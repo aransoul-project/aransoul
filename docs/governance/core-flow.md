@@ -1,6 +1,6 @@
 # AranSoul Governance Core Flow
 
-Status: **Current baseline with 2026-08 refinement note**
+Status: **Canonical process map — current baseline with 2026-08 refinement note**
 
 This document translates the current AranSoul governance chain into externally readable terms. It does not expose hidden chain-of-thought; it describes governance responsibilities, gates, and authority boundaries.
 
