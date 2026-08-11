@@ -1,8 +1,12 @@
 # External Action Verification
 
+Status: **Operational companion to governance and tool-execution controls**
+
 AranSoul distinguishes **producing an answer** from **completing work in the external world**.
 
 A model can generate correct content while the actual task still fails because a tool call was never sent, the target system rejected it, the change did not persist, or the change landed in the wrong place.
+
+This document explains how to verify completion after an action is authorized. It does not itself grant permission to perform the action; authorization is governed by the canonical authority and process documents.
 
 ## Five external completion states
 
