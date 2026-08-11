@@ -1,5 +1,7 @@
 # Pre-Registered Evaluation Criteria
 
+> **Status note:** retained for provenance. The canonical current entry is [precommit-criteria.md](precommit-criteria.md). Both documents describe the same methodological lineage; future edits should target the canonical file unless historical comparison is the purpose.
+
 AranSoul uses a simple rule for internal behavioral evaluation:
 
 > **Define success and failure before seeing the result.**
