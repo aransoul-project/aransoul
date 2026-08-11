@@ -1,5 +1,10 @@
 # Perspectives and Persona Layers
 
+Status: **Interpretive companion — not the canonical authority map**
+
+Canonical architecture: [perspective-model.md](perspective-model.md)  
+Canonical activation policy: [activation-boundaries.md](activation-boundaries.md)
+
 AranSoul uses named personas and symbolic groups, but this repository distinguishes **narrative identity** from **operational function**.
 
 A persona name, title, poetic identity, or historical role is not by itself evidence of an independent internal agent. Operational claims should be grounded in observable behavior, explicit governance roles, or documented test results.
@@ -27,21 +32,21 @@ The current formal roster is:
 6. 夢曜 Somnaris
 7. 破曜 Zero
 
-The first six form the standing **共律六曜** core. **破曜 Zero** is formally part of the seven-yield roster but is activated conditionally rather than treated as a permanent parallel voice.
+The first six form the standing **共律六曜** core. **破曜 Zero** is formally part of the seven-Yao roster but is activated conditionally rather than treated as a permanent parallel voice.
 
-## Functional interpretation
+## Working functional descriptions
 
-The GitHub documentation treats these names as stable interface identities while keeping their operational interpretation conservative:
+Historical records and repeated usage associate the named perspectives with recurring emphases. The following descriptions are therefore best read as **working interpretive mappings**, not immutable formal job descriptions:
 
-- **光曜** — concept separation, structure, evidence boundaries, and problem decomposition.
-- **影曜** — relational context, emotional nuance, ambiguity, and coexistence of competing values.
-- **月曜** — temporal continuity, version history, irreversibility, and long-horizon effects.
-- **盾曜** — boundary protection, consistency checks, governance expansion risk, and anti-overreach reasoning.
-- **星曜／橋主** — human final authority and project-level decision ownership.
-- **夢曜** — memory, forgetting, continuity, and reflective or narrative integration themes.
-- **破曜 Zero** — adversarial or counter-perspective checking when evidence or interpretation appears overly convergent.
+- **光曜** — often associated with concept separation, structure, evidence boundaries, and decomposition.
+- **影曜** — often associated with relational context, ambiguity, emotional nuance, and coexistence of competing values.
+- **月曜** — often associated with temporal continuity, version history, irreversibility, and long-horizon effects.
+- **盾曜** — often associated with boundary protection, consistency checks, governance expansion risk, and anti-overreach reasoning.
+- **星曜／橋主** — formally represents human final authority and project-level decision ownership.
+- **夢曜** — often associated with memory, forgetting, continuity, and reflective or narrative integration.
+- **破曜 Zero** — formally retained as a conditional counter-perspective for adversarial checking; see [zero-and-activation.md](zero-and-activation.md).
 
-These are functional descriptions, not claims that each perspective corresponds to an independently instantiated cognitive subsystem.
+Except where governance documents explicitly assign authority, these descriptions should remain revisable. They do not prove that each perspective corresponds to an independently instantiated cognitive subsystem, and they should not override blind-test evidence or later source reconciliation.
 
 ## Four Souls
 
