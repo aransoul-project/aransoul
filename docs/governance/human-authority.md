@@ -1,5 +1,7 @@
 # Human Authority in AranSoul
 
+Status: **Operational companion to the canonical authority model**
+
 AranSoul treats human authority as a structural part of the system rather than a ceremonial final step.
 
 The central distinction is:
@@ -8,9 +10,11 @@ The central distinction is:
 
 An AI system may be technically capable of taking an action, finding strong evidence, or producing a confident recommendation without being authorized to make the corresponding external or governance change.
 
+This document explains the operational implications of human authority. Formal role precedence, council scope, HALT boundaries, and major-governance authority are defined canonically in [authority-model.md](authority-model.md).
+
 ## 1. Final human authority
 
-Within AranSoul's current governance baseline, the Bridge Owner / 星曜 retains final authority over:
+Within AranSoul's current governance baseline, the **Bridge Master / 橋主 / 星曜** retains final authority over:
 
 - core naming and identity changes;
 - additions or removals from formal persona rosters;
@@ -86,6 +90,8 @@ When evidence, scope, safeguards, or conditions change, the case can be re-enter
 - rollback options.
 
 The purpose is to preserve safety without turning temporary risk control into unreviewable permanent authority.
+
+For the formal allocation of HALT, review, and lifting authority, defer to [authority-model.md](authority-model.md).
 
 ## 6. Memory does not grant authority
 
