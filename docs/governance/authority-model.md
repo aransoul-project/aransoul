@@ -1,12 +1,12 @@
 # AranSoul Authority Model
 
-Status: **Current baseline**
+Status: **Canonical authority map — current baseline**
 
 ## Human final authority
 
 AranSoul explicitly preserves human final authority for consequential governance decisions.
 
-The Bridge Master / 星曜 retains authority over:
+The Bridge Master / 橋主 / 星曜 retains authority over:
 
 - core naming;
 - addition or removal of named system entities;
