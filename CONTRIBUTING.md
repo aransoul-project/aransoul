@@ -76,6 +76,14 @@ Keep pull requests narrow when possible. Explain:
 
 Major changes to governance, identity, authority, irreversible history, or formal project status should not be treated as routine editorial edits.
 
-## Licensing
+## Licensing of contributions
 
-This repository does not yet state a final public license. Until a license is explicitly added, do not assume that public visibility alone grants permission to reuse, redistribute, or modify the material outside the rights provided by GitHub's platform terms and applicable law.
+By contributing material to this repository, contributors should expect the repository's content-type licensing policy in [LICENSE](LICENSE) to apply unless a contribution is explicitly accepted under different terms.
+
+- Documentation, research text, governance specifications, experiment protocols, historical case studies, and other non-code content are contributed for distribution under **CC BY-SA 4.0** unless otherwise stated.
+- Software source code and executable code are contributed for distribution under **Apache-2.0** unless otherwise stated.
+- Third-party material must retain its original licensing and attribution requirements and should not be contributed unless redistribution is permitted.
+
+Do not submit material under incompatible terms without making those terms explicit before incorporation.
+
+Licensing a contribution does not automatically change its AranSoul governance status. A contributed document may remain Candidate, Historical, or Retired / Unverified even when it is legally reusable under the repository license.
