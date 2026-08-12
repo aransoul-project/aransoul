@@ -84,22 +84,33 @@ For a complete map, see [docs/README.md](docs/README.md).
 - `STATUS.md` — current/candidate/historical/retired classification
 - `GLOSSARY.md` — terminology and bilingual mappings
 - `CONTRIBUTING.md` — contribution and status-discipline guidelines
-- `CITATION.md` — version-sensitive citation guidance
-- `docs/public-release-readiness.md` — release-preparation checklist and blockers
+- `CITATION.md` — citation and version-sensitive reference guidance
+- `LICENSE` — repository licensing scope
+- `docs/public-release-readiness.md` — release-readiness checklist
 
-## Contributing, citation, and reuse
+## Contributing
 
 Contributions that improve evidence discipline, traceability, implementation realism, or status clarity are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-For citation, use [CITATION.md](CITATION.md) and prefer a stable release tag or exact commit when reproducibility matters.
+## Licensing and reuse
 
-For current release blockers and readiness criteria, see [Public Release Readiness](docs/public-release-readiness.md).
+AranSoul uses a **content-type licensing model**. See [LICENSE](LICENSE) for the authoritative repository-level scope notice.
 
-A final repository license has **not yet been selected**. Public visibility should not be interpreted as an explicit open-source or open-content license. A `LICENSE` file should be added only after the intended reuse terms are deliberately chosen.
+- Documentation, research text, governance specifications, experiment protocols, historical case studies, and other non-code content are licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** unless otherwise stated.
+- Software source code and executable code added under this repository policy are licensed under the **Apache License, Version 2.0 (Apache-2.0)** unless otherwise stated.
+- Third-party material remains subject to its own terms.
 
-## Status
+Licensing permission is separate from AranSoul governance status. Permission to copy or adapt historical or candidate material does not make that material part of the current baseline.
+
+## Citation
+
+See [CITATION.md](CITATION.md). Until a tagged release and machine-readable citation metadata are fixed, reproducible references should identify the exact commit used.
+
+## Release status
 
 This repository is a **living design and research baseline**, not a claim of a completed production framework.
+
+The documentation baseline is approaching a deliberate v0.1 release state, but a formal release tag should follow a final release-point consistency, link, claim-strength, and over-narration audit. See [public release readiness](docs/public-release-readiness.md).
 
 Many concepts documented here are design patterns, governance rules, or hypotheses. Mechanistic claims about model internals require independent evidence and should not be inferred from metaphorical, behavioral, or conceptual models alone.
 
