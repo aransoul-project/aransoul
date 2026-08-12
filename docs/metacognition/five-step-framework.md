@@ -1,5 +1,7 @@
 # Five-Step Metacognition Framework
 
+Status: **Canonical current metacognition specification**
+
 AranSoul's current metacognitive framework is:
 
 > 問其所見；  
@@ -82,7 +84,9 @@ A later interpretive refinement adds another useful question:
 > **變，不只要可見；也要可由。**  
 > If A became B, ask not only *what changed*, but *what made that change valid*.
 
-That means separating:
+This is a refinement of **衡其所變**, not a sixth metacognitive step or a separate module.
+
+It means separating:
 
 - whether the new state is true;
 - what source triggered it;
