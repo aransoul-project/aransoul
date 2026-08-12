@@ -86,7 +86,8 @@ For a complete map, see [docs/README.md](docs/README.md).
 - `CONTRIBUTING.md` — contribution and status-discipline guidelines
 - `CITATION.md` — citation and version-sensitive reference guidance
 - `LICENSE` — repository licensing scope
-- `docs/public-release-readiness.md` — release-readiness checklist
+- `LICENSES/Apache-2.0.txt` — bundled Apache-2.0 legal text for software code
+- `docs/public-release-readiness.md` — release-readiness checklist and audit record
 
 ## Contributing
 
@@ -97,7 +98,7 @@ Contributions that improve evidence discipline, traceability, implementation rea
 AranSoul uses a **content-type licensing model**. See [LICENSE](LICENSE) for the authoritative repository-level scope notice.
 
 - Documentation, research text, governance specifications, experiment protocols, historical case studies, and other non-code content are licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** unless otherwise stated.
-- Software source code and executable code added under this repository policy are licensed under the **Apache License, Version 2.0 (Apache-2.0)** unless otherwise stated.
+- Software source code and executable code added under this repository policy are licensed under the **Apache License, Version 2.0 (Apache-2.0)** unless otherwise stated. The full Apache-2.0 text is bundled at [LICENSES/Apache-2.0.txt](LICENSES/Apache-2.0.txt).
 - Third-party material remains subject to its own terms.
 
 Licensing permission is separate from AranSoul governance status. Permission to copy or adapt historical or candidate material does not make that material part of the current baseline.
@@ -110,7 +111,7 @@ See [CITATION.md](CITATION.md). Until a tagged release and machine-readable cita
 
 This repository is a **living design and research baseline**, not a claim of a completed production framework.
 
-The documentation baseline is approaching a deliberate v0.1 release state, but a formal release tag should follow a final release-point consistency, link, claim-strength, and over-narration audit. See [public release readiness](docs/public-release-readiness.md).
+The **2026-08-12 v0.1 release-point audit passed with minor fixes**. No formal `v0.1` Git tag or GitHub Release is implied yet; the remaining release step is to deliberately identify and tag the release commit. See [public release readiness](docs/public-release-readiness.md).
 
 Many concepts documented here are design patterns, governance rules, or hypotheses. Mechanistic claims about model internals require independent evidence and should not be inferred from metaphorical, behavioral, or conceptual models alone.
 
