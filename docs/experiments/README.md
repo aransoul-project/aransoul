@@ -8,6 +8,10 @@ This directory contains evaluation methods, experimental protocols, interpretati
 - [Blind persona testing](blind-persona-testing.md) — **current specialized protocol**. Remove explicit role cues, anonymize outputs, and test whether behavioral distinctions remain observable.
 - [Evidence ladder](evidence-ladder.md) — **current interpretation framework**. Separate a run's result from the strength of the experimental design that produced it.
 
+## Candidate experiments
+
+- [Zombie Memory Benchmark v0.1](zombie-memory-benchmark-v0.1.md) — **pre-registered candidate experiment** testing whether explicit Truth / Time / Effect / Authority representation reduces stale-authority errors relative to plain-context and timestamp-only baselines. No empirical result has been claimed yet.
+
 ## Method status is not claim status
 
 AranSoul distinguishes two questions:
@@ -18,6 +22,8 @@ AranSoul distinguishes two questions:
 A method can be current while the claim it investigates remains candidate or weakly supported.
 
 For example, blind testing is a current evaluation protocol. That does not mean stable cross-context persona identity has been established.
+
+Likewise, the Zombie Memory benchmark protocol can be pre-registered before any result exists; the protocol's presence is not evidence that T/T/E/A will outperform simpler baselines.
 
 ## Candidate research and stronger evidence goals
 
