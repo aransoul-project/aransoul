@@ -84,10 +84,16 @@ For a complete map, see [docs/README.md](docs/README.md).
 - `STATUS.md` — current/candidate/historical/retired classification
 - `GLOSSARY.md` — terminology and bilingual mappings
 - `CONTRIBUTING.md` — contribution and status-discipline guidelines
+- `CITATION.md` — version-sensitive citation guidance
+- `docs/public-release-readiness.md` — release-preparation checklist and blockers
 
-## Contributing and reuse
+## Contributing, citation, and reuse
 
 Contributions that improve evidence discipline, traceability, implementation realism, or status clarity are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+For citation, use [CITATION.md](CITATION.md) and prefer a stable release tag or exact commit when reproducibility matters.
+
+For current release blockers and readiness criteria, see [Public Release Readiness](docs/public-release-readiness.md).
 
 A final repository license has **not yet been selected**. Public visibility should not be interpreted as an explicit open-source or open-content license. A `LICENSE` file should be added only after the intended reuse terms are deliberately chosen.
 
