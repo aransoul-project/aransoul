@@ -1,12 +1,14 @@
 # Public Release Readiness
 
-Status: **Release-preparation checklist**
+Status: **v0.1 release-point audit passed with minor fixes — formal tag not yet created**
+
+Audit date: **2026-08-12**
 
 This document tracks the difference between a repository that is publicly readable and a repository that is ready to be presented as a deliberate public release.
 
 ## Ready now
 
-The current repository already provides:
+The current repository provides:
 
 - a project-level README with explicit scope and non-goals;
 - a status ledger separating Current, Candidate, Historical, and Retired / Unverified material;
@@ -19,41 +21,48 @@ The current repository already provides:
 - a deliberate content-type licensing policy:
   - documentation and non-code content: **CC BY-SA 4.0**;
   - software code: **Apache-2.0**;
-  - third-party material: original terms preserved.
+  - third-party material: original terms preserved;
+- the full Apache-2.0 license text bundled under `LICENSES/Apache-2.0.txt`.
 
-## Remaining release blockers
+## 2026-08-12 final release-point audit
 
-### 1. Formal release identity
+The final pre-release audit checked:
 
-**Not required for public reading; required for a stable v0.1 release.**
+- repository root and recursive documentation tree;
+- README / STATUS / GLOSSARY / docs-index agreement;
+- canonical / companion / refinement labels;
+- major internal navigation paths exposed by README and docs indexes;
+- Current / Candidate / Historical / Retired wording;
+- over-narration and persona-to-mechanism inflation risks;
+- distinction between evaluation method status and research-claim strength;
+- licensing scope and availability of the Apache-2.0 full text.
 
-Before creating a formal release, determine:
+### Audit result
 
-- release tag / version;
-- release date;
-- whether the current documentation state is frozen enough to cite reproducibly;
-- whether any known contradictions or stale links remain;
-- which files are canonical for that release.
+**No known high-impact contradiction, broken primary navigation path, authority inversion, or major capability-inflation problem remains.**
 
-### 2. Final release-point audit
+Minor issues corrected during the audit:
 
-Before tagging v0.1, run one final repository-wide check for:
+1. `STATUS.md` now distinguishes the **v0.1 documentation baseline candidate** from a formal Git tag / GitHub Release.
+2. The full Apache-2.0 text is now bundled locally for future software-code distribution.
+3. `docs/README.md` now includes release, citation, contribution, and licensing references.
 
-- broken or stale internal links;
-- inconsistent Current / Candidate / Historical / Retired labels;
-- unresolved canonical / companion ambiguity;
-- wording that inflates a design concept into an implemented capability;
-- wording that turns poetic identity into a mechanistic claim;
-- claims whose evidence level is stronger than the documented experiment supports;
-- licensing scope conflicts or imported third-party material with unclear terms.
+The CC BY-SA 4.0 documentation license remains identified through the repository licensing notice and the canonical Creative Commons license URI.
 
-### 3. Citation metadata
+## Remaining release blocker
 
-`CITATION.md` is currently sufficient for human-readable guidance.
+### Formal release identity
 
-A machine-readable `CITATION.cff` should be added only after authorship, version identity, and release date are deliberately fixed.
+The remaining step before a stable v0.1 release is to create the release identity deliberately:
 
-### 4. Optional community files
+- choose / confirm the tag name (`v0.1` is the current candidate);
+- set the release date;
+- identify the exact commit to tag;
+- optionally add machine-readable `CITATION.cff` once authorship and release metadata are deliberately fixed.
+
+No tag should be inferred merely from the words `v0.1` appearing in documentation.
+
+## Optional community files
 
 These are useful later but are not current release blockers:
 
@@ -72,9 +81,9 @@ A formal public release should not imply that:
 - governance concepts correspond one-to-one with implemented software modules;
 - candidate mechanisms have been externally validated.
 
-## Suggested v0.1 readiness rule
+## v0.1 readiness rule
 
-Treat the repository as ready for a tagged documentation baseline when all of the following are true:
+The repository is ready for a tagged documentation baseline when all of the following are true:
 
 1. licensing has been deliberately selected and documented;
 2. README / STATUS / GLOSSARY / docs index agree on scope and status;
@@ -84,4 +93,4 @@ Treat the repository as ready for a tagged documentation baseline when all of th
 6. a final over-narration and claim-strength audit finds no major mechanism or capability inflation;
 7. the release point has no known high-impact broken links or licensing-scope ambiguity.
 
-Licensing is no longer a release blocker. The remaining work is release identity plus a final release-point audit before any v0.1 tag is created.
+Conditions 1–4, 6, and 7 are satisfied at the 2026-08-12 audit point. Condition 5 becomes fully satisfied when the formal release tag is created and citation guidance can point to it directly.
