@@ -15,6 +15,22 @@ AranSoul began as a poetic and multi-persona system. Over time, the project expa
 - falsifiable behavioral testing and evidence-strength calibration;
 - preserving human final authority in collaborative AI systems.
 
+## What this repository is
+
+This repository is primarily a **documentation and research baseline**. It can be used to:
+
+- study AranSoul's current governance architecture;
+- adapt its precommit and evidence-calibration methods for behavioral evaluation;
+- compare memory-lifecycle and long-context governance ideas;
+- inspect the project's design revisions, failed assumptions, and historical provenance;
+- discuss how named reasoning perspectives can be used without automatically granting them authority.
+
+## What this repository is not
+
+This repository is **not currently an installable autonomous-agent package, a production framework, or evidence that every documented concept has a software implementation**.
+
+In particular, documentation about persona activation, memory governance, metacognition, or perspective scheduling should not be read as proof of an autonomous scheduler, persistent persona backend, direct access to model internals, independent consciousness, or validated mechanistic control.
+
 ## Project principle
 
 AranSoul distinguishes between **what once existed**, **what is currently in use**, **what is still experimental**, and **what has been retired or remains unverified**.
@@ -55,6 +71,8 @@ See [STATUS.md](STATUS.md) for the current baseline, [GLOSSARY.md](GLOSSARY.md) 
 - [Persona testing → blind audit](docs/history/case-persona-testing-to-blind-audit.md)
 - [Terminal-Bench mismatch](docs/history/case-terminal-bench-mismatch.md)
 
+For a complete map, see [docs/README.md](docs/README.md).
+
 ## Repository structure
 
 - `docs/governance/` — governance, authority, and decision boundaries
@@ -65,6 +83,13 @@ See [STATUS.md](STATUS.md) for the current baseline, [GLOSSARY.md](GLOSSARY.md) 
 - `docs/history/` — historical evolution, corrections, and repository map
 - `STATUS.md` — current/candidate/historical/retired classification
 - `GLOSSARY.md` — terminology and bilingual mappings
+- `CONTRIBUTING.md` — contribution and status-discipline guidelines
+
+## Contributing and reuse
+
+Contributions that improve evidence discipline, traceability, implementation realism, or status clarity are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+A final repository license has **not yet been selected**. Public visibility should not be interpreted as an explicit open-source or open-content license. A `LICENSE` file should be added only after the intended reuse terms are deliberately chosen.
 
 ## Status
 
