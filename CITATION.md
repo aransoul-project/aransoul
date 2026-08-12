@@ -1,27 +1,34 @@
 # Citing AranSoul
 
-AranSoul is currently maintained as a **living documentation and research baseline** rather than a fixed scholarly publication or software release.
+AranSoul is maintained as a **living documentation and research project** with stable public release points.
 
-Until a formal release, DOI, and fixed author list are established, please cite the specific repository state you used rather than treating the project as a timeless artifact.
+The first formal documentation baseline is **AranSoul v0.1 — Documentation Baseline**, published on **2026-08-13 (UTC+8)** and fixed at commit `2dea4f52fb18fbf81e8a5af32eccbc1dc592cc6e`.
 
 ## Recommended citation practice
 
-When referring to the project as a whole, include:
+When referring to the v0.1 project baseline as a whole, include:
 
 - **Project:** AranSoul
 - **Maintaining organization:** AranSoul Project (`aransoul-project`)
 - **Repository:** `aransoul-project/aransoul`
 - **Artifact type:** documentation / research baseline
-- **Version or commit:** use the exact release tag or commit SHA you consulted
+- **Version:** `v0.1`
+- **Release:** `AranSoul v0.1 — Documentation Baseline`
+- **Release commit:** `2dea4f52fb18fbf81e8a5af32eccbc1dc592cc6e`
+- **Release date:** 2026-08-13 (UTC+8)
 - **Access date:** include the date on which you consulted the repository when required by your citation style
+
+Release page: <https://github.com/aransoul-project/aransoul/releases/tag/v0.1>
 
 For technical or research discussion, prefer citing the specific document that supports the claim—for example the governance core flow, memory lifecycle, metacognition framework, experiment protocol, or historical case study—rather than citing the repository generally.
 
 ## Version-sensitive citation
 
-The `main` branch is intentionally allowed to evolve. Claims about the project should therefore be tied to a stable release tag or commit whenever reproducibility matters.
+The `main` branch continues to evolve after v0.1. Claims about the v0.1 baseline should therefore cite the `v0.1` tag or its fixed release commit rather than the current `main` branch.
 
-A later version may refine terminology, status, or interpretation without erasing the historical state that existed at the cited commit.
+For work based on post-v0.1 changes that have not yet received another release tag, cite the exact commit SHA consulted.
+
+A later version may refine terminology, status, or interpretation without erasing the historical state preserved by the v0.1 release.
 
 ## Licensing and citation are separate
 
@@ -35,6 +42,6 @@ Repository-level licensing is defined in [LICENSE](LICENSE):
 
 CC BY-SA 4.0 requires appropriate attribution for covered reuse. A citation may help satisfy scholarly attribution expectations, but users should consult the license terms for the legal attribution requirements that apply to their reuse.
 
-## Citation status
+## Machine-readable citation metadata
 
-A machine-readable `CITATION.cff` may be added later when the project has deliberately fixed the citation metadata needed for a tagged public release, including authorship, version identity, and release date.
+A `CITATION.cff` may be added in a later documentation update once the project deliberately fixes the remaining machine-readable authorship metadata. The absence of a CFF file does not change the stable identity of the v0.1 release.
