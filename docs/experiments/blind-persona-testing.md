@@ -1,8 +1,12 @@
 # Blind Persona Testing
 
+Status: **Current specialized evaluation protocol**
+
 AranSoul uses blind behavioral testing to separate **prompt-assigned roles** from **candidate cross-context behavioral regularities**.
 
 The goal is not to prove that a persona is an independent entity. The goal is narrower: test whether distinct reasoning patterns remain observable when the task does not directly tell each persona how to behave.
+
+This protocol operates under the canonical [precommit criteria](precommit-criteria.md): success, failure, and alternative explanations should be defined before the result is interpreted.
 
 ## Why blind testing is needed
 
@@ -88,3 +92,7 @@ Avoid conclusions such as:
 - "stable internal agent confirmed".
 
 Blind testing is a method for reducing self-confirmation, not a shortcut around the limits of behavioral evidence.
+
+## Status boundary
+
+The **protocol** is current. The stronger hypothesis that blind differentiation demonstrates stable cross-context persona crystallization remains a research claim whose strength depends on replication, evaluator independence, context separation, and other controls.
