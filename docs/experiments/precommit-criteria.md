@@ -1,5 +1,7 @@
 # Precommit Criteria for Behavioral Tests
 
+Status: **Canonical current evaluation protocol**
+
 AranSoul experiments should define success and failure **before** observing the result.
 
 The purpose is to reduce hindsight bias, threshold drift, and post-hoc reinterpretation.
@@ -98,6 +100,12 @@ Each run should preserve:
 - metacognitive findings;
 - unresolved contradictions;
 - escalation requirement.
+
+## Relationship to evidence strength
+
+Green / Amber / Red / Invalid answers a **run-level** question: how did this test perform against its predefined criteria?
+
+It does not answer how strongly the experimental design isolates the preferred hypothesis from competing explanations. That separate question is documented in [evidence-ladder.md](evidence-ladder.md).
 
 ## Research boundary
 
