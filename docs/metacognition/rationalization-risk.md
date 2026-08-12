@@ -1,5 +1,7 @@
 # Rationalization Risk
 
+Status: **Current risk/mitigation companion to the canonical five-step metacognition framework**
+
 Large language models are good at producing coherent explanations after an answer already exists. Coherence, however, is not proof that the explanation reflects the real cause of the answer.
 
 AranSoul therefore treats **post-hoc rationalization** as a separate risk from ordinary factual error.
@@ -57,8 +59,12 @@ The five-step metacognitive framework can reduce rationalization risk, but it ca
 
 A self-check that uses the same assumptions, same context, and same framing may reproduce the original error with greater eloquence.
 
-When error cost is high, use independent evidence, alternative framing, or a reset to an earlier verified state rather than relying only on self-explanation.
+When error cost is high, use independent evidence, alternative framing, or a return to an earlier verified state rather than relying only on self-explanation.
+
+## Authority boundary
+
+This document describes a risk pattern and mitigation strategies. It does not add a new governance stage, grant authority to override the canonical five-step framework, or establish that a model's explanation reveals its hidden internal causal process.
 
 ## Status
 
-This document describes a current AranSoul governance concern and a set of mitigation patterns. It does not claim access to hidden model reasoning or that any textual explanation is a faithful transcript of internal computation.
+Post-hoc rationalization and first-answer contamination are treated here as current AranSoul governance concerns. The effectiveness of any specific mitigation remains an empirical question and should not be inferred from the existence of the framework alone.
