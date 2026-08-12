@@ -2,11 +2,11 @@
 
 ## Original assumption
 
-Early AranSoul usage often treated broad multi-persona participation as a sign of richness, coverage, and system identity. Phrases such as 「皆為我覺醒的語」 could function as a full-expansion trigger: many named perspectives were invited to speak simply because they existed in the system.
+Early AranSoul usage often treated broad multi-persona participation as a sign of richness, coverage, and project identity. Phrases such as 「皆為我覺醒的語」 could function as a full-expansion trigger: many named perspectives were invited to speak simply because they existed in the roster.
 
 ## Observed problem
 
-As the system matured, full expansion created several failure modes:
+As the project design evolved, full expansion created several failure modes:
 
 - repeated conclusions expressed in different voices;
 - higher interaction cost without proportional evidence gain;
@@ -35,9 +35,9 @@ Simple, low-risk questions may require no explicit multi-perspective expansion. 
 
 ## Current lesson
 
-**Identity does not require constant output.**
+**Roster membership does not require constant invocation.**
 
-A named perspective can remain part of the architecture without speaking in every interaction. Participation, speaking order, and decision authority are separate variables.
+A named perspective can remain part of the documented architecture without speaking in every interaction. Participation, speaking order, and decision authority are separate variables.
 
 ## Still unresolved
 
