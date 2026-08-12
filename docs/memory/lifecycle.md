@@ -1,5 +1,7 @@
 # Memory Lifecycle Governance
 
+Status: **Canonical current memory-governance specification**
+
 AranSoul treats memory as governed state, not as an automatically trusted instruction channel.
 
 The central principle is simple: **a memory may be true and still be stale, non-binding, out of scope, or unauthorized for the current action.** Retrieval therefore does not imply execution.
@@ -57,7 +59,7 @@ Expose only what is necessary for the current task. Avoid propagating sensitive 
 Summarization and repetition do not raise authority. In AranSoul terms: a statement may travel while its authority must remain attached to its original provenance and status.
 
 ### 6. Forgetting / Rollback
-Forgetting is not limited to deletion. Available interventions include:
+Forgetting is not limited to deletion. Governance may call for interventions such as:
 
 - lowering retrieval priority;
 - removing an item from the active baseline;
@@ -68,6 +70,8 @@ Forgetting is not limited to deletion. Available interventions include:
 - version rollback.
 
 When the problem is interference from old material, prefer demotion or archival before destructive deletion. Irreversible deletion of core identity or major governance history requires elevated review.
+
+These options define **allowed governance responses**. They do not imply that an autonomous persistent-memory backend currently performs them automatically.
 
 ## Four dimensions of memory validity
 
@@ -94,6 +98,8 @@ Updating evidence does not mean the previous historical record never existed. Up
 
 This rule applies especially to long-running agents, where accumulated context can otherwise convert old assumptions, experiments, or superseded rules into silent present-day instructions.
 
-## Status
+## Status boundary
 
-The six-stage lifecycle and the separation of current, candidate, historical, and retained material are part of the current AranSoul governance baseline. More elaborate provenance chains, immutable audit trails, or automatic memory scoring remain implementation questions rather than established capabilities.
+The six-stage lifecycle and the separation of current, candidate, historical, and retained material are part of the current AranSoul governance baseline.
+
+More elaborate provenance chains, immutable audit trails, automatic memory scoring, automated retrieval weighting, or autonomous rollback remain implementation questions rather than established capabilities unless separately implemented and verified.
