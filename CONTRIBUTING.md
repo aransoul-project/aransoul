@@ -54,6 +54,24 @@ Behavioral tests should use the current [precommit criteria](docs/experiments/pr
 
 Green / Amber / Red / Invalid describe performance against predefined criteria. They do not by themselves describe the strength of the experimental design. Use the [evidence ladder](docs/experiments/evidence-ladder.md) to discuss evidence strength separately.
 
+### Open replication: Zombie Memory Benchmark
+
+The [Zombie Memory Benchmark v0.1](docs/experiments/zombie-memory-benchmark-v0.1.md) is an open candidate experiment. External replication is explicitly welcome.
+
+Useful contributions include:
+
+- implementing the dataset schema or deterministic scorer;
+- contributing adversarial or edge cases;
+- running the benchmark on different models or providers;
+- proposing simpler baselines or ablations;
+- reporting null or Red results;
+- testing whether historical recall degrades while stale-authority errors improve;
+- identifying representation leakage, scoring bias, or other invalidating confounds.
+
+A contribution does not need to support the AranSoul hypothesis. Reproducible evidence that a simpler method performs equally well or better is especially valuable.
+
+Replication reports should preserve enough metadata to be checked independently, including model/version, parameters, benchmark commit, condition definitions, protocol deviations, aggregate and per-family metrics, and raw outputs where redistribution is permitted.
+
 ## Historical material
 
 Do not rewrite earlier records to make the project appear to have always held its current position.
