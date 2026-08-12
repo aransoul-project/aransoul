@@ -1,8 +1,10 @@
 # AranSoul Status Ledger
 
-Baseline: **v0.1**
+Documentation baseline candidate: **v0.1 (pre-release)**
 
 This ledger separates current governance from candidates, historical artifacts, and retired or unverified claims. Presence in the AranSoul archive does not imply current validity.
+
+The `v0.1` label here identifies the documentation baseline being prepared for release. It does **not** by itself mean that a formal Git tag or GitHub Release already exists.
 
 ## CURRENT — Current baseline
 
