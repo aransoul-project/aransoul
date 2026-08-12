@@ -2,7 +2,7 @@
 
 ## Original assumption
 
-Early persona tests often asked named roles to answer questions while their expected functions were already visible in the prompt or surrounding context. If the resulting answers matched those descriptions, the system could appear to show stable differentiated personas.
+Early persona tests often asked named roles to answer questions while their expected functions were already visible in the prompt or surrounding context. If the resulting answers matched those descriptions, the results could appear to show stable differentiated personas.
 
 ## Observed problem
 
@@ -35,7 +35,7 @@ A stronger evidence ladder now distinguishes prompt compliance from blind attrib
 
 ## Current lesson
 
-**A system should make it possible for its own preferred interpretation to fail.**
+**An evaluation should make it possible for the project's preferred interpretation to fail.**
 
 If every result can be explained as confirmation, the test is not discriminating enough.
 
