@@ -7,7 +7,8 @@ This directory documents how AranSoul organizes multiple perspectives without tr
 1. [Perspective model](perspective-model.md) — **canonical architecture map**. Separates identity, function, participation, speaking order, and authority.
 2. [Activation boundaries](activation-boundaries.md) — **canonical activation policy**. Defines selective activation and cost-sensitive use of additional perspectives.
 3. [Perspectives](perspectives.md) — **interpretive companion**. Preserves working descriptions of named groups and recurring emphases; these descriptions are revisable unless governance documents explicitly fix them.
-4. [Zero and activation](zero-and-activation.md) — **specialized companion** for Zero / 破曜 and conditional counter-perspective activation.
+4. [Seven Bridges research status](seven-bridges.md) — **research-status companion**. Preserves the Seven Bridges roster and historical lineage while keeping individual functional mappings under provenance review and behavioral validation.
+5. [Zero and activation](zero-and-activation.md) — **specialized companion** for Zero / 破曜 and conditional counter-perspective activation.
 
 If a companion document appears to conflict with a canonical document, the canonical document governs the architecture interpretation until a later explicit refinement changes that status.
 
