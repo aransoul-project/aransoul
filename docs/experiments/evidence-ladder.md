@@ -1,8 +1,12 @@
 # Evidence Ladder for AranSoul Experiments
 
+Status: **Current interpretation framework**
+
 AranSoul should not treat all successful tests as equally informative.
 
 This ladder separates increasingly strong forms of evidence while preserving the distinction between **observable behavioral regularity** and stronger claims about persistent internal identity or mechanism.
+
+It is an AranSoul research framework for claim calibration, not a claim that these levels are an externally established scientific taxonomy.
 
 ## Level 0 — Prompt compliance
 
@@ -95,3 +99,7 @@ The result class and the evidence level answer different questions:
 A Level 1 Green result may be less informative than a Level 4 Amber result.
 
 This prevents test success from being confused with experimental strength.
+
+## Status boundary
+
+The ladder is current as an internal claim-calibration framework. Achieving a higher level is not itself evidence that the level ordering is universally optimal, and the ladder should be revised if empirical use exposes missing distinctions or misleading assumptions.
