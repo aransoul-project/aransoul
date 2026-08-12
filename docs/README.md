@@ -50,6 +50,16 @@ The older `pre-registered-criteria.md` file is retained as provenance for the sa
 - [Persona testing to blind audit](history/case-persona-testing-to-blind-audit.md)
 - [Terminal-Bench mismatch](history/case-terminal-bench-mismatch.md)
 
+## Public release / repository policy
+
+- [Public release readiness](public-release-readiness.md)
+- [Repository status ledger](../STATUS.md)
+- [Glossary](../GLOSSARY.md)
+- [Contribution guide](../CONTRIBUTING.md)
+- [Citation guidance](../CITATION.md)
+- [Repository licensing notice](../LICENSE)
+- [Apache-2.0 full license text](../LICENSES/Apache-2.0.txt)
+
 ## How to read status
 
 Use the repository-level [STATUS.md](../STATUS.md) before treating a concept as current, candidate, historical, retired, or unverified.
