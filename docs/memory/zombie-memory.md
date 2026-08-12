@@ -1,5 +1,7 @@
 # Zombie Memory
 
+Status: **Current memory-governance risk concept / diagnostic companion**
+
 **Zombie memory** is AranSoul's working term for information that remains available and influential after the conditions that once gave it authority have expired or changed.
 
 It is not necessarily false memory.
@@ -34,7 +36,7 @@ When an old memory affects a current conclusion, ask:
 - Was the item retrieved because it is relevant, or merely because it is semantically similar?
 - Would combining it with other retrieved items create a state that never existed?
 
-## Preferred response
+## Preferred governance response
 
 Do not default to deletion.
 
@@ -48,6 +50,8 @@ Use the least destructive intervention that restores the boundary:
 6. delete only when justified;
 7. rollback when a later change itself was invalid.
 
+These are governance responses. This document does **not** claim that AranSoul currently has an autonomous memory engine that can perform every response automatically.
+
 ## Relationship to history
 
 AranSoul deliberately preserves historical artifacts. Historical preservation and current authority are separate concerns.
@@ -58,4 +62,4 @@ This repository therefore uses status distinctions such as `CURRENT`, `CANDIDATE
 
 For long-running AI systems, the difficult memory problem may shift from **"Can the system remember?"** toward **"Can the system preserve provenance, status, and useful forgetting well enough that remembering does not corrupt the present?"**
 
-This is a design hypothesis, not a claim that AranSoul has solved machine memory or forgetting.
+This is a design hypothesis, not a claim that AranSoul has solved machine memory or forgetting, and not a claim that the term `zombie memory` is an established external research taxonomy.
