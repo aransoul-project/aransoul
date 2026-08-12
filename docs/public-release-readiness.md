@@ -15,19 +15,15 @@ The current repository already provides:
 - canonical / companion distinctions across governance, architecture, memory, metacognition, and experiments;
 - historical case studies that preserve corrections and failed assumptions;
 - contribution guidance;
-- citation guidance that recommends commit- or release-specific references.
+- citation guidance that recommends commit- or release-specific references;
+- a deliberate content-type licensing policy:
+  - documentation and non-code content: **CC BY-SA 4.0**;
+  - software code: **Apache-2.0**;
+  - third-party material: original terms preserved.
 
 ## Remaining release blockers
 
-### 1. Repository license
-
-**Blocking for a deliberate open-source / open-content release.**
-
-No final license has been selected. Public visibility does not by itself define reuse, redistribution, modification, or commercial-use permissions.
-
-The project should decide whether software, documentation, and future cultural / poetic material use one license or separate licenses.
-
-### 2. Formal release identity
+### 1. Formal release identity
 
 **Not required for public reading; required for a stable v0.1 release.**
 
@@ -39,11 +35,23 @@ Before creating a formal release, determine:
 - whether any known contradictions or stale links remain;
 - which files are canonical for that release.
 
+### 2. Final release-point audit
+
+Before tagging v0.1, run one final repository-wide check for:
+
+- broken or stale internal links;
+- inconsistent Current / Candidate / Historical / Retired labels;
+- unresolved canonical / companion ambiguity;
+- wording that inflates a design concept into an implemented capability;
+- wording that turns poetic identity into a mechanistic claim;
+- claims whose evidence level is stronger than the documented experiment supports;
+- licensing scope conflicts or imported third-party material with unclear terms.
+
 ### 3. Citation metadata
 
 `CITATION.md` is currently sufficient for human-readable guidance.
 
-A machine-readable `CITATION.cff` should be added only after authorship, version identity, and release metadata are deliberately fixed.
+A machine-readable `CITATION.cff` should be added only after authorship, version identity, and release date are deliberately fixed.
 
 ### 4. Optional community files
 
@@ -68,11 +76,12 @@ A formal public release should not imply that:
 
 Treat the repository as ready for a tagged documentation baseline when all of the following are true:
 
-1. licensing has been deliberately selected;
+1. licensing has been deliberately selected and documented;
 2. README / STATUS / GLOSSARY / docs index agree on scope and status;
 3. canonical documents have no known high-impact contradictions;
 4. historical materials are clearly prevented from regaining current authority by mere presence;
 5. citation guidance points to a stable tag or commit;
-6. a final over-narration and claim-strength audit finds no major mechanism or capability inflation.
+6. a final over-narration and claim-strength audit finds no major mechanism or capability inflation;
+7. the release point has no known high-impact broken links or licensing-scope ambiguity.
 
-Until those conditions are satisfied, the repository may remain public and useful as a living research baseline without presenting itself as a finalized release.
+Licensing is no longer a release blocker. The remaining work is release identity plus a final release-point audit before any v0.1 tag is created.
