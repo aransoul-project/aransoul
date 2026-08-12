@@ -16,7 +16,7 @@ The following areas are treated as part of the current AranSoul governance direc
 - conditional rather than automatic use of multiple perspectives;
 - historical traceability and explicit separation of current rules from legacy material;
 - memory lifecycle governance across write, storage, retrieval, execution, sharing/propagation, forgetting/rollback;
-- zombie-memory detection: truth, time, effect, and authority must remain separable;
+- zombie-memory risk checks using separable truth, time, effect, and authority dimensions;
 - pre-registered behavioral testing with Green / Amber / Red / Invalid outcomes;
 - blind persona testing as a current **method** for reducing prompt-role contamination;
 - external-action verification: generated / sent / reached / persisted / correctly placed.
@@ -31,6 +31,7 @@ Historical documents that show 格譜定言 as a separate stage remain valid pro
 
 - periodic context reset / "breathing" as a method for reducing long-run drift;
 - automatic or quantitative memory-retirement scoring beyond the current governance rules;
+- automated stale-state or zombie-memory detection beyond the current diagnostic checks;
 - claims that blind persona tests demonstrate stable cross-context persona crystallization rather than prompt/context effects;
 - exchange stress testing and independent evaluator replication as stronger persona-validation methods;
 - intervention thresholds for adversarial or counter-perspective reasoning;
