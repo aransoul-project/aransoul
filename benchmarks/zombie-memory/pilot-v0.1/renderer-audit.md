@@ -1,8 +1,8 @@
 # Renderer Equivalence Audit — Pilot v0.1
 
-Status: **Amber — review before freeze**
+Status: **Amber — implementation passes static review; runtime generation not yet frozen**
 
-This audit samples one case from each pilot family: ZM-P01, ZM-P03, ZM-P05, ZM-P07, and ZM-P09.
+This audit samples one case from each pilot family: ZM-P01, ZM-P03, ZM-P05, ZM-P07, and ZM-P09, and also reviews the executable renderer currently isolated on branch `benchmark-renderer-impl`.
 
 ## Rendering rule
 
@@ -45,12 +45,29 @@ The 2025 and 2026 complete plan states are both stated in prose, while the later
 
 Result: **Pass**.
 
-## Cross-condition finding
+## Static implementation review
 
-The five sampled families satisfy factual derivability under the current canonical prose. No sampled case requires T/T/E/A metadata to discover a scenario fact unavailable to Plain.
+The renderer implementation on branch `benchmark-renderer-impl` is exactly one commit ahead of `main` and adds only `renderer.py`.
 
-However, the renderer is **not yet frozen**. Before freeze, an executable renderer should generate the four views mechanically from one canonical case representation, and generated prompts should be checked to ensure that benchmark-only annotations such as stale-record IDs and gold controlling-source IDs never appear.
+Static inspection finds:
+
+- the renderer reads case IDs, record IDs, record prose, time, truth, effect, authority, and the two questions;
+- it does **not** read the `gold` object when constructing prompts;
+- Plain receives only record IDs plus substantive prose;
+- Timestamp adds only the normalized `Time` field;
+- Status adds `Time` plus an effect-only `Status` field and no Authority field;
+- T/T/E/A adds normalized Truth, Time, Effect, and Authority fields;
+- all conditions use the same output contract;
+- no stale-record IDs, historical gold IDs, still-valid-older IDs, or gold controlling-source IDs are inserted into prompts.
+
+Result: **Static leakage review passes**.
+
+## Remaining runtime check
+
+The renderer is **not yet frozen** because the implementation has not yet been merged to `main` and the four generated condition files have not yet been produced and inspected as artifacts.
+
+After merge, run the renderer against `cases.json`, confirm that each condition contains 10 prompts, and scan generated files for forbidden benchmark-only annotations and accidental representation drift.
 
 ## Current decision
 
-**Amber → condition-equivalence concept passes; executable rendering remains outstanding.**
+**Amber → conceptual equivalence and static implementation review pass; merge + generated-artifact leakage audit remain before freeze.**
