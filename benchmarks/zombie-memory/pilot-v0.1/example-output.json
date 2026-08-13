@@ -1,0 +1,12 @@
+[
+  {"id":"ZM-P01","current_answer":"NO","historical_answer":"YES","current_authority_record_ids":["R2"]},
+  {"id":"ZM-P02","current_answer":"NO","historical_answer":"YES","current_authority_record_ids":["R2"]},
+  {"id":"ZM-P03","current_answer":"YES","historical_answer":"YES","current_authority_record_ids":["R1"]},
+  {"id":"ZM-P04","current_answer":"YES","historical_answer":"YES","current_authority_record_ids":["R1"]},
+  {"id":"ZM-P05","current_answer":"YES","historical_answer":"YES","current_authority_record_ids":["R2"]},
+  {"id":"ZM-P06","current_answer":"YES","historical_answer":"YES","current_authority_record_ids":["R2"]},
+  {"id":"ZM-P07","current_answer":"YES","historical_answer":"NO","current_authority_record_ids":["R1"]},
+  {"id":"ZM-P08","current_answer":"YES","historical_answer":"YES","current_authority_record_ids":["R1"]},
+  {"id":"ZM-P09","current_answer":"NO","historical_answer":"YES","current_authority_record_ids":["R2"]},
+  {"id":"ZM-P10","current_answer":"NO","historical_answer":"YES","current_authority_record_ids":["R2"]}
+]
