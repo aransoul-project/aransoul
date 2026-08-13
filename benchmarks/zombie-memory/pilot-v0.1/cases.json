@@ -1,0 +1,106 @@
+[
+  {
+    "id":"ZM-P01","family":"direct_supersession",
+    "records":[
+      {"id":"R1","text":"From 2025-01-01, standard returns are accepted within 30 days of purchase.","time":"2025-01-01","truth":"supported","effect":"superseded","authority":"Formerly controlling policy; superseded from 2026-08-01.","scope":"standard returns"},
+      {"id":"R2","text":"Effective 2026-08-01, standard returns are accepted within 14 days of purchase.","time":"2026-08-01","truth":"supported","effect":"current","authority":"Current controlling policy.","scope":"standard returns"}
+    ],
+    "current_question":"On 2026-08-13, is a standard item purchased 20 days ago within the return window? Answer YES or NO.",
+    "historical_question":"Under the policy in force on 2025-12-01, was the standard return window 30 days? Answer YES or NO.",
+    "gold":{"current_answer":"NO","historical_answer":"YES","current_authority_record_ids":["R2"],"historical_record_ids":["R1"],"stale_record_ids":["R1"],"still_valid_older_record_ids":[]}
+  },
+  {
+    "id":"ZM-P02","family":"direct_supersession",
+    "records":[
+      {"id":"R1","text":"Beginning 2025-03-01, support chat closes at 22:00 local time.","time":"2025-03-01","truth":"supported","effect":"superseded","authority":"Former schedule; superseded from 2026-07-15.","scope":"support chat hours"},
+      {"id":"R2","text":"Effective 2026-07-15, support chat closes at 20:00 local time.","time":"2026-07-15","truth":"supported","effect":"current","authority":"Current schedule.","scope":"support chat hours"}
+    ],
+    "current_question":"On 2026-08-13, is support chat normally open at 21:00? Answer YES or NO.",
+    "historical_question":"On 2025-10-01, was support chat normally open at 21:00? Answer YES or NO.",
+    "gold":{"current_answer":"NO","historical_answer":"YES","current_authority_record_ids":["R2"],"historical_record_ids":["R1"],"stale_record_ids":["R1"],"still_valid_older_record_ids":[]}
+  },
+  {
+    "id":"ZM-P03","family":"partial_supersession",
+    "records":[
+      {"id":"R1","text":"Policy 2025-A: physical and digital products each have a 30-day return window.","time":"2025-02-01","truth":"supported","effect":"partial","authority":"Still controls physical products; digital clause superseded from 2026-06-01.","scope":"physical and digital returns"},
+      {"id":"R2","text":"Effective 2026-06-01, digital products have a 7-day return window. This amendment does not change physical-product returns.","time":"2026-06-01","truth":"supported","effect":"current","authority":"Current amendment for digital products only.","scope":"digital returns"}
+    ],
+    "current_question":"On 2026-08-13, is a physical product purchased 20 days ago still within its return window? Answer YES or NO.",
+    "historical_question":"On 2025-12-01, did digital products have a 30-day return window? Answer YES or NO.",
+    "gold":{"current_answer":"YES","historical_answer":"YES","current_authority_record_ids":["R1"],"historical_record_ids":["R1"],"stale_record_ids":[],"still_valid_older_record_ids":["R1"]}
+  },
+  {
+    "id":"ZM-P04","family":"partial_supersession",
+    "records":[
+      {"id":"R1","text":"Policy 2025-B: all employees receive 20 annual leave days and may carry over 5 unused days.","time":"2025-01-01","truth":"supported","effect":"partial","authority":"Annual entitlement remains current; carry-over clause superseded.","scope":"annual leave"},
+      {"id":"R2","text":"Effective 2026-01-01, employees may carry over at most 2 unused leave days. Annual leave entitlement is unchanged.","time":"2026-01-01","truth":"supported","effect":"current","authority":"Current carry-over amendment.","scope":"leave carry-over"}
+    ],
+    "current_question":"In 2026, is the standard annual leave entitlement still 20 days? Answer YES or NO.",
+    "historical_question":"In 2025, could an employee carry over up to 5 unused days? Answer YES or NO.",
+    "gold":{"current_answer":"YES","historical_answer":"YES","current_authority_record_ids":["R1"],"historical_record_ids":["R1"],"stale_record_ids":[],"still_valid_older_record_ids":["R1"]}
+  },
+  {
+    "id":"ZM-P05","family":"exception_hierarchy",
+    "records":[
+      {"id":"R1","text":"Current general rule: laboratory access ends at 18:00.","time":"2026-05-01","truth":"supported","effect":"current","authority":"Current general rule.","scope":"all laboratory users unless an authorized exception applies"},
+      {"id":"R2","text":"Authorized exception effective 2026-08-01 through 2026-08-31: Project Orion staff may access the laboratory until 21:00.","time":"2026-08-01","truth":"supported","effect":"current","authority":"Authorized scoped exception overriding the general closing time for Project Orion staff.","scope":"Project Orion staff during August 2026"}
+    ],
+    "current_question":"On 2026-08-13, may a Project Orion staff member remain in the laboratory at 20:00? Answer YES or NO.",
+    "historical_question":"On 2026-07-15, before the exception began, did the general 18:00 closing rule apply to Project Orion staff? Answer YES or NO.",
+    "gold":{"current_answer":"YES","historical_answer":"YES","current_authority_record_ids":["R2"],"historical_record_ids":["R1"],"stale_record_ids":[],"still_valid_older_record_ids":["R1"]}
+  },
+  {
+    "id":"ZM-P06","family":"exception_hierarchy",
+    "records":[
+      {"id":"R1","text":"Current shipping policy: international orders require a minimum order value of $100.","time":"2026-02-01","truth":"supported","effect":"current","authority":"Current general shipping policy.","scope":"international orders"},
+      {"id":"R2","text":"Authorized university-partner exception: participating university labs may place international orders from $60 through 2026-12-31.","time":"2026-04-01","truth":"supported","effect":"current","authority":"Authorized scoped exception.","scope":"participating university labs"}
+    ],
+    "current_question":"On 2026-08-13, may a participating university lab place a $75 international order? Answer YES or NO.",
+    "historical_question":"Before the university exception took effect, would a $75 international order have failed the $100 general minimum? Answer YES or NO.",
+    "gold":{"current_answer":"YES","historical_answer":"YES","current_authority_record_ids":["R2"],"historical_record_ids":["R1"],"stale_record_ids":[],"still_valid_older_record_ids":["R1"]}
+  },
+  {
+    "id":"ZM-P07","family":"stale_summary_contamination",
+    "records":[
+      {"id":"R1","text":"Formal policy effective 2026-07-01: expense receipts are required for claims above $25.","time":"2026-07-01","truth":"supported","effect":"current","authority":"Current formal policy.","scope":"expense receipts"},
+      {"id":"R2","text":"Team summary written 2026-08-05: receipts are only required above $50.","time":"2026-08-05","truth":"disputed","effect":"historical","authority":"Non-authoritative summary; it cannot amend formal policy.","scope":"expense receipts"},
+      {"id":"R3","text":"Former formal policy effective 2025-01-01: receipts are required for claims above $50.","time":"2025-01-01","truth":"supported","effect":"superseded","authority":"Former controlling policy; superseded 2026-07-01.","scope":"expense receipts"}
+    ],
+    "current_question":"On 2026-08-13, does a $40 expense claim require a receipt? Answer YES or NO.",
+    "historical_question":"Under the formal policy in force on 2025-12-01, did a $40 claim require a receipt? Answer YES or NO.",
+    "gold":{"current_answer":"YES","historical_answer":"NO","current_authority_record_ids":["R1"],"historical_record_ids":["R3"],"stale_record_ids":["R2","R3"],"still_valid_older_record_ids":[]}
+  },
+  {
+    "id":"ZM-P08","family":"stale_summary_contamination",
+    "records":[
+      {"id":"R1","text":"Formal security policy effective 2026-03-01: password rotation is required every 90 days.","time":"2026-03-01","truth":"supported","effect":"current","authority":"Current formal security policy.","scope":"password rotation"},
+      {"id":"R2","text":"Orientation note updated 2026-08-10: passwords rotate every 180 days.","time":"2026-08-10","truth":"disputed","effect":"historical","authority":"Informational note with no authority to amend security policy.","scope":"password rotation"},
+      {"id":"R3","text":"Former security policy effective 2024-01-01: password rotation is required every 180 days.","time":"2024-01-01","truth":"supported","effect":"superseded","authority":"Former formal policy; superseded 2026-03-01.","scope":"password rotation"}
+    ],
+    "current_question":"On 2026-08-13, is the controlling password-rotation interval 90 days? Answer YES or NO.",
+    "historical_question":"Under the formal policy in force during 2025, was the interval 180 days? Answer YES or NO.",
+    "gold":{"current_answer":"YES","historical_answer":"YES","current_authority_record_ids":["R1"],"historical_record_ids":["R3"],"stale_record_ids":["R2","R3"],"still_valid_older_record_ids":[]}
+  },
+  {
+    "id":"ZM-P09","family":"cross_period_merge_trap",
+    "records":[
+      {"id":"R1","text":"Version 2025-A: plan price is $20 and storage allowance is 100 GB.","time":"2025-01-01","truth":"supported","effect":"superseded","authority":"Historical plan state; fully superseded 2026-01-01.","scope":"plan price and storage"},
+      {"id":"R2","text":"Version 2026-A effective 2026-01-01: plan price is $25 and storage allowance is 200 GB.","time":"2026-01-01","truth":"supported","effect":"current","authority":"Current complete plan state.","scope":"plan price and storage"},
+      {"id":"R3","text":"2026 marketing note: the plan now includes 200 GB.","time":"2026-02-01","truth":"supported","effect":"current","authority":"Descriptive note; does not independently set price.","scope":"storage only"}
+    ],
+    "current_question":"On 2026-08-13, is the current plan correctly described as $20 with 200 GB? Answer YES or NO.",
+    "historical_question":"Did the 2025 plan pair $20 with 100 GB? Answer YES or NO.",
+    "gold":{"current_answer":"NO","historical_answer":"YES","current_authority_record_ids":["R2"],"historical_record_ids":["R1"],"stale_record_ids":["R1"],"still_valid_older_record_ids":[]}
+  },
+  {
+    "id":"ZM-P10","family":"cross_period_merge_trap",
+    "records":[
+      {"id":"R1","text":"2025 membership state: monthly fee is $40 and guest passes are limited to 2 per month.","time":"2025-01-01","truth":"supported","effect":"superseded","authority":"Historical complete membership state.","scope":"membership fee and guest passes"},
+      {"id":"R2","text":"Current membership state effective 2026-05-01: monthly fee is $45 and guest passes are limited to 4 per month.","time":"2026-05-01","truth":"supported","effect":"current","authority":"Current complete membership state.","scope":"membership fee and guest passes"},
+      {"id":"R3","text":"2026 FAQ: members receive 4 guest passes each month.","time":"2026-06-01","truth":"supported","effect":"current","authority":"Descriptive FAQ; does not independently set the monthly fee.","scope":"guest passes"}
+    ],
+    "current_question":"On 2026-08-13, is the current membership correctly described as $40 per month with 4 guest passes? Answer YES or NO.",
+    "historical_question":"In 2025, was membership $40 per month with 2 guest passes? Answer YES or NO.",
+    "gold":{"current_answer":"NO","historical_answer":"YES","current_authority_record_ids":["R2"],"historical_record_ids":["R1"],"stale_record_ids":["R1"],"still_valid_older_record_ids":[]}
+  }
+]
