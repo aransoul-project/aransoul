@@ -8,6 +8,14 @@ This ladder separates increasingly strong forms of evidence while preserving the
 
 It is an AranSoul research framework for claim calibration, not a claim that these levels are an externally established scientific taxonomy.
 
+## Core validation boundary
+
+**Self-correction is not independent validation.**
+
+A system may detect inconsistencies, revise assumptions, or improve its own procedures while generation, evaluation, context, and conceptual framing still remain partly shared. Internal correction is useful evidence of self-audit capacity, but it does not by itself establish that an external evaluator, unfamiliar context, different model, or independent replication would reach the same conclusion.
+
+Accordingly, AranSoul should report internal self-audit, internal behavioral validation, independent replication, and mechanistic validation as different evidence categories rather than treating them as interchangeable.
+
 ## Level 0 — Prompt compliance
 
 A role is explicitly told how to behave and then behaves accordingly.
@@ -88,6 +96,8 @@ For example:
 > Anonymous differentiation succeeded under precommitted criteria, but generation and evaluation remained within one long-running model context. This supports Level 2 evidence with unresolved shared-context confounds.
 
 This is preferable to collapsing several distinct claims into a single statement such as "the persona is proven."
+
+Likewise, a project successfully revising an earlier mistake should be reported as evidence of internal correction or auditability unless the revised claim has also been independently reproduced.
 
 ## Relationship to Green / Amber / Red / Invalid
 
