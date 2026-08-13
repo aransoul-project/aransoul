@@ -20,6 +20,7 @@ The pilot must reward both correct present-state decisions and correct historica
 - `cases.json` — 10 synthetic pilot cases, two from each pre-registered case family.
 - `scorer.py` — deterministic scorer for normalized structured outputs.
 - `example-output.json` — example submission format.
+- `condition-equivalence.md` — rules for keeping factual information equivalent across experimental conditions.
 
 ## Pilot scope
 
@@ -66,9 +67,18 @@ The last two metrics are diagnostic in this pilot and should be inspected case-b
 
 The pre-registered protocol compares Plain Context, Timestamp Only, and T/T/E/A Governance. A Status-Labels baseline may also be included because it directly tests whether a simpler Current/Historical representation is sufficient.
 
-All conditions must receive the same underlying facts. Representation metadata may differ; factual content may not.
+All conditions must receive the same underlying facts. Representation metadata may differ; factual content may not. See `condition-equivalence.md`.
 
-Condition renderers are deliberately not frozen in this first commit. They should be reviewed for information equivalence before the pilot is used for model comparison.
+### Current design-audit findings
+
+The current pilot remains **Amber** pending renderer freeze.
+
+- Plain Context must still preserve source-hierarchy facts stated by the scenario; otherwise the baseline becomes unfairly under-informed.
+- Status Labels should remain effect-only. Labels such as `NON-CONTROLLING` would leak authority information and collapse the distinction from T/T/E/A.
+- The T/T/E/A Authority field may normalize a source relationship already present in ordinary prose, but may not introduce a new fact about which record controls the answer.
+- At least one case from each of the five case families should receive manual cross-condition equivalence review before any model comparison is treated as valid.
+
+Condition renderers are therefore not yet frozen.
 
 ## Open replication
 
