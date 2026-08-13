@@ -1,10 +1,10 @@
 # AranSoul Status Ledger
 
-Documentation baseline candidate: **v0.1 (pre-release)**
+Current public baseline: **v0.1 — released**
 
 This ledger separates current governance from candidates, historical artifacts, and retired or unverified claims. Presence in the AranSoul archive does not imply current validity.
 
-The `v0.1` label here identifies the documentation baseline being prepared for release. It does **not** by itself mean that a formal Git tag or GitHub Release already exists.
+The formal `v0.1` Git tag and GitHub Release identify the first public documentation baseline. The `main` branch may continue to evolve after that fixed release point.
 
 ## CURRENT — Current baseline
 
@@ -28,6 +28,25 @@ The following areas are treated as part of the current AranSoul governance direc
 The useful function historically named **格譜定言** is retained, but current GitHub documentation does not require it to exist as an independent runtime module. Evidence commitment is treated as part of `度其治` and output-boundary governance.
 
 Historical documents that show 格譜定言 as a separate stage remain valid provenance for the July 2026 baseline.
+
+## VALIDATION BOUNDARY — What has and has not been established
+
+Most AranSoul evidence to date comes from **internal longitudinal use, self-audit, precommitted behavioral tests, and same-project evaluation**.
+
+This evidence can support claims about internal consistency, operational usefulness within the studied setting, recurring behavioral patterns, and the project's ability to identify and revise some of its own assumptions. It should not be presented as independent external validation.
+
+**Self-correction is not independent validation.** A system may successfully detect or revise some of its own errors while still sharing the same context, evaluator assumptions, selection effects, or conceptual framework that produced the original claim.
+
+Independent replication remains a major open requirement. Stronger evidence should increasingly involve evaluator separation, unfamiliar contexts, different models or environments, externally proposed counterexamples, and reproducible protocols that allow null or negative results.
+
+The project should therefore distinguish at least:
+
+- internal consistency / self-audit;
+- internal behavioral validation;
+- independent replication;
+- mechanistic validation.
+
+At present, AranSoul has substantial work in the first two categories, limited evidence in the third, and no basis for claiming the fourth.
 
 ## CANDIDATE — Worth testing, not yet established
 
