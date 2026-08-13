@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AranSoul Zombie Memory Pilot Case v0.1",
+  "type": "object",
+  "required": ["id", "family", "records", "current_question", "historical_question", "gold"],
+  "properties": {
+    "id": {"type": "string"},
+    "family": {"enum": ["direct_supersession", "partial_supersession", "exception_hierarchy", "stale_summary_contamination", "cross_period_merge_trap"]},
+    "records": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["id", "text", "time", "truth", "effect", "authority"],
+        "properties": {
+          "id": {"type": "string"},
+          "text": {"type": "string"},
+          "time": {"type": "string"},
+          "truth": {"enum": ["supported", "disputed", "unknown"]},
+          "effect": {"enum": ["current", "superseded", "partial", "candidate", "historical", "revoked"]},
+          "authority": {"type": "string"},
+          "scope": {"type": "string"}
+        }
+      }
+    },
+    "current_question": {"type": "string"},
+    "historical_question": {"type": "string"},
+    "gold": {
+      "type": "object",
+      "required": ["current_answer", "historical_answer", "current_authority_record_ids", "historical_record_ids"],
+      "properties": {
+        "current_answer": {"type": "string"},
+        "historical_answer": {"type": "string"},
+        "current_authority_record_ids": {"type": "array", "items": {"type": "string"}},
+        "historical_record_ids": {"type": "array", "items": {"type": "string"}},
+        "stale_record_ids": {"type": "array", "items": {"type": "string"}},
+        "still_valid_older_record_ids": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}
