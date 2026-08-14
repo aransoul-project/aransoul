@@ -121,7 +121,6 @@ def response_schema(case_id, allowed_record_ids):
             "current_authority_record_ids": {
                 "type": "array",
                 "items": {"type": "string", "enum": allowed_record_ids},
-                "uniqueItems": True,
             },
         },
     }
@@ -245,7 +244,7 @@ def build_record(config, mode, run_id, request_index, row, started_at, status, r
     return {
         "schema_version": 1,
         "mode": mode,
-        "api_called": mode == "live",
+        "api_called": mode != "dry-run",
         "run_id": run_id,
         "provider": config["provider"],
         "api": config["api"],
@@ -324,7 +323,11 @@ def write_json(path, value):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mode", choices=("dry-run", "live"), default="dry-run")
+    parser.add_argument(
+        "--mode",
+        choices=("dry-run", "live", "compatibility-probe"),
+        default="dry-run",
+    )
     parser.add_argument("--confirm-live", action="store_true")
     parser.add_argument("--run-id")
     args = parser.parse_args()
@@ -333,13 +336,13 @@ def main():
     prompts = load_frozen_prompts(config)
     validate_prompt_sets(config, prompts)
 
-    if args.mode == "live" and not args.confirm_live:
-        raise SystemExit("live mode requires --confirm-live")
+    if args.mode != "dry-run" and not args.confirm_live:
+        raise SystemExit(f"{args.mode} mode requires --confirm-live")
     api_key = None
-    if args.mode == "live":
+    if args.mode != "dry-run":
         api_key = os.environ.get("OPENAI_API_KEY")
         if not api_key:
-            raise SystemExit("live mode requires OPENAI_API_KEY")
+            raise SystemExit(f"{args.mode} mode requires OPENAI_API_KEY")
 
     run_started_at = utc_now()
     run_id = args.run_id or f"{args.mode}-{run_started_at.replace(':', '').replace('-', '')}"
@@ -365,7 +368,7 @@ def main():
         "top_p": config["top_p"],
         "max_output_tokens": config["max_output_tokens"],
         "retry_count": config["retry_count"],
-        "request_count_expected": 40,
+        "request_count_expected": 1 if args.mode == "compatibility-probe" else 40,
         "request_count_recorded": 0,
         "parsed_count": 0,
         "parse_failure_count": 0,
@@ -376,33 +379,48 @@ def main():
     }
     write_json(manifest_path, manifest)
 
+    request_rows = [
+        row
+        for condition in config["conditions"]
+        for row in prompts[condition]
+    ]
+    if args.mode == "compatibility-probe":
+        request_rows = request_rows[:1]
+
     request_index = 0
     with responses_path.open("a", encoding="utf-8", newline="\n") as stream:
-        for condition in config["conditions"]:
-            for row in prompts[condition]:
-                request_index += 1
-                started_at = utc_now()
-                payload = request_payload(config, row)
-                if args.mode == "dry-run":
-                    status, raw, error = mock_response(row)
-                else:
-                    status, raw, error = call_openai(config, payload, api_key)
-                    manifest["api_called"] = True
-                record = build_record(
-                    config, args.mode, run_id, request_index, row, started_at,
-                    status, raw, error,
-                )
-                validate_output_record(record)
-                stream.write(json.dumps(record, ensure_ascii=False) + "\n")
-                stream.flush()
-                manifest["request_count_recorded"] += 1
-                key = f"{record['parse_status']}_count"
-                manifest[key] += 1
-                write_json(manifest_path, manifest)
+        for row in request_rows:
+            request_index += 1
+            started_at = utc_now()
+            payload = request_payload(config, row)
+            if args.mode == "dry-run":
+                status, raw, error = mock_response(row)
+            else:
+                status, raw, error = call_openai(config, payload, api_key)
+                manifest["api_called"] = True
+            record = build_record(
+                config, args.mode, run_id, request_index, row, started_at,
+                status, raw, error,
+            )
+            validate_output_record(record)
+            stream.write(json.dumps(record, ensure_ascii=False) + "\n")
+            stream.flush()
+            manifest["request_count_recorded"] += 1
+            key = f"{record['parse_status']}_count"
+            manifest[key] += 1
+            write_json(manifest_path, manifest)
 
     if manifest["request_count_recorded"] != manifest["request_count_expected"]:
-        raise RuntimeError("run ended without exactly 40 persisted response records")
-    manifest["status"] = "dry_run_validated" if args.mode == "dry-run" else "responses_complete_unscored"
+        raise RuntimeError(
+            f"run ended without exactly {manifest['request_count_expected']} "
+            "persisted response records"
+        )
+    if args.mode == "dry-run":
+        manifest["status"] = "dry_run_validated"
+    elif args.mode == "compatibility-probe":
+        manifest["status"] = "compatibility_probe_complete_unscored"
+    else:
+        manifest["status"] = "responses_complete_unscored"
     manifest["run_completed_at"] = utc_now()
     write_json(manifest_path, manifest)
     print(json.dumps(manifest, ensure_ascii=False, indent=2))
