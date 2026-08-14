@@ -67,7 +67,11 @@ def main():
             totals["stale_authority_errors"] += 1
 
         required_old = set(norm_ids(gold.get("still_valid_older_record_ids", [])))
-        false_discard = bool(required_old) and not required_old.issubset(set(selected))
+        false_discard = (
+            (not current_ok)
+            and bool(required_old)
+            and not required_old.issubset(set(selected))
+        )
         if false_discard:
             totals["false_discard_cases"] += 1
 
