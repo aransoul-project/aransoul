@@ -1,6 +1,6 @@
 # Renderer Equivalence Audit — Pilot v0.1
 
-Status: **Amber — executable runtime audit complete; not frozen**
+Status: **Frozen instrument — renderer and condition-equivalence audit passed**
 
 This audit covers the executable renderer, all 10 pilot cases, and all 40 generated prompts.
 
@@ -67,8 +67,8 @@ All 10 cases satisfy factual derivability under the repaired canonical prose. No
 
 The executable renderer generated `plain.json`, `timestamp.json`, `status.json`, and `ttea.json` mechanically from canonical `cases.json`. Runtime review covered 10 prompts per condition, 40 prompts total. `assert_equivalent()` and `assert_no_leakage()` pass, required identity fields remain aligned, and condition-specific metadata follows `renderer-spec.md`.
 
-This runtime audit is an implementation check, not an independent validation or empirical benchmark result. It does not freeze the renderer.
+## Freeze decision
 
-## Current decision
+After synchronization with `main`, final read-back review, scorer regression repair, and PR #1 merge, the **Pilot v0.1 renderer and generated condition artifacts are frozen as a research instrument**.
 
-**Amber → executable rendering and the 40-prompt runtime audit pass; independent review and an explicit freeze decision remain outstanding.**
+This freeze does not validate the Zombie Memory hypothesis or T/T/E/A effectiveness. The research hypothesis remains **Amber / no empirical result yet**. Any later substantive change to rendering semantics or the 40 model-facing prompts should use an explicit new revision.

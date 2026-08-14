@@ -1,6 +1,6 @@
 # Runtime Artifact Audit — Pilot v0.1
 
-Status: **Amber — authority-equivalence repair passes runtime review; not frozen**
+Status: **Frozen instrument — runtime artifact audit passed**
 
 ## Scope
 
@@ -23,33 +23,9 @@ No gold answer, hypothesis, metric, success threshold, or research-status field 
 | ZM-P09 | **Repaired — Pass** | R3 prose explicitly states that the marketing note does not independently set the plan price. T/T/E/A `Authority` only structures that same fact. |
 | ZM-P10 | **Repaired — Pass** | R3 prose explicitly states that the FAQ does not independently set the monthly fee. T/T/E/A `Authority` only structures that same fact. |
 
-## Minimal canonical-prose repair proposals
+## Canonical-prose repairs
 
-The following minimal repairs were applied to canonical prose. Gold labels and all other case fields remain unchanged.
-
-### ZM-P07 R2
-
-Previous canonical text:
-
-> Team summary written 2026-08-05: receipts are only required above $50.
-
-Applied replacement:
-
-> Non-authoritative team summary written 2026-08-05: receipts are only required above $50. This summary cannot amend formal policy.
-
-This exposes in ordinary prose the same source hierarchy currently present only in T/T/E/A `Authority`, without changing the claim, date, scope, or gold labels.
-
-### ZM-P08 R2
-
-Previous canonical text:
-
-> Orientation note updated 2026-08-10: passwords rotate every 180 days.
-
-Applied replacement:
-
-> Informational orientation note updated 2026-08-10: passwords rotate every 180 days. This note has no authority to amend security policy.
-
-This exposes in ordinary prose the same source hierarchy currently present only in T/T/E/A `Authority`, without changing the claim, date, scope, or gold labels.
+Minimal prose repairs were applied to P07, P08, P09, and P10 so answer-relevant authority facts are available in Plain prose as well as structured T/T/E/A metadata. Gold labels and other case fields remained unchanged.
 
 ## Regeneration and runtime verification
 
@@ -66,12 +42,12 @@ Results:
 - `assert_no_leakage()` passes for all 40 prompts.
 - `assert_equivalent()` passes across all four conditions.
 - The condition metadata contract passes, including no normalized metadata headers in Plain and no normalized Time header in Status.
-- P07 and P08 Plain prompts now contain the authority-bearing scenario facts that T/T/E/A structures.
+- P07 through P10 Plain prompts contain the authority-bearing scenario facts that T/T/E/A structures.
 - The deterministic scorer completes with current-answer, historical-recall, and authority-resolution accuracy of `1.0`; stale-authority error count and false-discard diagnostic count are both `0` for the gold example output.
 
 ## False-discard diagnostic repair
 
-The previous false-discard rule flagged ZM-P05 and ZM-P06 under the gold example because their still-valid R1 general rules were not listed as current controlling sources. In both cases, R1 remains useful context while the scoped R2 exception correctly controls the current answer.
+The previous false-discard rule incorrectly flagged ZM-P05 and ZM-P06 under the gold example because their still-valid R1 general rules were not listed as current controlling sources. In both cases, R1 remains useful context while the scoped R2 exception correctly controls the current answer.
 
 The repaired diagnostic requires all three conditions:
 
@@ -86,10 +62,10 @@ Regression tests in `test_scorer.py` confirm:
 - a wrong P05 answer that includes R1 is not flagged;
 - a correct P05 answer selecting only the controlling R2 exception is not flagged.
 
-## Artifact decision
+## Freeze decision
 
-The two identified authority-bearing prose gaps have been repaired. All four condition artifacts were regenerated from the updated canonical `cases.json`; runtime checks confirm 10 cases per condition, identical canonical identity fields, the registered metadata contract, and no benchmark-only annotation leakage.
+PR #1 synchronized the implementation with current `main`, the merge gate was rechecked, and the PR was merged. The **Pilot v0.1 dataset, renderer, generated prompts, scorer, and scoring semantics are now frozen as a research instrument**.
 
-The repair passes this runtime review, but the pilot remains **Amber** and **not frozen**. This audit is an implementation check, not a benchmark result or an independent validation.
+This freeze is an implementation/research-instrument decision only. It is not independent validation, not an empirical benchmark result, and does not upgrade the Zombie Memory / T/T/E/A research hypothesis beyond **Amber / no empirical result yet**.
 
-Do not merge, freeze the renderer, or change research status to Green on the basis of the current artifacts.
+Any later substantive repair should use an explicit new revision rather than silently mutate Pilot v0.1.
