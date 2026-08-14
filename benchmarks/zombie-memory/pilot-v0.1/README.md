@@ -1,8 +1,12 @@
 # Zombie Memory Benchmark — Pilot v0.1
 
-Status: **Pilot infrastructure — not an empirical result**
+Status: **Frozen research instrument — not an empirical result**
 
 This directory is the first executable research artifact for the Zombie Memory benchmark. Its purpose is to test whether the benchmark design is fair, machine-readable, and reproducible before a 100-case dataset is frozen.
+
+The Pilot v0.1 research instrument was frozen after PR #1 merged into `main`. This freeze applies to the 10-case pilot dataset, four-condition renderer, generated prompts, deterministic scorer, and associated scoring semantics. Any later substantive change should use an explicit new revision rather than silently mutate Pilot v0.1.
+
+The Zombie Memory / T/T/E/A research hypothesis itself remains **Amber / no empirical result yet**.
 
 ## Research question
 
@@ -18,13 +22,18 @@ The pilot must reward both correct present-state decisions and correct historica
 
 - `schema.json` — machine-readable case schema.
 - `cases.json` — 10 synthetic pilot cases, two from each pre-registered case family.
+- `renderer.py` — executable renderer for Plain, Timestamp, Status, and T/T/E/A conditions.
+- `generated/` — 40 frozen model-facing pilot prompts, 10 per condition.
 - `scorer.py` — deterministic scorer for normalized structured outputs.
+- `test_scorer.py` — regression tests for scorer diagnostics.
 - `example-output.json` — example submission format.
 - `condition-equivalence.md` — rules for keeping factual information equivalent across experimental conditions.
+- `renderer-audit.md` — renderer and condition-equivalence audit.
+- `runtime-audit.md` — runtime artifact and scorer audit.
 
 ## Pilot scope
 
-The 10 cases are for **benchmark debugging only**. Do not use this pilot to claim that T/T/E/A is validated or superior.
+The 10 cases are for **benchmark debugging and pilot execution only**. Do not use this pilot to claim that T/T/E/A is validated or superior.
 
 The pilot is successful when an independent person can:
 
@@ -34,7 +43,7 @@ The pilot is successful when an independent person can:
 4. run the scorer and reproduce the same metrics;
 5. identify any ambiguity, leakage, unfair representation advantage, or scoring defect.
 
-A broken or ambiguous pilot should be marked **Invalid** and repaired before the 100-case benchmark is generated.
+A later discovered defect should be documented explicitly. Substantive repairs should create a new revision instead of silently rewriting the frozen Pilot v0.1 instrument.
 
 ## Required model output
 
@@ -59,26 +68,34 @@ The scorer reports:
 - historical-recall accuracy;
 - authority-resolution accuracy;
 - stale-authority error count where deterministically inferable from a wrong current answer plus selection of a stale record;
-- false-discard indicators for cases whose correct current answer requires still-valid older records.
+- false-discard indicators for cases whose wrong current answer is consistent with omitting a still-valid older record needed for correct reasoning.
 
 The last two metrics are diagnostic in this pilot and should be inspected case-by-case rather than treated as a complete causal explanation of model error.
 
 ## Experimental conditions
 
-The pre-registered protocol compares Plain Context, Timestamp Only, and T/T/E/A Governance. A Status-Labels baseline may also be included because it directly tests whether a simpler Current/Historical representation is sufficient.
+The frozen pilot contains four conditions:
 
-All conditions must receive the same underlying facts. Representation metadata may differ; factual content may not. See `condition-equivalence.md`.
+- Plain Context;
+- Timestamp Only;
+- Status Labels;
+- T/T/E/A Governance.
 
-### Current design-audit findings
+All conditions receive the same underlying scenario facts. Representation metadata differs according to `condition-equivalence.md`.
 
-The current pilot remains **Amber** pending renderer freeze.
+### Freeze decision
 
-- Plain Context must still preserve source-hierarchy facts stated by the scenario; otherwise the baseline becomes unfairly under-informed.
-- Status Labels should remain effect-only. Labels such as `NON-CONTROLLING` would leak authority information and collapse the distinction from T/T/E/A.
-- The T/T/E/A Authority field may normalize a source relationship already present in ordinary prose, but may not introduce a new fact about which record controls the answer.
-- At least one case from each of the five case families should receive manual cross-condition equivalence review before any model comparison is treated as valid.
+The Pilot v0.1 instrument passed internal read-back review for:
 
-Condition renderers are therefore not yet frozen.
+- cross-condition factual equivalence;
+- authority-fact equivalence;
+- leakage prevention;
+- executable renderer behavior;
+- deterministic scorer behavior;
+- gold smoke test;
+- false-discard regression tests.
+
+This is an **instrument freeze**, not independent validation and not a benchmark result.
 
 ## Open replication
 
