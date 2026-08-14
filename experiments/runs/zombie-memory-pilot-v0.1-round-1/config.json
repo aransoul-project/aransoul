@@ -1,0 +1,32 @@
+{
+  "experiment_id": "zombie-memory-pilot-v0.1-round-1",
+  "provider": "openai",
+  "api": "responses",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "temperature": 0,
+  "top_p": 1,
+  "max_output_tokens": 256,
+  "store": false,
+  "request_timeout_seconds": 120,
+  "retry_count": 0,
+  "conditions": ["plain", "timestamp", "status", "ttea"],
+  "cases_per_condition": 10,
+  "prompt_files": {
+    "plain": "benchmarks/zombie-memory/pilot-v0.1/generated/plain.json",
+    "timestamp": "benchmarks/zombie-memory/pilot-v0.1/generated/timestamp.json",
+    "status": "benchmarks/zombie-memory/pilot-v0.1/generated/status.json",
+    "ttea": "benchmarks/zombie-memory/pilot-v0.1/generated/ttea.json"
+  },
+  "prompt_sha256": {
+    "plain": "58231f0f41e190d1d11a25e1ebf9b23264e4864b250bf1b4c7b2b3b62c4bfa64",
+    "timestamp": "18d71f7bc1cb9ddf6d856af2ea30ca129d2e43353c5b07617352ac612fad3441",
+    "status": "07af858528f5a4fcee09c0e63a79319b2d7027db4d2dea58afa1b45e88fe61ec",
+    "ttea": "a504018d74363c574c672bbf30c0b330d4538d32932c6fe3c3f459e907a24a86"
+  },
+  "pricing_usd_per_million_tokens": {
+    "input": 0.4,
+    "output": 1.6
+  },
+  "expected_output_tokens_per_response": 64
+}
