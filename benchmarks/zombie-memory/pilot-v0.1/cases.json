@@ -63,7 +63,7 @@
     "id":"ZM-P07","family":"stale_summary_contamination",
     "records":[
       {"id":"R1","text":"Formal policy effective 2026-07-01: expense receipts are required for claims above $25.","time":"2026-07-01","truth":"supported","effect":"current","authority":"Current formal policy.","scope":"expense receipts"},
-      {"id":"R2","text":"Team summary written 2026-08-05: receipts are only required above $50.","time":"2026-08-05","truth":"disputed","effect":"historical","authority":"Non-authoritative summary; it cannot amend formal policy.","scope":"expense receipts"},
+      {"id":"R2","text":"Non-authoritative team summary written 2026-08-05: receipts are only required above $50. This summary cannot amend formal policy.","time":"2026-08-05","truth":"disputed","effect":"historical","authority":"Non-authoritative summary; it cannot amend formal policy.","scope":"expense receipts"},
       {"id":"R3","text":"Former formal policy effective 2025-01-01: receipts are required for claims above $50.","time":"2025-01-01","truth":"supported","effect":"superseded","authority":"Former controlling policy; superseded 2026-07-01.","scope":"expense receipts"}
     ],
     "current_question":"On 2026-08-13, does a $40 expense claim require a receipt? Answer YES or NO.",
@@ -74,7 +74,7 @@
     "id":"ZM-P08","family":"stale_summary_contamination",
     "records":[
       {"id":"R1","text":"Formal security policy effective 2026-03-01: password rotation is required every 90 days.","time":"2026-03-01","truth":"supported","effect":"current","authority":"Current formal security policy.","scope":"password rotation"},
-      {"id":"R2","text":"Orientation note updated 2026-08-10: passwords rotate every 180 days.","time":"2026-08-10","truth":"disputed","effect":"historical","authority":"Informational note with no authority to amend security policy.","scope":"password rotation"},
+      {"id":"R2","text":"Informational orientation note updated 2026-08-10: passwords rotate every 180 days. This note has no authority to amend security policy.","time":"2026-08-10","truth":"disputed","effect":"historical","authority":"Informational note with no authority to amend security policy.","scope":"password rotation"},
       {"id":"R3","text":"Former security policy effective 2024-01-01: password rotation is required every 180 days.","time":"2024-01-01","truth":"supported","effect":"superseded","authority":"Former formal policy; superseded 2026-03-01.","scope":"password rotation"}
     ],
     "current_question":"On 2026-08-13, is the controlling password-rotation interval 90 days? Answer YES or NO.",
