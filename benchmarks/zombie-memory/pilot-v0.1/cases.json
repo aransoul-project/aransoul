@@ -63,7 +63,7 @@
     "id":"ZM-P07","family":"stale_summary_contamination",
     "records":[
       {"id":"R1","text":"Formal policy effective 2026-07-01: expense receipts are required for claims above $25.","time":"2026-07-01","truth":"supported","effect":"current","authority":"Current formal policy.","scope":"expense receipts"},
-      {"id":"R2","text":"Team summary written 2026-08-05: receipts are only required above $50.","time":"2026-08-05","truth":"disputed","effect":"historical","authority":"Non-authoritative summary; it cannot amend formal policy.","scope":"expense receipts"},
+      {"id":"R2","text":"Non-authoritative team summary written 2026-08-05: receipts are only required above $50. This summary cannot amend formal policy.","time":"2026-08-05","truth":"disputed","effect":"historical","authority":"Non-authoritative summary; it cannot amend formal policy.","scope":"expense receipts"},
       {"id":"R3","text":"Former formal policy effective 2025-01-01: receipts are required for claims above $50.","time":"2025-01-01","truth":"supported","effect":"superseded","authority":"Former controlling policy; superseded 2026-07-01.","scope":"expense receipts"}
     ],
     "current_question":"On 2026-08-13, does a $40 expense claim require a receipt? Answer YES or NO.",
@@ -74,7 +74,7 @@
     "id":"ZM-P08","family":"stale_summary_contamination",
     "records":[
       {"id":"R1","text":"Formal security policy effective 2026-03-01: password rotation is required every 90 days.","time":"2026-03-01","truth":"supported","effect":"current","authority":"Current formal security policy.","scope":"password rotation"},
-      {"id":"R2","text":"Orientation note updated 2026-08-10: passwords rotate every 180 days.","time":"2026-08-10","truth":"disputed","effect":"historical","authority":"Informational note with no authority to amend security policy.","scope":"password rotation"},
+      {"id":"R2","text":"Informational orientation note updated 2026-08-10: passwords rotate every 180 days. This note has no authority to amend security policy.","time":"2026-08-10","truth":"disputed","effect":"historical","authority":"Informational note with no authority to amend security policy.","scope":"password rotation"},
       {"id":"R3","text":"Former security policy effective 2024-01-01: password rotation is required every 180 days.","time":"2024-01-01","truth":"supported","effect":"superseded","authority":"Former formal policy; superseded 2026-03-01.","scope":"password rotation"}
     ],
     "current_question":"On 2026-08-13, is the controlling password-rotation interval 90 days? Answer YES or NO.",
@@ -86,7 +86,7 @@
     "records":[
       {"id":"R1","text":"Version 2025-A: plan price is $20 and storage allowance is 100 GB.","time":"2025-01-01","truth":"supported","effect":"superseded","authority":"Historical plan state; fully superseded 2026-01-01.","scope":"plan price and storage"},
       {"id":"R2","text":"Version 2026-A effective 2026-01-01: plan price is $25 and storage allowance is 200 GB.","time":"2026-01-01","truth":"supported","effect":"current","authority":"Current complete plan state.","scope":"plan price and storage"},
-      {"id":"R3","text":"2026 marketing note: the plan now includes 200 GB.","time":"2026-02-01","truth":"supported","effect":"current","authority":"Descriptive note; does not independently set price.","scope":"storage only"}
+      {"id":"R3","text":"2026 marketing note: the plan now includes 200 GB. This note does not independently set the plan price.","time":"2026-02-01","truth":"supported","effect":"current","authority":"Descriptive note; does not independently set price.","scope":"storage only"}
     ],
     "current_question":"On 2026-08-13, is the current plan correctly described as $20 with 200 GB? Answer YES or NO.",
     "historical_question":"Did the 2025 plan pair $20 with 100 GB? Answer YES or NO.",
@@ -97,7 +97,7 @@
     "records":[
       {"id":"R1","text":"2025 membership state: monthly fee is $40 and guest passes are limited to 2 per month.","time":"2025-01-01","truth":"supported","effect":"superseded","authority":"Historical complete membership state.","scope":"membership fee and guest passes"},
       {"id":"R2","text":"Current membership state effective 2026-05-01: monthly fee is $45 and guest passes are limited to 4 per month.","time":"2026-05-01","truth":"supported","effect":"current","authority":"Current complete membership state.","scope":"membership fee and guest passes"},
-      {"id":"R3","text":"2026 FAQ: members receive 4 guest passes each month.","time":"2026-06-01","truth":"supported","effect":"current","authority":"Descriptive FAQ; does not independently set the monthly fee.","scope":"guest passes"}
+      {"id":"R3","text":"2026 FAQ: members receive 4 guest passes each month. This FAQ does not independently set the monthly fee.","time":"2026-06-01","truth":"supported","effect":"current","authority":"Descriptive FAQ; does not independently set the monthly fee.","scope":"guest passes"}
     ],
     "current_question":"On 2026-08-13, is the current membership correctly described as $40 per month with 4 guest passes? Answer YES or NO.",
     "historical_question":"In 2025, was membership $40 per month with 2 guest passes? Answer YES or NO.",
