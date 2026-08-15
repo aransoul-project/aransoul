@@ -1,0 +1,13 @@
+{
+  "slot_id":"ZH-11","candidate_version":1,"family":"Temporary rule with expiry/restoration","surface_domain":"facilities scheduling","difficulty":"compound","primary_competing_cue":"temporary extension, expiry, and restoration",
+  "question":"On 2026-10-10, what is the normal closing time for the West Annex study hall?","query_time":"2026-10-10",
+  "historical_question":"On 2026-08-20, what closing time applied to the West Annex study hall?","historical_query_time":"2026-08-20",
+  "records":[
+    {"id":"R1","content":"The West Annex study hall normally closes at 20:00.","time":"Effective 2026-01-01.","status":"Current baseline scheduling rule except while a bounded temporary extension is active.","effect":"Sets the ordinary closing time at 20:00 and resumes after any temporary extension ends.","authority":"Baseline facilities-scheduling rule for the West Annex study hall."},
+    {"id":"R2","content":"From 2026-08-01 through 2026-08-31, the West Annex study hall closes at 22:00 for examination season.","time":"Effective only 2026-08-01 through 2026-08-31.","status":"Expired temporary extension.","effect":"Extends closing time to 22:00 during August only, then ceases without replacing R1.","authority":"Temporary facilities-scheduling override during the examination window."},
+    {"id":"R3","content":"On Fridays, the final room-sweep begins 30 minutes before the applicable study-hall closing time.","time":"Effective 2026-02-01.","status":"Current operational rule.","effect":"Schedules room-sweep timing relative to whichever closing rule is controlling; it does not set the closing time itself.","authority":"Authoritative facilities-operations rule for room-sweep timing only."},
+    {"id":"R4","content":"A notice issued 2026-09-05 confirms that the examination-season extension ended on 2026-08-31 and the ordinary West Annex schedule is again in effect.","time":"Issued 2026-09-05.","status":"Current confirmation notice.","effect":"Confirms restoration already caused by R2's expiry; it does not create a new closing-time rule.","authority":"Administrative confirmation of schedule status, not an independent source of the closing-time value."}
+  ],
+  "gold":{"current_answer":"20:00","historical_answer":"22:00","current_authority_record_ids":["R1"],"stale_record_ids":["R2"]},
+  "gold_logic":"R2 is a bounded August extension and expires automatically. R1 therefore resumes as the current closing-time authority; R4 merely confirms that restoration and is not required to make it operative. R3 governs room-sweep timing only. The historical query falls inside R2's active August window."
+}
