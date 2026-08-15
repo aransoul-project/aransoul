@@ -1,0 +1,44 @@
+{
+  "slot_id": "ZH-04",
+  "family": "Supersession / replacement",
+  "surface_domain": "procurement",
+  "difficulty": "moderate",
+  "primary_competing_cue": "replacement inferred from effective-rule language vs recency cue",
+  "question": "At 2026-09-01, what is the approval threshold above which a purchase request must go to the Central Review Board?",
+  "query_time": "2026-09-01",
+  "historical_question": "At 2026-03-01, what was that approval threshold?",
+  "historical_query_time": "2026-03-01",
+  "records": [
+    {
+      "id": "R1",
+      "content": "Purchase requests above $20,000 require Central Review Board approval.",
+      "time": "Effective 2026-01-01.",
+      "status": "Former rule; displaced when R2 became effective for the same scope.",
+      "effect": "Sets the review threshold at $20,000 while effective.",
+      "authority": "Procurement approval rule until a later rule for the same scope takes effect."
+    },
+    {
+      "id": "R2",
+      "content": "For purchase requests submitted on or after 2026-07-01, Central Review Board approval is required only above $35,000.",
+      "time": "Effective 2026-07-01.",
+      "status": "Current for requests on or after its effective date.",
+      "effect": "Sets the threshold at $35,000 for the same approval scope previously governed by R1.",
+      "authority": "Current procurement approval rule for this threshold."
+    },
+    {
+      "id": "R3",
+      "content": "Procurement bulletin 2026-08-20 reminds staff that requests must include a cost-center code before review.",
+      "time": "Published 2026-08-20.",
+      "status": "Current procedural bulletin.",
+      "effect": "Adds a submission-format requirement but does not set or modify the Central Review Board threshold.",
+      "authority": "Authoritative only for the cost-center-code submission requirement."
+    }
+  ],
+  "gold": {
+    "current_answer": "$35,000",
+    "historical_answer": "$20,000",
+    "current_authority_record_ids": ["R2"],
+    "stale_record_ids": ["R1"]
+  },
+  "gold_logic": "R2 takes effect on 2026-07-01 for the same procurement-threshold scope as R1, so it displaces R1 even without using the word 'supersedes'. R3 is newer than R2 but governs a different procedural requirement and therefore does not affect the threshold."
+}
