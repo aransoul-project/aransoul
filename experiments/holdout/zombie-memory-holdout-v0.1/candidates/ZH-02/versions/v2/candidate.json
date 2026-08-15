@@ -1,0 +1,44 @@
+{
+  "slot_id": "ZH-02",
+  "family": "Supersession / replacement",
+  "surface_domain": "facilities access",
+  "difficulty": "moderate",
+  "primary_competing_cue": "explicit replacement vs still-visible old notice",
+  "question": "At 2026-08-10, which entrance must night-shift staff use after 22:00?",
+  "query_time": "2026-08-10",
+  "historical_question": "At 2026-03-10, which entrance did night-shift staff have to use after 22:00?",
+  "historical_query_time": "2026-03-10",
+  "records": [
+    {
+      "id": "R1",
+      "content": "After 22:00, night-shift staff must use the South Gate.",
+      "time": "Effective 2026-01-15.",
+      "status": "Superseded on 2026-07-01 by R2.",
+      "effect": "Sets South Gate as the required night entrance while effective.",
+      "authority": "Facilities access directive until replaced."
+    },
+    {
+      "id": "R2",
+      "content": "After 22:00, night-shift staff must use the East Gate; this directive replaces the South Gate requirement.",
+      "time": "Effective 2026-07-01.",
+      "status": "Current.",
+      "effect": "Replaces the prior night entrance rule and sets East Gate as required.",
+      "authority": "Current facilities access directive for night entry."
+    },
+    {
+      "id": "R3",
+      "content": "The South Gate notice board is scheduled for physical removal on 2026-09-01; until then, the superseded South Gate instruction remains visibly posted in the lobby.",
+      "time": "Removal schedule issued 2026-06-25.",
+      "status": "Operational removal schedule; the posted instruction it references is already superseded as of 2026-07-01.",
+      "effect": "Explains why the obsolete notice remains visible; it does not create or preserve an access rule.",
+      "authority": "Facilities logistics record governing sign removal only, not night-entry requirements."
+    }
+  ],
+  "gold": {
+    "current_answer": "East Gate",
+    "historical_answer": "South Gate",
+    "current_authority_record_ids": ["R2"],
+    "stale_record_ids": ["R1"]
+  },
+  "gold_logic": "R2 explicitly replaces R1 on 2026-07-01 and therefore uniquely controls the 2026-08-10 night-entry requirement. R3 only schedules removal of the still-visible obsolete notice and does not govern entry policy. On 2026-03-10, before R2 took effect, R1 controlled and required South Gate."
+}
