@@ -1,0 +1,18 @@
+{
+  "slot_id": "ZH-02",
+  "candidate_version": 1,
+  "state": "draft",
+  "construction_pass": {"result":"pass","notes":"Matches frozen ZH-02 slot and contains a plausible still-visible obsolete notice cue.","issues_found":[]},
+  "adversarial_review_pass": {"result":"not_run","notes":"Pending separate adversarial review.","issues_found":[]},
+  "schema_check": {"result":"pass","notes":"Candidate matches the canonical candidate schema by inspection."},
+  "slot_match_check": {"result":"pass","notes":"Family, domain, record count, difficulty, and cue match the frozen matrix."},
+  "gold_uniqueness_check": {"result":"pass","notes":"R2 explicitly replaces R1; R3 explicitly lacks policy authority, leaving R2 as the unique controlling source."},
+  "pilot_overlap_check": {"result":"not_run","notes":"Pending adversarial structural-overlap review."},
+  "leakage_check": {"result":"not_run","notes":"Rendered conditions not yet generated."},
+  "semantic_equivalence_check": {"result":"not_run","notes":"Rendered conditions not yet generated."},
+  "scorer_determinism_check": {"result":"not_run","notes":"Scorer not yet constructed for holdout."},
+  "repair_history": [],
+  "rejection_reason": null,
+  "accepted_reason": null,
+  "target_model_execution_count": 0
+}
