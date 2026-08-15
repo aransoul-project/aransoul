@@ -1,11 +1,14 @@
 {
-  "slot_id":"ZH-14","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "slot_id":"ZH-14","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
   "construction_pass":{"result":"pass","notes":"Matches frozen current-non-authoritative/product-pricing/3-record/moderate price-rule-vs-marketing-summary slot.","issues_found":[]},
   "adversarial_review_pass":{"result":"pass","notes":"R1 uniquely sets the exact monthly list price. R2 is current marketing material but gives only a compatible coarse claim ('under $50'), not a contradictory exact price. R3 is genuinely authoritative for annual prepayment only. No alternative monthly-list-price authority exists.","issues_found":[]},
   "schema_check":{"result":"pass","notes":"Canonical fields present; three-record target satisfied."},
   "slot_match_check":{"result":"pass","notes":"All five frozen ZH-14 slot properties match."},
   "gold_uniqueness_check":{"result":"pass","notes":"R1 alone controls and supplies $48 for the monthly list price; R2 cannot determine an exact value and R3 controls a different billing scope."},
-  "pilot_overlap_check":{"result":"pass","notes":"Current marketing material is required by the preregistered slot. Candidate avoids a post-Pilot adversarial escalation: marketing copy does not state a conflicting exact price and the third record is authoritative different-scope material rather than another descriptive distractor."},
-  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
-  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+  "pilot_overlap_check":{"result":"pass","notes":"Current marketing material is required by the preregistered slot. Candidate avoids post-Pilot escalation: marketing copy does not state a conflicting exact price and the third record is authoritative different-scope material."},
+  "leakage_check":{"result":"pass","notes":"All four renderings expose the same marketing-copy limitation and annual-billing authority scope; T/T/E/A adds no exclusive hint or scorer metadata."},
+  "semantic_equivalence_check":{"result":"pass","notes":"All renderings preserve identical canonical facts and questions; differences are field grouping only."},
+  "scorer_determinism_check":{"result":"pass","notes":"Existing deterministic scorer plus ZH-14 fixture yields expected behavior: R1 correct; R1+R2 and R1+R3 are exact-set over-selection without stale/false-discard; R2-only is wrong authority with false-discard but not stale because marketing material is current."},
+  "repair_history":[],"rejection_reason":null,
+  "accepted_reason":"All pre-freeze construction, overlap, rendering, leakage, equivalence, gold-uniqueness, and deterministic-scoring gates passed."
 }
