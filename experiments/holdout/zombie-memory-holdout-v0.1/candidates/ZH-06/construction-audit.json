@@ -1,11 +1,14 @@
 {
-  "slot_id":"ZH-06","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "slot_id":"ZH-06","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
   "construction_pass":{"result":"pass","notes":"Matches frozen scoped-exception/membership/3-record/moderate/specificity-vs-recency slot.","issues_found":[]},
   "adversarial_review_pass":{"result":"pass","notes":"R2 specifically controls Harbor Plus issuance quantity. R3 is newer and authoritative, but only for transferability; recency cannot override the narrower quantity rule. No alternative controlling set found.","issues_found":[]},
   "schema_check":{"result":"pass","notes":"Canonical fields present; three-record target satisfied."},
   "slot_match_check":{"result":"pass","notes":"All five frozen slot properties match ZH-06."},
   "gold_uniqueness_check":{"result":"pass","notes":"R2 uniquely controls current quantity; R1 controls the historical query before R2's effective date; R3 changes a different benefit dimension."},
   "pilot_overlap_check":{"result":"pass","notes":"The newer record is independently authoritative for a different scope rather than descriptive/non-authoritative material; the case tests preregistered specificity-vs-recency."},
-  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
-  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+  "leakage_check":{"result":"pass","notes":"Four renderings add no gold labels, scorer terminology, or condition-exclusive hints; R3's different authority scope is canonical in every condition."},
+  "semantic_equivalence_check":{"result":"pass","notes":"All four renderings preserve identical issuance, scope, transferability, temporal, and authority facts; only field grouping differs."},
+  "scorer_determinism_check":{"result":"pass","notes":"Existing deterministic holdout scorer plus ZH-06 fixture gives the expected correct result, exact-set failure for [R2,R3] without stale/false-discard, and false-discard for R1-only. No target model involved."},
+  "repair_history":[],"rejection_reason":null,
+  "accepted_reason":"All pre-freeze construction, overlap, rendering, leakage, equivalence, gold-uniqueness, and deterministic-scoring gates passed."
 }
