@@ -1,0 +1,20 @@
+{
+  "slot_id":"ZH-03",
+  "candidate_version":2,
+  "family":"Supersession / replacement",
+  "surface_domain":"publishing workflow",
+  "difficulty":"compound",
+  "primary_competing_cue":"effective replacement vs later descriptive note",
+  "question":"For a manuscript submitted on 2026-10-01, how many independent reviewers are required before an acceptance decision?",
+  "query_time":"2026-10-01",
+  "historical_question":"For a manuscript submitted on 2026-03-01, how many independent reviewers were required before an acceptance decision?",
+  "historical_query_time":"2026-03-01",
+  "records":[
+    {"id":"R1","content":"Research manuscripts require two independent reviewers before an acceptance decision.","time":"Effective 2026-01-01.","status":"Former workflow rule; displaced for submissions on or after 2026-07-01 by R2.","effect":"Requires two independent reviewers while effective.","authority":"Publishing workflow rule until a later rule for the same review-count scope takes effect."},
+    {"id":"R2","content":"Research manuscripts submitted on or after 2026-07-01 require three independent reviewers before an acceptance decision.","time":"Effective 2026-07-01.","status":"Current for submissions on or after its effective date.","effect":"Sets the independent-reviewer requirement to three for the same scope previously governed by R1.","authority":"Current publishing workflow rule for required reviewer count."},
+    {"id":"R3","content":"Editorial handbook revision log: 'The reviewer-count workflow was revised in July; editors should consult the active workflow rule for the required number.'", "time":"Published 2026-09-15.","status":"Current descriptive revision note.","effect":"Describes that a July workflow change occurred without specifying or modifying the required reviewer count.","authority":"Descriptive handbook note only; it does not establish the reviewer-count requirement."},
+    {"id":"R4","content":"Acceptance decisions must record the handling editor's conflict-of-interest declaration.","time":"Effective 2026-02-01.","status":"Current and unaffected by R2.","effect":"Adds a documentation requirement separate from reviewer count.","authority":"Current publishing workflow rule for conflict-of-interest documentation only."}
+  ],
+  "gold":{"current_answer":"3 reviewers","historical_answer":"2 reviewers","current_authority_record_ids":["R2"],"stale_record_ids":["R1"]},
+  "gold_logic":"R2 became effective for the same reviewer-count scope and displaced R1. R3 is the single later descriptive note required by the frozen slot but neither supplies nor changes the count. R4 is an independently authoritative rule for a different workflow dimension, so it does not control reviewer count."
+}
