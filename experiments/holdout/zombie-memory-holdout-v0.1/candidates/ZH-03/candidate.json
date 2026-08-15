@@ -1,0 +1,52 @@
+{
+  "slot_id": "ZH-03",
+  "family": "Supersession / replacement",
+  "surface_domain": "publishing workflow",
+  "difficulty": "compound",
+  "primary_competing_cue": "effective replacement vs later descriptive note",
+  "question": "At 2026-08-12, which approval chain governs release of a standard article?",
+  "query_time": "2026-08-12",
+  "historical_question": "At 2026-04-15, which approval chain governed release of a standard article?",
+  "historical_query_time": "2026-04-15",
+  "records": [
+    {
+      "id": "R1",
+      "content": "Standard articles require editor approval followed by managing-editor approval.",
+      "time": "Effective 2026-01-10.",
+      "status": "Superseded on 2026-07-01 by R2.",
+      "effect": "Sets a two-step editor then managing-editor approval chain while effective.",
+      "authority": "Publishing workflow directive until replaced."
+    },
+    {
+      "id": "R2",
+      "content": "Standard articles require editor approval followed by section-lead approval; this workflow replaces the managing-editor second step.",
+      "time": "Effective 2026-07-01.",
+      "status": "Current.",
+      "effect": "Replaces the prior second approval step and sets editor then section-lead approval.",
+      "authority": "Current publishing workflow directive for standard articles."
+    },
+    {
+      "id": "R3",
+      "content": "The release dashboard lists the active workflow name as 'Standard Article Flow 2026-B'.",
+      "time": "Dashboard snapshot 2026-08-05.",
+      "status": "Current descriptive system state.",
+      "effect": "Names the active workflow but does not define its approval steps.",
+      "authority": "Operational status display; not an independent workflow directive."
+    },
+    {
+      "id": "R4",
+      "content": "The publishing system maps 'Standard Article Flow 2026-B' to editor approval followed by section-lead approval.",
+      "time": "Configuration map effective 2026-07-01.",
+      "status": "Current implementation mapping.",
+      "effect": "Implements R2's approval chain in the publishing system.",
+      "authority": "Implementation mapping subordinate to the governing workflow directive."
+    }
+  ],
+  "gold": {
+    "current_answer": "Editor approval, then section-lead approval",
+    "historical_answer": "Editor approval, then managing-editor approval",
+    "current_authority_record_ids": ["R2"],
+    "stale_record_ids": ["R1"]
+  },
+  "gold_logic": "R2 explicitly replaces R1 on 2026-07-01 and uniquely governs the approval chain. R3 only names the active workflow and R4 implements R2 without independently governing policy. Before 2026-07-01, R1 controlled the historical approval chain."
+}
