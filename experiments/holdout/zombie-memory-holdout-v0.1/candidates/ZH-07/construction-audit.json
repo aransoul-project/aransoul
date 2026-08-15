@@ -1,11 +1,13 @@
 {
-  "slot_id":"ZH-07","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "slot_id":"ZH-07","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
   "construction_pass":{"result":"pass","notes":"Matches frozen scoped-exception/logistics/4+/compound slot with one narrow routing exception and multiple still-current background rules.","issues_found":[]},
-  "adversarial_review_pass":{"result":"pass","notes":"R2 uniquely controls hub selection for the queried subset. R3 and R4 are genuinely authoritative and still current, but their scopes are packaging and dispatch documentation. They are not descriptive/non-authoritative records and cannot form an alternative hub-selection controlling set.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R2 uniquely controls hub selection for the queried subset. R3 and R4 are genuinely authoritative and still current, but their scopes are packaging and dispatch documentation; they cannot form an alternative hub-selection controlling set.","issues_found":[]},
   "schema_check":{"result":"pass","notes":"Canonical fields present; four-record target satisfied."},
   "slot_match_check":{"result":"pass","notes":"Family, logistics domain, 4+ records, compound difficulty, and narrow-exception-vs-current-background cue match ZH-07."},
   "gold_uniqueness_check":{"result":"pass","notes":"R2 alone controls current hub selection; R1 controls the historical query before R2's effective date. R3/R4 govern different dimensions."},
   "pilot_overlap_check":{"result":"pass","notes":"Multiple background records are required by the frozen slot, but unlike the post-Pilot descriptive over-selection motif they are independently authoritative rules with clearly different operational scopes."},
-  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
-  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+  "leakage_check":{"result":"pass","notes":"Four renderings introduce no gold answer, scorer label, or condition-exclusive substantive hint; all scope distinctions are canonical and reproduced across conditions."},
+  "semantic_equivalence_check":{"result":"pass","notes":"Plain, Timestamp, Status, and T/T/E/A preserve the same four records, scopes, temporal facts, status, effects, authorities, and current/historical questions; only field grouping differs."},
+  "scorer_determinism_check":{"result":"pass","notes":"Deterministic scorer fixture confirms [R2] is exact-set correct; [R1,R2] and [R2,R4] are over-selection failures without stale or false-discard; [R1] alone is authority failure with false-discard and no stale flag because R1 remains current generally."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze construction, overlap, rendering, leakage, equivalence, gold-uniqueness, and deterministic-scoring gates passed."
 }
