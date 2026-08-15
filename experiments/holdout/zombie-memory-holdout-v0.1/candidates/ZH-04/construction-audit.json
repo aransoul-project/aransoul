@@ -1,0 +1,18 @@
+{
+  "slot_id":"ZH-04",
+  "candidate_version":1,
+  "state":"draft",
+  "construction_pass":{"result":"pass","notes":"Matches the frozen ZH-04 slot and requires inferring displacement from same-scope effective-rule language rather than an explicit 'supersedes' label.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"No alternative controlling set found. R2 governs the same threshold scope as R1 and takes effect later; R3 is newer but governs a distinct submission requirement, so recency alone cannot control the queried threshold.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; 3-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"Family, procurement domain, 3-record target, moderate difficulty, and inferred replacement vs recency cue all match the frozen matrix."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R2 uniquely controls the current threshold. R3 cannot be part of the controlling set because its authority is limited to cost-center-code submission requirements."},
+  "pilot_overlap_check":{"result":"pass","notes":"The newer distractor is not a non-authoritative descriptive source; it is an authoritative rule for a different scope. This tests scope-versus-recency without reproducing the Pilot current-descriptive over-selection motif."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},
+  "semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},
+  "scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer unit case."},
+  "repair_history":[],
+  "rejection_reason":null,
+  "accepted_reason":null,
+  "target_model_execution_count":0
+}
