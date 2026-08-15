@@ -1,0 +1,12 @@
+{
+  "slot_id":"ZH-06","candidate_version":1,"family":"Scoped exception vs general rule","surface_domain":"membership service","difficulty":"moderate","primary_competing_cue":"scope specificity vs recency",
+  "question":"At 2026-10-01, how many guest passes per month does a Harbor Plus member receive?","query_time":"2026-10-01",
+  "historical_question":"At 2026-04-01, how many guest passes per month did a Harbor Plus member receive?","historical_query_time":"2026-04-01",
+  "records":[
+    {"id":"R1","content":"All paid members receive 2 guest passes per month.","time":"Effective 2026-01-01.","status":"Current general membership benefit.","effect":"Provides two monthly guest passes unless a narrower plan-specific benefit applies.","authority":"General membership benefit rule."},
+    {"id":"R2","content":"Harbor Plus members receive 4 guest passes per month.","time":"Effective 2026-05-01.","status":"Current plan-specific exception.","effect":"Provides four monthly guest passes to Harbor Plus members while leaving R1 applicable to other paid members.","authority":"Specific benefit rule for Harbor Plus."},
+    {"id":"R3","content":"Beginning 2026-09-01, all paid members may transfer unused guest passes to another member within the same calendar month.","time":"Effective 2026-09-01.","status":"Current general transfer rule.","effect":"Allows transfer of unused passes but does not set the number of passes issued.","authority":"General membership rule for transferability only."}
+  ],
+  "gold":{"current_answer":"4 guest passes","historical_answer":"2 guest passes","current_authority_record_ids":["R2"],"stale_record_ids":[]},
+  "gold_logic":"R2 is the narrower plan-specific rule controlling issuance quantity for Harbor Plus. R3 is newer than R2 but governs transferability, not quantity. Before R2 became effective, R1 controlled the historical quantity."
+}
