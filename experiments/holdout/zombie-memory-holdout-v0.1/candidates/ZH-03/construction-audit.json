@@ -1,0 +1,18 @@
+{
+  "slot_id":"ZH-03",
+  "candidate_version":1,
+  "state":"rejected",
+  "construction_pass":{"result":"pass","notes":"Matches the frozen ZH-03 slot: supersession, publishing workflow, 4+ records, compound, effective replacement vs later descriptive note.","issues_found":[]},
+  "adversarial_review_pass":{"result":"fail","notes":"The candidate is logically unambiguous, but its current descriptive R3 plus subordinate current implementation R4 recreates the already-salient pattern of multiple current/relevant/noncontrolling records around a unique controlling record. Because that failure mode was discovered in Pilot before candidate authoring, this version is not clean enough for a holdout.","issues_found":["post-observation authority over-selection motif risk","two extra current relevant records amplify a known Pilot failure pattern"]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present and 4-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"All frozen slot properties matched."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R2 uniquely governs the current workflow; R3 and R4 do not independently define policy."},
+  "pilot_overlap_check":{"result":"fail","notes":"Not a textual copy, but role structure is too close to the empirically salient Pilot pattern: a unique controlling record surrounded by current descriptive/implementation records that are relevant but not controlling."},
+  "leakage_check":{"result":"not_run","notes":"Rejected before rendering."},
+  "semantic_equivalence_check":{"result":"not_run","notes":"Rejected before rendering."},
+  "scorer_determinism_check":{"result":"not_run","notes":"Rejected before scorer validation."},
+  "repair_history":[{"version":1,"action":"rejected_after_adversarial_review","reason":"Post-observation motif leakage risk despite slot match."}],
+  "rejection_reason":"The frozen slot's 'later descriptive note' cue can be implemented, but this v1 amplified it with multiple current noncontrolling records and therefore overfit a known Pilot weakness.",
+  "accepted_reason":null,
+  "target_model_execution_count":0
+}
