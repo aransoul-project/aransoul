@@ -1,11 +1,13 @@
 {
-  "slot_id":"ZH-17","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "slot_id":"ZH-17","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
   "construction_pass":{"result":"pass","notes":"Matches frozen explicit-authority-hierarchy/procurement/2-record/simple higher-priority-vs-lower-priority-conflict slot.","issues_found":[]},
-  "adversarial_review_pass":{"result":"pass","notes":"Both records are current and directly conflict on the same approval-ceiling scope, but the hierarchy is explicit and unambiguous: Tier 1 corporate policy overrides Tier 2 local procedure. No recency or scope ambiguity changes that result.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"Both records are current and directly conflict on the same approval-ceiling scope, but the hierarchy is explicit and unambiguous: Tier 1 corporate policy overrides Tier 2 local procedure.","issues_found":[]},
   "schema_check":{"result":"pass","notes":"Canonical fields present; two-record target satisfied."},
-  "slot_match_check":{"result":"pass","notes":"Family, procurement domain, record count, simple difficulty, and frozen hierarchy cue all match ZH-17."},
-  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls at both query times because the authority hierarchy explicitly resolves the conflict."},
-  "pilot_overlap_check":{"result":"pass","notes":"Tests explicit hierarchical precedence between two authoritative conflicting rules rather than stale/current or descriptive-material discrimination."},
-  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
-  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+  "slot_match_check":{"result":"pass","notes":"All frozen ZH-17 properties match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls at both query times because explicit hierarchy resolves the conflict."},
+  "pilot_overlap_check":{"result":"pass","notes":"Tests explicit hierarchical precedence rather than stale/current or descriptive-material discrimination."},
+  "leakage_check":{"result":"pass","notes":"Tier 1/Tier 2 precedence is equally explicit in Plain, Timestamp, Status, and T/T/E/A; no condition-exclusive hierarchy hint exists."},
+  "semantic_equivalence_check":{"result":"pass","notes":"All four renderings preserve identical conflicting rules, chronology, current status, numeric values, and hierarchy relation."},
+  "scorer_determinism_check":{"result":"pass","notes":"Existing deterministic scorer plus ZH-17 fixture correctly treats R2-only as wrong-current/authority plus false-discard but not stale, and R1+R2 as exact-set over-selection without stale/false-discard."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze gates passed without target-model execution."
 }
