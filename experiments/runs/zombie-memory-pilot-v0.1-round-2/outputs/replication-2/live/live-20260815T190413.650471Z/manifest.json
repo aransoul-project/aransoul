@@ -6,7 +6,7 @@
   "mode": "live",
   "api_called": true,
   "run_id": "live-20260815T190413.650471Z",
-  "status": "responses_complete_unreviewed",
+  "status": "scoring_and_preregistered_diagnostic_complete",
   "run_started_at": "2026-08-15T19:04:13.650471Z",
   "run_completed_at": "2026-08-15T19:05:00.798119Z",
   "repository_commit": "42eb0e27a5ece5e7ca5ed1eab18b29bd1055aecb",
@@ -38,7 +38,7 @@
     "estimated_cost_usd": 0.008797,
     "max_configured_cost_usd": 0.021085
   },
-  "raw_data_integrity_approved": false,
-  "scoring_started": false,
-  "authority_diagnostic_started": false
+  "raw_data_integrity_approved": true,
+  "scoring_started": true,
+  "authority_diagnostic_started": true
 }
