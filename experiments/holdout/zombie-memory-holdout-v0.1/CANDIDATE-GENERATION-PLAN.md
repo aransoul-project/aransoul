@@ -45,11 +45,11 @@ No difficulty tier is a scoring category.
 | ZH-13 | Current but non-authoritative material | membership service | 2 | simple | authoritative policy vs current FAQ summary |
 | ZH-14 | Current but non-authoritative material | product pricing | 3 | moderate | controlling price rule vs current marketing summary |
 | ZH-15 | Current but non-authoritative material | software operations | 4+ | compound | authoritative configuration vs dashboard/advisory material |
-| ZH-16 | Current but non-authoritative material | publishing | 3 | moderate | policy authority vs current editorial guidance note |
+| ZH-16 | Current but non-authoritative material | publishing | 2 | moderate | policy authority vs current editorial guidance note |
 | ZH-17 | Explicit authority hierarchy | procurement | 2 | simple | higher-priority source vs lower-priority conflicting source |
 | ZH-18 | Explicit authority hierarchy | logistics | 3 | moderate | explicit tie-break hierarchy vs newest-record cue |
 | ZH-19 | Explicit authority hierarchy | education administration | 4+ | compound | hierarchy plus scoped applicability |
-| ZH-20 | Explicit authority hierarchy | service plan administration | 3 | moderate | explicit tie-break vs descriptive current source |
+| ZH-20 | Explicit authority hierarchy | service plan administration | 2 | moderate | explicit tie-break vs descriptive current source |
 | ZH-21 | Historical superseded-but-correct answer | workplace policy | 2 | simple | current replacement vs correct earlier historical rule |
 | ZH-22 | Historical superseded-but-correct answer | software configuration | 3 | moderate | historical cutoff vs later supersession |
 | ZH-23 | Historical superseded-but-correct answer | facilities operations | 4+ | compound | historical authority recovery plus current controlling set |
@@ -61,14 +61,14 @@ The matrix intentionally satisfies the preregistered structural constraints befo
 
 - 6 families × 4 slots each = 24 slots;
 - exactly 8 slots target 2 records;
-- exactly 12 slots target 3 records;
-- exactly 4 slots target 4+ records;
+- exactly 10 slots target 3 records;
+- exactly 6 slots target 4+ records;
 - every family contains at least one simple slot and at least one slot with a legitimate competing cue;
 - no surface domain exceeds three slots;
 - no family is tied to a single surface domain;
 - recency is not the only competing cue; scope, restoration, descriptive relevance, explicit hierarchy, and historical cutoff are distributed across the set.
 
-The 3-record count is intentionally more common than the minimum required because it allows one controlling relationship plus one plausible distractor without excessive complexity.
+The 3-record count remains common because it allows one controlling relationship plus one plausible distractor without excessive complexity. The 4+ group is limited to structurally justified compound cases.
 
 ## 4. Authoring constraints by slot
 
