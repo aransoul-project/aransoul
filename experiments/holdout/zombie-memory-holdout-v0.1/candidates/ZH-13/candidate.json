@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-13","candidate_version":1,"family":"Current but non-authoritative material","surface_domain":"membership service","difficulty":"simple","primary_competing_cue":"authoritative policy vs current FAQ summary",
+  "question":"At 2026-10-01, how many complimentary locker days per month does a Summit membership include?","query_time":"2026-10-01",
+  "historical_question":"At 2026-04-01, how many complimentary locker days per month did a Summit membership include?","historical_query_time":"2026-04-01",
+  "records":[
+    {"id":"R1","content":"Summit memberships include 6 complimentary locker days per calendar month.","time":"Effective 2026-01-01.","status":"Current membership policy.","effect":"Sets the Summit monthly complimentary-locker allowance to 6 days.","authority":"Controlling membership-benefit policy for this allowance."},
+    {"id":"R2","content":"Current FAQ summary: 'Summit members get several complimentary locker days each month; check the membership policy for the exact allowance.'","time":"FAQ reviewed 2026-09-20.","status":"Current customer-facing FAQ summary.","effect":"Summarizes the existence of the benefit without setting or changing its numeric allowance.","authority":"Informational FAQ only; the membership policy remains controlling for the exact allowance."}
+  ],
+  "gold":{"current_answer":"6 days","historical_answer":"6 days","current_authority_record_ids":["R1"],"stale_record_ids":[]},
+  "gold_logic":"R1 directly sets the exact allowance and remains controlling. R2 is intentionally current and relevant because the frozen slot requires a current FAQ summary, but it expressly defers the exact value to policy and supplies no competing numeric rule."
+}
