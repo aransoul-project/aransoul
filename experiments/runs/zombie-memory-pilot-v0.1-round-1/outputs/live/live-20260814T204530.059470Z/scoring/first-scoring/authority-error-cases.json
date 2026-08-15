@@ -1,0 +1,1042 @@
+{
+  "run_id": "live-20260814T204530.059470Z",
+  "scoring_id": "first-scoring",
+  "analysis_status": "post_hoc_diagnostic_not_preregistered",
+  "scoring_changed": false,
+  "classification_note": "Error flags follow the requested set definitions and are non-exclusive: wrong_source also implies omission because at least one gold record is missing.",
+  "explicit_non_authoritative_detection": {
+    "source": "canonical record authority prose",
+    "case_insensitive_phrases": [
+      "non-authoritative",
+      "no authority to amend",
+      "does not independently set"
+    ]
+  },
+  "cases": [
+    {
+      "condition": "plain",
+      "case_id": "ZM-P01",
+      "family": "direct_supersession",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "plain",
+      "case_id": "ZM-P02",
+      "family": "direct_supersession",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "plain",
+      "case_id": "ZM-P03",
+      "family": "partial_supersession",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "plain",
+      "case_id": "ZM-P04",
+      "family": "partial_supersession",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [
+        "R1"
+      ],
+      "extra_selected_record_ids": [
+        "R2"
+      ],
+      "error_types": [
+        "omission",
+        "wrong_source"
+      ],
+      "over_selection": false,
+      "omission": true,
+      "wrong_source": true,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "plain",
+      "case_id": "ZM-P05",
+      "family": "exception_hierarchy",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R1",
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R1"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "plain",
+      "case_id": "ZM-P06",
+      "family": "exception_hierarchy",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R1",
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R1"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "plain",
+      "case_id": "ZM-P07",
+      "family": "stale_summary_contamination",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "plain",
+      "case_id": "ZM-P08",
+      "family": "stale_summary_contamination",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "plain",
+      "case_id": "ZM-P09",
+      "family": "cross_period_merge_trap",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2",
+        "R3"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R3"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": true,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [
+        "R3"
+      ],
+      "explicitly_non_authoritative_evidence": {
+        "R3": "Descriptive note; does not independently set price."
+      }
+    },
+    {
+      "condition": "plain",
+      "case_id": "ZM-P10",
+      "family": "cross_period_merge_trap",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2",
+        "R3"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R3"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": true,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [
+        "R3"
+      ],
+      "explicitly_non_authoritative_evidence": {
+        "R3": "Descriptive FAQ; does not independently set the monthly fee."
+      }
+    },
+    {
+      "condition": "timestamp",
+      "case_id": "ZM-P01",
+      "family": "direct_supersession",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "timestamp",
+      "case_id": "ZM-P02",
+      "family": "direct_supersession",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "timestamp",
+      "case_id": "ZM-P03",
+      "family": "partial_supersession",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "timestamp",
+      "case_id": "ZM-P04",
+      "family": "partial_supersession",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [
+        "R1"
+      ],
+      "extra_selected_record_ids": [
+        "R2"
+      ],
+      "error_types": [
+        "omission",
+        "wrong_source"
+      ],
+      "over_selection": false,
+      "omission": true,
+      "wrong_source": true,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "timestamp",
+      "case_id": "ZM-P05",
+      "family": "exception_hierarchy",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "timestamp",
+      "case_id": "ZM-P06",
+      "family": "exception_hierarchy",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R1",
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R1"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "timestamp",
+      "case_id": "ZM-P07",
+      "family": "stale_summary_contamination",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "timestamp",
+      "case_id": "ZM-P08",
+      "family": "stale_summary_contamination",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "timestamp",
+      "case_id": "ZM-P09",
+      "family": "cross_period_merge_trap",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2",
+        "R3"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R3"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": true,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [
+        "R3"
+      ],
+      "explicitly_non_authoritative_evidence": {
+        "R3": "Descriptive note; does not independently set price."
+      }
+    },
+    {
+      "condition": "timestamp",
+      "case_id": "ZM-P10",
+      "family": "cross_period_merge_trap",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2",
+        "R3"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R3"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": true,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [
+        "R3"
+      ],
+      "explicitly_non_authoritative_evidence": {
+        "R3": "Descriptive FAQ; does not independently set the monthly fee."
+      }
+    },
+    {
+      "condition": "status",
+      "case_id": "ZM-P01",
+      "family": "direct_supersession",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "status",
+      "case_id": "ZM-P02",
+      "family": "direct_supersession",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "status",
+      "case_id": "ZM-P03",
+      "family": "partial_supersession",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1",
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R2"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "status",
+      "case_id": "ZM-P04",
+      "family": "partial_supersession",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [
+        "R1"
+      ],
+      "extra_selected_record_ids": [
+        "R2"
+      ],
+      "error_types": [
+        "omission",
+        "wrong_source"
+      ],
+      "over_selection": false,
+      "omission": true,
+      "wrong_source": true,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "status",
+      "case_id": "ZM-P05",
+      "family": "exception_hierarchy",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R1",
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R1"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "status",
+      "case_id": "ZM-P06",
+      "family": "exception_hierarchy",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R1",
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R1"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "status",
+      "case_id": "ZM-P07",
+      "family": "stale_summary_contamination",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "status",
+      "case_id": "ZM-P08",
+      "family": "stale_summary_contamination",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "status",
+      "case_id": "ZM-P09",
+      "family": "cross_period_merge_trap",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2",
+        "R3"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R3"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": true,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [
+        "R3"
+      ],
+      "explicitly_non_authoritative_evidence": {
+        "R3": "Descriptive note; does not independently set price."
+      }
+    },
+    {
+      "condition": "status",
+      "case_id": "ZM-P10",
+      "family": "cross_period_merge_trap",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2",
+        "R3"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R3"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": true,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [
+        "R3"
+      ],
+      "explicitly_non_authoritative_evidence": {
+        "R3": "Descriptive FAQ; does not independently set the monthly fee."
+      }
+    },
+    {
+      "condition": "ttea",
+      "case_id": "ZM-P01",
+      "family": "direct_supersession",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "ttea",
+      "case_id": "ZM-P02",
+      "family": "direct_supersession",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "ttea",
+      "case_id": "ZM-P03",
+      "family": "partial_supersession",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1",
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R2"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "ttea",
+      "case_id": "ZM-P04",
+      "family": "partial_supersession",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [
+        "R1"
+      ],
+      "extra_selected_record_ids": [
+        "R2"
+      ],
+      "error_types": [
+        "omission",
+        "wrong_source"
+      ],
+      "over_selection": false,
+      "omission": true,
+      "wrong_source": true,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "ttea",
+      "case_id": "ZM-P05",
+      "family": "exception_hierarchy",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R1",
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R1"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "ttea",
+      "case_id": "ZM-P06",
+      "family": "exception_hierarchy",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R1",
+        "R2"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R1"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "ttea",
+      "case_id": "ZM-P07",
+      "family": "stale_summary_contamination",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "ttea",
+      "case_id": "ZM-P08",
+      "family": "stale_summary_contamination",
+      "gold_controlling_record_ids": [
+        "R1"
+      ],
+      "model_selected_record_ids": [
+        "R1"
+      ],
+      "exact_set_scorer_result": true,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [],
+      "error_types": [],
+      "over_selection": false,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": false,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [],
+      "explicitly_non_authoritative_evidence": {}
+    },
+    {
+      "condition": "ttea",
+      "case_id": "ZM-P09",
+      "family": "cross_period_merge_trap",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2",
+        "R3"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R3"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": true,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [
+        "R3"
+      ],
+      "explicitly_non_authoritative_evidence": {
+        "R3": "Descriptive note; does not independently set price."
+      }
+    },
+    {
+      "condition": "ttea",
+      "case_id": "ZM-P10",
+      "family": "cross_period_merge_trap",
+      "gold_controlling_record_ids": [
+        "R2"
+      ],
+      "model_selected_record_ids": [
+        "R2",
+        "R3"
+      ],
+      "exact_set_scorer_result": false,
+      "missing_gold_record_ids": [],
+      "extra_selected_record_ids": [
+        "R3"
+      ],
+      "error_types": [
+        "over_selection"
+      ],
+      "over_selection": true,
+      "omission": false,
+      "wrong_source": false,
+      "stale_or_non_authoritative_selection": true,
+      "selected_stale_record_ids": [],
+      "selected_explicitly_non_authoritative_record_ids": [
+        "R3"
+      ],
+      "explicitly_non_authoritative_evidence": {
+        "R3": "Descriptive FAQ; does not independently set the monthly fee."
+      }
+    }
+  ]
+}
