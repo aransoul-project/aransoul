@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-18","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen explicit-authority-hierarchy/logistics/3-record/moderate hierarchy-vs-newest-record slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R1 and R2 conflict for the queried hazardous-battery subset, but their priority labels explicitly resolve the conflict in favor of R1. R2's much later date creates the intended recency cue without changing authority. R3 is independently authoritative for scan documentation only.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; three-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"All frozen ZH-18 slot properties match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls lane selection at both query times; R2 is subordinate where conflicting and R3 has a different scope."},
+  "pilot_overlap_check":{"result":"pass","notes":"Uses an explicit authority tie-break and recency competition, not Pilot's stale/descriptive authority motifs."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+}
