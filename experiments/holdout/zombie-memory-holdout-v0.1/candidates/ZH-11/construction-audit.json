@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-11","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen temporary-rule/facilities/4+/compound extension-expiry-restoration slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R2 is explicitly bounded to August and does not permanently replace R1. R4 only confirms the restoration already implied by R2's expiry, so the current authority remains R1 rather than R4. R3 governs room-sweep timing only. No alternative closing-time controlling set found.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; four-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"Family, facilities-scheduling domain, 4+ records, compound difficulty, and extension-expiry-restoration cue all match ZH-11."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls current closing time; R2 uniquely controls the historical August closing time; R3/R4 do not create alternative closing-time values."},
+  "pilot_overlap_check":{"result":"pass","notes":"The case tests bounded restoration and distinguishes a confirmation notice from operative authority. It does not reproduce the Pilot current descriptive/non-authoritative motif as the central challenge."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+}
