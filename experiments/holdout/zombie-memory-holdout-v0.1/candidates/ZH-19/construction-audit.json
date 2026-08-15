@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-19","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen explicit-authority-hierarchy/education-administration/4+/compound hierarchy-plus-scoped-applicability slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"The queried advanced Engineering laboratory falls under both R1 and broader R2, requiring scope matching plus the explicit Level 1-over-Level 2 hierarchy. R3 is seminar-only and R4 documentation-only, so neither creates an alternative controlling capacity set.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; four-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"Family, education-administration domain, 4+ records, compound difficulty, and hierarchy-plus-scope cue match ZH-19."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls the laboratory cap after applying both section-type scope and explicit authority hierarchy; R2 is current but subordinate on overlapping scope."},
+  "pilot_overlap_check":{"result":"pass","notes":"Tests two-step scope-plus-hierarchy reasoning. R3/R4 are independently scoped authoritative rules, not descriptive pseudo-authorities, so the case does not amplify the Pilot over-selection motif."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+}
