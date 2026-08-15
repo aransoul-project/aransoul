@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-10","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen temporary-rule/software-release/3-record/moderate/bounded-override-vs-later-current-time slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R2 is bounded to August and explicitly restores the ordinary rule afterward. R3 is later and current but governs release-log documentation, not approval count. No alternative controlling set for approver quantity exists.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; three-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"All frozen slot properties match ZH-10."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls current approver count after expiry; R2 uniquely controls the historical in-window count; R3 has a different scope."},
+  "pilot_overlap_check":{"result":"pass","notes":"The newer current record is independently authoritative for a distinct release-policy dimension. The central construct is bounded expiry/restoration, not the Pilot descriptive-source motif."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+}
