@@ -1,11 +1,13 @@
 {
-  "slot_id":"ZH-20","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "slot_id":"ZH-20","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
   "construction_pass":{"result":"pass","notes":"Matches frozen explicit-authority-hierarchy/service-plan-administration/2-record/moderate explicit-tie-break-vs-descriptive-current-source slot.","issues_found":[]},
-  "adversarial_review_pass":{"result":"pass","notes":"R1 is explicitly Tier A and supplies the exact numeric entitlement. R2 is current and relevant but Tier C descriptive material, contains no alternative number, and itself defers to the Service Schedule. This preserves the frozen cue without escalating the known current-descriptive over-selection weakness.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R1 is Tier A and supplies the exact entitlement; R2 is current Tier C descriptive material, non-numeric, and explicitly defers to the Service Schedule.","issues_found":[]},
   "schema_check":{"result":"pass","notes":"Canonical fields present; two-record target satisfied."},
-  "slot_match_check":{"result":"pass","notes":"All five frozen ZH-20 properties match."},
-  "gold_uniqueness_check":{"result":"pass","notes":"R1 alone controls and supplies 8 incidents at both query times; R2 cannot determine an exact allowance or override Tier A authority."},
-  "pilot_overlap_check":{"result":"pass","notes":"The descriptive-current-source cue is preregistered for ZH-20. Candidate deliberately avoids a conflicting exact value or policy-like pseudo-rule in R2, preventing post-observation adversarial escalation."},
-  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
-  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+  "slot_match_check":{"result":"pass","notes":"All frozen ZH-20 properties match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 alone controls and supplies 8 incidents at both query times."},
+  "pilot_overlap_check":{"result":"pass","notes":"The preregistered descriptive-current-source cue is retained without a conflicting exact pseudo-rule."},
+  "leakage_check":{"result":"pass","notes":"All four conditions preserve the same Tier A/Tier C hierarchy and R2's deferral to the Service Schedule; T/T/E/A adds no exclusive authority clue."},
+  "semantic_equivalence_check":{"result":"pass","notes":"All four renderings preserve identical canonical facts and questions."},
+  "scorer_determinism_check":{"result":"pass","notes":"Existing deterministic scorer plus ZH-20 fixture treats R1+R2 as exact-set over-selection without stale/false-discard and R2-only as false-discard without stale, matching current descriptive hierarchy semantics."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze gates passed without target-model execution."
 }
