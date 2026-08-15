@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-21","candidate_version":1,"family":"Historical superseded-but-correct answer","surface_domain":"workplace policy","difficulty":"simple","primary_competing_cue":"current replacement vs correct earlier historical rule",
+  "question":"At 2026-10-01, what is the maximum remote-work allowance per week for standard office roles?","query_time":"2026-10-01",
+  "historical_question":"At 2026-03-01, what was the maximum remote-work allowance per week for standard office roles?","historical_query_time":"2026-03-01",
+  "records":[
+    {"id":"R1","content":"Standard office roles may work remotely up to 2 days per week.","time":"Effective 2026-01-01.","status":"Superseded on 2026-07-01 by R2.","effect":"Sets the remote-work allowance at 2 days per week while effective.","authority":"Authoritative workplace policy until replaced."},
+    {"id":"R2","content":"Standard office roles may work remotely up to 3 days per week; this replaces the prior 2-day allowance.","time":"Effective 2026-07-01.","status":"Current workplace policy.","effect":"Replaces the prior allowance and sets 3 days per week.","authority":"Current authoritative workplace policy for standard office-role remote-work allowance."}
+  ],
+  "gold":{"current_answer":"3 days","historical_answer":"2 days","current_authority_record_ids":["R2"],"stale_record_ids":["R1"]},
+  "gold_logic":"R2 uniquely controls the current query. R1 is stale for the current query but was the correct authoritative rule at the historical cutoff, so historical correctness must be preserved without restoring current authority."
+}
