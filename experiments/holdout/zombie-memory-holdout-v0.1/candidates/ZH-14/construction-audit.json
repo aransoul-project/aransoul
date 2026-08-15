@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-14","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen current-non-authoritative/product-pricing/3-record/moderate price-rule-vs-marketing-summary slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R1 uniquely sets the exact monthly list price. R2 is current marketing material but gives only a compatible coarse claim ('under $50'), not a contradictory exact price. R3 is genuinely authoritative for annual prepayment only. No alternative monthly-list-price authority exists.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; three-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"All five frozen ZH-14 slot properties match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 alone controls and supplies $48 for the monthly list price; R2 cannot determine an exact value and R3 controls a different billing scope."},
+  "pilot_overlap_check":{"result":"pass","notes":"Current marketing material is required by the preregistered slot. Candidate avoids a post-Pilot adversarial escalation: marketing copy does not state a conflicting exact price and the third record is authoritative different-scope material rather than another descriptive distractor."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+}
