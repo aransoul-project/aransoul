@@ -1,0 +1,13 @@
+{
+  "slot_id":"ZH-15","candidate_version":1,"family":"Current but non-authoritative material","surface_domain":"software operations","difficulty":"compound","primary_competing_cue":"authoritative configuration vs dashboard/advisory material",
+  "question":"At 2026-10-01, what retry limit should the Vega ingestion worker use?","query_time":"2026-10-01",
+  "historical_question":"At 2026-04-01, what retry limit should the Vega ingestion worker have used?","historical_query_time":"2026-04-01",
+  "records":[
+    {"id":"R1","content":"The Vega ingestion worker retry limit is 5 attempts.","time":"Effective 2026-02-01.","status":"Current runtime configuration rule.","effect":"Sets the retry limit to 5 attempts.","authority":"Controlling software-operations configuration for Vega retries."},
+    {"id":"R2","content":"Operations dashboard note: 'Vega retries are elevated this week; monitor the retry panel during peak load.'","time":"Dashboard refreshed 2026-09-28.","status":"Current operational dashboard note.","effect":"Reports observed operational conditions but does not set the retry limit.","authority":"Observational dashboard material only; configuration remains controlled by the runtime rule."},
+    {"id":"R3","content":"Reliability advisory: 'If Vega error rates remain high, engineers may review whether a future configuration change is warranted.'","time":"Issued 2026-09-29.","status":"Current advisory.","effect":"Suggests possible future review without changing the active retry limit.","authority":"Advisory material only; it does not modify runtime configuration."},
+    {"id":"R4","content":"Vega retry failures must be logged with error class and request identifier.","time":"Effective 2026-03-01.","status":"Current logging rule.","effect":"Sets retry-failure logging requirements but not retry count.","authority":"Authoritative software-operations rule for retry-failure logging only."}
+  ],
+  "gold":{"current_answer":"5 attempts","historical_answer":"5 attempts","current_authority_record_ids":["R1"],"stale_record_ids":[]},
+  "gold_logic":"R1 alone sets the retry-count configuration. R2 and R3 are current, relevant, and intentionally non-authoritative as required by the frozen slot; neither states a competing exact retry value or claims configuration authority. R4 is authoritative but controls logging rather than retry count."
+}
