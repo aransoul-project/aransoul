@@ -1,0 +1,64 @@
+{
+  "run_id": "live-20260814T204530.059470Z",
+  "scoring_id": "first-scoring",
+  "analysis_status": "post_hoc_diagnostic_not_preregistered",
+  "scoring_changed": false,
+  "classification_note": "Error flags follow the requested set definitions and are non-exclusive: wrong_source also implies omission because at least one gold record is missing.",
+  "explicit_non_authoritative_detection": {
+    "source": "canonical record authority prose",
+    "case_insensitive_phrases": [
+      "non-authoritative",
+      "no authority to amend",
+      "does not independently set"
+    ]
+  },
+  "condition_by_error_type": [
+    {
+      "condition": "plain",
+      "cases": 10,
+      "exact_set_match_count": 5,
+      "exact_set_mismatch_count": 5,
+      "over_selection_count": 4,
+      "omission_count": 1,
+      "wrong_source_count": 1,
+      "stale_or_non_authoritative_selection_count": 2
+    },
+    {
+      "condition": "timestamp",
+      "cases": 10,
+      "exact_set_match_count": 6,
+      "exact_set_mismatch_count": 4,
+      "over_selection_count": 3,
+      "omission_count": 1,
+      "wrong_source_count": 1,
+      "stale_or_non_authoritative_selection_count": 2
+    },
+    {
+      "condition": "status",
+      "cases": 10,
+      "exact_set_match_count": 4,
+      "exact_set_mismatch_count": 6,
+      "over_selection_count": 5,
+      "omission_count": 1,
+      "wrong_source_count": 1,
+      "stale_or_non_authoritative_selection_count": 2
+    },
+    {
+      "condition": "ttea",
+      "cases": 10,
+      "exact_set_match_count": 4,
+      "exact_set_mismatch_count": 6,
+      "over_selection_count": 5,
+      "omission_count": 1,
+      "wrong_source_count": 1,
+      "stale_or_non_authoritative_selection_count": 2
+    }
+  ],
+  "status_ttea_comparison": {
+    "status_and_ttea_submissions_byte_identical": true,
+    "status_and_ttea_submissions_structurally_identical": true,
+    "differing_case_ids": [],
+    "status_submission_sha256": "d01070e6f2057f504ee844098375559124412a3dadf72f7c032cb07b13712ab4",
+    "ttea_submission_sha256": "d01070e6f2057f504ee844098375559124412a3dadf72f7c032cb07b13712ab4"
+  }
+}

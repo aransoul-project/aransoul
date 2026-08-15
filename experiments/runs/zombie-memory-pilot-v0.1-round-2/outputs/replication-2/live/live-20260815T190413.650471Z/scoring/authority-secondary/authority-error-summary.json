@@ -1,0 +1,55 @@
+{
+  "analysis_status": "preregistered_secondary_diagnostic",
+  "raw_data_integrity_approved": true,
+  "frozen_scoring_complete": true,
+  "scoring_changed": false,
+  "condition_by_error_type": [
+    {
+      "condition": "plain",
+      "cases": 10,
+      "exact_set_match_count": 4,
+      "exact_set_mismatch_count": 6,
+      "over_selection_count": 5,
+      "omission_count": 1,
+      "wrong_source_count": 1,
+      "stale_or_non_authoritative_selection_count": 2
+    },
+    {
+      "condition": "timestamp",
+      "cases": 10,
+      "exact_set_match_count": 5,
+      "exact_set_mismatch_count": 5,
+      "over_selection_count": 4,
+      "omission_count": 1,
+      "wrong_source_count": 1,
+      "stale_or_non_authoritative_selection_count": 2
+    },
+    {
+      "condition": "status",
+      "cases": 10,
+      "exact_set_match_count": 4,
+      "exact_set_mismatch_count": 6,
+      "over_selection_count": 5,
+      "omission_count": 1,
+      "wrong_source_count": 1,
+      "stale_or_non_authoritative_selection_count": 2
+    },
+    {
+      "condition": "ttea",
+      "cases": 10,
+      "exact_set_match_count": 4,
+      "exact_set_mismatch_count": 6,
+      "over_selection_count": 5,
+      "omission_count": 1,
+      "wrong_source_count": 1,
+      "stale_or_non_authoritative_selection_count": 2
+    }
+  ],
+  "status_ttea_comparison": {
+    "byte_identical": true,
+    "structurally_identical": true,
+    "differing_case_ids": [],
+    "status_submission_sha256": "d01070e6f2057f504ee844098375559124412a3dadf72f7c032cb07b13712ab4",
+    "ttea_submission_sha256": "d01070e6f2057f504ee844098375559124412a3dadf72f7c032cb07b13712ab4"
+  }
+}

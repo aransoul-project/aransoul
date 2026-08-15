@@ -1,0 +1,92 @@
+{
+  "summary": {
+    "cases": 10,
+    "current_answer_accuracy": 0.9,
+    "historical_recall_accuracy": 1.0,
+    "authority_resolution_accuracy": 0.6,
+    "stale_authority_error_count": 0,
+    "false_discard_case_count": 0
+  },
+  "details": [
+    {
+      "id": "ZM-P01",
+      "current_correct": true,
+      "historical_correct": true,
+      "authority_correct": true,
+      "stale_authority_error": false,
+      "false_discard_indicator": false
+    },
+    {
+      "id": "ZM-P02",
+      "current_correct": true,
+      "historical_correct": true,
+      "authority_correct": true,
+      "stale_authority_error": false,
+      "false_discard_indicator": false
+    },
+    {
+      "id": "ZM-P03",
+      "current_correct": true,
+      "historical_correct": true,
+      "authority_correct": true,
+      "stale_authority_error": false,
+      "false_discard_indicator": false
+    },
+    {
+      "id": "ZM-P04",
+      "current_correct": true,
+      "historical_correct": true,
+      "authority_correct": false,
+      "stale_authority_error": false,
+      "false_discard_indicator": false
+    },
+    {
+      "id": "ZM-P05",
+      "current_correct": true,
+      "historical_correct": true,
+      "authority_correct": true,
+      "stale_authority_error": false,
+      "false_discard_indicator": false
+    },
+    {
+      "id": "ZM-P06",
+      "current_correct": true,
+      "historical_correct": true,
+      "authority_correct": false,
+      "stale_authority_error": false,
+      "false_discard_indicator": false
+    },
+    {
+      "id": "ZM-P07",
+      "current_correct": false,
+      "historical_correct": true,
+      "authority_correct": true,
+      "stale_authority_error": false,
+      "false_discard_indicator": false
+    },
+    {
+      "id": "ZM-P08",
+      "current_correct": true,
+      "historical_correct": true,
+      "authority_correct": true,
+      "stale_authority_error": false,
+      "false_discard_indicator": false
+    },
+    {
+      "id": "ZM-P09",
+      "current_correct": true,
+      "historical_correct": true,
+      "authority_correct": false,
+      "stale_authority_error": false,
+      "false_discard_indicator": false
+    },
+    {
+      "id": "ZM-P10",
+      "current_correct": true,
+      "historical_correct": true,
+      "authority_correct": false,
+      "stale_authority_error": false,
+      "false_discard_indicator": false
+    }
+  ]
+}
