@@ -1,0 +1,13 @@
+{
+  "slot_id":"ZH-19","candidate_version":1,"family":"Explicit authority hierarchy","surface_domain":"education administration","difficulty":"compound","primary_competing_cue":"hierarchy plus scoped applicability",
+  "question":"At 2026-10-01, what is the maximum enrollment cap for an advanced laboratory section in the School of Engineering?","query_time":"2026-10-01",
+  "historical_question":"At 2026-04-01, what was the maximum enrollment cap for an advanced laboratory section in the School of Engineering?","historical_query_time":"2026-04-01",
+  "records":[
+    {"id":"R1","content":"University Academic Safety Code: advanced laboratory sections may enroll no more than 18 students.","time":"Effective 2026-01-01.","status":"Current university safety code.","effect":"Sets an 18-student cap for advanced laboratory sections university-wide.","authority":"Level 1 university safety authority; overrides school-level scheduling rules where both apply to advanced laboratories."},
+    {"id":"R2","content":"School of Engineering Scheduling Manual: Engineering course sections may enroll up to 24 students unless a higher-level safety rule sets a lower cap for the section type.","time":"Effective 2026-03-01.","status":"Current school scheduling rule.","effect":"Sets a general 24-student Engineering section cap subject to higher-level safety constraints.","authority":"Level 2 school scheduling authority; subordinate to Level 1 university safety rules on overlapping scope."},
+    {"id":"R3","content":"School of Engineering seminar sections may enroll up to 28 students.","time":"Effective 2026-08-15.","status":"Current seminar-specific scheduling rule.","effect":"Sets a cap for seminar sections, not advanced laboratory sections.","authority":"Level 2 school scheduling authority for seminar sections only."},
+    {"id":"R4","content":"Advanced laboratory enrollment rosters must include each student's completed safety-orientation date.","time":"Effective 2026-09-01.","status":"Current laboratory roster rule.","effect":"Adds a roster field requirement but does not set enrollment capacity.","authority":"Authoritative education-administration rule for laboratory roster documentation only."}
+  ],
+  "gold":{"current_answer":"18 students","historical_answer":"18 students","current_authority_record_ids":["R1"],"stale_record_ids":[]},
+  "gold_logic":"The query matches both R1's advanced-laboratory scope and R2's broader Engineering-section scope, so the explicit Level 1-over-Level 2 hierarchy resolves the overlapping cap in favor of R1. R3 does not apply because the queried section is a laboratory rather than a seminar, and R4 governs documentation only."
+}
