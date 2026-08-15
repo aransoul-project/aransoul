@@ -1,0 +1,12 @@
+{
+  "slot_id":"ZH-18","candidate_version":1,"family":"Explicit authority hierarchy","surface_domain":"logistics","difficulty":"moderate","primary_competing_cue":"explicit tie-break hierarchy vs newest-record cue",
+  "question":"At 2026-10-01, which dispatch lane must hazardous-battery parcels use at Harbor East?","query_time":"2026-10-01",
+  "historical_question":"At 2026-04-01, which dispatch lane did hazardous-battery parcels have to use at Harbor East?","historical_query_time":"2026-04-01",
+  "records":[
+    {"id":"R1","content":"Network Safety Standard: hazardous-battery parcels at Harbor East must use Dispatch Lane 4.","time":"Effective 2026-01-15.","status":"Current network safety standard.","effect":"Sets Lane 4 for hazardous-battery parcels at Harbor East.","authority":"Priority A network safety rule; where routing documents conflict, Priority A safety rules override local routing bulletins."},
+    {"id":"R2","content":"Harbor East routing bulletin: all battery-labeled parcels should use Dispatch Lane 6.","time":"Issued 2026-09-20.","status":"Current local routing bulletin.","effect":"States Lane 6 for the broader battery-labeled parcel category.","authority":"Priority B local routing bulletin; subordinate to Priority A network safety rules in case of conflict."},
+    {"id":"R3","content":"Harbor East dispatch scans must include the destination dock code before loading.","time":"Effective 2026-08-01.","status":"Current dispatch-record rule.","effect":"Adds a scan-field requirement but does not choose a dispatch lane.","authority":"Authoritative logistics rule for scan documentation only."}
+  ],
+  "gold":{"current_answer":"Dispatch Lane 4","historical_answer":"Dispatch Lane 4","current_authority_record_ids":["R1"],"stale_record_ids":[]},
+  "gold_logic":"R1 and R2 conflict for hazardous-battery parcels, but the explicit hierarchy makes Priority A R1 controlling even though R2 is much newer. R3 governs documentation only."
+}
