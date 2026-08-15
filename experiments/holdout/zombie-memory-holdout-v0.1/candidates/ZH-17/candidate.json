@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-17","candidate_version":1,"family":"Explicit authority hierarchy","surface_domain":"procurement","difficulty":"simple","primary_competing_cue":"higher-priority source vs lower-priority conflicting source",
+  "question":"At 2026-10-01, what is the maximum purchase amount a department manager may approve without central procurement sign-off?","query_time":"2026-10-01",
+  "historical_question":"At 2026-04-01, what was that maximum amount?","historical_query_time":"2026-04-01",
+  "records":[
+    {"id":"R1","content":"Corporate Procurement Policy: department managers may approve purchases up to $12,000 without central procurement sign-off.","time":"Effective 2026-01-01.","status":"Current corporate procurement policy.","effect":"Sets the manager self-approval ceiling at $12,000.","authority":"Tier 1 procurement authority; corporate policy overrides local departmental procedures on approval ceilings."},
+    {"id":"R2","content":"Facilities Department procedure: department managers may approve purchases up to $15,000 without central procurement sign-off.","time":"Effective 2026-03-01.","status":"Current departmental procedure.","effect":"States a $15,000 local approval ceiling.","authority":"Tier 2 local procedure; subordinate to corporate procurement policy where the two conflict."}
+  ],
+  "gold":{"current_answer":"$12,000","historical_answer":"$12,000","current_authority_record_ids":["R1"],"stale_record_ids":[]},
+  "gold_logic":"Both records are current, but the hierarchy is explicit: R1 is Tier 1 and overrides conflicting Tier 2 local procedures. Therefore R1 alone controls despite R2 being later and stating a different amount."
+}
