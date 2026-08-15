@@ -1,11 +1,13 @@
 {
-  "slot_id":"ZH-15","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "slot_id":"ZH-15","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
   "construction_pass":{"result":"pass","notes":"Matches frozen current-non-authoritative/software-operations/4+/compound configuration-vs-dashboard/advisory slot.","issues_found":[]},
-  "adversarial_review_pass":{"result":"pass","notes":"R1 uniquely sets the exact retry limit. R2 and R3 are current and relevant but do not state an alternative value or claim configuration authority; R4 is independently authoritative for logging only. The case uses the preregistered dashboard/advisory structure without making the non-authoritative material contradict or impersonate the active configuration.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R1 uniquely sets the exact retry limit. R2/R3 are current relevant dashboard/advisory material without alternative numeric value or configuration authority; R4 is authoritative for logging only.","issues_found":[]},
   "schema_check":{"result":"pass","notes":"Canonical fields present; four-record target satisfied."},
-  "slot_match_check":{"result":"pass","notes":"Family, domain, 4+ records, compound difficulty, and frozen competing cue all match ZH-15."},
-  "gold_uniqueness_check":{"result":"pass","notes":"R1 alone controls retry count; R2/R3 cannot support an alternative exact value and R4 controls a different operational dimension."},
-  "pilot_overlap_check":{"result":"pass","notes":"The family and dashboard/advisory cue were frozen pre-execution. Candidate avoids post-observation escalation by keeping dashboard/advisory text non-contradictory, non-numeric, and explicitly non-configurational; only one additional authoritative different-scope record is included."},
-  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
-  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+  "slot_match_check":{"result":"pass","notes":"All frozen ZH-15 properties match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 alone controls retry count."},
+  "pilot_overlap_check":{"result":"pass","notes":"Frozen dashboard/advisory cue retained without post-observation escalation; descriptive material is non-contradictory and non-numeric."},
+  "leakage_check":{"result":"pass","notes":"All four conditions expose the same dashboard/advisory non-configurational facts; T/T/E/A adds no exclusive authority clue or answer metadata."},
+  "semantic_equivalence_check":{"result":"pass","notes":"Plain, Timestamp, Status, and T/T/E/A preserve identical four-record semantics and questions."},
+  "scorer_determinism_check":{"result":"pass","notes":"Existing deterministic scorer plus ZH-15 fixture distinguishes current non-authoritative over-selection from stale selection: R1+R2+R3 and R1+R4 fail exact-set only, while R3-only also triggers false-discard; none are mislabeled stale."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze gates passed without target-model execution."
 }
