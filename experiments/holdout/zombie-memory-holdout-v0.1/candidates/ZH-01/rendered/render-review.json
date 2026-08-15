@@ -1,0 +1,15 @@
+{
+  "slot_id":"ZH-01",
+  "candidate_version":1,
+  "target_model_execution_count":0,
+  "renderings":{
+    "plain":{"records":[{"id":"R1","text":"The Orion service timeout is 30 seconds. Effective 2026-01-01. Superseded on 2026-05-01 by R2. Sets the Orion timeout to 30 seconds while effective. Authoritative configuration rule for Orion until replaced."},{"id":"R2","text":"The Orion service timeout is 45 seconds. Effective 2026-05-01. Current. Replaces the prior Orion timeout rule and sets 45 seconds. Current authoritative configuration rule for Orion."}]},
+    "timestamp":{"records":[{"id":"R1","time":"Effective 2026-01-01.","text":"The Orion service timeout is 30 seconds. Superseded on 2026-05-01 by R2. Sets the Orion timeout to 30 seconds while effective. Authoritative configuration rule for Orion until replaced."},{"id":"R2","time":"Effective 2026-05-01.","text":"The Orion service timeout is 45 seconds. Current. Replaces the prior Orion timeout rule and sets 45 seconds. Current authoritative configuration rule for Orion."}]},
+    "status":{"records":[{"id":"R1","status":"Superseded on 2026-05-01 by R2.","text":"The Orion service timeout is 30 seconds. Effective 2026-01-01. Sets the Orion timeout to 30 seconds while effective. Authoritative configuration rule for Orion until replaced."},{"id":"R2","status":"Current.","text":"The Orion service timeout is 45 seconds. Effective 2026-05-01. Replaces the prior Orion timeout rule and sets 45 seconds. Current authoritative configuration rule for Orion."}]},
+    "ttea":{"records":[{"id":"R1","time":"Effective 2026-01-01.","status":"Superseded on 2026-05-01 by R2.","effect":"Sets the Orion timeout to 30 seconds while effective.","authority":"Authoritative configuration rule for Orion until replaced.","content":"The Orion service timeout is 30 seconds."},{"id":"R2","time":"Effective 2026-05-01.","status":"Current.","effect":"Replaces the prior Orion timeout rule and sets 45 seconds.","authority":"Current authoritative configuration rule for Orion.","content":"The Orion service timeout is 45 seconds."}]}
+  },
+  "question":"At 2026-06-15, what timeout value should the Orion service use?",
+  "historical_question":"At 2026-02-15, what timeout value should the Orion service have used?",
+  "semantic_equivalence_check":{"result":"pass","notes":"All four renderings contain the same two records and preserve identical content, time, lifecycle status, effect, authority, current question, and historical question. Only field grouping differs."},
+  "leakage_check":{"result":"pass","notes":"No gold answer, gold record-id set, scorer terminology, expected condition ranking, or extra hint was introduced. Authority/status wording is copied from canonical facts rather than inferred labels."}
+}
