@@ -1,0 +1,22 @@
+{
+  "slot_id": "ZH-02",
+  "candidate_version": 3,
+  "state": "draft",
+  "construction_pass": {"result":"pass","notes":"Preserves the frozen ZH-02 slot and implements the still-visible-old-notice cue using an obsolete physical artifact rather than a new current descriptive source.","issues_found":[]},
+  "adversarial_review_pass": {"result":"pass","notes":"No alternative controlling set found. The visible-notice cue is now represented as stale residue derived from R1, avoiding the prior current-relevant-noncontrolling record-role pattern. The case remains moderate because the model must distinguish visible artifact from current governing directive.","issues_found":[]},
+  "schema_check": {"result":"pass","notes":"Canonical fields present; 3-record slot satisfied."},
+  "slot_match_check": {"result":"pass","notes":"Family, facilities domain, 3-record target, moderate difficulty, and explicit replacement vs still-visible-old-notice cue all match the frozen matrix."},
+  "gold_uniqueness_check": {"result":"pass","notes":"R2 explicitly supersedes R1 and uniquely controls current night entry. R3 is explicitly derivative of R1 and has no independent authority."},
+  "pilot_overlap_check": {"result":"pass","notes":"Compared structurally against Pilot direct-supersession and descriptive-note cases. ZH-02 v3 keeps the preregistered supersession construct but its third record is a stale physical artifact derived from the old rule, not a current descriptive/marketing/FAQ source. This removes the post-Pilot over-selection motif that caused rejection of v1/v2."},
+  "leakage_check": {"result":"not_run","notes":"Rendered conditions not yet generated."},
+  "semantic_equivalence_check": {"result":"not_run","notes":"Rendered conditions not yet generated."},
+  "scorer_determinism_check": {"result":"not_run","notes":"Scorer not yet constructed for holdout."},
+  "repair_history": [
+    {"version":1,"action":"rejected","reason":"Current descriptive/non-authoritative distractor overlapped with a post-Pilot failure-relevant motif."},
+    {"version":2,"action":"rejected","reason":"Current logistics record still retained the same current-relevant-noncontrolling role pattern."},
+    {"version":3,"action":"reframed_competing_cue","reason":"Represent still-visible notice as stale physical residue derived from R1 rather than a new current information source."}
+  ],
+  "rejection_reason": null,
+  "accepted_reason": null,
+  "target_model_execution_count": 0
+}
