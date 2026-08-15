@@ -1,11 +1,13 @@
 {
-  "slot_id":"ZH-22","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "slot_id":"ZH-22","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
   "construction_pass":{"result":"pass","notes":"Matches frozen historical-superseded/software-configuration/3-record/moderate historical-cutoff-vs-later-supersession slot.","issues_found":[]},
-  "adversarial_review_pass":{"result":"pass","notes":"R1 uniquely controls the historical cutoff before R2 exists; R2 uniquely controls current pool size after supersession. R3 is newer and authoritative only for alert metadata, creating a legitimate recency cue without changing pool-size authority.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R1 uniquely controls the historical cutoff before R2 exists; R2 uniquely controls current pool size after supersession. R3 is newer and authoritative only for alert metadata.","issues_found":[]},
   "schema_check":{"result":"pass","notes":"Canonical fields present; three-record target satisfied."},
-  "slot_match_check":{"result":"pass","notes":"All frozen ZH-22 slot properties match."},
+  "slot_match_check":{"result":"pass","notes":"All frozen ZH-22 properties match."},
   "gold_uniqueness_check":{"result":"pass","notes":"R1 alone is historically correct at 2026-05-15; R2 alone controls current pool size; R3 cannot affect the numeric limit."},
-  "pilot_overlap_check":{"result":"pass","notes":"The family explicitly tests historical recovery across a cutoff. R3 is a different-scope authoritative rule rather than descriptive material, keeping the challenge focused on time-indexed authority rather than post-Pilot over-selection motifs."},
-  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
-  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+  "pilot_overlap_check":{"result":"pass","notes":"The challenge remains time-indexed authority recovery; R3 is different-scope authoritative material rather than descriptive pseudo-authority."},
+  "leakage_check":{"result":"pass","notes":"All four conditions expose the same supersession cutoff and R3 monitoring-only scope; no condition receives a unique historical-answer cue."},
+  "semantic_equivalence_check":{"result":"pass","notes":"All four renderings preserve identical dates, status, effects, authority scopes, and both query times."},
+  "scorer_determinism_check":{"result":"pass","notes":"Fixture separately detects current stale-rule reuse, historical supersession leakage, and current monitoring-rule over-selection. Historical correctness of R1 is preserved even though R1 is stale for current authority."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze gates passed without target-model execution."
 }
