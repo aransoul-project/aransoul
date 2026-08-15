@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-05","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen scoped-exception/workplace/2-record/simple slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R1 remains current generally and R2 is a narrower exception for the queried rotation. No supersession is implied and no alternative current controlling set exists.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; two-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"Family, domain, record count, difficulty, and competing cue match ZH-05."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R2 alone controls current queried rotation; R1 alone controls historical time before R2 became effective."},
+  "pilot_overlap_check":{"result":"pass","notes":"Tests scope specificity with both rules authoritative; does not reuse the Pilot current-descriptive-source motif or a direct replacement template."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+}
