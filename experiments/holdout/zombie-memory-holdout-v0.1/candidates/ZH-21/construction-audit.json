@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-21","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen historical-superseded/workplace-policy/2-record/simple current-replacement-vs-earlier-historical-rule slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"The case directly separates temporal correctness from present authority: R1 is stale now but uniquely correct at the historical cutoff; R2 controls now. No additional cue is needed for the simple slot.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; two-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"Family, workplace domain, record count, simple difficulty, and historical-vs-current cue match ZH-21."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R2 uniquely controls current allowance; R1 uniquely controls the historical cutoff before R2's effective date."},
+  "pilot_overlap_check":{"result":"pass","notes":"Although the lifecycle uses supersession, the preregistered family objective is explicit historical recovery: the gold requires retaining R1 as historically correct while excluding it from the current authority set."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+}
