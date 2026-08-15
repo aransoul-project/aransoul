@@ -1,11 +1,13 @@
 {
-  "slot_id":"ZH-16","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "slot_id":"ZH-16","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
   "construction_pass":{"result":"pass","notes":"Matches frozen current-non-authoritative/publishing/2-record/moderate policy-vs-guidance slot.","issues_found":[]},
-  "adversarial_review_pass":{"result":"pass","notes":"R1 uniquely sets the numeric abstract limit. R2 is current and relevant but provides only non-numeric editorial advice and expressly defers formal limits to policy. No alternative controlling set or numeric answer exists.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R1 uniquely sets the numeric abstract limit. R2 is current relevant guidance but non-numeric and expressly defers formal limits to policy.","issues_found":[]},
   "schema_check":{"result":"pass","notes":"Canonical fields present; two-record target satisfied."},
-  "slot_match_check":{"result":"pass","notes":"Family, publishing domain, 2 records, moderate difficulty, and policy-vs-guidance cue all match ZH-16."},
-  "gold_uniqueness_check":{"result":"pass","notes":"R1 alone controls and supplies 250 words at both query times; R2 cannot determine a formal limit."},
-  "pilot_overlap_check":{"result":"pass","notes":"The guidance-note family was frozen before execution. Candidate avoids turning guidance into a pseudo-policy or contradictory numeric statement, so it does not intensify the known over-selection failure mode after observation."},
-  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
-  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+  "slot_match_check":{"result":"pass","notes":"All frozen ZH-16 properties match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 alone controls and supplies 250 words at both query times."},
+  "pilot_overlap_check":{"result":"pass","notes":"Frozen guidance-note family retained without making guidance a contradictory pseudo-policy."},
+  "leakage_check":{"result":"pass","notes":"All four conditions preserve the same guidance deferral and non-controlling role; T/T/E/A adds no exclusive hint."},
+  "semantic_equivalence_check":{"result":"pass","notes":"All four renderings preserve identical canonical facts and questions."},
+  "scorer_determinism_check":{"result":"pass","notes":"Existing deterministic scorer plus ZH-16 fixture treats R1+R2 as exact-set over-selection without stale/false-discard and R2-only as false-discard without stale, matching current non-authoritative semantics."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze gates passed without target-model execution."
 }
