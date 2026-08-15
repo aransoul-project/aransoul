@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-23","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen historical-superseded/facilities-operations/4+/compound historical-recovery-plus-current-controlling-set slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R1 and R2 are the only records governing continuous runtime, with a clean supersession boundary between historical and current queries. R3/R4 are current authoritative facilities rules but govern inspection/logging, so the current controlling set remains uniquely R2 while historical authority recovery remains uniquely R1.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; four-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"Family, facilities-operations domain, 4+ records, compound difficulty, and historical-authority-recovery-plus-current-set cue match ZH-23."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls historical runtime; R2 uniquely controls current runtime; R3/R4 cannot determine runtime quantity."},
+  "pilot_overlap_check":{"result":"pass","notes":"Compound complexity comes from recovering historical authority while filtering multiple current authoritative different-scope records, not from stacking current descriptive pseudo-authorities."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+}
