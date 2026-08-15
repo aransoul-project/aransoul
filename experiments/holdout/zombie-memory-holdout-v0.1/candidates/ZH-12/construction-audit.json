@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-12","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen temporary-rule/product-operations/3-record/moderate historical-in-window-vs-current-post-expiry slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R2 is explicitly limited to September purchases and cannot control the November current query. R3 is later and current but governs documentation only. The historical query is intentionally inside R2's window and therefore has a different correct authority/value from the current query.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; three-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"All frozen ZH-12 slot properties match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls current duration; R2 uniquely controls the historical in-window duration; R3 cannot affect duration."},
+  "pilot_overlap_check":{"result":"pass","notes":"The primary challenge is time-bounded historical correctness followed by restoration, not permanent replacement or descriptive-source authority."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+}
