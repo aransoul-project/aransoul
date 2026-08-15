@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-13","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen current-non-authoritative/membership/2-record/simple policy-vs-FAQ slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"The FAQ is current and relevant as required by the frozen slot, but it neither supplies a competing exact value nor claims policy authority; it explicitly defers the exact allowance to the controlling policy. This tests authority discrimination without escalating the known Pilot weakness after observation.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; two-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"Family, membership domain, record count, simple difficulty, and policy-vs-current-FAQ cue all match ZH-13."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 alone supplies and controls the exact allowance at both query times; R2 cannot support an alternative numeric answer or controlling set."},
+  "pilot_overlap_check":{"result":"pass","notes":"The family itself was frozen before target-model execution. Candidate does not copy Pilot wording/domain/value and deliberately avoids turning the FAQ into a contradictory or exact-value pseudo-rule, which would intensify a post-observation failure mode."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+}
