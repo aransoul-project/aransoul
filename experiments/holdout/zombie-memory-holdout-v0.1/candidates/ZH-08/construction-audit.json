@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-08","candidate_version":1,"state":"draft","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen scoped-exception/education/3-record/moderate cohort-vs-institution slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R2 is explicitly limited to the 2026 Bridge Scholars cohort and therefore controls only the current queried cohort. R1 remains institution-wide and controls the historical 2025-cohort question. R3 governs submission method only. No plausible interpretation extends R2 to 2025 or globally replaces R1.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; three-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"Family, education-program domain, 3 records, moderate difficulty, and cohort-specific-vs-institution-wide cue match ZH-08."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R2 uniquely controls current 2026-cohort hours; R1 uniquely controls the historical 2025-cohort hours; R3 cannot affect quantity."},
+  "pilot_overlap_check":{"result":"pass","notes":"Tests cohort scope rather than stale descriptive authority. The newer third rule is independently authoritative for submission method and not an answer-summary record."},
+  "leakage_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"semantic_equivalence_check":{"result":"not_run","notes":"Rendered conditions not yet generated."},"scorer_determinism_check":{"result":"not_run","notes":"Pending rendering and scorer fixture."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":null
+}
