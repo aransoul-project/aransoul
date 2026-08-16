@@ -1,0 +1,166 @@
+{
+  "status": "semantic_aggregate_scoring_complete",
+  "measurement": "post-freeze semantic scoring amendment",
+  "grader": {
+    "frozen_commit": "52450aca7988ec0377ca889a6d0db4f7c03c77fa",
+    "sha256": "ae850a560c2072b658a0aaa5dff344e4ab8c321d542d70058a567aefcf60a108"
+  },
+  "inspection_level": "aggregate_only_no_individual_details",
+  "overall": {
+    "responses": 96,
+    "current": {
+      "equivalent": {
+        "count": 95,
+        "rate": 0.9895833333333334
+      },
+      "not_equivalent": {
+        "count": 1,
+        "rate": 0.010416666666666666
+      },
+      "indeterminate": {
+        "count": 0,
+        "rate": 0.0
+      }
+    },
+    "historical": {
+      "equivalent": {
+        "count": 95,
+        "rate": 0.9895833333333334
+      },
+      "not_equivalent": {
+        "count": 1,
+        "rate": 0.010416666666666666
+      },
+      "indeterminate": {
+        "count": 0,
+        "rate": 0.0
+      }
+    }
+  },
+  "by_condition": {
+    "plain": {
+      "responses": 24,
+      "current": {
+        "equivalent": {
+          "count": 23,
+          "rate": 0.9583333333333334
+        },
+        "not_equivalent": {
+          "count": 1,
+          "rate": 0.041666666666666664
+        },
+        "indeterminate": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "historical": {
+        "equivalent": {
+          "count": 23,
+          "rate": 0.9583333333333334
+        },
+        "not_equivalent": {
+          "count": 1,
+          "rate": 0.041666666666666664
+        },
+        "indeterminate": {
+          "count": 0,
+          "rate": 0.0
+        }
+      }
+    },
+    "timestamp": {
+      "responses": 24,
+      "current": {
+        "equivalent": {
+          "count": 24,
+          "rate": 1.0
+        },
+        "not_equivalent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "indeterminate": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "historical": {
+        "equivalent": {
+          "count": 24,
+          "rate": 1.0
+        },
+        "not_equivalent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "indeterminate": {
+          "count": 0,
+          "rate": 0.0
+        }
+      }
+    },
+    "status": {
+      "responses": 24,
+      "current": {
+        "equivalent": {
+          "count": 24,
+          "rate": 1.0
+        },
+        "not_equivalent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "indeterminate": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "historical": {
+        "equivalent": {
+          "count": 24,
+          "rate": 1.0
+        },
+        "not_equivalent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "indeterminate": {
+          "count": 0,
+          "rate": 0.0
+        }
+      }
+    },
+    "ttea": {
+      "responses": 24,
+      "current": {
+        "equivalent": {
+          "count": 24,
+          "rate": 1.0
+        },
+        "not_equivalent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "indeterminate": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "historical": {
+        "equivalent": {
+          "count": 24,
+          "rate": 1.0
+        },
+        "not_equivalent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "indeterminate": {
+          "count": 0,
+          "rate": 0.0
+        }
+      }
+    }
+  }
+}
