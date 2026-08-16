@@ -39,6 +39,58 @@ Historical artifacts are preserved when useful, but their existence does not aut
 
 See [STATUS.md](STATUS.md) for the current baseline, [GLOSSARY.md](GLOSSARY.md) for terminology, and [docs/history/repository-map.md](docs/history/repository-map.md) for the relationship between this repository and earlier AranSoul-related projects.
 
+## Empirical study: Zombie Memory Holdout v0.1
+
+AranSoul's first completed holdout study asks a narrower question than simple memory retrieval:
+
+> Can a model distinguish information that is remembered or relevant from information that currently has decision authority?
+
+The study used a fixed 24-case holdout, four presentation conditions, three blind live replications, and 288 substantive model responses under stable execution settings.
+
+### Confirmatory authority result
+
+Exact identification of the current authority set remained near 65% across all three replications:
+
+- Replication 1: 61/96 = 63.54%
+- Replication 2: 63/96 = 65.63%
+- Replication 3: 62/96 = 64.58%
+- Pooled: **186/288 = 64.58%**
+
+### Post-freeze semantic measurement amendment
+
+The original exact-string free-text metric was not suitable for semantic correctness because the prompt did not require canonical wording. A separately defined and frozen semantic grader was therefore added as a post-freeze measurement amendment.
+
+Under that amended semantic measure:
+
+- Current answer: **284/288 = 98.61%**
+- Historical answer: **283/288 = 98.26%**
+
+These semantic results are informative but are **not part of the original confirmatory scoring plan**.
+
+### Exploratory structural finding
+
+After all three replications were completed, individual authority errors were opened for exploratory analysis. All 102 authority-set failures were `over_selection`: the model retained the required authority record(s) but also selected extra records.
+
+A frozen 18-failure stratified sample found those extra records concentrated in supporting/context material and out-of-scope general rules.
+
+The resulting research framing is:
+
+> remembered ≠ relevant ≠ supportive ≠ currently authoritative
+
+This framing is benchmark-specific and exploratory. It should not be generalized to other models, providers, agent frameworks, or real-world systems without external replication.
+
+### Reading path
+
+For the study itself, start here:
+
+- [Research report](experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md) — paper-style overview and interpretation
+- [Findings](experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINDINGS.md) — evidence-layered results
+- [Final repository audit](experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINAL-AUDIT.md) — consistency and provenance audit
+- [Preregistration](experiments/holdout/zombie-memory-holdout-v0.1/PREREGISTRATION.md) — original holdout plan
+- [Zombie Memory benchmark design](docs/experiments/zombie-memory-benchmark-v0.1.md) — benchmark rationale and structure
+
+The repository preserves confirmatory results, post-freeze measurement amendments, and exploratory analyses as separate evidence layers.
+
 ## Core documentation
 
 ### Governance
@@ -59,6 +111,8 @@ See [STATUS.md](STATUS.md) for the current baseline, [GLOSSARY.md](GLOSSARY.md) 
 - [Pre-commit criteria](docs/experiments/precommit-criteria.md)
 - [Blind persona testing](docs/experiments/blind-persona-testing.md)
 - [Evidence ladder](docs/experiments/evidence-ladder.md)
+- [Zombie Memory benchmark v0.1](docs/experiments/zombie-memory-benchmark-v0.1.md)
+- [Zombie Memory Holdout v0.1 research report](experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md)
 
 ### Architecture / perspectives
 - [Perspective model](docs/architecture/perspective-model.md)
@@ -81,6 +135,7 @@ For a complete map, see [docs/README.md](docs/README.md).
 - `docs/experiments/` — experiments, tests, validation methods, evidence strength
 - `docs/architecture/` — perspective roles, activation, and non-authority boundaries
 - `docs/history/` — historical evolution, corrections, and repository map
+- `experiments/holdout/` — preregistered holdouts, result summaries, audits, and research reports
 - `STATUS.md` — current/candidate/historical/retired classification
 - `GLOSSARY.md` — terminology and bilingual mappings
 - `CONTRIBUTING.md` — contribution and status-discipline guidelines
