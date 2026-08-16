@@ -1,0 +1,20 @@
+[
+  {"id":"S01","question":"What is the maximum runtime?","gold":"8 hours","candidate":"eight hours","expected":"equivalent","reason_code":"numeric_equivalent"},
+  {"id":"S02","question":"What is the maximum runtime?","gold":"8 hours","candidate":"8h","expected":"equivalent","reason_code":"numeric_equivalent"},
+  {"id":"S03","question":"What is the maximum runtime?","gold":"8 hours","candidate":"10 hours","expected":"not_equivalent","reason_code":"factual_mismatch"},
+  {"id":"S04","question":"Which gate is used?","gold":"East Gate","candidate":"the east entrance gate","expected":"equivalent","reason_code":"entity_equivalent"},
+  {"id":"S05","question":"Which gate is used?","gold":"East Gate","candidate":"South Gate","expected":"not_equivalent","reason_code":"factual_mismatch"},
+  {"id":"S06","question":"Which approval chain applies?","gold":"Editor approval, then section-lead approval","candidate":"section lead first, then editor","expected":"not_equivalent","reason_code":"factual_mismatch"},
+  {"id":"S07","question":"Which approval chain applies?","gold":"Editor approval, then section-lead approval","candidate":"Editor signs off first; the section lead approves second.","expected":"equivalent","reason_code":"ordered_sequence_equivalent"},
+  {"id":"S08","question":"What is the Education-channel replacement window?","gold":"21 days","candidate":"The general policy is 14 days.","expected":"not_equivalent","reason_code":"scope_mismatch"},
+  {"id":"S09","question":"Historically, what was the cap?","gold":"10 hours","candidate":"The current cap is 8 hours.","expected":"not_equivalent","reason_code":"temporal_mismatch"},
+  {"id":"S10","question":"What is the limit?","gold":"18 students","candidate":"It appears to be 18 students.","expected":"equivalent","reason_code":"numeric_equivalent"},
+  {"id":"S11","question":"What is the limit?","gold":"18 students","candidate":"Either 18 or 24 students.","expected":"indeterminate","reason_code":"contradiction"},
+  {"id":"S12","question":"What is the limit?","gold":"18 students","candidate":"There is a limit, but the records conflict.","expected":"indeterminate","reason_code":"insufficient_specificity"},
+  {"id":"S13","question":"How many incidents are included?","gold":"8 incidents","candidate":"8 priority-support incidents per month","expected":"equivalent","reason_code":"numeric_equivalent"},
+  {"id":"S14","question":"How many incidents are included?","gold":"8 incidents","candidate":"Unlimited priority support","expected":"not_equivalent","reason_code":"factual_mismatch"},
+  {"id":"S15","question":"What is the current pool size?","gold":"120 connections","candidate":"120 concurrent connections","expected":"equivalent","reason_code":"numeric_equivalent"},
+  {"id":"S16","question":"What is the current pool size?","gold":"120 connections","candidate":"The pool was formerly 80 and is now 120 connections.","expected":"equivalent","reason_code":"numeric_equivalent"},
+  {"id":"S17","question":"What was the historical pool size?","gold":"80 connections","candidate":"It used to be 80 connections before later increasing.","expected":"equivalent","reason_code":"numeric_equivalent"},
+  {"id":"S18","question":"What was the historical pool size?","gold":"80 connections","candidate":"120 connections","expected":"not_equivalent","reason_code":"temporal_mismatch"}
+]
