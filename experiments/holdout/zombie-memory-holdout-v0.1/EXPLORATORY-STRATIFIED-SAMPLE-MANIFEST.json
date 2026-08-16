@@ -1,0 +1,110 @@
+[
+  {
+    "replication": "replication-1",
+    "case_id": "ZH-10",
+    "condition": "plain",
+    "frozen_family": "Temporary rule with expiry/restoration"
+  },
+  {
+    "replication": "replication-2",
+    "case_id": "ZH-10",
+    "condition": "status",
+    "frozen_family": "Temporary rule with expiry/restoration"
+  },
+  {
+    "replication": "replication-3",
+    "case_id": "ZH-10",
+    "condition": "timestamp",
+    "frozen_family": "Temporary rule with expiry/restoration"
+  },
+  {
+    "replication": "replication-1",
+    "case_id": "ZH-10",
+    "condition": "ttea",
+    "frozen_family": "Temporary rule with expiry/restoration"
+  },
+  {
+    "replication": "replication-1",
+    "case_id": "ZH-11",
+    "condition": "plain",
+    "frozen_family": "Temporary rule with expiry/restoration"
+  },
+  {
+    "replication": "replication-1",
+    "case_id": "ZH-11",
+    "condition": "status",
+    "frozen_family": "Temporary rule with expiry/restoration"
+  },
+  {
+    "replication": "replication-1",
+    "case_id": "ZH-05",
+    "condition": "plain",
+    "frozen_family": "Scoped exception vs general rule"
+  },
+  {
+    "replication": "replication-2",
+    "case_id": "ZH-06",
+    "condition": "plain",
+    "frozen_family": "Scoped exception vs general rule"
+  },
+  {
+    "replication": "replication-3",
+    "case_id": "ZH-05",
+    "condition": "timestamp",
+    "frozen_family": "Scoped exception vs general rule"
+  },
+  {
+    "replication": "replication-1",
+    "case_id": "ZH-05",
+    "condition": "ttea",
+    "frozen_family": "Scoped exception vs general rule"
+  },
+  {
+    "replication": "replication-1",
+    "case_id": "ZH-06",
+    "condition": "status",
+    "frozen_family": "Scoped exception vs general rule"
+  },
+  {
+    "replication": "replication-1",
+    "case_id": "ZH-06",
+    "condition": "timestamp",
+    "frozen_family": "Scoped exception vs general rule"
+  },
+  {
+    "replication": "replication-1",
+    "case_id": "ZH-03",
+    "condition": "ttea",
+    "frozen_family": "Supersession / replacement"
+  },
+  {
+    "replication": "replication-2",
+    "case_id": "ZH-06",
+    "condition": "ttea",
+    "frozen_family": "Scoped exception vs general rule"
+  },
+  {
+    "replication": "replication-3",
+    "case_id": "ZH-07",
+    "condition": "ttea",
+    "frozen_family": "Scoped exception vs general rule"
+  },
+  {
+    "replication": "replication-1",
+    "case_id": "ZH-04",
+    "condition": "ttea",
+    "frozen_family": "Supersession / replacement"
+  },
+  {
+    "replication": "replication-2",
+    "case_id": "ZH-08",
+    "condition": "ttea",
+    "frozen_family": "Scoped exception vs general rule"
+  },
+  {
+    "replication": "replication-1",
+    "case_id": "ZH-11",
+    "condition": "ttea",
+    "frozen_family": "Temporary rule with expiry/restoration"
+  }
+]
