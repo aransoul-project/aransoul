@@ -22,7 +22,14 @@
   "individual_retry_allowed":false,
   "technical_invalid_scope":"entire_replication",
   "replacement_replication":"stop_and_review_before_authorization",
-  "prompt_files":{"plain":null,"timestamp":null,"status":null,"ttea":null},
+  "prompt_generator":"experiments/holdout/zombie-memory-holdout-v0.1/prompt_generator.py",
+  "prompt_files":{
+    "plain":"experiments/holdout/zombie-memory-holdout-v0.1/generated/plain.json",
+    "timestamp":"experiments/holdout/zombie-memory-holdout-v0.1/generated/timestamp.json",
+    "status":"experiments/holdout/zombie-memory-holdout-v0.1/generated/status.json",
+    "ttea":"experiments/holdout/zombie-memory-holdout-v0.1/generated/ttea.json"
+  },
+  "prompt_hash_manifest":"experiments/holdout/zombie-memory-holdout-v0.1/generated/prompt-hashes.json",
   "prompt_sha256":{"plain":null,"timestamp":null,"status":null,"ttea":null},
   "execution_authorized":false
 }
