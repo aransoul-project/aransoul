@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 CANDIDATES = ROOT / "candidates"
+FREEZE_MANIFEST = ROOT / "FREEZE-MANIFEST.json"
 CONDITIONS = ["plain", "timestamp", "status", "ttea"]
 CASE_IDS = [f"ZH-{i:02d}" for i in range(1, 25)]
 
@@ -19,6 +20,26 @@ def norm_answer(value):
 
 def norm_ids(values):
     return sorted(str(v).strip() for v in (values or []))
+
+
+def accepted_versions():
+    manifest = load_json(FREEZE_MANIFEST)
+    versions = manifest.get("accepted_versions", {})
+    expected = set(CASE_IDS)
+    if set(versions) != expected:
+        raise ValueError("FREEZE-MANIFEST accepted_versions does not cover exactly ZH-01..ZH-24")
+    return versions
+
+
+def accepted_artifact_path(cid, filename):
+    version = int(accepted_versions()[cid])
+    if version == 1:
+        path = CANDIDATES / cid / filename
+    else:
+        path = CANDIDATES / cid / "versions" / f"v{version}" / filename
+    if not path.exists():
+        raise SystemExit(f"missing accepted v{version} artifact for {cid}: {path}")
+    return path
 
 
 def score_one(gold, row):
@@ -38,10 +59,7 @@ def score_one(gold, row):
 
 def fixture_paths():
     for cid in CASE_IDS:
-        path = CANDIDATES / cid / "scorer-fixture.json"
-        if not path.exists():
-            raise SystemExit(f"missing fixture: {path}")
-        yield cid, path
+        yield cid, accepted_artifact_path(cid, "scorer-fixture.json")
 
 
 def self_test():
@@ -75,7 +93,7 @@ def load_gold():
     result = {}
     families = {}
     for cid in CASE_IDS:
-        candidate = load_json(CANDIDATES / cid / "candidate.json")
+        candidate = load_json(accepted_artifact_path(cid, "candidate.json"))
         result[cid] = candidate["gold"]
         families[cid] = candidate["family"]
     return result, families
