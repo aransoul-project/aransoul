@@ -32,6 +32,20 @@ The repository deliberately separates **current governance**, **evaluation metho
 - [Blind persona testing](experiments/blind-persona-testing.md)
 - [Evidence ladder](experiments/evidence-ladder.md)
 
+### Zombie Memory Holdout v0.1
+
+The completed Zombie Memory Holdout v0.1 studies whether a model can distinguish remembered or relevant records from the records that are currently authoritative.
+
+Start with:
+
+- [Research report](../experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md)
+- [Findings and evidence layers](../experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINDINGS.md)
+- [Final audit](../experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINAL-AUDIT.md)
+- [Execution preregistration](../experiments/holdout/zombie-memory-holdout-v0.1/EXECUTION-PREREGISTRATION.md)
+- [Benchmark design](../experiments/holdout/zombie-memory-holdout-v0.1/BENCHMARK-DESIGN.md)
+
+The study contains three within-protocol replications (288 live responses total). Treat the confirmatory, post-freeze measurement-amendment, and exploratory evidence layers separately; the replications are not independent external validation.
+
 The older `pre-registered-criteria.md` file is retained as provenance for the same methodological lineage and is not the canonical editing target.
 
 ## Architecture / Perspectives
