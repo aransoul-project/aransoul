@@ -30,6 +30,11 @@
     "ttea":"experiments/holdout/zombie-memory-holdout-v0.1/generated/ttea.json"
   },
   "prompt_hash_manifest":"experiments/holdout/zombie-memory-holdout-v0.1/generated/prompt-hashes.json",
-  "prompt_sha256":{"plain":null,"timestamp":null,"status":null,"ttea":null},
+  "prompt_sha256":{
+    "plain":"f3851670b76982663b74aa32d86f8826fe6d4d13d5416d9fb0a7db248d9d7dca",
+    "timestamp":"b5c845229d3444c368398b97c317b055bd5f37da0ec3d83b8e6ce1f479c0bb09",
+    "status":"8622a5cb4b008bc0e2b298c8ee4b67a30bee5ca7794cc3f4d6ce626f9171054c",
+    "ttea":"127a08c37ab3e6d43aee7cf4c792a949a6fd720e6872842ac0f02ea767bd11b8"
+  },
   "execution_authorized":false
 }
