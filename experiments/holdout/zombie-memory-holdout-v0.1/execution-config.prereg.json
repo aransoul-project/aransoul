@@ -1,6 +1,6 @@
 {
   "experiment_id":"zombie-memory-holdout-v0.1-blind",
-  "status":"preregistered-not-authorized",
+  "status":"replication-1-live-authorized",
   "construction_source_branch":"zombie-memory-holdout-v0.1-frozen",
   "construction_payload_commit":"b33adb63a71ae34b90429d556a82eeee920b6b65",
   "provider":"openai",
@@ -36,5 +36,6 @@
     "status":"8622a5cb4b008bc0e2b298c8ee4b67a30bee5ca7794cc3f4d6ce626f9171054c",
     "ttea":"127a08c37ab3e6d43aee7cf4c792a949a6fd720e6872842ac0f02ea767bd11b8"
   },
-  "execution_authorized":false
+  "execution_authorized":true,
+  "authorized_replication":"replication-1"
 }
