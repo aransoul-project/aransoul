@@ -68,7 +68,9 @@ def test_parsed_validation_enforces_uniqueness_in_application_code():
         raise AssertionError("duplicate authority IDs should fail application validation")
 
 
-def test_live_execution_starts_disabled():
+def test_live_execution_stays_disabled_until_explicit_authorization():
     config = runner.load_json(runner.CONFIG_PATH)
     assert config["execution_authorized"] is False
-    assert all(config["prompt_sha256"][c] is None for c in config["conditions"])
+    assert config["status"] in {"preregistered-not-authorized", "execution-ready-frozen-not-authorized"}
+    assert set(config["prompt_files"]) == set(config["conditions"])
+    assert set(config["prompt_sha256"]) == set(config["conditions"])
