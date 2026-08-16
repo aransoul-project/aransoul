@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "zombie-memory-holdout-v0.1-blind",
+  "replication": "replication-1",
+  "mode": "dry-run",
+  "api_called": false,
+  "run_id": "execution-ready-validation",
+  "status": "dry_run_validated",
+  "run_started_at": "2026-08-16T14:05:20.073372Z",
+  "run_completed_at": "2026-08-16T14:05:20.143837Z",
+  "repository_commit": "8e80ce226ac3e6a1c9237d77b6183bad81e5b984",
+  "construction_payload_commit": "b33adb63a71ae34b90429d556a82eeee920b6b65",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "temperature": 0,
+  "top_p": 1,
+  "max_output_tokens": 256,
+  "retry_count": 0,
+  "request_count_expected": 96,
+  "request_count_recorded": 96,
+  "parsed_count": 96,
+  "parse_failure_count": 0,
+  "request_failure_count": 0,
+  "prompt_sha256": {
+    "plain": "f3851670b76982663b74aa32d86f8826fe6d4d13d5416d9fb0a7db248d9d7dca",
+    "timestamp": "b5c845229d3444c368398b97c317b055bd5f37da0ec3d83b8e6ce1f479c0bb09",
+    "status": "8622a5cb4b008bc0e2b298c8ee4b67a30bee5ca7794cc3f4d6ce626f9171054c",
+    "ttea": "127a08c37ab3e6d43aee7cf4c792a949a6fd720e6872842ac0f02ea767bd11b8"
+  },
+  "raw_data_integrity_approved": false,
+  "scoring_started": false
+}
