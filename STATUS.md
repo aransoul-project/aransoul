@@ -35,6 +35,14 @@ Most AranSoul evidence to date comes from **internal longitudinal use, self-audi
 
 This evidence can support claims about internal consistency, operational usefulness within the studied setting, recurring behavioral patterns, and the project's ability to identify and revise some of its own assumptions. It should not be presented as independent external validation.
 
+### Completed internal behavioral study — Zombie Memory Holdout v0.1
+
+A post-v0.1 study, **Zombie Memory Holdout v0.1**, completed three preregistered within-protocol live replications using the same frozen model snapshot, benchmark, prompts, and execution settings: **288 responses total**.
+
+The confirmatory authority exact-set result pooled across the three replications was **186/288 = 64.58%**. A post-freeze semantic measurement amendment reported **284/288 = 98.61%** for current-answer semantic accuracy and **283/288 = 98.26%** for historical-answer semantic accuracy. Subsequent individual-level error taxonomy and stratified case inspection were explicitly exploratory rather than confirmatory.
+
+These replications establish **within-protocol stability in this studied setting**. They do **not** constitute independent external replication: the model family/snapshot, benchmark construction, project context, and evaluation lineage were not independently separated. See `experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md` and its associated findings/audit artifacts for evidence-layer boundaries.
+
 **Self-correction is not independent validation.** A system may successfully detect or revise some of its own errors while still sharing the same context, evaluator assumptions, selection effects, or conceptual framework that produced the original claim.
 
 Independent replication remains a major open requirement. Stronger evidence should increasingly involve evaluator separation, unfamiliar contexts, different models or environments, externally proposed counterexamples, and reproducible protocols that allow null or negative results.
