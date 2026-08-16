@@ -1,0 +1,20 @@
+{
+  "artifact": "Zombie Memory Holdout v0.1 semantic grader",
+  "status": "semantic-grader-frozen",
+  "grader_version": "v0.1",
+  "source_commit": "52450aca7988ec0377ca889a6d0db4f7c03c77fa",
+  "validation": {
+    "synthetic_cases": 18,
+    "passed": 18,
+    "failed": 0,
+    "replication_1_answers_inspected_before_freeze": false,
+    "live_api_calls": 0
+  },
+  "locked_files": {
+    "semantic_grader.py": "a3ff907f027b8fc1de13437b8a18e7749cb6e55e",
+    "semantic-scoring-synthetic-v0.1.json": "bd0f0c0b1e6f0083a623024052c3992ddfa184d4",
+    "SEMANTIC-GRADER-VALIDATION.md": "8e07bd4b4b5105f7518b08e1964ae425dcd6f043"
+  },
+  "allowed_labels": ["equivalent", "not_equivalent", "indeterminate"],
+  "interpretation_boundary": "This grader was frozen before it was run against replication-1 model answers. Any later semantic score is a post-freeze measurement amendment and must preserve the original exact-string outputs as historical artifacts."
+}
