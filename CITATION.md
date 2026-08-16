@@ -22,6 +22,20 @@ Release page: <https://github.com/aransoul-project/aransoul/releases/tag/v0.1>
 
 For technical or research discussion, prefer citing the specific document that supports the claim—for example the governance core flow, memory lifecycle, metacognition framework, experiment protocol, or historical case study—rather than citing the repository generally.
 
+## Citing Zombie Memory Holdout v0.1
+
+**Zombie Memory Holdout v0.1 is a post-v0.1 research study.** It is not part of the fixed `v0.1` documentation-release contents merely because its study name also uses `v0.1`.
+
+When citing results from this study:
+
+- cite the exact post-release commit consulted rather than only the repository `v0.1` tag;
+- prefer the study's `experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md` for the research narrative;
+- use `HOLDOUT-V0.1-FINDINGS.md`, `HOLDOUT-V0.1-FINAL-AUDIT.md`, preregistration/freeze artifacts, and run/scoring artifacts when the claim requires the underlying evidence chain;
+- preserve the study's evidence-layer distinctions: preregistered confirmatory results, post-freeze measurement amendment, and exploratory analyses should not be cited as though they had the same evidentiary status;
+- describe the three completed live replications as **within-protocol replications**, not independent external replication.
+
+For reproducibility, a citation to a numerical result should identify enough provenance to recover the exact report/artifact state, normally including the repository, document path, exact commit SHA, and access date where required.
+
 ## Version-sensitive citation
 
 The `main` branch continues to evolve after v0.1. Claims about the v0.1 baseline should therefore cite the `v0.1` tag or its fixed release commit rather than the current `main` branch.
