@@ -26,6 +26,6 @@
     "status": "8622a5cb4b008bc0e2b298c8ee4b67a30bee5ca7794cc3f4d6ce626f9171054c",
     "ttea": "127a08c37ab3e6d43aee7cf4c792a949a6fd720e6872842ac0f02ea767bd11b8"
   },
-  "raw_data_integrity_approved": false,
+  "raw_data_integrity_approved": true,
   "scoring_started": false
 }
