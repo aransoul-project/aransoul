@@ -1,0 +1,13 @@
+{
+  "slot_id":"ZH-19","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen explicit-authority-hierarchy/education-administration/4+/compound hierarchy-plus-scoped-applicability slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"The queried advanced Engineering laboratory falls under both R1 and broader R2, requiring scope matching plus the explicit Level 1-over-Level 2 hierarchy. R3 is seminar-only and R4 documentation-only.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; four-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"All frozen ZH-19 properties match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls the laboratory cap after applying both scope and hierarchy."},
+  "pilot_overlap_check":{"result":"pass","notes":"Tests two-step scope-plus-hierarchy reasoning without descriptive pseudo-authority escalation."},
+  "leakage_check":{"result":"pass","notes":"All four conditions expose the same Level 1/Level 2 precedence, laboratory/seminar scope distinctions, and documentation-only role of R4; T/T/E/A adds no exclusive clue."},
+  "semantic_equivalence_check":{"result":"pass","notes":"Plain, Timestamp, Status, and T/T/E/A preserve identical four-record semantics and questions."},
+  "scorer_determinism_check":{"result":"pass","notes":"Existing deterministic scorer plus ZH-19 fixture treats R2-only as wrong-current/wrong-authority plus false-discard without stale, while R1+R2 and R1+R3+R4 are exact-set over-selection without stale or false-discard."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze gates passed without target-model execution."
+}

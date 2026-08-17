@@ -1,0 +1,546 @@
+{
+  "analysis_title": "EXPLORATORY — NOT PREREGISTERED CONFIRMATORY ANALYSIS",
+  "analysis_status": "exploratory",
+  "taxonomy_method": "set-difference structural taxonomy",
+  "semantic_causal_interpretation_performed": false,
+  "overall": {
+    "total_responses": 288,
+    "total_exact_matches": 186,
+    "exact_match_rate": 0.6458333333333334,
+    "total_failures": 102,
+    "failure_rate": 0.3541666666666667,
+    "error_taxonomy": {
+      "under_selection": {
+        "count": 0,
+        "rate_of_failures": 0.0,
+        "rate_of_total": 0.0
+      },
+      "over_selection": {
+        "count": 102,
+        "rate_of_failures": 1.0,
+        "rate_of_total": 0.3541666666666667
+      },
+      "mixed_selection": {
+        "count": 0,
+        "rate_of_failures": 0.0,
+        "rate_of_total": 0.0
+      },
+      "empty_prediction": {
+        "count": 0,
+        "rate_of_failures": 0.0,
+        "rate_of_total": 0.0
+      },
+      "other": {
+        "count": 0,
+        "rate_of_failures": 0.0,
+        "rate_of_total": 0.0
+      }
+    }
+  },
+  "taxonomy_by_condition": {
+    "plain": {
+      "total_responses": 72,
+      "total_exact_matches": 49,
+      "exact_match_rate": 0.6805555555555556,
+      "total_failures": 23,
+      "failure_rate": 0.3194444444444444,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 23,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.3194444444444444
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    },
+    "timestamp": {
+      "total_responses": 72,
+      "total_exact_matches": 47,
+      "exact_match_rate": 0.6527777777777778,
+      "total_failures": 25,
+      "failure_rate": 0.3472222222222222,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 25,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.3472222222222222
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    },
+    "status": {
+      "total_responses": 72,
+      "total_exact_matches": 50,
+      "exact_match_rate": 0.6944444444444444,
+      "total_failures": 22,
+      "failure_rate": 0.3055555555555556,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 22,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.3055555555555556
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    },
+    "ttea": {
+      "total_responses": 72,
+      "total_exact_matches": 40,
+      "exact_match_rate": 0.5555555555555556,
+      "total_failures": 32,
+      "failure_rate": 0.4444444444444444,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 32,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.4444444444444444
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    }
+  },
+  "taxonomy_by_replication": {
+    "replication-1": {
+      "total_responses": 96,
+      "total_exact_matches": 61,
+      "exact_match_rate": 0.6354166666666666,
+      "total_failures": 35,
+      "failure_rate": 0.3645833333333333,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 35,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.3645833333333333
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    },
+    "replication-2": {
+      "total_responses": 96,
+      "total_exact_matches": 63,
+      "exact_match_rate": 0.65625,
+      "total_failures": 33,
+      "failure_rate": 0.34375,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 33,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.34375
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    },
+    "replication-3": {
+      "total_responses": 96,
+      "total_exact_matches": 62,
+      "exact_match_rate": 0.6458333333333334,
+      "total_failures": 34,
+      "failure_rate": 0.3541666666666667,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 34,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.3541666666666667
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    }
+  },
+  "taxonomy_by_family": {
+    "Current but non-authoritative material": {
+      "total_responses": 48,
+      "total_exact_matches": 34,
+      "exact_match_rate": 0.7083333333333334,
+      "total_failures": 14,
+      "failure_rate": 0.2916666666666667,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 14,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.2916666666666667
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    },
+    "Explicit authority hierarchy": {
+      "total_responses": 48,
+      "total_exact_matches": 45,
+      "exact_match_rate": 0.9375,
+      "total_failures": 3,
+      "failure_rate": 0.0625,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 3,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.0625
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    },
+    "Historical superseded-but-correct answer": {
+      "total_responses": 48,
+      "total_exact_matches": 33,
+      "exact_match_rate": 0.6875,
+      "total_failures": 15,
+      "failure_rate": 0.3125,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 15,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.3125
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    },
+    "Scoped exception vs general rule": {
+      "total_responses": 48,
+      "total_exact_matches": 19,
+      "exact_match_rate": 0.3958333333333333,
+      "total_failures": 29,
+      "failure_rate": 0.6041666666666666,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 29,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.6041666666666666
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    },
+    "Supersession / replacement": {
+      "total_responses": 48,
+      "total_exact_matches": 40,
+      "exact_match_rate": 0.8333333333333334,
+      "total_failures": 8,
+      "failure_rate": 0.16666666666666666,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 8,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.16666666666666666
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    },
+    "Temporary rule with expiry/restoration": {
+      "total_responses": 48,
+      "total_exact_matches": 15,
+      "exact_match_rate": 0.3125,
+      "total_failures": 33,
+      "failure_rate": 0.6875,
+      "error_taxonomy": {
+        "under_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "over_selection": {
+          "count": 33,
+          "rate_of_failures": 1.0,
+          "rate_of_total": 0.6875
+        },
+        "mixed_selection": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "empty_prediction": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        },
+        "other": {
+          "count": 0,
+          "rate_of_failures": 0.0,
+          "rate_of_total": 0.0
+        }
+      }
+    }
+  },
+  "exact_match_by_condition": {
+    "plain": {
+      "count": 49,
+      "rate": 0.6805555555555556
+    },
+    "timestamp": {
+      "count": 47,
+      "rate": 0.6527777777777778
+    },
+    "status": {
+      "count": 50,
+      "rate": 0.6944444444444444
+    },
+    "ttea": {
+      "count": 40,
+      "rate": 0.5555555555555556
+    }
+  },
+  "exact_match_by_replication": {
+    "replication-1": {
+      "count": 61,
+      "rate": 0.6354166666666666
+    },
+    "replication-2": {
+      "count": 63,
+      "rate": 0.65625
+    },
+    "replication-3": {
+      "count": 62,
+      "rate": 0.6458333333333334
+    }
+  },
+  "exact_match_by_family": {
+    "Current but non-authoritative material": {
+      "count": 34,
+      "rate": 0.7083333333333334
+    },
+    "Explicit authority hierarchy": {
+      "count": 45,
+      "rate": 0.9375
+    },
+    "Historical superseded-but-correct answer": {
+      "count": 33,
+      "rate": 0.6875
+    },
+    "Scoped exception vs general rule": {
+      "count": 19,
+      "rate": 0.3958333333333333
+    },
+    "Supersession / replacement": {
+      "count": 40,
+      "rate": 0.8333333333333334
+    },
+    "Temporary rule with expiry/restoration": {
+      "count": 15,
+      "rate": 0.3125
+    }
+  }
+}

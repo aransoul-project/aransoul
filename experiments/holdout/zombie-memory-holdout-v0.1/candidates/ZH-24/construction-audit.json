@@ -1,0 +1,13 @@
+{
+  "slot_id":"ZH-24","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen historical-superseded/product-operations/3-record/moderate historical-answer-vs-current-scoped-rule slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R1 correctly governs the Education-channel historical query before R2 exists, while R2 is the narrower current Education-channel rule. R1 remains current generally, so historical recovery is separated from staleness. R3 is current documentation-only authority and cannot affect duration.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; three-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"All five frozen ZH-24 slot properties match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls the historical 14-day window; R2 uniquely controls the current Education-channel 21-day window; R3 is different-scope."},
+  "pilot_overlap_check":{"result":"pass","notes":"The case tests preregistered historical-vs-current-scoped reasoning. The newer third record is authoritative for documentation, not descriptive pseudo-authority."},
+  "leakage_check":{"result":"pass","notes":"All four rendered conditions preserve that R1 remains a current general rule, R2 is the narrower Education-channel rule, and R3 is documentation-only; no condition-exclusive scope or stale hint is added."},
+  "semantic_equivalence_check":{"result":"pass","notes":"Plain, Timestamp, Status, and T/T/E/A preserve identical scope, lifecycle, authority, and both query times; only field grouping differs."},
+  "scorer_determinism_check":{"result":"pass","notes":"Existing deterministic scorer plus ZH-24 fixture correctly treats R1 as historically correct yet non-stale/current-general, penalizes using it alone for the current scoped query via false-discard, and does not conflate noncontrolling scope with staleness."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze gates passed without target-model execution."
+}

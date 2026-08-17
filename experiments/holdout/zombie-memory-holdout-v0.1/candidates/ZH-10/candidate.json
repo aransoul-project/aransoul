@@ -1,0 +1,12 @@
+{
+  "slot_id":"ZH-10","candidate_version":1,"family":"Temporary rule with expiry/restoration","surface_domain":"software release policy","difficulty":"moderate","primary_competing_cue":"bounded temporary override vs later current time",
+  "question":"At 2026-10-01, how many approvers are required to promote a standard release to production?","query_time":"2026-10-01",
+  "historical_question":"At 2026-08-15, how many approvers were required to promote a standard release to production?","historical_query_time":"2026-08-15",
+  "records":[
+    {"id":"R1","content":"A standard production release requires approval from 2 release managers.","time":"Effective 2026-01-01.","status":"Current baseline release rule except during an active temporary override.","effect":"Sets the normal production-promotion requirement at 2 approvers.","authority":"Baseline software release policy."},
+    {"id":"R2","content":"For the migration window from 2026-08-01 through 2026-08-31, a standard production release requires approval from 3 release managers; the ordinary approval rule resumes when the migration window closes.","time":"Effective only 2026-08-01 through 2026-08-31.","status":"Expired temporary migration override.","effect":"Raises the requirement to 3 approvers only during August and then expires automatically.","authority":"Temporary release-policy override within the migration window."},
+    {"id":"R3","content":"Beginning 2026-09-15, every production release must include a deployment-ticket identifier in the release log.","time":"Effective 2026-09-15.","status":"Current release-documentation rule.","effect":"Adds a logging requirement but does not set the number of release approvers.","authority":"Authoritative release policy for deployment-ticket documentation only."}
+  ],
+  "gold":{"current_answer":"2 approvers","historical_answer":"3 approvers","current_authority_record_ids":["R1"],"stale_record_ids":["R2"]},
+  "gold_logic":"The current query is after R2's bounded migration window, so baseline R1 has resumed. R3 is newer and current but controls documentation rather than approval count. The historical query falls inside R2's active window."
+}

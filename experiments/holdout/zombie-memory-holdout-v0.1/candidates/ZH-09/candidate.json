@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-09","candidate_version":1,"family":"Temporary rule with expiry/restoration","surface_domain":"service operations","difficulty":"simple","primary_competing_cue":"temporary rule vs restored baseline after expiry",
+  "question":"At 2026-09-01, what is the standard callback window for Priority B support tickets?","query_time":"2026-09-01",
+  "historical_question":"At 2026-07-15, what callback window applied to Priority B support tickets?","historical_query_time":"2026-07-15",
+  "records":[
+    {"id":"R1","content":"Priority B support tickets have a standard callback window of 4 hours.","time":"Effective 2026-01-01.","status":"Current baseline rule except while a bounded temporary override is active.","effect":"Sets the normal callback window to 4 hours and resumes automatically when any temporary override ends.","authority":"Baseline service-operations rule."},
+    {"id":"R2","content":"From 2026-07-01 through 2026-07-31, Priority B support tickets use a temporary callback window of 6 hours; after 2026-07-31 the baseline callback rule resumes.","time":"Effective only 2026-07-01 through 2026-07-31.","status":"Expired temporary override.","effect":"Temporarily changes the callback window to 6 hours during July, then ceases without replacing R1.","authority":"Temporary service-operations override only within its stated window."}
+  ],
+  "gold":{"current_answer":"4 hours","historical_answer":"6 hours","current_authority_record_ids":["R1"],"stale_record_ids":["R2"]},
+  "gold_logic":"R2 controls only inside its explicit July window. By the current query date it has expired and R1 has resumed without needing a new reinstatement record. The historical query falls inside R2's active window."
+}

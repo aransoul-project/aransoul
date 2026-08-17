@@ -1,0 +1,44 @@
+{
+  "slot_id": "ZH-02",
+  "family": "Supersession / replacement",
+  "surface_domain": "facilities access",
+  "difficulty": "moderate",
+  "primary_competing_cue": "explicit replacement vs still-visible old notice",
+  "question": "At 2026-08-10, which entrance must night-shift staff use after 22:00?",
+  "query_time": "2026-08-10",
+  "historical_question": "At 2026-03-10, which entrance did night-shift staff have to use after 22:00?",
+  "historical_query_time": "2026-03-10",
+  "records": [
+    {
+      "id": "R1",
+      "content": "After 22:00, night-shift staff must use the South Gate.",
+      "time": "Effective 2026-01-15.",
+      "status": "Superseded on 2026-07-01 by R2.",
+      "effect": "Sets South Gate as the required night entrance while effective.",
+      "authority": "Facilities access directive until replaced."
+    },
+    {
+      "id": "R2",
+      "content": "After 22:00, night-shift staff must use the East Gate; this directive replaces the South Gate requirement.",
+      "time": "Effective 2026-07-01.",
+      "status": "Current.",
+      "effect": "Replaces the prior night entrance rule and sets East Gate as required.",
+      "authority": "Current facilities access directive for night entry."
+    },
+    {
+      "id": "R3",
+      "content": "Lobby placard text: 'Night-shift staff: use South Gate after 22:00.'",
+      "time": "Placard installed 2026-01-15 under R1.",
+      "status": "Obsolete physical artifact still visible as of 2026-08-10; its underlying instruction was superseded on 2026-07-01.",
+      "effect": "Displays the former rule only; it does not create a separate policy or extend the former rule after supersession.",
+      "authority": "No independent authority; physical display artifact derived from R1."
+    }
+  ],
+  "gold": {
+    "current_answer": "East Gate",
+    "historical_answer": "South Gate",
+    "current_authority_record_ids": ["R2"],
+    "stale_record_ids": ["R1", "R3"]
+  },
+  "gold_logic": "R2 explicitly replaces R1 on 2026-07-01 and uniquely controls the 2026-08-10 night-entry requirement. R3 is not a new current information source; it is an obsolete physical artifact derived from R1 and remains visible only as stale residue. On 2026-03-10, R1 controlled and required South Gate."
+}

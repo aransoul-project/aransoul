@@ -1,0 +1,13 @@
+{
+  "slot_id":"ZH-21","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen historical-superseded/workplace-policy/2-record/simple current-replacement-vs-earlier-historical-rule slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"The case directly separates temporal correctness from present authority: R1 is stale now but uniquely correct at the historical cutoff; R2 controls now.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; two-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"All frozen ZH-21 properties match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R2 uniquely controls current allowance; R1 uniquely controls the historical cutoff before R2's effective date."},
+  "pilot_overlap_check":{"result":"pass","notes":"The preregistered family objective is explicit historical recovery rather than merely current supersession."},
+  "leakage_check":{"result":"pass","notes":"All four renderings expose the same fact that R1 was authoritative while effective and later superseded; no condition gets an exclusive historical-correctness hint."},
+  "semantic_equivalence_check":{"result":"pass","notes":"Plain, Timestamp, Status, and T/T/E/A preserve identical lifecycle facts and both query times."},
+  "scorer_determinism_check":{"result":"pass","notes":"Fixture confirms a record can be stale for current authority while still producing a correct historical answer: choosing R1 as current authority yields current error + stale + false-discard while historical correctness remains true; replacing the historical answer with the current value is separately detected as a historical error."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze gates passed without target-model execution."
+}

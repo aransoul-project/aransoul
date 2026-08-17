@@ -1,0 +1,36 @@
+{
+  "slot_id": "ZH-01",
+  "family": "Supersession / replacement",
+  "surface_domain": "software configuration",
+  "difficulty": "simple",
+  "primary_competing_cue": "newer valid rule vs obsolete prior rule",
+  "question": "At 2026-06-15, what timeout value should the Orion service use?",
+  "query_time": "2026-06-15",
+  "historical_question": "At 2026-02-15, what timeout value should the Orion service have used?",
+  "historical_query_time": "2026-02-15",
+  "records": [
+    {
+      "id": "R1",
+      "content": "The Orion service timeout is 30 seconds.",
+      "time": "Effective 2026-01-01.",
+      "status": "Superseded on 2026-05-01 by R2.",
+      "effect": "Sets the Orion timeout to 30 seconds while effective.",
+      "authority": "Authoritative configuration rule for Orion until replaced."
+    },
+    {
+      "id": "R2",
+      "content": "The Orion service timeout is 45 seconds.",
+      "time": "Effective 2026-05-01.",
+      "status": "Current.",
+      "effect": "Replaces the prior Orion timeout rule and sets 45 seconds.",
+      "authority": "Current authoritative configuration rule for Orion."
+    }
+  ],
+  "gold": {
+    "current_answer": "45 seconds",
+    "historical_answer": "30 seconds",
+    "current_authority_record_ids": ["R2"],
+    "stale_record_ids": ["R1"]
+  },
+  "gold_logic": "R2 explicitly becomes effective on 2026-05-01 and replaces R1, so R2 uniquely controls the 2026-06-15 current query. Before replacement, on 2026-02-15, R1 controlled and required 30 seconds."
+}

@@ -1,0 +1,13 @@
+{
+  "slot_id":"ZH-18","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen explicit-authority-hierarchy/logistics/3-record/moderate hierarchy-vs-newest-record slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R1 and R2 conflict for the queried hazardous-battery subset, but Priority A explicitly outranks Priority B. R3 is authoritative for scan documentation only.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; three-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"All frozen ZH-18 properties match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls lane selection at both query times."},
+  "pilot_overlap_check":{"result":"pass","notes":"Uses an explicit authority tie-break and recency competition, not Pilot's stale/descriptive authority motifs."},
+  "leakage_check":{"result":"pass","notes":"Priority A/Priority B precedence is explicit in every condition; T/T/E/A receives no exclusive hierarchy clue."},
+  "semantic_equivalence_check":{"result":"pass","notes":"All four renderings preserve identical chronology, current statuses, conflicting lane rules, priority relation, and documentation-only R3 scope."},
+  "scorer_determinism_check":{"result":"pass","notes":"Existing deterministic scorer plus ZH-18 fixture treats newest lower-priority R2-only as wrong-current/authority plus false-discard but not stale; R1+R2 and R1+R3 are exact-set over-selection without stale/false-discard."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze gates passed without target-model execution."
+}

@@ -1,0 +1,612 @@
+{
+  "analysis_title": "EXPLORATORY — NOT PREREGISTERED CONFIRMATORY ANALYSIS",
+  "analysis_status": "exploratory",
+  "sample_manifest_frozen_before_content_inspection": true,
+  "sampling_deterministic": true,
+  "semantic_free_text_answers_inspected": false,
+  "causal_interpretation_performed": false,
+  "new_live_api_calls": 0,
+  "sampled_cases_count": 18,
+  "sampled_failures_by_stratum": {
+    "Temporary rule with expiry/restoration": 6,
+    "Scoped exception vs general rule": 6,
+    "condition=ttea over-selection failures": 6
+  },
+  "extra_record_count": 24,
+  "extra_record_structural_role_counts": {
+    "expired_temporary_rule": 0,
+    "restored_general_rule": 0,
+    "general_rule_outside_scope": 7,
+    "scoped_exception": 0,
+    "superseded_record": 0,
+    "current_non_authoritative_material": 3,
+    "supporting_or_context_record": 14,
+    "other_structural_role": 0,
+    "unclassified": 0
+  },
+  "structural_role_by_stratum": {
+    "Temporary rule with expiry/restoration": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 0,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 2,
+      "supporting_or_context_record": 6,
+      "other_structural_role": 0,
+      "unclassified": 0
+    },
+    "Scoped exception vs general rule": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 5,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 0,
+      "supporting_or_context_record": 3,
+      "other_structural_role": 0,
+      "unclassified": 0
+    },
+    "condition=ttea over-selection failures": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 2,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 1,
+      "supporting_or_context_record": 5,
+      "other_structural_role": 0,
+      "unclassified": 0
+    }
+  },
+  "structural_role_by_family": {
+    "Temporary rule with expiry/restoration": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 0,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 3,
+      "supporting_or_context_record": 7,
+      "other_structural_role": 0,
+      "unclassified": 0
+    },
+    "Scoped exception vs general rule": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 7,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 0,
+      "supporting_or_context_record": 5,
+      "other_structural_role": 0,
+      "unclassified": 0
+    },
+    "Supersession / replacement": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 0,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 0,
+      "supporting_or_context_record": 2,
+      "other_structural_role": 0,
+      "unclassified": 0
+    }
+  },
+  "structural_role_by_condition": {
+    "plain": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 2,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 1,
+      "supporting_or_context_record": 3,
+      "other_structural_role": 0,
+      "unclassified": 0
+    },
+    "status": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 1,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 1,
+      "supporting_or_context_record": 3,
+      "other_structural_role": 0,
+      "unclassified": 0
+    },
+    "timestamp": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 1,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 0,
+      "supporting_or_context_record": 2,
+      "other_structural_role": 0,
+      "unclassified": 0
+    },
+    "ttea": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 3,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 1,
+      "supporting_or_context_record": 6,
+      "other_structural_role": 0,
+      "unclassified": 0
+    }
+  },
+  "structural_role_by_replication": {
+    "replication-1": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 3,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 3,
+      "supporting_or_context_record": 9,
+      "other_structural_role": 0,
+      "unclassified": 0
+    },
+    "replication-2": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 2,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 0,
+      "supporting_or_context_record": 4,
+      "other_structural_role": 0,
+      "unclassified": 0
+    },
+    "replication-3": {
+      "expired_temporary_rule": 0,
+      "restored_general_rule": 0,
+      "general_rule_outside_scope": 2,
+      "scoped_exception": 0,
+      "superseded_record": 0,
+      "current_non_authoritative_material": 0,
+      "supporting_or_context_record": 1,
+      "other_structural_role": 0,
+      "unclassified": 0
+    }
+  },
+  "samples": [
+    {
+      "replication": "replication-1",
+      "case_id": "ZH-10",
+      "condition": "plain",
+      "family": "Temporary rule with expiry/restoration",
+      "gold_authority_ids": [
+        "R1"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R3"
+      ],
+      "extra_ids": [
+        "R3"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        }
+      ]
+    },
+    {
+      "replication": "replication-2",
+      "case_id": "ZH-10",
+      "condition": "status",
+      "family": "Temporary rule with expiry/restoration",
+      "gold_authority_ids": [
+        "R1"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R3"
+      ],
+      "extra_ids": [
+        "R3"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        }
+      ]
+    },
+    {
+      "replication": "replication-3",
+      "case_id": "ZH-10",
+      "condition": "timestamp",
+      "family": "Temporary rule with expiry/restoration",
+      "gold_authority_ids": [
+        "R1"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R3"
+      ],
+      "extra_ids": [
+        "R3"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        }
+      ]
+    },
+    {
+      "replication": "replication-1",
+      "case_id": "ZH-10",
+      "condition": "ttea",
+      "family": "Temporary rule with expiry/restoration",
+      "gold_authority_ids": [
+        "R1"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R3"
+      ],
+      "extra_ids": [
+        "R3"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        }
+      ]
+    },
+    {
+      "replication": "replication-1",
+      "case_id": "ZH-11",
+      "condition": "plain",
+      "family": "Temporary rule with expiry/restoration",
+      "gold_authority_ids": [
+        "R1"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R3",
+        "R4"
+      ],
+      "extra_ids": [
+        "R3",
+        "R4"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        },
+        {
+          "record_id": "R4",
+          "structural_role": "current_non_authoritative_material"
+        }
+      ]
+    },
+    {
+      "replication": "replication-1",
+      "case_id": "ZH-11",
+      "condition": "status",
+      "family": "Temporary rule with expiry/restoration",
+      "gold_authority_ids": [
+        "R1"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R3",
+        "R4"
+      ],
+      "extra_ids": [
+        "R3",
+        "R4"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        },
+        {
+          "record_id": "R4",
+          "structural_role": "current_non_authoritative_material"
+        }
+      ]
+    },
+    {
+      "replication": "replication-1",
+      "case_id": "ZH-05",
+      "condition": "plain",
+      "family": "Scoped exception vs general rule",
+      "gold_authority_ids": [
+        "R2"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R2"
+      ],
+      "extra_ids": [
+        "R1"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R1",
+          "structural_role": "general_rule_outside_scope"
+        }
+      ]
+    },
+    {
+      "replication": "replication-2",
+      "case_id": "ZH-06",
+      "condition": "plain",
+      "family": "Scoped exception vs general rule",
+      "gold_authority_ids": [
+        "R2"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "extra_ids": [
+        "R1",
+        "R3"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R1",
+          "structural_role": "general_rule_outside_scope"
+        },
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        }
+      ]
+    },
+    {
+      "replication": "replication-3",
+      "case_id": "ZH-05",
+      "condition": "timestamp",
+      "family": "Scoped exception vs general rule",
+      "gold_authority_ids": [
+        "R2"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R2"
+      ],
+      "extra_ids": [
+        "R1"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R1",
+          "structural_role": "general_rule_outside_scope"
+        }
+      ]
+    },
+    {
+      "replication": "replication-1",
+      "case_id": "ZH-05",
+      "condition": "ttea",
+      "family": "Scoped exception vs general rule",
+      "gold_authority_ids": [
+        "R2"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R2"
+      ],
+      "extra_ids": [
+        "R1"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R1",
+          "structural_role": "general_rule_outside_scope"
+        }
+      ]
+    },
+    {
+      "replication": "replication-1",
+      "case_id": "ZH-06",
+      "condition": "status",
+      "family": "Scoped exception vs general rule",
+      "gold_authority_ids": [
+        "R2"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "extra_ids": [
+        "R1",
+        "R3"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R1",
+          "structural_role": "general_rule_outside_scope"
+        },
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        }
+      ]
+    },
+    {
+      "replication": "replication-1",
+      "case_id": "ZH-06",
+      "condition": "timestamp",
+      "family": "Scoped exception vs general rule",
+      "gold_authority_ids": [
+        "R2"
+      ],
+      "predicted_authority_ids": [
+        "R2",
+        "R3"
+      ],
+      "extra_ids": [
+        "R3"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        }
+      ]
+    },
+    {
+      "replication": "replication-1",
+      "case_id": "ZH-03",
+      "condition": "ttea",
+      "family": "Supersession / replacement",
+      "gold_authority_ids": [
+        "R2"
+      ],
+      "predicted_authority_ids": [
+        "R2",
+        "R4"
+      ],
+      "extra_ids": [
+        "R4"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R4",
+          "structural_role": "supporting_or_context_record"
+        }
+      ]
+    },
+    {
+      "replication": "replication-2",
+      "case_id": "ZH-06",
+      "condition": "ttea",
+      "family": "Scoped exception vs general rule",
+      "gold_authority_ids": [
+        "R2"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "extra_ids": [
+        "R1",
+        "R3"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R1",
+          "structural_role": "general_rule_outside_scope"
+        },
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        }
+      ]
+    },
+    {
+      "replication": "replication-3",
+      "case_id": "ZH-07",
+      "condition": "ttea",
+      "family": "Scoped exception vs general rule",
+      "gold_authority_ids": [
+        "R2"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R2"
+      ],
+      "extra_ids": [
+        "R1"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R1",
+          "structural_role": "general_rule_outside_scope"
+        }
+      ]
+    },
+    {
+      "replication": "replication-1",
+      "case_id": "ZH-04",
+      "condition": "ttea",
+      "family": "Supersession / replacement",
+      "gold_authority_ids": [
+        "R2"
+      ],
+      "predicted_authority_ids": [
+        "R2",
+        "R3"
+      ],
+      "extra_ids": [
+        "R3"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        }
+      ]
+    },
+    {
+      "replication": "replication-2",
+      "case_id": "ZH-08",
+      "condition": "ttea",
+      "family": "Scoped exception vs general rule",
+      "gold_authority_ids": [
+        "R2"
+      ],
+      "predicted_authority_ids": [
+        "R2",
+        "R3"
+      ],
+      "extra_ids": [
+        "R3"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        }
+      ]
+    },
+    {
+      "replication": "replication-1",
+      "case_id": "ZH-11",
+      "condition": "ttea",
+      "family": "Temporary rule with expiry/restoration",
+      "gold_authority_ids": [
+        "R1"
+      ],
+      "predicted_authority_ids": [
+        "R1",
+        "R3",
+        "R4"
+      ],
+      "extra_ids": [
+        "R3",
+        "R4"
+      ],
+      "extra_record_structural_labels": [
+        {
+          "record_id": "R3",
+          "structural_role": "supporting_or_context_record"
+        },
+        {
+          "record_id": "R4",
+          "structural_role": "current_non_authoritative_material"
+        }
+      ]
+    }
+  ]
+}

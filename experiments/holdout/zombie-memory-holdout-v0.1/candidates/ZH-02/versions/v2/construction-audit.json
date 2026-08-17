@@ -1,0 +1,18 @@
+{
+  "slot_id": "ZH-02",
+  "candidate_version": 2,
+  "state": "rejected",
+  "construction_pass": {"result":"pass","notes":"Preserves frozen ZH-02 slot and replaces the v1 maintenance-note wording with a facilities logistics record.","issues_found":[]},
+  "adversarial_review_pass": {"result":"fail","notes":"The replacement still introduces a current, relevant, non-controlling R3. Although its domain role changed, that record-role pattern remains too close to the post-Pilot over-selection motif already exposed empirically.","issues_found":["current relevant non-controlling extra record remains structurally salient after Pilot error analysis"]},
+  "schema_check": {"result":"pass","notes":"Canonical fields present."},
+  "slot_match_check": {"result":"pass","notes":"Family, facilities domain, 3-record target, moderate difficulty, and still-visible-old-notice cue preserved."},
+  "gold_uniqueness_check": {"result":"pass","notes":"R2 uniquely controls current entry policy."},
+  "pilot_overlap_check": {"result":"fail","notes":"Not a textual copy, but R3 remains a current relevant record without authority over the queried decision, which is too close to the known Pilot authority over-selection failure structure."},
+  "leakage_check": {"result":"not_run","notes":"No rendering performed."},
+  "semantic_equivalence_check": {"result":"not_run","notes":"No rendering performed."},
+  "scorer_determinism_check": {"result":"not_run","notes":"Scorer not yet constructed."},
+  "repair_history": [{"version":2,"action":"rejected_after_adversarial_review","reason":"Replacing descriptive note with a logistics record did not remove the post-observation record-role overlap."}],
+  "rejection_reason": "Residual post-Pilot motif leakage risk.",
+  "accepted_reason": null,
+  "target_model_execution_count": 0
+}

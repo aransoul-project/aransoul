@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-05","candidate_version":1,"family":"Scoped exception vs general rule","surface_domain":"workplace scheduling","difficulty":"simple","primary_competing_cue":"general current rule vs narrower exception",
+  "question":"On 2026-09-14, what time may overnight incident responders assigned to the Network Operations rotation begin their shift?","query_time":"2026-09-14",
+  "historical_question":"On 2026-02-16, what time could an overnight incident responder assigned to that rotation begin their shift?","historical_query_time":"2026-02-16",
+  "records":[
+    {"id":"R1","content":"All overnight staff shifts begin at 22:00.","time":"Effective 2026-01-01.","status":"Current general scheduling rule.","effect":"Sets 22:00 as the normal start time for overnight staff.","authority":"General workplace scheduling rule except where a narrower current exception applies."},
+    {"id":"R2","content":"Overnight incident responders assigned to the Network Operations rotation may begin at 21:00.","time":"Effective 2026-06-01.","status":"Current scoped exception.","effect":"Sets a 21:00 start for Network Operations overnight incident responders while leaving the general rule in force for other overnight staff.","authority":"Specific scheduling exception controlling this named rotation."}
+  ],
+  "gold":{"current_answer":"21:00","historical_answer":"22:00","current_authority_record_ids":["R2"],"stale_record_ids":[]},
+  "gold_logic":"R1 remains current generally. At the current query time, R2 is the narrower current exception for the queried rotation and controls without superseding R1 globally. At the historical query time R2 was not yet effective, so R1 controls."
+}
