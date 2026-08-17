@@ -42,7 +42,7 @@ Start with:
 - [Findings and evidence layers](../experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINDINGS.md)
 - [Final audit](../experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINAL-AUDIT.md)
 - [Execution preregistration](../experiments/holdout/zombie-memory-holdout-v0.1/EXECUTION-PREREGISTRATION.md)
-- [Benchmark design](../experiments/holdout/zombie-memory-holdout-v0.1/BENCHMARK-DESIGN.md)
+- [Benchmark design](experiments/zombie-memory-benchmark-v0.1.md)
 
 The study contains three within-protocol replications (288 live responses total). Treat the confirmatory, post-freeze measurement-amendment, and exploratory evidence layers separately; the replications are not independent external validation.
 
