@@ -1,0 +1,56 @@
+{
+  "schema_version": "zombie-memory-replication-run-metadata-v0.1",
+  "replication_title": "Example public-benchmark reproduction",
+  "evidence_label": "reproduction",
+  "preregistration_id": "example-preregistration-commit",
+  "source_commit_sha": "5b402378ffa33757f1a3f1132f7e5c14f3e5120e",
+  "case_set": {
+    "source_type": "original-public",
+    "path_or_id": "experiments/holdout/zombie-memory-holdout-v0.1/generated",
+    "immutable_hash_or_commit": "example-source-commit",
+    "case_count": 24,
+    "conditions": ["plain", "timestamp", "status", "ttea"]
+  },
+  "execution": {
+    "provider": "example-provider",
+    "model": "example-model",
+    "model_version_or_snapshot": null,
+    "runtime_or_sdk": null,
+    "temperature": 0,
+    "top_p": 1,
+    "max_output_tokens": 256,
+    "seed": null,
+    "retry_policy": "no selective retry; follow frozen preregistration",
+    "ordering_policy": "case-major_then_condition-fixed"
+  },
+  "separation": {
+    "case_constructor": "original-public-benchmark",
+    "generation_operator": "external-example-operator",
+    "evaluator": "frozen deterministic scorer",
+    "model_identity_blinded_to_evaluator": null,
+    "condition_blinded_to_evaluator": null,
+    "prior_exposure_disclosed": true,
+    "notes": "Template example only; not an empirical run."
+  },
+  "run": {
+    "run_id": "example-run",
+    "started_at": "YYYY-MM-DDTHH:MM:SSZ",
+    "completed_at": null,
+    "status": "planned",
+    "request_count_expected": 96,
+    "request_count_recorded": 0,
+    "parse_failure_count": 0,
+    "request_failure_count": 0,
+    "protocol_deviation": false,
+    "protocol_deviation_notes": null
+  },
+  "artifact_paths": {
+    "preregistration": "path/to/preregistration.md",
+    "raw_responses": "path/to/responses.jsonl",
+    "run_manifest": "path/to/run-metadata.json",
+    "confirmatory_scores": null,
+    "semantic_scores": null,
+    "exploratory_analysis": null,
+    "result_report": "path/to/result-report.md"
+  }
+}
