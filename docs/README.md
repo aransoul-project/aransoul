@@ -34,6 +34,7 @@ The repository deliberately separates **current governance**, **evaluation metho
 - [Zombie Memory independent replication protocol v0.1](experiments/zombie-memory-independent-replication-protocol-v0.1.md) — Candidate design for evaluation separation and future external replication; not a completed replication result
 - [Zombie Memory replication kit v0.1](experiments/zombie-memory-replication-kit-v0.1/README.md) — Candidate handoff kit with preregistration, run-metadata, result-report, evidence-label, hash-verification, and provider-neutral integrity tooling; no new replication result
 - [Zombie Memory external replication handoff v0.1](experiments/zombie-memory-external-replication-handoff-v0.1.md) — Public handoff for researchers outside the original AranSoul execution/evaluation lineage; explicitly accepts Green, Red, null, contradictory, or Invalid outcomes
+- [Zombie Memory preprint readiness audit](experiments/ZOMBIE-MEMORY-PREPRINT-READINESS-AUDIT.md) — Readiness audit for converting the completed Holdout report into a conventional scholarly preprint; no submission has occurred
 
 ### Zombie Memory Holdout v0.1
 
