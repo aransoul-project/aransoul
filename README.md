@@ -4,6 +4,16 @@
 
 It studies how an AI system can remain useful over time while managing uncertainty, memory, multiple reasoning perspectives, governance boundaries, validation, and human authority.
 
+## Research focus: agent memory authority and stale-state evaluation
+
+For researchers working on **LLM agents, long-term agent memory, stale memory, memory updates, temporal validity, provenance, RAG, or LLM evaluation**, the most directly empirical part of this repository is the **Zombie Memory Holdout v0.1**.
+
+The study asks whether an LLM can distinguish information that is merely **remembered, relevant, or supportive** from information that is **currently authoritative for a decision**. It separates answer correctness from exact authority-set identification and preserves preregistration, frozen inputs, raw evidence, scoring, amendments, exploratory analysis, and a provider-neutral replication kit.
+
+Useful search terms for this research area include: `agent memory`, `LLM memory`, `long-term memory`, `stale memory`, `memory update`, `authority resolution`, `temporal validity`, `provenance`, `RAG`, `LLM evaluation`, `agent benchmark`, and `persistent agents`.
+
+Start with the [Zombie Memory research report](experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md), then see the [Replication Kit](docs/experiments/zombie-memory-replication-kit-v0.1/README.md) and [external replication handoff](docs/experiments/zombie-memory-external-replication-handoff-v0.1.md).
+
 AranSoul began as a poetic and multi-persona system. Over time, the project expanded into a broader investigation of:
 
 - evidence thresholds and when a conclusion should be withheld;
