@@ -1,0 +1,13 @@
+{
+  "slot_id":"ZH-07","candidate_version":1,"family":"Scoped exception vs general rule","surface_domain":"logistics routing","difficulty":"compound","primary_competing_cue":"narrow exception vs multiple still-current background rules",
+  "question":"On 2026-10-05, which hub must refrigerated medical parcels originating in District North use for outbound routing?","query_time":"2026-10-05",
+  "historical_question":"On 2026-03-05, which hub did refrigerated medical parcels originating in District North have to use?","historical_query_time":"2026-03-05",
+  "records":[
+    {"id":"R1","content":"All outbound parcels originating in District North route through Hub Cedar.","time":"Effective 2026-01-01.","status":"Current general routing rule.","effect":"Sets Hub Cedar as the default outbound hub for District North parcels.","authority":"General District North routing rule except where a narrower current routing rule applies."},
+    {"id":"R2","content":"Refrigerated medical parcels originating in District North route through Hub Iris.","time":"Effective 2026-06-01.","status":"Current scoped routing exception.","effect":"Sets Hub Iris for the refrigerated-medical subset while leaving R1 current for other District North parcels.","authority":"Specific routing rule for refrigerated medical parcels from District North."},
+    {"id":"R3","content":"All refrigerated parcels must use insulated container class C7.","time":"Effective 2026-02-01.","status":"Current packaging rule.","effect":"Sets required container class but does not choose a routing hub.","authority":"Authoritative packaging rule for refrigerated parcels."},
+    {"id":"R4","content":"Parcels routed through Hub Iris must be entered in the cold-chain manifest before dispatch.","time":"Effective 2026-08-01.","status":"Current Hub Iris dispatch rule.","effect":"Adds manifest documentation for parcels using Hub Iris but does not determine which parcels must use that hub.","authority":"Authoritative dispatch-documentation rule for Hub Iris traffic."}
+  ],
+  "gold":{"current_answer":"Hub Iris","historical_answer":"Hub Cedar","current_authority_record_ids":["R2"],"stale_record_ids":[]},
+  "gold_logic":"R1 remains the general District North routing rule. R2 is the narrower current routing rule matching both District North origin and refrigerated-medical parcel type, so it controls the current hub. R3 and R4 remain authoritative background rules but govern packaging and dispatch documentation rather than hub selection. Before R2 became effective, R1 controlled the historical query."
+}

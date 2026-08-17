@@ -1,0 +1,21 @@
+{
+  "artifact":"Zombie Memory Holdout v0.1",
+  "status":"frozen-construction-instrument",
+  "design_baseline_commit":"263a17d8e20f29ca9df7a90243d969134ae61052",
+  "audited_payload_commit":"b33adb63a71ae34b90429d556a82eeee920b6b65",
+  "audited_payload_tree":"4a2af8289909dc061ec196572a3af340bfafad4d",
+  "accepted_case_count":24,
+  "family_count":6,
+  "accepted_versions":{
+    "ZH-01":1,"ZH-02":3,"ZH-03":2,"ZH-04":1,"ZH-05":1,"ZH-06":1,"ZH-07":1,"ZH-08":1,
+    "ZH-09":1,"ZH-10":1,"ZH-11":1,"ZH-12":1,"ZH-13":1,"ZH-14":1,"ZH-15":1,"ZH-16":1,
+    "ZH-17":1,"ZH-18":1,"ZH-19":1,"ZH-20":1,"ZH-21":1,"ZH-22":1,"ZH-23":1,"ZH-24":1
+  },
+  "record_count_quota":{"two_record":8,"three_record":10,"four_or_more":6},
+  "required_conditions":["plain","timestamp","status","ttea"],
+  "accepted_artifact_requirements":["candidate","construction_audit","render_review","scorer_fixture"],
+  "target_model_execution_count_during_construction":0,
+  "rejected_history_preserved":{"ZH-02":[1,2],"ZH-03":[1]},
+  "freeze_audit":"FULL-FREEZE-AUDIT.md",
+  "interpretation_boundary":"This manifest freezes the research instrument construction payload only; it is not an empirical validation result and does not authorize silent mutation after model execution."
+}

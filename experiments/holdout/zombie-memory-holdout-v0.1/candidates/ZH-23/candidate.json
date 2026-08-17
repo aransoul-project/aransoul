@@ -1,0 +1,13 @@
+{
+  "slot_id":"ZH-23","candidate_version":1,"family":"Historical superseded-but-correct answer","surface_domain":"facilities operations","difficulty":"compound","primary_competing_cue":"historical authority recovery plus current controlling set",
+  "question":"At 2026-10-01, what is the maximum continuous runtime allowed for an Atrium ventilation unit before a mandatory cooldown?","query_time":"2026-10-01",
+  "historical_question":"At 2026-04-15, what maximum continuous runtime applied to an Atrium ventilation unit before mandatory cooldown?","historical_query_time":"2026-04-15",
+  "records":[
+    {"id":"R1","content":"Atrium ventilation units may run continuously for up to 10 hours before a mandatory cooldown.","time":"Effective 2026-01-01.","status":"Superseded on 2026-07-01 by R2 for Atrium ventilation runtime.","effect":"Sets the Atrium continuous-runtime limit to 10 hours while effective.","authority":"Authoritative Atrium ventilation runtime rule until replaced."},
+    {"id":"R2","content":"Atrium ventilation units may run continuously for up to 8 hours before a mandatory cooldown; this replaces the prior 10-hour Atrium runtime limit.","time":"Effective 2026-07-01.","status":"Current Atrium ventilation runtime rule.","effect":"Replaces R1 and sets the current continuous-runtime limit to 8 hours.","authority":"Current authoritative Atrium ventilation runtime rule."},
+    {"id":"R3","content":"All ventilation units in public halls must receive a filter inspection every 30 operating days.","time":"Effective 2026-03-01.","status":"Current facilities maintenance rule.","effect":"Sets an inspection interval but does not set continuous runtime or cooldown timing.","authority":"Authoritative facilities rule for filter inspections only."},
+    {"id":"R4","content":"Beginning 2026-09-01, Atrium ventilation cooldown events must be recorded in the facilities log with unit identifier and operator initials.","time":"Effective 2026-09-01.","status":"Current Atrium logging rule.","effect":"Adds cooldown-event documentation without changing the continuous-runtime limit.","authority":"Authoritative Atrium facilities rule for cooldown logging only."}
+  ],
+  "gold":{"current_answer":"8 hours","historical_answer":"10 hours","current_authority_record_ids":["R2"],"stale_record_ids":["R1"]},
+  "gold_logic":"R1 uniquely governed Atrium continuous runtime at the historical cutoff and remains historically correct even though it is stale for the current query. R2 replaced R1 for the same runtime scope and uniquely controls now. R3 and R4 remain current authoritative facilities rules but govern inspection and logging rather than runtime quantity."
+}

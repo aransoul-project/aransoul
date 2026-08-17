@@ -1,0 +1,12 @@
+{
+  "slot_id":"ZH-12","candidate_version":1,"family":"Temporary rule with expiry/restoration","surface_domain":"product operations","difficulty":"moderate","primary_competing_cue":"historical in-window answer vs current post-expiry answer",
+  "question":"At 2026-11-01, what is the standard return window for unopened Atlas Mini accessories?","query_time":"2026-11-01",
+  "historical_question":"At 2026-09-10, what return window applied to unopened Atlas Mini accessories?","historical_query_time":"2026-09-10",
+  "records":[
+    {"id":"R1","content":"Unopened Atlas Mini accessories have a standard return window of 30 days from purchase.","time":"Effective 2026-01-01.","status":"Current baseline product-operations rule except while a bounded promotional override is active.","effect":"Sets the ordinary return window at 30 days and resumes after any temporary promotion ends.","authority":"Baseline return-window rule for unopened Atlas Mini accessories."},
+    {"id":"R2","content":"For purchases made from 2026-09-01 through 2026-09-30, unopened Atlas Mini accessories have a temporary return window of 45 days; purchases outside that period follow the standard return rule.","time":"Applies only to purchases dated 2026-09-01 through 2026-09-30.","status":"Expired promotional override.","effect":"Extends the return window to 45 days only for September purchases and does not replace R1 generally.","authority":"Temporary product-operations override for the September promotion window."},
+    {"id":"R3","content":"Beginning 2026-10-15, returned Atlas Mini accessories must include the original serial-number label.","time":"Effective 2026-10-15.","status":"Current return-processing rule.","effect":"Adds a return-processing requirement but does not set the number of return days.","authority":"Authoritative product-operations rule for return documentation only."}
+  ],
+  "gold":{"current_answer":"30 days","historical_answer":"45 days","current_authority_record_ids":["R1"],"stale_record_ids":["R2"]},
+  "gold_logic":"The current query is after the September promotion window, so R1 controls the standard return window again. The historical query falls within R2's bounded purchase-date window, so 45 days was correct then. R3 is current but controls documentation, not duration."
+}

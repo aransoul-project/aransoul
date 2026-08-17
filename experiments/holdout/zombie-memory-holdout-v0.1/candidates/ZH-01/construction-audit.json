@@ -1,0 +1,18 @@
+{
+  "slot_id": "ZH-01",
+  "candidate_version": 1,
+  "state": "accepted-pre-freeze",
+  "construction_pass": {"result":"pass","notes":"Matches the frozen ZH-01 slot: supersession, software configuration, 2 records, simple cue.","issues_found":[]},
+  "adversarial_review_pass": {"result":"pass","notes":"Independent structural review found no ambiguity in supersession or gold derivation. Abstract construct reuse only; no trivial Pilot template reuse.","issues_found":[]},
+  "schema_check": {"result":"pass","notes":"Candidate matches the canonical candidate schema by inspection."},
+  "slot_match_check": {"result":"pass","notes":"Family, domain, record count, difficulty, and cue match the frozen matrix."},
+  "gold_uniqueness_check": {"result":"pass","notes":"R2 explicitly replaces R1 before the current query; no alternative controlling set is supported."},
+  "pilot_overlap_check": {"result":"pass","notes":"Compared against Pilot ZM-P01/P02; similarity is limited to preregistered supersession logic, with different domain, answer form, values, dates, and wording."},
+  "leakage_check": {"result":"pass","notes":"Four rendered drafts add no gold labels, scorer terms, answer-key metadata, or condition-specific substantive hints."},
+  "semantic_equivalence_check": {"result":"pass","notes":"Plain, Timestamp, Status, and T/T/E/A drafts preserve the same canonical content, time, status, effect, authority, and current/historical questions; only field grouping differs."},
+  "scorer_determinism_check": {"result":"pass","notes":"Construction scorer read back from GitHub and unit-tested locally: 6/6 tests passed, including correct scoring, stale wrong-source detection, over-selection exact-set failure, duplicate-ID rejection, and deterministic repeated output."},
+  "repair_history": [],
+  "rejection_reason": null,
+  "accepted_reason": "All currently applicable construction gates passed; accepted for inclusion in the pre-freeze candidate set only. This does not authorize model execution or final freeze.",
+  "target_model_execution_count": 0
+}

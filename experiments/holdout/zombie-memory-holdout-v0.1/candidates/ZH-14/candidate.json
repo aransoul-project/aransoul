@@ -1,0 +1,12 @@
+{
+  "slot_id":"ZH-14","candidate_version":1,"family":"Current but non-authoritative material","surface_domain":"product pricing","difficulty":"moderate","primary_competing_cue":"controlling price rule vs current marketing summary",
+  "question":"At 2026-10-01, what is the monthly list price of the Nimbus Team plan?","query_time":"2026-10-01",
+  "historical_question":"At 2026-05-01, what was the monthly list price of the Nimbus Team plan?","historical_query_time":"2026-05-01",
+  "records":[
+    {"id":"R1","content":"The Nimbus Team plan monthly list price is $48.","time":"Effective 2026-03-01.","status":"Current pricing rule.","effect":"Sets the monthly list price at $48.","authority":"Controlling product-pricing rule for the Nimbus Team monthly list price."},
+    {"id":"R2","content":"Current campaign page: 'Nimbus Team starts under $50 per month and includes collaborative workspaces.'","time":"Campaign page refreshed 2026-09-25.","status":"Current marketing summary.","effect":"Provides promotional positioning without setting a different exact list price.","authority":"Marketing copy only; exact list pricing is governed by the pricing rule."},
+    {"id":"R3","content":"Annual Nimbus Team subscriptions receive a 10% prepayment discount from the applicable monthly-equivalent list price.","time":"Effective 2026-06-01.","status":"Current annual-billing rule.","effect":"Sets an annual-prepayment discount but does not change the monthly list price asked in this case.","authority":"Authoritative pricing rule for annual prepayment only."}
+  ],
+  "gold":{"current_answer":"$48","historical_answer":"$48","current_authority_record_ids":["R1"],"stale_record_ids":[]},
+  "gold_logic":"R1 sets the exact monthly list price. R2 is current marketing material and intentionally relevant but non-controlling; its 'under $50' wording is consistent rather than a competing exact price. R3 is independently authoritative for annual prepayment, a different pricing scope."
+}

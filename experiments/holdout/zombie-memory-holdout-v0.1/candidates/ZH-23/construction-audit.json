@@ -1,0 +1,13 @@
+{
+  "slot_id":"ZH-23","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen historical-superseded/facilities-operations/4+/compound historical-recovery-plus-current-controlling-set slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R1 and R2 are the only records governing continuous runtime, with a clean supersession boundary between historical and current queries. R3/R4 are current authoritative facilities rules but govern inspection/logging, so the current controlling set remains uniquely R2 while historical authority recovery remains uniquely R1.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; four-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"Family, facilities-operations domain, 4+ records, compound difficulty, and historical-authority-recovery-plus-current-set cue match ZH-23."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R1 uniquely controls historical runtime; R2 uniquely controls current runtime; R3/R4 cannot determine runtime quantity."},
+  "pilot_overlap_check":{"result":"pass","notes":"Compound complexity comes from recovering historical authority while filtering multiple current authoritative different-scope records, not from stacking current descriptive pseudo-authorities."},
+  "leakage_check":{"result":"pass","notes":"All four rendered conditions expose the same supersession boundary, historical-validity facts, and R3/R4 different scopes; T/T/E/A receives no exclusive historical-recovery clue."},
+  "semantic_equivalence_check":{"result":"pass","notes":"Plain, Timestamp, Status, and T/T/E/A preserve identical four-record semantics and both query times; differences are field grouping only."},
+  "scorer_determinism_check":{"result":"pass","notes":"Existing deterministic scorer plus ZH-23 fixture preserves historical correctness of stale R1 while penalizing its reuse as current authority, and distinguishes current different-scope over-selection from staleness."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze gates passed without target-model execution."
+}

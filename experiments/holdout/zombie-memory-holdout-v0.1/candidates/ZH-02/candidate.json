@@ -1,0 +1,44 @@
+{
+  "slot_id": "ZH-02",
+  "family": "Supersession / replacement",
+  "surface_domain": "facilities access",
+  "difficulty": "moderate",
+  "primary_competing_cue": "explicit replacement vs still-visible old notice",
+  "question": "At 2026-08-10, which entrance may night-shift staff use after 22:00?",
+  "query_time": "2026-08-10",
+  "historical_question": "At 2026-03-10, which entrance could night-shift staff use after 22:00?",
+  "historical_query_time": "2026-03-10",
+  "records": [
+    {
+      "id": "R1",
+      "content": "After 22:00, night-shift staff must enter through the South Gate.",
+      "time": "Effective 2026-01-15.",
+      "status": "Superseded on 2026-07-01 by R2, but the printed lobby notice has not yet been removed.",
+      "effect": "Sets South Gate as the required night entrance while effective.",
+      "authority": "Facilities access directive until replaced."
+    },
+    {
+      "id": "R2",
+      "content": "After 22:00, night-shift staff must enter through the East Gate; this directive replaces the South Gate requirement.",
+      "time": "Effective 2026-07-01.",
+      "status": "Current.",
+      "effect": "Replaces the prior night entrance rule and sets East Gate as required.",
+      "authority": "Current facilities access directive for night entry."
+    },
+    {
+      "id": "R3",
+      "content": "A lobby maintenance note says the old South Gate sign is still physically posted until the next signage update.",
+      "time": "Posted 2026-07-20.",
+      "status": "Current descriptive note.",
+      "effect": "Reports signage condition only; does not change entry requirements.",
+      "authority": "Non-authoritative maintenance note; cannot set access policy."
+    }
+  ],
+  "gold": {
+    "current_answer": "East Gate",
+    "historical_answer": "South Gate",
+    "current_authority_record_ids": ["R2"],
+    "stale_record_ids": ["R1"]
+  },
+  "gold_logic": "R2 explicitly replaces R1 on 2026-07-01 and uniquely controls the current night-entry rule. R3 only reports that obsolete signage remains visible and has no policy authority. On 2026-03-10, before R2 existed, R1 controlled and required South Gate."
+}

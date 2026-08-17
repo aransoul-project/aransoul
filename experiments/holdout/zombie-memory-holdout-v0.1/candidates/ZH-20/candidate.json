@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-20","candidate_version":1,"family":"Explicit authority hierarchy","surface_domain":"service plan administration","difficulty":"moderate","primary_competing_cue":"explicit tie-break vs descriptive current source",
+  "question":"At 2026-10-01, how many priority support incidents per month are included with the Meridian Pro service plan?","query_time":"2026-10-01",
+  "historical_question":"At 2026-04-01, how many priority support incidents per month were included with the Meridian Pro service plan?","historical_query_time":"2026-04-01",
+  "records":[
+    {"id":"R1","content":"Meridian Service Schedule: the Pro plan includes 8 priority support incidents per calendar month.","time":"Effective 2026-01-01.","status":"Current service schedule.","effect":"Sets the included monthly priority-incident allowance at 8.","authority":"Tier A service-plan authority; the Service Schedule controls plan entitlements over customer-facing descriptive materials."},
+    {"id":"R2","content":"Current Pro plan overview: 'Meridian Pro includes priority support throughout the month; see the Service Schedule for the exact included incident allowance.'","time":"Overview refreshed 2026-09-22.","status":"Current customer-facing plan overview.","effect":"Describes the availability of priority support without setting a numeric allowance.","authority":"Tier C descriptive material; under the explicit plan-document hierarchy it cannot set or override Service Schedule entitlements."}
+  ],
+  "gold":{"current_answer":"8 incidents","historical_answer":"8 incidents","current_authority_record_ids":["R1"],"stale_record_ids":[]},
+  "gold_logic":"R1 is the explicit Tier A entitlement source and supplies the exact allowance. R2 is current and relevant but descriptive, gives no competing numeric value, and explicitly defers to the Service Schedule. The hierarchy therefore uniquely leaves R1 controlling."
+}

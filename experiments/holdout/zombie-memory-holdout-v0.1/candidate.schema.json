@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aransoul.example/schemas/zombie-memory-holdout-v0.1-candidate.schema.json",
+  "title": "Zombie Memory Holdout v0.1 Canonical Candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "slot_id", "family", "surface_domain", "difficulty", "primary_competing_cue",
+    "question", "query_time", "historical_question", "historical_query_time",
+    "records", "gold", "gold_logic"
+  ],
+  "properties": {
+    "slot_id": {"type":"string","pattern":"^ZH-(0[1-9]|1[0-9]|2[0-4])$"},
+    "family": {"type":"string","minLength":1},
+    "surface_domain": {"type":"string","minLength":1},
+    "difficulty": {"enum":["simple","moderate","compound"]},
+    "primary_competing_cue": {"type":"string","minLength":1},
+    "question": {"type":"string","minLength":1},
+    "query_time": {"type":["string","null"]},
+    "historical_question": {"type":"string","minLength":1},
+    "historical_query_time": {"type":["string","null"]},
+    "records": {
+      "type":"array","minItems":2,
+      "items": {
+        "type":"object","additionalProperties":false,
+        "required":["id","content","time","status","effect","authority"],
+        "properties": {
+          "id":{"type":"string","pattern":"^R[1-9][0-9]*$"},
+          "content":{"type":"string","minLength":1},
+          "time":{"type":"string","minLength":1},
+          "status":{"type":"string","minLength":1},
+          "effect":{"type":"string","minLength":1},
+          "authority":{"type":"string","minLength":1}
+        }
+      }
+    },
+    "gold": {
+      "type":"object","additionalProperties":false,
+      "required":["current_answer","historical_answer","current_authority_record_ids","stale_record_ids"],
+      "properties": {
+        "current_answer":{"type":"string","minLength":1},
+        "historical_answer":{"type":"string","minLength":1},
+        "current_authority_record_ids":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string","pattern":"^R[1-9][0-9]*$"}},
+        "stale_record_ids":{"type":"array","uniqueItems":true,"items":{"type":"string","pattern":"^R[1-9][0-9]*$"}}
+      }
+    },
+    "gold_logic":{"type":"string","minLength":1}
+  }
+}

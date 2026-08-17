@@ -1,0 +1,18 @@
+{
+  "slot_id": "ZH-02",
+  "candidate_version": 1,
+  "state": "draft",
+  "construction_pass": {"result":"pass","notes":"Matches frozen ZH-02 slot and contains a plausible still-visible obsolete notice cue.","issues_found":[]},
+  "adversarial_review_pass": {"result":"fail","notes":"Gold derivation is unique, but structural overlap risk is too high for a clean holdout. ZH-02 combines direct supersession with an extra current descriptive/non-authoritative record, closely reproducing a failure-relevant motif already exposed in Pilot ZM-P09/P10 and analyzed extensively after Round 1/2 (models over-selecting current descriptive records). Keeping this candidate would risk testing a pattern selected after observing Pilot behavior.","issues_found":["post-Pilot motif leakage risk: current descriptive/non-authoritative distractor alongside unique controlling replacement","candidate structure may encode the already-observed authority over-selection failure mode"]},
+  "schema_check": {"result":"pass","notes":"Candidate matches the canonical candidate schema by inspection."},
+  "slot_match_check": {"result":"pass","notes":"Family, domain, record count, difficulty, and cue match the frozen matrix."},
+  "gold_uniqueness_check": {"result":"pass","notes":"R2 explicitly replaces R1; R3 explicitly lacks policy authority, leaving R2 as the unique controlling source."},
+  "pilot_overlap_check": {"result":"fail","notes":"Not a textual copy, but the combination of a controlling current record plus a current descriptive/non-authoritative extra record is materially similar to Pilot ZM-P09/P10, whose R3 records were current descriptive notes without independent authority. Because that motif became salient through prior empirical error analysis, ZH-02 v1 is rejected rather than repaired around the observed model weakness."},
+  "leakage_check": {"result":"not_run","notes":"Rendered conditions not yet generated."},
+  "semantic_equivalence_check": {"result":"not_run","notes":"Rendered conditions not yet generated."},
+  "scorer_determinism_check": {"result":"not_run","notes":"Scorer not yet constructed for holdout."},
+  "repair_history": [{"version":1,"action":"rejected_after_adversarial_review","reason":"Structural motif overlaps with a post-Pilot failure-relevant pattern; replacement must preserve the frozen ZH-02 slot but use a competing cue not selected from observed model errors."}],
+  "rejection_reason": "Pilot-overlap / post-observation motif leakage risk.",
+  "accepted_reason": null,
+  "target_model_execution_count": 0
+}

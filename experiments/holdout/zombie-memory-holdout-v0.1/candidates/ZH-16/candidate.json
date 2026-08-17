@@ -1,0 +1,11 @@
+{
+  "slot_id":"ZH-16","candidate_version":1,"family":"Current but non-authoritative material","surface_domain":"publishing","difficulty":"moderate","primary_competing_cue":"policy authority vs current editorial guidance note",
+  "question":"At 2026-10-01, what is the maximum abstract length for standard research articles?","query_time":"2026-10-01",
+  "historical_question":"At 2026-04-01, what was the maximum abstract length for standard research articles?","historical_query_time":"2026-04-01",
+  "records":[
+    {"id":"R1","content":"Standard research articles may include abstracts of up to 250 words.","time":"Effective 2026-01-01.","status":"Current submission policy.","effect":"Sets the maximum abstract length at 250 words.","authority":"Controlling publishing policy for abstract length."},
+    {"id":"R2","content":"Current editorial guidance: 'Authors are encouraged to keep abstracts concise and focus on the primary result; consult the submission policy for formal limits.'","time":"Guidance reviewed 2026-09-10.","status":"Current editorial guidance note.","effect":"Provides writing guidance without setting or changing a numeric abstract limit.","authority":"Editorial guidance only; formal limits remain governed by submission policy."}
+  ],
+  "gold":{"current_answer":"250 words","historical_answer":"250 words","current_authority_record_ids":["R1"],"stale_record_ids":[]},
+  "gold_logic":"R1 directly sets the formal maximum and remains controlling at both query times. R2 is current editorial guidance and relevant to abstract writing, but explicitly defers formal limits to policy and supplies no competing numeric maximum."
+}

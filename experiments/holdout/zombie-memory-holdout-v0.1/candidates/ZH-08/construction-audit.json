@@ -1,0 +1,13 @@
+{
+  "slot_id":"ZH-08","candidate_version":1,"state":"accepted-pre-freeze","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Matches frozen scoped-exception/education/3-record/moderate cohort-vs-institution slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"R2 is explicitly limited to the 2026 Bridge Scholars cohort and therefore controls only the current queried cohort. R1 remains institution-wide and controls the historical 2025-cohort question. R3 governs submission method only. No plausible interpretation extends R2 to 2025 or globally replaces R1.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; three-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"Family, education-program domain, 3 records, moderate difficulty, and cohort-specific-vs-institution-wide cue match ZH-08."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R2 uniquely controls current 2026-cohort hours; R1 uniquely controls the historical 2025-cohort hours; R3 cannot affect quantity."},
+  "pilot_overlap_check":{"result":"pass","notes":"Tests cohort scope rather than stale descriptive authority. The newer third rule is independently authoritative for submission method and not an answer-summary record."},
+  "leakage_check":{"result":"pass","notes":"Four renderings introduce no gold answer, scorer label, or condition-exclusive substantive hint; R3's submission-only scope is canonical in every condition."},
+  "semantic_equivalence_check":{"result":"pass","notes":"All four renderings preserve the same cohort scope, timing, status, effects, authorities, and questions; only field grouping differs."},
+  "scorer_determinism_check":{"result":"pass","notes":"Deterministic scorer fixture confirms [R2] is exact-set correct; [R1,R2] and [R2,R3] are over-selection failures without stale or false-discard; [R1] alone is current-answer/authority failure with false-discard and no stale flag because R1 remains current institution-wide."},
+  "repair_history":[],"rejection_reason":null,"accepted_reason":"All pre-freeze construction, overlap, rendering, leakage, equivalence, gold-uniqueness, and deterministic-scoring gates passed."
+}

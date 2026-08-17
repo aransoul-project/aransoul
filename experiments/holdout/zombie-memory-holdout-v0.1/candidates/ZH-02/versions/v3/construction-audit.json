@@ -1,0 +1,22 @@
+{
+  "slot_id": "ZH-02",
+  "candidate_version": 3,
+  "state": "accepted-pre-freeze",
+  "construction_pass": {"result":"pass","notes":"Preserves the frozen ZH-02 slot and implements the still-visible-old-notice cue using an obsolete physical artifact rather than a new current descriptive source.","issues_found":[]},
+  "adversarial_review_pass": {"result":"pass","notes":"No alternative controlling set found; the visible artifact is stale residue derived from R1 rather than a new current noncontrolling source.","issues_found":[]},
+  "schema_check": {"result":"pass","notes":"Canonical fields present; 3-record slot satisfied."},
+  "slot_match_check": {"result":"pass","notes":"Family, facilities domain, 3-record target, moderate difficulty, and explicit replacement vs still-visible-old-notice cue all match the frozen matrix."},
+  "gold_uniqueness_check": {"result":"pass","notes":"R2 explicitly supersedes R1 and uniquely controls current night entry. R3 is derivative of R1 and has no independent authority."},
+  "pilot_overlap_check": {"result":"pass","notes":"v3 avoids the current-descriptive-source role pattern that caused v1/v2 rejection; its third record is a stale physical artifact of the old rule."},
+  "leakage_check": {"result":"pass","notes":"Four rendered drafts add no gold answer, scorer label, expected ranking, or condition-specific substantive hint. R3's lack of independent authority is canonical content reproduced across all conditions."},
+  "semantic_equivalence_check": {"result":"pass","notes":"Plain, Timestamp, Status, and T/T/E/A preserve all three records' content, temporal facts, lifecycle status, effect, authority, and both current/historical questions; differences are field grouping only."},
+  "scorer_determinism_check": {"result":"pass","notes":"Construction scorer read back from GitHub and unit-tested locally: 6/6 tests passed. ZH-02 tests confirm exact [R2] is correct while [R2,R3] is an exact-set failure, triggers stale-authority error, and does not count as false discard."},
+  "repair_history": [
+    {"version":1,"action":"rejected","reason":"Current descriptive/non-authoritative distractor overlapped with a post-Pilot failure-relevant motif."},
+    {"version":2,"action":"rejected","reason":"Current logistics record still retained the same current-relevant-noncontrolling role pattern."},
+    {"version":3,"action":"reframed_competing_cue","reason":"Represent still-visible notice as stale physical residue derived from R1 rather than a new current information source."}
+  ],
+  "rejection_reason": null,
+  "accepted_reason": "All currently applicable construction gates passed after two rejected versions; accepted for the pre-freeze candidate set only. No model execution or final freeze is authorized.",
+  "target_model_execution_count": 0
+}

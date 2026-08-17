@@ -1,0 +1,12 @@
+{
+  "slot_id":"ZH-22","candidate_version":1,"family":"Historical superseded-but-correct answer","surface_domain":"software configuration","difficulty":"moderate","primary_competing_cue":"historical cutoff vs later supersession",
+  "question":"At 2026-10-01, what is the connection-pool limit for the Luma API gateway?","query_time":"2026-10-01",
+  "historical_question":"At 2026-05-15, what connection-pool limit should the Luma API gateway have used?","historical_query_time":"2026-05-15",
+  "records":[
+    {"id":"R1","content":"The Luma API gateway connection-pool limit is 80 connections.","time":"Effective 2026-02-01.","status":"Superseded on 2026-06-15 by R2.","effect":"Sets the connection-pool limit to 80 while effective.","authority":"Authoritative Luma runtime configuration until replaced."},
+    {"id":"R2","content":"The Luma API gateway connection-pool limit is 120 connections; this replaces the prior pool-limit configuration.","time":"Effective 2026-06-15.","status":"Current runtime configuration.","effect":"Replaces R1 and sets the connection-pool limit to 120.","authority":"Current authoritative Luma runtime configuration for connection-pool size."},
+    {"id":"R3","content":"Beginning 2026-08-01, Luma connection-pool saturation alerts must include the upstream cluster name.","time":"Effective 2026-08-01.","status":"Current monitoring rule.","effect":"Adds an alert-field requirement but does not set connection-pool size.","authority":"Authoritative monitoring configuration for alert metadata only."}
+  ],
+  "gold":{"current_answer":"120 connections","historical_answer":"80 connections","current_authority_record_ids":["R2"],"stale_record_ids":["R1"]},
+  "gold_logic":"The historical cutoff precedes R2's effective date, so R1 was correct then. The current query follows supersession, so R2 controls now. R3 is newer and authoritative for monitoring metadata but irrelevant to pool size."
+}

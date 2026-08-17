@@ -1,0 +1,12 @@
+{
+  "slot_id":"ZH-24","candidate_version":1,"family":"Historical superseded-but-correct answer","surface_domain":"product operations","difficulty":"moderate","primary_competing_cue":"historical answer vs current scoped rule",
+  "question":"At 2026-10-01, what is the replacement-request window for a Nova Mini unit purchased through the Education channel?","query_time":"2026-10-01",
+  "historical_question":"At 2026-04-01, what replacement-request window applied to a Nova Mini unit purchased through the Education channel?","historical_query_time":"2026-04-01",
+  "records":[
+    {"id":"R1","content":"Nova Mini units may be submitted for replacement within 14 days of delivery.","time":"Effective 2026-01-01.","status":"Current general Nova Mini replacement rule except where a narrower current channel rule applies.","effect":"Sets the general replacement-request window at 14 days.","authority":"General product-operations replacement rule for Nova Mini units."},
+    {"id":"R2","content":"Nova Mini units purchased through the Education channel may be submitted for replacement within 21 days of delivery.","time":"Effective 2026-07-01.","status":"Current Education-channel scoped rule.","effect":"Sets a 21-day replacement window for Education-channel Nova Mini purchases while leaving R1 current for other channels.","authority":"Specific current product-operations replacement rule for Education-channel Nova Mini units."},
+    {"id":"R3","content":"Beginning 2026-09-01, Education-channel replacement requests must include the institutional order number.","time":"Effective 2026-09-01.","status":"Current Education-channel documentation rule.","effect":"Adds a required request field but does not set replacement-window duration.","authority":"Authoritative product-operations rule for Education-channel replacement documentation only."}
+  ],
+  "gold":{"current_answer":"21 days","historical_answer":"14 days","current_authority_record_ids":["R2"],"stale_record_ids":[]},
+  "gold_logic":"At the historical cutoff R2 did not yet exist, so the general R1 correctly governed Education-channel Nova Mini purchases. At the current query R1 remains valid generally but R2 is the narrower current rule for the queried channel and therefore controls 21 days. R3 governs documentation only. Historical recovery here must not require labeling R1 stale, because it remains a current general rule outside R2's scope."
+}

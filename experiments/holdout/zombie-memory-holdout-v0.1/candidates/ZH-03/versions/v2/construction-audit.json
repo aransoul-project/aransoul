@@ -1,0 +1,16 @@
+{
+  "slot_id":"ZH-03","candidate_version":2,"state":"accepted-pre-freeze","target_model_execution_count":0,
+  "construction_pass":{"result":"pass","notes":"Preserves frozen publishing/4+/compound/effective-replacement-vs-later-descriptive-note slot.","issues_found":[]},
+  "adversarial_review_pass":{"result":"pass","notes":"v2 limits the post-replacement descriptive material to the single note required by the frozen slot. R4 is independently authoritative for a different workflow dimension, not a second current descriptive/non-authoritative source. No alternative reviewer-count controlling set found.","issues_found":[]},
+  "schema_check":{"result":"pass","notes":"Canonical fields present; four-record target satisfied."},
+  "slot_match_check":{"result":"pass","notes":"Family, domain, 4+ records, compound difficulty, and frozen competing cue all match."},
+  "gold_uniqueness_check":{"result":"pass","notes":"R2 uniquely sets current reviewer count; R1 controls the historical query. R3 does not specify a count and R4 governs conflict-of-interest documentation."},
+  "pilot_overlap_check":{"result":"pass","notes":"The later descriptive note is retained because it was frozen before Pilot-result-driven holdout authoring. v2 does not amplify the observed over-selection motif with multiple current descriptive/non-authoritative sources; the fourth record is a scoped authoritative rule on a different workflow dimension."},
+  "leakage_check":{"result":"pass","notes":"Four rendered drafts add no gold answer, controlling record ID, scorer terminology, expected condition ranking, or condition-exclusive substantive hint."},
+  "semantic_equivalence_check":{"result":"pass","notes":"Plain, Timestamp, Status, and T/T/E/A preserve the same four canonical records, time/status/effect/authority facts, and current/historical questions; differences are field grouping only."},
+  "scorer_determinism_check":{"result":"pass","notes":"Existing deterministic holdout scorer semantics apply. The ZH-03 fixture yields all-correct for [R2], exact-set failure without stale/false-discard for over-selection [R2,R3] or [R2,R4], and stale wrong-source plus false-discard for [R1]. No target model was executed."},
+  "repair_history":[{"version":1,"action":"rejected","reason":"Candidate amplified a post-Pilot over-selection motif by stacking multiple current relevant-but-noncontrolling sources."},{"version":2,"action":"reconstructed","reason":"Retained exactly one frozen later-descriptive-note cue and used the fourth record as an authoritative different-scope workflow rule."}],
+  "rejection_reason":null,
+  "accepted_reason":"All pre-freeze construction, adversarial, overlap, rendering, leakage, equivalence, gold-uniqueness, and deterministic-scoring gates passed.",
+  "target_model_execution_count":0
+}
