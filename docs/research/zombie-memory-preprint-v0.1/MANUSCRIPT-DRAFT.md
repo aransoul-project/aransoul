@@ -94,6 +94,136 @@ Likewise, the term Zombie Memory is used here as a descriptive research framing 
 
 See `RELATED-WORK-DRAFT.md` for the current verified manuscript working section and `REFERENCES-WORKING.md` for the checked bibliography. These will be integrated into the final manuscript after citation formatting and final human review.
 
+## 4. Benchmark Design
+
+### 4.1 Frozen holdout inventory
+
+Zombie Memory Holdout v0.1 contains exactly 24 independent synthetic cases. The final holdout uses six preregistered case families, with four cases in each family:
+
+1. supersession or replacement;
+2. scoped exception versus general rule;
+3. temporary rule with expiry or restoration;
+4. descriptive or current-but-non-authoritative material;
+5. conflicting sources with an explicit authority hierarchy;
+6. historical queries in which a superseded record remains the correct historical answer.
+
+Final case identifiers run from `ZH-01` through `ZH-24`. The cases were constructed before target-model execution under a no-live-model gate. Candidate review was restricted to schema validity, internal logic, gold-label uniqueness, family fit, overlap with the earlier pilot, leakage, semantic equivalence across conditions, and deterministic scorer behavior.
+
+The benchmark is synthetic by design. Surface domains include ordinary fictional settings such as workplace policy, software configuration, memberships, service plans, logistics, access control, publishing, procurement, education, facilities, and product operations. No case requires outside factual knowledge, and no real current law, medical rule, financial product, company policy, or politically sensitive fact is used as ground truth.
+
+### 4.2 Gold labels and authority uniqueness
+
+Each case contains a canonical set of records with stable record identifiers. Gold labels include:
+
+- a current answer;
+- a historical answer;
+- the exact set of currently authoritative record IDs;
+- stale-record identifiers where applicable.
+
+The construction protocol required the controlling authority set to be unique under the written records before a case could be frozen. Cases whose current authority could be interpreted in more than one valid way were to be repaired or rejected before freeze. Multi-record authority sets were allowed only when the case logic required joint control and no proper subset was sufficient.
+
+This design matters because the primary metric is exact-set identification. A case with an ambiguous gold authority boundary would make the metric uninterpretable.
+
+### 4.3 Four presentation conditions
+
+Each case was rendered into four conditions that preserve the same substantive facts while changing the representation layer:
+
+- **Plain:** ordinary textual records without an explicit governance schema beyond the wording itself;
+- **Timestamp:** the same records with explicit temporal markers;
+- **Status:** the same records with lifecycle/status labels;
+- **T/T/E/A:** records represented with explicit Truth, Time, Effect, and Authority metadata.
+
+A semantic-equivalence requirement governed construction: no condition could add, remove, or alter a substantive fact, scope rule, timing relation, authority relation, or question. The representation conditions were therefore intended to differ in metadata organization rather than factual content.
+
+The present paper does not treat T/T/E/A as a proven superior representation. The pooled confirmatory result is the primary focus; condition-level differences are reported descriptively and do not establish causal effects of metadata format.
+
+### 4.4 Leakage and difficulty controls
+
+Difficulty was intended to arise from the authority construct rather than from irrelevant language complexity. Construction rules prohibited hidden real-world conventions, obscure vocabulary, excessive narrative length, deliberate grammatical confusion, or unnecessary record counts.
+
+Rendered prompts were also prohibited from exposing gold labels, scorer terminology, or direct answer cues. Metadata could describe time, state, effect, and authority properties, but it could not collapse the task into an explicit answer key.
+
+The design therefore aims to test a narrow distinction: whether the model can preserve historical information while identifying which remembered records currently control the requested decision.
+
+## 5. Experimental Setup
+
+### 5.1 Request structure
+
+Each of the 24 cases appears once under each of the four presentation conditions, producing 96 substantive requests per replication. The response contract requires four structured outputs:
+
+- case ID;
+- current answer;
+- historical answer;
+- predicted current-authority record IDs.
+
+The same frozen prompt payload was used across all three live replications.
+
+### 5.2 Model and generation settings
+
+All three replications used the same frozen model snapshot, `gpt-4.1-mini-2025-04-14`, with temperature 0, `top_p = 1`, retry count 0, and no selective individual retries. The purpose of the repeated runs was to test within-protocol stability under the same execution specification, not cross-model or cross-provider generalization.
+
+Each completed replication recorded 96/96 requests and 96/96 parsed responses, with no request failures and no parse failures. All three runs passed the preregistered raw-data integrity gate before scoring.
+
+### 5.3 Freeze and execution provenance
+
+The experiment separated construction, freeze, execution authorization, scoring, and later exploratory analysis. Immutable provenance is distributed across the preregistration documents, freeze manifests, prompt hashes, construction payload commit, frozen scoring artifacts, and per-replication manifests.
+
+The mutable `execution-config.prereg.json` advanced as live execution authorization progressed and is therefore not treated alone as the immutable preregistration record. Publication claims should instead be checked against the full frozen evidence chain.
+
+### 5.4 Scoring
+
+The preregistered confirmatory measure used deterministic structured scoring of the predicted current-authority set against the frozen gold set. A response counted as correct only when the predicted set exactly equaled the gold authority set.
+
+The original frozen scorer also produced exact-string metrics for the current and historical free-text answers. Because the prompt did not require canonical wording, those free-text exact-string outputs were later judged unsuitable for semantic-correctness interpretation. They remain preserved as historical scorer outputs but are not used as evidence of semantic answer failure.
+
+A separate semantic-equivalence grader was subsequently defined, validated, and frozen as a post-freeze measurement amendment. Its results are reported in a later section and are not merged into the original confirmatory scoring plan.
+
+### 5.5 Replication status
+
+The three live runs are **within-protocol replications**. They reused the same benchmark, model snapshot, execution settings, and original research lineage. They therefore provide evidence about stability of the observed behavior under repeated execution of the frozen protocol, but they do not constitute independent external replication.
+
+## 6. Confirmatory Results
+
+### 6.1 Exact current-authority-set accuracy
+
+Across the three planned replications, exact identification of the benchmark-defined current authority set was:
+
+| Replication | Exact matches | Accuracy |
+| --- | ---: | ---: |
+| 1 | 61/96 | 63.54% |
+| 2 | 63/96 | 65.63% |
+| 3 | 62/96 | 64.58% |
+| **Pooled** | **186/288** | **64.58%** |
+
+The three replication-level estimates remained within roughly two percentage points of one another. This supports a narrow claim of within-protocol stability in the studied setting. It does not establish that the same rate would hold under a different model, provider, independently constructed benchmark, or external evaluation team.
+
+### 6.2 Results by presentation condition
+
+Pooled exact-set authority accuracy by presentation condition was:
+
+| Condition | Exact matches | Accuracy |
+| --- | ---: | ---: |
+| Plain | 49/72 | 68.06% |
+| Timestamp | 47/72 | 65.28% |
+| Status | 50/72 | 69.44% |
+| T/T/E/A | 40/72 | 55.56% |
+
+These values are descriptive outputs of the frozen experiment. The study was not designed to support a causal claim that T/T/E/A metadata harms reasoning, nor does this result establish that any one representation is generally superior. In particular, the present evidence does not separate metadata semantics from possible format or task-interaction effects.
+
+### 6.3 Other frozen structured metrics
+
+Under the frozen authority scorer, stale-authority error count and false-discard count were both zero across the three replications. These metrics are retained as part of the original structured scoring output.
+
+The main confirmatory observation is therefore not that the tested model systematically chose a stale record instead of the current authority. Rather, it is that exact authority-boundary identification remained substantially imperfect even when the required controlling record was often present in the prediction. The individual structure of those failures was not inspected until after the planned replications and aggregate analyses were complete; that error taxonomy is therefore reported only as exploratory evidence later in the manuscript.
+
+### 6.4 Confirmatory claim boundary
+
+The confirmatory result supports the following narrow statement:
+
+> On Zombie Memory Holdout v0.1, using one frozen model snapshot under three repeated executions of the same preregistered protocol, exact identification of the current authority set was 186/288 (64.58%), with similar replication-level rates.
+
+It does not establish the cause of the errors, the generality of the behavior across models or real-world memory systems, or the superiority or inferiority of any metadata representation outside this benchmark.
+
 ## Manuscript evidence boundary
 
 This draft must continue to preserve the following distinctions:
