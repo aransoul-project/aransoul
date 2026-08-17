@@ -124,9 +124,19 @@ Important constraints of this scorer:
 - it is intentionally tied to exactly `ZH-01..ZH-24` and the four original conditions;
 - it requires exactly 96 parsed rows;
 - it loads gold from the accepted candidate versions referenced by `FREEZE-MANIFEST.json`;
-- it scores `current_answer` and `historical_answer` by normalized exact string equality;
-- it scores `current_authority_record_ids` by exact set equality;
+- it scores `current_answer` and `historical_answer` using the normalization implemented in the archived scorer;
+- it scores `current_authority_record_ids` using the exact-set behavior implemented in the archived scorer;
 - it also records stale-authority and false-discard metrics.
+
+### Frozen scorer precedence
+
+For reproducing the completed Holdout's reported structured metrics, treat these artifacts as the operational scoring chain, in this order:
+
+1. the accepted pre-freeze `scorer-fixture.json` artifacts referenced through `FREEZE-MANIFEST.json`;
+2. `HOLDOUT-SCORING-CONTRACT.md`, which states that those frozen fixtures control the executable Holdout scoring semantics;
+3. the archived `holdout_scorer.py` that self-tests against those fixtures and produced the reported aggregate scores.
+
+`SCORER-SPEC.md` is an earlier **construction-time** specification and explicitly says it was not yet the frozen 24-case scorer. It is preserved as research history, not as a replacement for the final executable scoring chain. If wording in that historical construction document differs from the archived scorer's implemented behavior, do not silently rewrite the historical file and do not invent a hybrid rule. Use the final frozen executable chain for an exact public-benchmark reproduction, and disclose any independently chosen alternative rule as a new preregistered scorer/evaluator.
 
 Do not modify the archived scorer in place and still describe it as the frozen original scorer. If adaptation is necessary, copy/version it separately, freeze the change, and report the resulting evidence boundary.
 
