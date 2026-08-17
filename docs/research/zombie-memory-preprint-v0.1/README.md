@@ -10,7 +10,7 @@ The empirical source remains:
 
 `experiments/holdout/zombie-memory-holdout-v0.1/`
 
-In particular, manuscript claims must remain traceable to the preregistration/freeze artifacts, archived raw evidence, frozen scoring chain, semantic-measurement amendment, exploratory analyses, final audit, and `RESEARCH-REPORT.md`.
+Manuscript claims must remain traceable to the preregistration/freeze artifacts, archived raw evidence, frozen scoring chain, semantic-measurement amendment, exploratory analyses, final audit, and `RESEARCH-REPORT.md`.
 
 Manuscript preparation must not silently promote:
 
@@ -27,18 +27,23 @@ Completed preparation decisions:
 - recommended affiliation: **Independent Researcher**;
 - project context: **AranSoul Project**;
 - AI systems: disclosed research/engineering assistance, not scholarly authors;
-- human author retains final responsibility for all claims and publication decisions.
+- human author retains final responsibility for all claims and publication decisions;
+- first Related Work positioning draft completed;
+- verified working bibliography started from primary paper records.
 
-See `AUTHORSHIP-AND-DISCLOSURE.md`.
+Working files:
+
+- `AUTHORSHIP-AND-DISCLOSURE.md`
+- `RELATED-WORK-DRAFT.md`
+- `REFERENCES-WORKING.md`
 
 Still required before a public preprint:
 
 1. human author's chosen publication name;
-2. Related Work with verified citations;
-3. formal bibliography/references;
-4. manuscript conversion into conventional paper structure;
-5. publication snapshot commit/tag;
-6. final human review of wording, citations, statistics, and venue-specific AI disclosure requirements.
+2. manuscript conversion into conventional paper structure;
+3. final human review and normalization of citations/references;
+4. publication snapshot commit/tag;
+5. final human review of wording, statistics, evidence labels, and venue-specific AI disclosure requirements.
 
 ## Planned paper structure
 
