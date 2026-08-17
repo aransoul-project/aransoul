@@ -1,0 +1,12 @@
+# Keep research and source artifacts byte-stable across platforms.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Frozen Zombie Memory artifacts are hashed as repository (LF) bytes.
+experiments/holdout/zombie-memory-holdout-v0.1/generated/*.json text eol=lf
+experiments/holdout/zombie-memory-holdout-v0.1/candidates/** text eol=lf

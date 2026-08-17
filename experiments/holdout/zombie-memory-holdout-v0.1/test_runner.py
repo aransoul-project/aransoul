@@ -68,9 +68,16 @@ def test_parsed_validation_enforces_uniqueness_in_application_code():
         raise AssertionError("duplicate authority IDs should fail application validation")
 
 
-def test_live_execution_stays_disabled_until_explicit_authorization():
+def test_completed_archive_execution_config_is_explicitly_authorized_for_replication_3():
+    """Post-study archive invariant.
+
+    Earlier freeze-time states are preserved in immutable preregistration/freeze
+    artifacts; the mutable execution config now records the final authorization
+    state after the three completed replications.
+    """
     config = runner.load_json(runner.CONFIG_PATH)
-    assert config["execution_authorized"] is False
-    assert config["status"] in {"preregistered-not-authorized", "execution-ready-frozen-not-authorized"}
+    assert config["execution_authorized"] is True
+    assert config["status"] == "replication-3-live-authorized"
+    assert config["authorized_replication"] == "replication-3"
     assert set(config["prompt_files"]) == set(config["conditions"])
     assert set(config["prompt_sha256"]) == set(config["conditions"])
