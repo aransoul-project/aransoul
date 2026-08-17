@@ -29,10 +29,14 @@ Completed preparation decisions:
 - AI systems: disclosed research/engineering assistance, not scholarly authors;
 - human author retains final responsibility for all claims and publication decisions;
 - first Related Work positioning draft completed;
-- verified working bibliography started from primary paper records.
+- verified working bibliography started from primary paper records;
+- integrated manuscript front matter, problem definition, benchmark design, experimental setup, and confirmatory results drafted;
+- post-freeze amendment, exploratory analysis, discussion, and limitations drafted with explicit evidence labels.
 
 Working files:
 
+- `MANUSCRIPT-DRAFT.md`
+- `MANUSCRIPT-ANALYSIS-SECTIONS.md`
 - `AUTHORSHIP-AND-DISCLOSURE.md`
 - `RELATED-WORK-DRAFT.md`
 - `REFERENCES-WORKING.md`
@@ -40,10 +44,11 @@ Working files:
 Still required before a public preprint:
 
 1. human author's chosen publication name;
-2. manuscript conversion into conventional paper structure;
-3. final human review and normalization of citations/references;
-4. publication snapshot commit/tag;
-5. final human review of wording, statistics, evidence labels, and venue-specific AI disclosure requirements.
+2. integrate the analysis sections and Related Work into one continuous manuscript;
+3. add reproducibility/artifact-availability, AI-assistance disclosure, conclusion, and final references sections;
+4. final human review and normalization of citations/references;
+5. publication snapshot commit/tag;
+6. final human review of wording, statistics, evidence labels, and venue-specific AI disclosure requirements.
 
 ## Planned paper structure
 
