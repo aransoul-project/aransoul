@@ -160,13 +160,13 @@ Licensing permission is separate from AranSoul governance status. Permission to 
 
 ## Citation
 
-See [CITATION.md](CITATION.md). Until a tagged release and machine-readable citation metadata are fixed, reproducible references should identify the exact commit used.
+See [CITATION.md](CITATION.md). Cite the fixed `v0.1` tag or release commit for claims about the v0.1 documentation baseline; for post-v0.1 research or evolving `main` content, cite the exact commit consulted.
 
 ## Release status
 
 This repository is a **living design and research baseline**, not a claim of a completed production framework.
 
-The **2026-08-12 v0.1 release-point audit passed with minor fixes**. No formal `v0.1` Git tag or GitHub Release is implied yet; the remaining release step is to deliberately identify and tag the release commit. See [public release readiness](docs/public-release-readiness.md).
+**AranSoul v0.1 — Documentation Baseline** has been formally released and tagged as `v0.1`, fixed at commit `2dea4f52fb18fbf81e8a5af32eccbc1dc592cc6e`. The `main` branch continues to evolve after that fixed release point. See [CITATION.md](CITATION.md) for version-sensitive citation guidance and [public release readiness](docs/public-release-readiness.md) for the release-point audit record.
 
 Many concepts documented here are design patterns, governance rules, or hypotheses. Mechanistic claims about model internals require independent evidence and should not be inferred from metaphorical, behavioral, or conceptual models alone.
 
