@@ -10,7 +10,7 @@ Long-running AI systems may retain information that remains true, relevant, or u
 
 The principal retained and interpretable preregistered confirmatory measure was exact identification of the currently controlling authority set. Exact-set authority accuracy was 61/96, 63/96, and 62/96 across the three replications, for a pooled 186/288 (64.58%). A separately defined post-freeze semantic measurement amendment found current-answer semantic equivalence of 284/288 (98.61%) and historical-answer semantic equivalence of 283/288 (98.26%). Exploratory analysis of all 102 authority-set failures found over-selection in every case: the required authority record or records were retained, but one or more additional records were also granted current authority.
 
-The benchmark therefore isolates a narrow decision-time failure mode in which semantic answer correctness can remain high while exact authority-boundary identification remains substantially lower. We distinguish this problem from stale-state recognition, obsolete-memory reuse, dynamic-state tracking, and write-time loss of authority during memory consolidation. The present evidence is limited to one frozen benchmark and one model snapshot; the three replications establish within-protocol stability, not independent external replication or generalization across models and systems. The 288 responses are repeated observations over the same 24 independent cases under four conditions and three executions, not 288 independent experimental units.
+The benchmark therefore isolates a narrow decision-time failure mode in which semantic answer correctness can remain high while exact authority-boundary identification remains substantially lower. We distinguish this problem from stale-state recognition, obsolete-memory reuse, dynamic-state tracking, and write-time loss of authority during memory consolidation. The present evidence is limited to one frozen benchmark and one model snapshot; the three replications establish within-protocol stability, not independent external replication or generalization across models and systems. The 288 responses are repeated observations over the same 24 distinct synthetic case units under four conditions and three executions, not 288 statistically independent experimental units.
 
 ## 1. Introduction
 
@@ -114,7 +114,7 @@ Likewise, Zombie Memory is used as a descriptive research framing rather than a 
 
 ### 4.1 Frozen holdout inventory
 
-The final holdout contains exactly 24 independent synthetic cases, with four cases in each of six preregistered families:
+The final holdout contains exactly 24 distinct synthetic case units, with four cases in each of six preregistered families:
 
 1. supersession or replacement;
 2. scoped exception versus general rule;
@@ -150,7 +150,7 @@ Difficulty was intended to arise from the target construct rather than irrelevan
 
 ### 5.1 Request structure and repeated measures
 
-Each of the 24 independent cases appears once under each of the four conditions, producing 96 case-condition requests per replication. The complete 96-request set was then executed three times under the same frozen protocol. Thus the pooled 288 responses are repeated observations over the same 24 independent case units; they are not 288 independent cases or experimental units. Likewise, each condition-level denominator of 72 consists of the same 24 cases observed across three executions.
+Each of the 24 distinct synthetic case units appears once under each of the four conditions, producing 96 case-condition requests per replication. The complete 96-request set was then executed three times under the same frozen protocol. Thus the pooled 288 responses are repeated observations over the same 24 distinct synthetic case units; they are not 288 statistically independent experimental units. Likewise, each condition-level denominator of 72 consists of the same 24 case units observed across three executions.
 
 The response contract requires case ID, current answer, historical answer, and predicted current-authority record IDs. The same frozen prompt payload was used across all three live replications.
 
@@ -174,7 +174,7 @@ The three live runs are **within-protocol replications**. They reused the same b
 
 ### 5.5 Operational meaning of procedural blinding
 
-Repository documents sometimes describe the live runs as `blind`. In this study, that term is used only in a procedural sense: prompts, gold labels, record-level scoring expectations, request ordering, and generation settings were fixed before substantive output inspection; individual live outputs and scores were not to be inspected during execution in a way that could alter later requests; selective individual retries were prohibited; and individual-level exploratory inspection was deferred until the planned replications and aggregate analyses were complete.
+Repository documents sometimes describe the live runs as `blind`. In this study, that term is used only in a procedural sense. According to the archived protocol and run attestations, prompts, gold labels, record-level scoring expectations, request ordering, and generation settings were fixed before substantive output inspection; individual live outputs and scores were not to be inspected during execution in a way that could alter later requests; selective individual retries were prohibited; and individual-level exploratory inspection was deferred until the planned replications and aggregate analyses were complete. Repository artifacts document this procedure and the corresponding attestations; they do not independently prove a person's cognitive access state.
 
 This is **not** a claim of conventional participant, evaluator, single-blind, or double-blind experimental design. The manuscript therefore uses `within-protocol replication` as the primary description and treats procedural blinding as an execution safeguard against outcome-driven adaptation.
 
@@ -204,7 +204,7 @@ Pooled exact-set authority accuracy by condition was:
 | Status | 50/72 | 69.44% |
 | T/T/E/A | 40/72 | 55.56% |
 
-Each denominator of 72 represents 24 fixed cases observed across three executions. These values are descriptive outputs of the frozen experiment. The study was not designed to support a causal claim that T/T/E/A metadata harms reasoning, nor do these values establish that any one representation is generally superior.
+Each denominator of 72 represents 24 fixed case units observed across three executions. These values are descriptive outputs of the frozen experiment. The study was not designed to support a causal claim that T/T/E/A metadata harms reasoning, nor do these values establish that any one representation is generally superior.
 
 ### 6.3 Other frozen structured metrics
 
@@ -264,7 +264,7 @@ The pattern was stable across replications: 35, 33, and 34 over-selection failur
 | Scoped exception vs general rule | 29/48 | 60.42% |
 | Temporary rule with expiry/restoration | 33/48 | 68.75% |
 
-These family-level denominators likewise reflect repeated observations of the fixed cases rather than independent new stimuli. The largest descriptive failure rates occurred when a generally valid rule remained available but a narrower scope or temporal boundary determined current control. These differences do not establish a causal reason for family-level variation.
+These family-level denominators likewise reflect repeated observations of the fixed case units rather than independent new stimuli. The largest descriptive failure rates occurred when a generally valid rule remained available but a narrower scope or temporal boundary determined current control. These differences do not establish a causal reason for family-level variation.
 
 ### 8.3 Stratified sample of extra records
 
@@ -320,7 +320,7 @@ The benchmark is small and synthetic: 24 cases across six constructed families. 
 
 The live evidence comes from one frozen model snapshot. The three replications reused the same benchmark, model, execution settings, and research lineage. They establish within-protocol stability only; they do not establish cross-model, cross-provider, or independent external replication.
 
-The 288 pooled responses are repeated observations of the same 24 independent cases under four conditions and three executions. They should not be interpreted as 288 independent experimental units, and this manuscript does not use the pooled count to make population-level inferential claims.
+The 288 pooled responses are repeated observations of the same 24 distinct synthetic case units under four conditions and three executions. They should not be interpreted as 288 statistically independent experimental units, and this manuscript does not use the pooled count to make population-level inferential claims.
 
 The final executable Holdout scorer and scoring contract were committed after live execution had begun, rather than at the pre-run point required by the construction-time scoring specification. The record-level scorer fixtures and authority exact-set expectations were frozen before target-model execution, and the later executable contract states that its rules were derived only from those fixtures without inspecting live answers. This preserves a pre-specified basis for the reported structured results but constitutes an implementation-timing deviation from the originally stated protocol and is a limitation of the study's provenance chain.
 
@@ -342,7 +342,7 @@ A separate contact-free replication kit is available at:
 
 `docs/experiments/zombie-memory-replication-kit-v0.1/`
 
-The kit provides a preregistration template, provider-neutral implementation guide, response-integrity validator, frozen-hash verification, metadata schema, result-report template, evidence-label checklist, and external handoff guidance. These artifacts are intended to let an external replicator verify frozen inputs, prepare provider-specific execution, preserve raw evidence, validate the 96-response structure, apply the documented fixture-derived scoring semantics, and report positive, null, contradictory, or invalid outcomes without requiring interpretation from the original author. The existence and behavior of these repository-local tools are directly inspectable; manuscript claims do not rely on unpublished agent-audit session histories.
+The kit provides a preregistration template, provider-neutral implementation guide, response-integrity validator, frozen-hash verification, metadata schema, result-report template, evidence-label checklist, and external handoff guidance. The kit also records `878b21f62faa9d999793b731198caac88a97bf62` as the recommended historical execution-ready source commit for recovering the four generated prompt arrays and `prompt-hashes.json`; see `PUBLIC-BENCHMARK-SOURCE.md`. These artifacts are intended to let an external replicator verify frozen inputs, prepare provider-specific execution, preserve raw evidence, validate the 96-response structure, apply the documented fixture-derived scoring semantics, and report positive, null, contradictory, or invalid outcomes without requiring interpretation from the original author. The existence and behavior of these repository-local tools are directly inspectable; manuscript claims do not rely on unpublished agent-audit session histories.
 
 The current manuscript draft does not yet designate an immutable publication snapshot. Before public preprint release, a specific commit or tag should be frozen and cited so that the paper points to a stable version of the evidence and replication materials.
 
