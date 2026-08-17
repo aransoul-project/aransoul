@@ -10,7 +10,7 @@ Long-running AI systems may retain information that remains true, relevant, or u
 
 The principal retained and interpretable preregistered confirmatory measure was exact identification of the currently controlling authority set. Exact-set authority accuracy was 61/96, 63/96, and 62/96 across the three replications, for a pooled 186/288 (64.58%). A separately defined post-freeze semantic measurement amendment found current-answer semantic equivalence of 284/288 (98.61%) and historical-answer semantic equivalence of 283/288 (98.26%). Exploratory analysis of all 102 authority-set failures found over-selection in every case: the required authority record or records were retained, but one or more additional records were also granted current authority.
 
-The benchmark therefore isolates a narrow decision-time failure mode in which semantic answer correctness can remain high while authority-boundary precision remains substantially lower. We distinguish this problem from stale-state recognition, obsolete-memory reuse, dynamic-state tracking, and write-time loss of authority during memory consolidation. The present evidence is limited to one frozen benchmark and one model snapshot; the three replications establish within-protocol stability, not independent external replication or generalization across models and systems. The 288 responses are repeated observations over the same 24 independent cases under four conditions and three executions, not 288 independent experimental units.
+The benchmark therefore isolates a narrow decision-time failure mode in which semantic answer correctness can remain high while exact authority-boundary identification remains substantially lower. We distinguish this problem from stale-state recognition, obsolete-memory reuse, dynamic-state tracking, and write-time loss of authority during memory consolidation. The present evidence is limited to one frozen benchmark and one model snapshot; the three replications establish within-protocol stability, not independent external replication or generalization across models and systems. The 288 responses are repeated observations over the same 24 independent cases under four conditions and three executions, not 288 independent experimental units.
 
 ## 1. Introduction
 
@@ -18,7 +18,7 @@ Memory-enabled AI systems are commonly evaluated by asking whether they can retr
 
 Consider a simple policy setting. A model may correctly remember an old rule, a newer rule, a temporary exception, and contextual notes that remain factually true. If asked for the current decision, it may still produce the correct substantive answer. Yet the same model can fail a stricter governance question by treating several remembered or relevant records as jointly authoritative when only a smaller subset currently controls the decision. In this setting, forgetting is not the central problem. The problem is distinguishing retention and relevance from current authority.
 
-We use the term **Zombie Memory** for this class of situations: information remains present and may still be true, relevant, or historically useful, but the authority it once had over current decisions has expired, narrowed, or otherwise changed. The concept developed within the broader AranSoul research project as a practical question about long-running AI systems. The empirical claims in this paper, however, do not depend on acceptance of the broader AranSoul framework. They stand on a preregistered benchmark, archived model outputs, frozen scoring artifacts, and explicitly separated evidence layers.
+We use the term **Zombie Memory** for this class of situations: information remains present and may still be true, relevant, or historically useful, but the authority it once had over current decisions has expired, narrowed, or otherwise changed. The concept developed within the broader AranSoul research project as a practical question about long-running AI systems. The empirical claims in this paper, however, do not depend on acceptance of the broader AranSoul framework. They stand on a preregistered benchmark, archived model outputs, frozen scoring semantics, and explicitly separated evidence layers.
 
 Zombie Memory Holdout v0.1 was designed to separate concepts that ordinary memory evaluation can collapse:
 
@@ -38,7 +38,7 @@ The study also has important limits. It uses one small synthetic benchmark, one 
 
 ### 2.1 Long-term memory evaluation for agents
 
-Recent benchmarks have moved beyond single-turn factual recall toward long-horizon memory evaluation in interactive and changing environments. LongMemEval evaluates information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention across sustained chat histories [1]. LongMemEval-V2 extends this emphasis toward environment experience, including dynamic state tracking and premise awareness in customized web and enterprise settings [3]. MemoryAgentBench, MemBench, and MemEvoBench similarly broaden evaluation toward incremental interaction, selective forgetting, and memory mis-evolution or safety risks from memory mis-evolution [6–8].
+Recent benchmarks have moved beyond single-turn factual recall toward long-horizon memory evaluation in interactive and changing environments. LongMemEval evaluates information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention across sustained chat histories [1]. LongMemEval-V2 extends this emphasis toward environment experience, including dynamic state tracking and premise awareness in customized web and enterprise settings [3]. MemoryAgentBench, MemBench, and MemEvoBench similarly broaden evaluation toward incremental interaction, selective forgetting, and memory mis-evolution [6–8].
 
 These benchmarks establish that long-term memory quality is not reducible to retrieval accuracy. Zombie Memory is narrower. It does not attempt to provide a general long-term-memory benchmark; it isolates whether a model can identify the exact record set that currently has decision authority while still preserving current and historical information.
 
@@ -98,7 +98,7 @@ This metric is deliberately stricter than asking whether the model included at l
 
 Each case also has a current substantive answer \(y_{current}\) and a historical answer \(y_{historical}\). The model produces corresponding free-text outputs \(\hat y_{current}\) and \(\hat y_{historical}\).
 
-The preregistration listed current-answer, historical-recall, authority exact-set, stale-authority error, and false-discard metrics as primary metrics. The original frozen scorer implemented normalized exact-string comparison for the two free-text fields. Because the prompt did not require canonical wording, those exact-string outputs were later judged unsuitable as semantic-correctness measurements. A separate deterministic semantic-equivalence grader was therefore defined and frozen post hoc as a **post-freeze measurement amendment**. Results from that grader are reported separately from the retained interpretable preregistered structured authority metrics.
+The preregistration listed current-answer, historical-recall, authority exact-set, stale-authority error, and false-discard metrics as primary metrics. The original scoring specification implemented normalized exact-string comparison for the two free-text fields. Because the prompt did not require canonical wording, those exact-string outputs were later judged unsuitable as semantic-correctness measurements. A separate deterministic semantic-equivalence grader was therefore defined and frozen post hoc as a **post-freeze measurement amendment**. Results from that grader are reported separately from the retained interpretable preregistered structured authority metrics.
 
 ### 3.3 Exploratory authority-error categories
 
@@ -160,11 +160,13 @@ All three replications used the same frozen model snapshot, `gpt-4.1-mini-2025-0
 
 ### 5.3 Freeze, execution, and scoring provenance
 
-The experiment separated construction, freeze, execution authorization, scoring, and later exploratory analysis. Immutable provenance is distributed across preregistration documents, freeze manifests, prompt hashes, construction payload commits, frozen scoring artifacts, and per-replication manifests.
+The experiment separated construction, freeze, execution authorization, scoring, and later exploratory analysis. Immutable provenance is distributed across preregistration documents, freeze manifests, prompt hashes, construction payload commits, pre-freeze scorer fixtures, per-replication manifests, and later scoring implementation artifacts.
 
 The preregistration specified multiple primary metrics. Among them, exact current-authority-set accuracy is the principal retained and interpretable confirmatory metric for the paper's authority-boundary claim. A response counted as correct only when the predicted set exactly equaled the frozen gold authority set. Stale-authority error and false-discard counts are also preserved as preregistered structured metrics.
 
-The original scorer also produced normalized exact-string metrics for the current and historical free-text answers. Because the prompt did not require canonical wording, those free-text metrics were later judged unsuitable for semantic-correctness interpretation. They remain preserved as historical scorer outputs rather than being reinterpreted as semantic failure.
+A scoring-provenance deviation should be stated explicitly. The construction-time `SCORER-SPEC.md` required a final executable scorer, tests, and hash to be committed before target-model execution. The record-level scoring expectations and authority exact-set semantics were encoded in the 24 accepted pre-freeze `scorer-fixture.json` artifacts, but the final fixture-locked `holdout_scorer.py` and `HOLDOUT-SCORING-CONTRACT.md` were committed later, during evidence-chain archival after live execution had begun. The later contract states that the executable rules were derived only from those pre-freeze fixtures and that no live answer was inspected to define them. Thus the authority scoring semantics were pre-specified, while the final executable packaging did not satisfy the originally stated pre-run implementation timing requirement. We treat this as a protocol implementation-timing deviation and disclose it rather than describing the final executable scorer itself as having been committed pre-run.
+
+The original scoring specification also included normalized exact-string metrics for the current and historical free-text answers. Because the prompt did not require canonical wording, those free-text metrics were later judged unsuitable for semantic-correctness interpretation. They remain preserved as historical scoring outputs rather than being reinterpreted as semantic failure.
 
 ### 5.4 Replication status
 
@@ -172,7 +174,7 @@ The three live runs are **within-protocol replications**. They reused the same b
 
 ### 5.5 Operational meaning of procedural blinding
 
-Repository documents sometimes describe the live runs as `blind`. In this study, that term is used only in a procedural sense: prompts, gold labels, scorer behavior, request ordering, and generation settings were frozen before substantive output inspection; individual live outputs and scores were not to be inspected during execution in a way that could alter later requests; selective individual retries were prohibited; and individual-level exploratory inspection was deferred until the planned replications and aggregate analyses were complete.
+Repository documents sometimes describe the live runs as `blind`. In this study, that term is used only in a procedural sense: prompts, gold labels, record-level scoring expectations, request ordering, and generation settings were fixed before substantive output inspection; individual live outputs and scores were not to be inspected during execution in a way that could alter later requests; selective individual retries were prohibited; and individual-level exploratory inspection was deferred until the planned replications and aggregate analyses were complete.
 
 This is **not** a claim of conventional participant, evaluator, single-blind, or double-blind experimental design. The manuscript therefore uses `within-protocol replication` as the primary description and treats procedural blinding as an execution safeguard against outcome-driven adaptation.
 
@@ -206,7 +208,7 @@ Each denominator of 72 represents 24 fixed cases observed across three execution
 
 ### 6.3 Other frozen structured metrics
 
-Under the frozen authority scorer, stale-authority error count and false-discard count were both zero across the three replications. The main retained confirmatory observation is therefore not that the tested model systematically chose a stale record instead of the current authority. Rather, exact authority-boundary identification remained substantially imperfect.
+Under the fixture-derived authority scorer, stale-authority error count and false-discard count were both zero across the three replications. The main retained confirmatory observation is therefore not that the tested model systematically chose a stale record instead of the current authority. Rather, exact authority-boundary identification remained substantially imperfect.
 
 The confirmatory claim is intentionally narrow:
 
@@ -216,7 +218,7 @@ The confirmatory claim is intentionally narrow:
 
 ### 7.1 Motivation
 
-The frozen scorer compared `current_answer` and `historical_answer` using normalized exact-string equality, while the prompt contract allowed ordinary free-text answers. A semantically correct answer could therefore differ from the frozen gold string while expressing the same substantive result. The resulting exact-string outputs were judged unsuitable for semantic-correctness interpretation.
+The original scoring specification compared `current_answer` and `historical_answer` using normalized exact-string equality, while the prompt contract allowed ordinary free-text answers. A semantically correct answer could therefore differ from the frozen gold string while expressing the same substantive result. The resulting exact-string outputs were judged unsuitable for semantic-correctness interpretation.
 
 ### 7.2 Amendment procedure
 
@@ -254,7 +256,7 @@ The pattern was stable across replications: 35, 33, and 34 over-selection failur
 ### 8.2 Family-level patterns
 
 | Family | Failures | Rate |
-| --- | ---: | ---: |
+| --- | ---: |
 | Explicit authority hierarchy | 3/48 | 6.25% |
 | Supersession / replacement | 8/48 | 16.67% |
 | Current but non-authoritative material | 14/48 | 29.17% |
@@ -297,7 +299,7 @@ This suggests that long-running systems may need more than retrieval and recency
 
 ### 9.3 Relationship to stale-memory research
 
-The observed failures should not be reduced to simple stale-memory retrieval. Under the frozen scorer, stale-authority error count was zero, and the exploratory sample did not show expired temporary rules being broadly resurrected as controlling evidence. Instead, the common pattern was inclusion of additional records that remained relevant, supportive, current, or generally valid but were not the controlling authority for the specific query.
+The observed failures should not be reduced to simple stale-memory retrieval. Under the fixture-derived authority scorer, stale-authority error count was zero, and the exploratory sample did not show expired temporary rules being broadly resurrected as controlling evidence. Instead, the common pattern was inclusion of additional records that remained relevant, supportive, current, or generally valid but were not the controlling authority for the specific query.
 
 ### 9.4 Metadata conditions are not yet an intervention result
 
@@ -320,11 +322,13 @@ The live evidence comes from one frozen model snapshot. The three replications r
 
 The 288 pooled responses are repeated observations of the same 24 independent cases under four conditions and three executions. They should not be interpreted as 288 independent experimental units, and this manuscript does not use the pooled count to make population-level inferential claims.
 
+The final executable Holdout scorer and scoring contract were committed after live execution had begun, rather than at the pre-run point required by the construction-time scoring specification. The record-level scorer fixtures and authority exact-set expectations were frozen before target-model execution, and the later executable contract states that its rules were derived only from those fixtures without inspecting live answers. This preserves a pre-specified basis for the reported structured results but constitutes an implementation-timing deviation from the originally stated protocol and is a limitation of the study's provenance chain.
+
 The semantic answer measurements are post-freeze amendments rather than part of the original confirmatory plan. The full authority-error taxonomy and stratified content inspection are exploratory. The fact that all 102 failures were over-selection may be specific to this benchmark, model, prompt contract, or scoring ontology.
 
 The benchmark's authority ontology is a research construct rather than a universal theory of authority. Exact-set scoring assumes that each case has one frozen controlling set. Real-world systems may permit multiple defensible interpretations or require abstention, escalation, or human adjudication.
 
-The study is behavioral. It does not reveal an internal causal mechanism, representation, attention pattern, or model psychology. The four presentation conditions were not designed as a definitive causal intervention study. Finally, the benchmark does not establish that authority-boundary precision is independently safety-critical in every application; demonstrating real-world operational consequences remains future work.
+The study is behavioral. It does not reveal an internal causal mechanism, representation, attention pattern, or model psychology. The four presentation conditions were not designed as a definitive causal intervention study. Finally, the benchmark does not establish that authority-boundary exactness is independently safety-critical in every application; demonstrating real-world operational consequences remains future work.
 
 ## 11. Reproducibility and Artifact Availability
 
@@ -332,13 +336,13 @@ The complete research evidence chain is publicly archived in the AranSoul reposi
 
 `experiments/holdout/zombie-memory-holdout-v0.1/`
 
-It includes the preregistration/freeze artifacts, final case construction materials, generated prompts, prompt hashes, frozen scorer and scoring contract, per-replication manifests, raw response archives, semantic-amendment artifacts, exploratory analyses, final findings, and final audit.
+It includes the preregistration/freeze artifacts, final case construction materials, generated prompts, prompt hashes, pre-freeze record-level scorer fixtures, the later fixture-derived executable scorer and scoring contract, per-replication manifests, raw response archives, semantic-amendment artifacts, exploratory analyses, final findings, and final audit. The repository history should be consulted for the scorer implementation chronology described in Section 5.3.
 
 A separate contact-free replication kit is available at:
 
 `docs/experiments/zombie-memory-replication-kit-v0.1/`
 
-The kit provides a preregistration template, provider-neutral implementation guide, response-integrity validator, frozen-hash verification, metadata schema, result-report template, evidence-label checklist, and external handoff guidance. These artifacts are intended to let an external replicator verify frozen inputs, prepare provider-specific execution, preserve raw evidence, validate the 96-response structure, apply the frozen scoring semantics, and report positive, null, contradictory, or invalid outcomes without requiring interpretation from the original author. The existence and behavior of these repository-local tools are directly inspectable; manuscript claims do not rely on unpublished agent-audit session histories.
+The kit provides a preregistration template, provider-neutral implementation guide, response-integrity validator, frozen-hash verification, metadata schema, result-report template, evidence-label checklist, and external handoff guidance. These artifacts are intended to let an external replicator verify frozen inputs, prepare provider-specific execution, preserve raw evidence, validate the 96-response structure, apply the documented fixture-derived scoring semantics, and report positive, null, contradictory, or invalid outcomes without requiring interpretation from the original author. The existence and behavior of these repository-local tools are directly inspectable; manuscript claims do not rely on unpublished agent-audit session histories.
 
 The current manuscript draft does not yet designate an immutable publication snapshot. Before public preprint release, a specific commit or tag should be frozen and cited so that the paper points to a stable version of the evidence and replication materials.
 
@@ -356,7 +360,7 @@ Zombie Memory Holdout v0.1 tests a narrow distinction in memory-enabled AI syste
 
 Across three within-protocol replications and 288 repeated responses from one frozen model snapshot, exact current-authority-set identification was 186/288 (64.58%). A separately labeled post-freeze semantic amendment found current and historical answer equivalence above 98%. Exploratory inspection found that all 102 authority-set failures were over-selection, with sampled extra records concentrated in supporting/context information and out-of-scope general rules.
 
-The strongest supported interpretation is therefore not that the model failed to remember the current state, nor that it broadly resurrected expired records. Rather, on this benchmark it often knew the substantive answer while assigning current authority too broadly. This motivates evaluating answer correctness and authority-boundary precision as distinct behavioral targets.
+The strongest supported interpretation is therefore not that the model failed to remember the current state, nor that it broadly resurrected expired records. Rather, on this benchmark it often knew the substantive answer while assigning current authority too broadly. This motivates evaluating answer correctness and exact authority-boundary identification as distinct behavioral targets.
 
 The result remains benchmark-specific. Independent external replication, cross-model testing, independently constructed unfamiliar cases, and causal studies of representation effects are necessary before broader claims can be made.
 
@@ -376,7 +380,7 @@ The result remains benchmark-specific. Independent external replication, cross-m
 
 [7] Haoran Tan, Zeyu Zhang, Chen Ma, Xu Chen, Quanyu Dai, and Zhenhua Dong. **MemBench: Towards More Comprehensive Evaluation on the Memory of LLM-based Agents.** arXiv:2506.21605, 2025.
 
-[8] Weiwei Xie, Shaoxiong Guo, Fan Zhang, Tian Xia, Xue Yang, Lizhuang Ma, Junchi Yan, and Qibing Ren. **MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents.** arXiv:2604.15774, 2026.
+[8] Weiwei Xie, Shaoxiong Guo, Fan Zhang, Tian Xia, Xue Yang, Lizhuang Ma, Junchi Yan, and Qibing Ren. **MemEvoBench: Benchmarking Memory MisEvolution in LLM Agents.** arXiv:2604.15774, 2026. Title verified against the arXiv record on 2026-08-18.
 
 ## Publication-status note
 
