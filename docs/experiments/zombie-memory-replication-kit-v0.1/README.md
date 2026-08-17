@@ -9,6 +9,7 @@ The kit does not guarantee that a run qualifies as independent external replicat
 ## What this kit contains
 
 - [`PREREGISTRATION-TEMPLATE.md`](PREREGISTRATION-TEMPLATE.md) — fields to freeze before substantive target-model outputs are inspected.
+- [`IMPLEMENTATION-GUIDE.md`](IMPLEMENTATION-GUIDE.md) — provider-neutral handoff from frozen prompts to request enumeration, response preservation, scorer-compatible rows, integrity checks, and reporting.
 - [`RUN-METADATA-SCHEMA.json`](RUN-METADATA-SCHEMA.json) — minimum machine-readable metadata for a replication run.
 - [`RESULT-REPORT-TEMPLATE.md`](RESULT-REPORT-TEMPLATE.md) — reporting structure that preserves confirmatory, amended, exploratory, and invalid evidence boundaries.
 - [`EVIDENCE-LABEL-CHECKLIST.md`](EVIDENCE-LABEL-CHECKLIST.md) — conservative rules for calling a run reproduction, cross-model reproduction, evaluation-separated replication, independent external replication, or cross-environment/generalization replication.
@@ -53,17 +54,18 @@ This path is more useful for testing generalization, but only if case constructi
 1. Choose the narrowest intended evidence label.
 2. Fix the benchmark/case source and exact commit or case-set hash.
 3. Complete and freeze `PREREGISTRATION-TEMPLATE.md` before inspecting substantive target-model outputs.
-4. Record model/provider/version, parameters, retries, ordering/randomization, and evaluator design.
-5. Run transport/format validation before substantive scoring.
-6. Preserve raw outputs and complete `RUN-METADATA-SCHEMA.json`-compatible metadata.
-7. Apply only frozen confirmatory scoring first.
-8. Treat any post-output metric change as an explicit amendment.
-9. Keep qualitative/error-taxonomy analysis exploratory unless it was separately preregistered.
-10. Publish the completed `RESULT-REPORT-TEMPLATE.md` with enough provenance for another reader to recover the artifacts.
+4. Use `IMPLEMENTATION-GUIDE.md` to implement or adapt the provider-facing runner without silently changing the research payload.
+5. Record model/provider/version, parameters, retries, ordering/randomization, and evaluator design.
+6. Run transport/format validation before substantive scoring.
+7. Preserve raw outputs and complete `RUN-METADATA-SCHEMA.json`-compatible metadata.
+8. Apply only frozen confirmatory scoring first.
+9. Treat any post-output metric change as an explicit amendment.
+10. Keep qualitative/error-taxonomy analysis exploratory unless it was separately preregistered.
+11. Publish the completed `RESULT-REPORT-TEMPLATE.md` with enough provenance for another reader to recover the artifacts.
 
 ## Important implementation note
 
-The original `runner.py` is a provenance artifact for the completed Holdout and is intentionally strict: it is tied to the original 24 cases, four conditions, three planned replications, frozen hashes, and OpenAI Responses API execution. External replicators may adapt or replace the runner for another provider or environment, but any change must be documented.
+The original `runner.py` is a provenance artifact for the completed Holdout and is intentionally strict: it is tied to the original 24 cases, four conditions, three planned replications, frozen hashes, and OpenAI Responses API execution. External replicators may adapt or replace the runner for another provider or environment, but any change must be documented. `IMPLEMENTATION-GUIDE.md` defines the minimum provider-neutral input/output and scorer-compatibility contract for that handoff.
 
 Do not silently modify the original frozen Holdout files to make a new run fit. Put new replication artifacts in a separate directory or repository and cite the source commit used.
 
@@ -89,6 +91,7 @@ It would still not establish that Zombie Memory is a universal taxonomy, that T/
 The kit should be considered usable only if a technically competent external reader can determine, from repository artifacts alone:
 
 - what to freeze before running;
+- how to turn the frozen public prompts into a provider-neutral execution and scorer-compatible response archive;
 - what must be recorded;
 - how to classify the evidence level;
 - where the original benchmark/scoring provenance lives;
