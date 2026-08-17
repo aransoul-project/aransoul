@@ -6,11 +6,11 @@ AranSoul Project
 
 ## Abstract
 
-Long-running AI systems may retain information that remains true, relevant, or useful even after that information has lost current decision authority. This creates a problem that ordinary retrieval or final-answer accuracy may not capture: a model can know both the present state and the historical state while still attributing current authority too broadly. We study this distinction with Zombie Memory Holdout v0.1, a frozen synthetic benchmark containing 24 cases, six authority-related families, four presentation conditions, and three planned blind live replications, yielding 288 substantive model responses.
+Long-running AI systems may retain information that remains true, relevant, or useful even after that information has lost current decision authority. This creates a problem that ordinary retrieval or final-answer accuracy may not capture: a model can know both the present state and the historical state while still attributing current authority too broadly. We study this distinction with Zombie Memory Holdout v0.1, a frozen synthetic benchmark containing 24 cases, six authority-related families, four presentation conditions, and three planned within-protocol live replications, yielding 288 substantive model responses.
 
-The preregistered confirmatory measure was exact identification of the currently controlling authority set. Exact-set authority accuracy was 61/96, 63/96, and 62/96 across the three replications, for a pooled 186/288 (64.58%). A separately defined post-freeze semantic measurement amendment found current-answer semantic equivalence of 284/288 (98.61%) and historical-answer semantic equivalence of 283/288 (98.26%). Exploratory analysis of all 102 authority-set failures found over-selection in every case: the required authority record or records were retained, but one or more additional records were also granted current authority.
+The principal retained and interpretable preregistered confirmatory measure was exact identification of the currently controlling authority set. Exact-set authority accuracy was 61/96, 63/96, and 62/96 across the three replications, for a pooled 186/288 (64.58%). A separately defined post-freeze semantic measurement amendment found current-answer semantic equivalence of 284/288 (98.61%) and historical-answer semantic equivalence of 283/288 (98.26%). Exploratory analysis of all 102 authority-set failures found over-selection in every case: the required authority record or records were retained, but one or more additional records were also granted current authority.
 
-The benchmark therefore isolates a narrow decision-time failure mode in which semantic answer correctness can remain high while authority-boundary precision remains substantially lower. We distinguish this problem from stale-state recognition, obsolete-memory reuse, dynamic-state tracking, and write-time loss of authority during memory consolidation. The present evidence is limited to one frozen benchmark and one model snapshot; the three replications establish within-protocol stability, not independent external replication or generalization across models and systems.
+The benchmark therefore isolates a narrow decision-time failure mode in which semantic answer correctness can remain high while authority-boundary precision remains substantially lower. We distinguish this problem from stale-state recognition, obsolete-memory reuse, dynamic-state tracking, and write-time loss of authority during memory consolidation. The present evidence is limited to one frozen benchmark and one model snapshot; the three replications establish within-protocol stability, not independent external replication or generalization across models and systems. The 288 responses are repeated observations over the same 24 independent cases under four conditions and three executions, not 288 independent experimental units.
 
 ## 1. Introduction
 
@@ -26,7 +26,7 @@ Zombie Memory Holdout v0.1 was designed to separate concepts that ordinary memor
 
 The task is not merely to answer correctly. For each case, the model must also identify the exact set of records that currently controls the answer while preserving the ability to state both current and historical answers. We evaluate this benchmark under four presentation conditions—Plain, Timestamp, Status, and T/T/E/A metadata—and repeat the frozen protocol three times using the same model snapshot and generation settings.
 
-The main confirmatory result is a persistent gap between substantive answer performance and exact authority-set identification. Across 288 responses, the tested model identified the exact current authority set in 186 cases (64.58%). By contrast, a separately defined post-freeze semantic amendment measured current-answer semantic equivalence at 98.61% and historical-answer semantic equivalence at 98.26%. These semantic measurements are informative but were not part of the original confirmatory scoring plan and are therefore reported as an amendment rather than promoted into preregistered evidence.
+The main confirmatory result is a persistent gap between substantive answer performance and exact authority-set identification. Across 288 repeated observations, the tested model identified the exact current authority set in 186 cases (64.58%). By contrast, a separately defined post-freeze semantic amendment measured current-answer semantic equivalence at 98.61% and historical-answer semantic equivalence at 98.26%. These semantic measurements are informative but were not part of the original confirmatory scoring plan and are therefore reported as an amendment rather than promoted into preregistered evidence.
 
 Exploratory analysis further narrowed the observed error structure. All 102 authority-set failures were over-selection failures: the model retained the required authority record or records but also selected additional records beyond the frozen gold set. A frozen stratified sample found these extras concentrated in supporting/context material and generally valid rules outside the applicable scope. These analyses are descriptive and exploratory; they do not establish a causal mechanism.
 
@@ -38,7 +38,7 @@ The study also has important limits. It uses one small synthetic benchmark, one 
 
 ### 2.1 Long-term memory evaluation for agents
 
-Recent benchmarks have moved beyond single-turn factual recall toward long-horizon memory evaluation in interactive and changing environments. LongMemEval evaluates information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention across sustained chat histories [1]. LongMemEval-V2 extends this emphasis toward environment experience, including dynamic state tracking and premise awareness in customized web and enterprise settings [3]. MemoryAgentBench, MemBench, and MemEvoBench similarly broaden evaluation toward incremental interaction, selective forgetting, and memory mis-evolution [6–8].
+Recent benchmarks have moved beyond single-turn factual recall toward long-horizon memory evaluation in interactive and changing environments. LongMemEval evaluates information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention across sustained chat histories [1]. LongMemEval-V2 extends this emphasis toward environment experience, including dynamic state tracking and premise awareness in customized web and enterprise settings [3]. MemoryAgentBench, MemBench, and MemEvoBench similarly broaden evaluation toward incremental interaction, selective forgetting, and memory mis-evolution or safety risks from memory mis-evolution [6–8].
 
 These benchmarks establish that long-term memory quality is not reducible to retrieval accuracy. Zombie Memory is narrower. It does not attempt to provide a general long-term-memory benchmark; it isolates whether a model can identify the exact record set that currently has decision authority while still preserving current and historical information.
 
@@ -86,7 +86,7 @@ as the frozen gold set of records that currently controls the decision under the
 \hat{A}(x) \subseteq R.
 \]
 
-The preregistered confirmatory authority metric is exact-set accuracy:
+The preregistered authority metric is exact-set accuracy:
 
 \[
 \mathrm{AuthorityExact}(x) = \mathbf{1}[\hat{A}(x)=A^*(x)].
@@ -98,7 +98,7 @@ This metric is deliberately stricter than asking whether the model included at l
 
 Each case also has a current substantive answer \(y_{current}\) and a historical answer \(y_{historical}\). The model produces corresponding free-text outputs \(\hat y_{current}\) and \(\hat y_{historical}\).
 
-The original frozen scorer used normalized exact-string comparison for these fields. Because the prompt did not require canonical wording, those outputs were later judged unsuitable as semantic-correctness measurements. A separate deterministic semantic-equivalence grader was therefore defined and frozen post hoc as a **post-freeze measurement amendment**. Results from that grader are reported separately from the original confirmatory authority measure.
+The preregistration listed current-answer, historical-recall, authority exact-set, stale-authority error, and false-discard metrics as primary metrics. The original frozen scorer implemented normalized exact-string comparison for the two free-text fields. Because the prompt did not require canonical wording, those exact-string outputs were later judged unsuitable as semantic-correctness measurements. A separate deterministic semantic-equivalence grader was therefore defined and frozen post hoc as a **post-freeze measurement amendment**. Results from that grader are reported separately from the retained interpretable preregistered structured authority metrics.
 
 ### 3.3 Exploratory authority-error categories
 
@@ -148,9 +148,11 @@ Difficulty was intended to arise from the target construct rather than irrelevan
 
 ## 5. Experimental Setup
 
-### 5.1 Request structure
+### 5.1 Request structure and repeated measures
 
-Each of the 24 cases appears once under each of the four conditions, producing 96 substantive requests per replication. The response contract requires case ID, current answer, historical answer, and predicted current-authority record IDs. The same frozen prompt payload was used across all three live replications.
+Each of the 24 independent cases appears once under each of the four conditions, producing 96 case-condition requests per replication. The complete 96-request set was then executed three times under the same frozen protocol. Thus the pooled 288 responses are repeated observations over the same 24 independent case units; they are not 288 independent cases or experimental units. Likewise, each condition-level denominator of 72 consists of the same 24 cases observed across three executions.
+
+The response contract requires case ID, current answer, historical answer, and predicted current-authority record IDs. The same frozen prompt payload was used across all three live replications.
 
 ### 5.2 Model and generation settings
 
@@ -160,13 +162,19 @@ All three replications used the same frozen model snapshot, `gpt-4.1-mini-2025-0
 
 The experiment separated construction, freeze, execution authorization, scoring, and later exploratory analysis. Immutable provenance is distributed across preregistration documents, freeze manifests, prompt hashes, construction payload commits, frozen scoring artifacts, and per-replication manifests.
 
-The preregistered confirmatory measure used deterministic structured scoring of the predicted current-authority set against the frozen gold set. A response counted as correct only when the predicted set exactly equaled the gold authority set.
+The preregistration specified multiple primary metrics. Among them, exact current-authority-set accuracy is the principal retained and interpretable confirmatory metric for the paper's authority-boundary claim. A response counted as correct only when the predicted set exactly equaled the frozen gold authority set. Stale-authority error and false-discard counts are also preserved as preregistered structured metrics.
 
-The original scorer also produced exact-string metrics for the current and historical free-text answers. Because the prompt did not require canonical wording, those free-text metrics were later judged unsuitable for semantic-correctness interpretation. They remain preserved as historical artifacts.
+The original scorer also produced normalized exact-string metrics for the current and historical free-text answers. Because the prompt did not require canonical wording, those free-text metrics were later judged unsuitable for semantic-correctness interpretation. They remain preserved as historical scorer outputs rather than being reinterpreted as semantic failure.
 
 ### 5.4 Replication status
 
 The three live runs are **within-protocol replications**. They reused the same benchmark, model snapshot, execution settings, and original research lineage. They provide evidence about stability of the observed behavior under repeated execution of the frozen protocol, but they do not constitute independent external replication.
+
+### 5.5 Operational meaning of procedural blinding
+
+Repository documents sometimes describe the live runs as `blind`. In this study, that term is used only in a procedural sense: prompts, gold labels, scorer behavior, request ordering, and generation settings were frozen before substantive output inspection; individual live outputs and scores were not to be inspected during execution in a way that could alter later requests; selective individual retries were prohibited; and individual-level exploratory inspection was deferred until the planned replications and aggregate analyses were complete.
+
+This is **not** a claim of conventional participant, evaluator, single-blind, or double-blind experimental design. The manuscript therefore uses `within-protocol replication` as the primary description and treats procedural blinding as an execution safeguard against outcome-driven adaptation.
 
 ## 6. Confirmatory Results
 
@@ -179,30 +187,30 @@ Across the three planned replications, exact identification of the benchmark-def
 | 1 | 61/96 | 63.54% |
 | 2 | 63/96 | 65.63% |
 | 3 | 62/96 | 64.58% |
-| **Pooled** | **186/288** | **64.58%** |
+| **Pooled repeated responses** | **186/288** | **64.58%** |
 
-The replication-level rates remained close to one another. This supports a narrow claim of within-protocol stability in the studied setting. It does not establish that the same rate would hold under a different model, provider, independently constructed benchmark, or external evaluation team.
+The replication-level rates remained close to one another. This supports a narrow descriptive claim of within-protocol stability in the studied setting. Because the same cases were repeatedly measured, the pooled denominator should not be interpreted as 288 independent case samples or used by itself to support population-level inference. The study does not establish that the same rate would hold under a different model, provider, independently constructed benchmark, or external evaluation team.
 
 ### 6.2 Results by presentation condition
 
 Pooled exact-set authority accuracy by condition was:
 
-| Condition | Exact matches | Accuracy |
+| Condition | Exact matches across repeated executions | Accuracy |
 | --- | ---: | ---: |
 | Plain | 49/72 | 68.06% |
 | Timestamp | 47/72 | 65.28% |
 | Status | 50/72 | 69.44% |
 | T/T/E/A | 40/72 | 55.56% |
 
-These values are descriptive outputs of the frozen experiment. The study was not designed to support a causal claim that T/T/E/A metadata harms reasoning, nor do these values establish that any one representation is generally superior.
+Each denominator of 72 represents 24 fixed cases observed across three executions. These values are descriptive outputs of the frozen experiment. The study was not designed to support a causal claim that T/T/E/A metadata harms reasoning, nor do these values establish that any one representation is generally superior.
 
 ### 6.3 Other frozen structured metrics
 
-Under the frozen authority scorer, stale-authority error count and false-discard count were both zero across the three replications. The main confirmatory observation is therefore not that the tested model systematically chose a stale record instead of the current authority. Rather, exact authority-boundary identification remained substantially imperfect.
+Under the frozen authority scorer, stale-authority error count and false-discard count were both zero across the three replications. The main retained confirmatory observation is therefore not that the tested model systematically chose a stale record instead of the current authority. Rather, exact authority-boundary identification remained substantially imperfect.
 
 The confirmatory claim is intentionally narrow:
 
-> On Zombie Memory Holdout v0.1, using one frozen model snapshot under three repeated executions of the same preregistered protocol, exact identification of the current authority set was 186/288 (64.58%), with similar replication-level rates.
+> On Zombie Memory Holdout v0.1, using one frozen model snapshot under three repeated executions of the same preregistered protocol, exact identification of the current authority set was 186/288 repeated responses (64.58%), with similar replication-level rates.
 
 ## 7. Post-Freeze Measurement Amendment
 
@@ -231,7 +239,7 @@ The semantic amendment supports a narrow descriptive contrast: substantive curre
 
 ### 8.1 Structural error taxonomy
 
-Individual authority failures were opened for exploratory inspection only after all three planned replications and aggregate analyses were complete. Of the 288 responses, 186 exactly matched the frozen authority set and 102 did not. All 102 failures were classified as over-selection:
+Individual authority failures were opened for exploratory inspection only after all three planned replications and aggregate analyses were complete. Of the 288 repeated responses, 186 exactly matched the frozen authority set and 102 did not. All 102 failures were classified as over-selection:
 
 | Error category | Count |
 | --- | ---: |
@@ -254,7 +262,7 @@ The pattern was stable across replications: 35, 33, and 34 over-selection failur
 | Scoped exception vs general rule | 29/48 | 60.42% |
 | Temporary rule with expiry/restoration | 33/48 | 68.75% |
 
-The largest descriptive failure rates occurred when a generally valid rule remained available but a narrower scope or temporal boundary determined current control. These differences do not establish a causal reason for family-level variation.
+These family-level denominators likewise reflect repeated observations of the fixed cases rather than independent new stimuli. The largest descriptive failure rates occurred when a generally valid rule remained available but a narrower scope or temporal boundary determined current control. These differences do not establish a causal reason for family-level variation.
 
 ### 8.3 Stratified sample of extra records
 
@@ -310,6 +318,8 @@ The benchmark is small and synthetic: 24 cases across six constructed families. 
 
 The live evidence comes from one frozen model snapshot. The three replications reused the same benchmark, model, execution settings, and research lineage. They establish within-protocol stability only; they do not establish cross-model, cross-provider, or independent external replication.
 
+The 288 pooled responses are repeated observations of the same 24 independent cases under four conditions and three executions. They should not be interpreted as 288 independent experimental units, and this manuscript does not use the pooled count to make population-level inferential claims.
+
 The semantic answer measurements are post-freeze amendments rather than part of the original confirmatory plan. The full authority-error taxonomy and stratified content inspection are exploratory. The fact that all 102 failures were over-selection may be specific to this benchmark, model, prompt contract, or scoring ontology.
 
 The benchmark's authority ontology is a research construct rather than a universal theory of authority. Exact-set scoring assumes that each case has one frozen controlling set. Real-world systems may permit multiple defensible interpretations or require abstention, escalation, or human adjudication.
@@ -328,7 +338,7 @@ A separate contact-free replication kit is available at:
 
 `docs/experiments/zombie-memory-replication-kit-v0.1/`
 
-The kit provides a preregistration template, provider-neutral implementation guide, response-integrity validator, frozen-hash verification, metadata schema, result-report template, evidence-label checklist, and external handoff guidance. An agentic cold-start audit using Codex first returned RED because of cross-platform hash and response-integrity handoff gaps; after repository fixes, the same audit returned GREEN and concluded that a provider endpoint would be sufficient to execute a preregistered public-benchmark reproduction without consulting the original author. This audit validates handoff usability, not the scientific result itself.
+The kit provides a preregistration template, provider-neutral implementation guide, response-integrity validator, frozen-hash verification, metadata schema, result-report template, evidence-label checklist, and external handoff guidance. These artifacts are intended to let an external replicator verify frozen inputs, prepare provider-specific execution, preserve raw evidence, validate the 96-response structure, apply the frozen scoring semantics, and report positive, null, contradictory, or invalid outcomes without requiring interpretation from the original author. The existence and behavior of these repository-local tools are directly inspectable; manuscript claims do not rely on unpublished agent-audit session histories.
 
 The current manuscript draft does not yet designate an immutable publication snapshot. Before public preprint release, a specific commit or tag should be frozen and cited so that the paper points to a stable version of the evidence and replication materials.
 
@@ -336,7 +346,7 @@ The current manuscript draft does not yet designate an immutable publication sna
 
 This work is independent, self-directed research conducted outside a university, company, or institutional research program. The Zombie Memory question developed within the broader AranSoul Project, but the empirical claims in this manuscript stand on the inspectable benchmark, archived outputs, scoring artifacts, and explicitly labeled analyses rather than on acceptance of the broader AranSoul framework.
 
-Generative AI systems, including ChatGPT and Codex, were used during this project for iterative research discussion, repository inspection, implementation assistance, documentation drafting, and adversarial engineering handoff audits. AI-generated suggestions were not treated as evidence. The human author determined the research questions, accepted or rejected methodological changes, approved evidence-boundary decisions, reviewed the resulting artifacts and claims, and assumes responsibility for the accuracy, citations, interpretation, and final manuscript.
+Generative AI systems, including ChatGPT and Codex, were used during this project for iterative research discussion, repository inspection, implementation assistance, documentation drafting, and adversarial engineering handoff and manuscript audits. AI-generated suggestions were not treated as empirical evidence. The human author determined the research questions, accepted or rejected methodological changes, approved evidence-boundary decisions, reviewed the resulting artifacts and claims, and assumes responsibility for the accuracy, citations, interpretation, and final manuscript.
 
 The exact wording of this disclosure should be checked against the policy of any future publication venue before submission.
 
@@ -344,7 +354,7 @@ The exact wording of this disclosure should be checked against the policy of any
 
 Zombie Memory Holdout v0.1 tests a narrow distinction in memory-enabled AI systems: whether information that remains remembered, relevant, or useful is correctly separated from information that currently has decision authority.
 
-Across three within-protocol replications and 288 responses from one frozen model snapshot, exact current-authority-set identification was 186/288 (64.58%). A separately labeled post-freeze semantic amendment found current and historical answer equivalence above 98%. Exploratory inspection found that all 102 authority-set failures were over-selection, with sampled extra records concentrated in supporting/context information and out-of-scope general rules.
+Across three within-protocol replications and 288 repeated responses from one frozen model snapshot, exact current-authority-set identification was 186/288 (64.58%). A separately labeled post-freeze semantic amendment found current and historical answer equivalence above 98%. Exploratory inspection found that all 102 authority-set failures were over-selection, with sampled extra records concentrated in supporting/context information and out-of-scope general rules.
 
 The strongest supported interpretation is therefore not that the model failed to remember the current state, nor that it broadly resurrected expired records. Rather, on this benchmark it often knew the substantive answer while assigning current authority too broadly. This motivates evaluating answer correctness and authority-boundary precision as distinct behavioral targets.
 
@@ -366,7 +376,7 @@ The result remains benchmark-specific. Independent external replication, cross-m
 
 [7] Haoran Tan, Zeyu Zhang, Chen Ma, Xu Chen, Quanyu Dai, and Zhenhua Dong. **MemBench: Towards More Comprehensive Evaluation on the Memory of LLM-based Agents.** arXiv:2506.21605, 2025.
 
-[8] Weiwei Xie, Shaoxiong Guo, Fan Zhang, Tian Xia, Xue Yang, Lizhuang Ma, Junchi Yan, and Qibing Ren. **MemEvoBench: Benchmarking Memory MisEvolution in LLM Agents.** arXiv:2604.15774, 2026.
+[8] Weiwei Xie, Shaoxiong Guo, Fan Zhang, Tian Xia, Xue Yang, Lizhuang Ma, Junchi Yan, and Qibing Ren. **MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents.** arXiv:2604.15774, 2026.
 
 ## Publication-status note
 
