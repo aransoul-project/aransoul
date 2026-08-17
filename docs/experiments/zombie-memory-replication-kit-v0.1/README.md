@@ -9,90 +9,49 @@ The kit does not guarantee that a run qualifies as independent external replicat
 ## What this kit contains
 
 - [`PREREGISTRATION-TEMPLATE.md`](PREREGISTRATION-TEMPLATE.md) — fields to freeze before substantive target-model outputs are inspected.
-- [`IMPLEMENTATION-GUIDE.md`](IMPLEMENTATION-GUIDE.md) — provider-neutral handoff from frozen prompts to request enumeration, response preservation, scorer-compatible rows, integrity checks, and reporting.
+- [`IMPLEMENTATION-GUIDE.md`](IMPLEMENTATION-GUIDE.md) — provider-neutral handoff including cross-platform hash verification and pre-score structural validation.
+- [`verify_frozen_hashes.py`](verify_frozen_hashes.py) — verifies frozen prompt hashes from Git repository bytes.
+- [`validate_provider_neutral_responses.py`](validate_provider_neutral_responses.py) — fail-closed 24×4 structural gate before the historical scorer is invoked.
+- [`VALID-RESPONSE-EXAMPLE.jsonl`](VALID-RESPONSE-EXAMPLE.jsonl) — minimal provider-neutral response-row example.
 - [`RUN-METADATA-SCHEMA.json`](RUN-METADATA-SCHEMA.json) — minimum machine-readable metadata for a replication run.
-- [`RESULT-REPORT-TEMPLATE.md`](RESULT-REPORT-TEMPLATE.md) — reporting structure that preserves confirmatory, amended, exploratory, and invalid evidence boundaries.
-- [`EVIDENCE-LABEL-CHECKLIST.md`](EVIDENCE-LABEL-CHECKLIST.md) — conservative rules for calling a run reproduction, cross-model reproduction, evaluation-separated replication, independent external replication, or cross-environment/generalization replication.
+- [`RUN-METADATA-EXAMPLE.json`](RUN-METADATA-EXAMPLE.json) — non-empirical metadata example.
+- [`RESULT-REPORT-TEMPLATE.md`](RESULT-REPORT-TEMPLATE.md) — reporting structure that preserves evidence boundaries.
+- [`EVIDENCE-LABEL-CHECKLIST.md`](EVIDENCE-LABEL-CHECKLIST.md) — conservative replication-label rules.
 
 ## Source benchmark and provenance
 
-The completed AranSoul Holdout v0.1 archive is preserved at:
-
-`experiments/holdout/zombie-memory-holdout-v0.1/`
-
-Useful source artifacts include:
-
-- `README.md` — evidence map;
-- `PREREGISTRATION.md` and `EXECUTION-PREREGISTRATION.md` — historical design/execution freezes;
-- `FREEZE-MANIFEST.json` and `EXECUTION-FREEZE-MANIFEST.json` — frozen provenance;
-- `runner.py` — guarded original OpenAI-specific runner used by the completed Holdout;
-- `holdout_scorer.py` — deterministic structured scorer;
-- `HOLDOUT-SCORING-CONTRACT.md` and `SCORER-SPEC.md` — scoring definitions;
-- `SEMANTIC-SCORING-AMENDMENT-v0.1.md` — post-freeze semantic measurement amendment;
-- `HOLDOUT-V0.1-FINDINGS.md` and `HOLDOUT-V0.1-FINAL-AUDIT.md` — completed-study findings and audit.
-
-Replicators should cite an exact repository commit SHA for any source artifact they use.
+The completed Holdout v0.1 archive is preserved at `experiments/holdout/zombie-memory-holdout-v0.1/`. Replicators should cite an exact repository commit SHA for any source artifact they use.
 
 ## Two valid replication paths
 
 ### Path 1 — Public-benchmark reproduction
-
-Reuse the frozen public Holdout cases and scoring definitions.
-
-This is the fastest path for testing model/provider dependence. If the original project lineage still controls execution and evaluation, the result should normally be labeled **reproduction** or **cross-model reproduction**, not independent external replication.
+Reuse the frozen public Holdout cases and scoring definitions. If the original project lineage still controls execution and evaluation, the result should normally be labeled **reproduction** or **cross-model reproduction**, not independent external replication.
 
 ### Path 2 — Independent unfamiliar-case replication
-
-Construct or obtain a new case set that tests the same distinction between remembered/relevant material and currently controlling authority.
-
-Gold authority must be defined before target-model outputs are inspected. New cases should permit historical recall while making scope, supersession, exceptions, and current authority independently decidable.
-
-This path is more useful for testing generalization, but only if case construction, generation, and evaluation separation are documented clearly.
+Construct or obtain a new case set testing remembered/relevant material versus currently controlling authority. Gold authority must be fixed before target-model outputs are inspected.
 
 ## Minimum workflow
 
 1. Choose the narrowest intended evidence label.
 2. Fix the benchmark/case source and exact commit or case-set hash.
-3. Complete and freeze `PREREGISTRATION-TEMPLATE.md` before inspecting substantive target-model outputs.
-4. Use `IMPLEMENTATION-GUIDE.md` to implement or adapt the provider-facing runner without silently changing the research payload.
-5. Record model/provider/version, parameters, retries, ordering/randomization, and evaluator design.
-6. Run transport/format validation before substantive scoring.
-7. Preserve raw outputs and complete `RUN-METADATA-SCHEMA.json`-compatible metadata.
-8. Apply only frozen confirmatory scoring first.
-9. Treat any post-output metric change as an explicit amendment.
-10. Keep qualitative/error-taxonomy analysis exploratory unless it was separately preregistered.
-11. Publish the completed `RESULT-REPORT-TEMPLATE.md` with enough provenance for another reader to recover the artifacts.
+3. Freeze `PREREGISTRATION-TEMPLATE.md` before substantive target-model output inspection.
+4. Use `IMPLEMENTATION-GUIDE.md` for provider-neutral execution.
+5. Verify frozen prompt hashes with `verify_frozen_hashes.py` from the exact Git source commit.
+6. Record model/provider/version, parameters, retries, ordering/randomization, and evaluator design.
+7. Preserve raw outputs and run metadata.
+8. Run `validate_provider_neutral_responses.py` and require PASS before invoking the historical scorer.
+9. Apply frozen confirmatory scoring first.
+10. Treat post-output metric changes as amendments and keep non-preregistered qualitative/error analysis exploratory.
+11. Publish the completed result report with recoverable provenance.
 
 ## Important implementation note
 
-The original `runner.py` is a provenance artifact for the completed Holdout and is intentionally strict: it is tied to the original 24 cases, four conditions, three planned replications, frozen hashes, and OpenAI Responses API execution. External replicators may adapt or replace the runner for another provider or environment, but any change must be documented. `IMPLEMENTATION-GUIDE.md` defines the minimum provider-neutral input/output and scorer-compatibility contract for that handoff.
-
-Do not silently modify the original frozen Holdout files to make a new run fit. Put new replication artifacts in a separate directory or repository and cite the source commit used.
+The original `runner.py` is a provenance artifact for the completed Holdout and is tied to its original execution environment. External replicators may replace provider-facing mechanics, but must not silently change the frozen research payload or scoring meaning.
 
 ## Required evidence boundaries
 
-A replication report must keep these distinctions visible:
-
-- **Preregistered confirmatory:** metrics and decision rules fixed before substantive output inspection.
-- **Post-freeze amendment:** a later measurement or procedure added after the original freeze; its rationale and timing must be explicit.
-- **Exploratory:** error taxonomy, qualitative interpretation, subgroup inspection, or post-hoc hypotheses not preregistered as confirmatory.
-- **Invalid / technical-invalid:** leakage, scoring defects, transport failures, missing provenance, or protocol violations that prevent the planned interpretation.
-
-A null or Red result is a valid contribution.
-
-## What successful replication would and would not mean
-
-A successful external replication can strengthen the claim that authority-boundary errors recur beyond the original AranSoul execution lineage. A cross-model or unfamiliar-case replication can also test model and benchmark dependence.
-
-It would still not establish that Zombie Memory is a universal taxonomy, that T/T/E/A is mechanistically necessary, that one hidden reasoning mechanism explains all failures, or that success on synthetic tasks guarantees production-agent safety.
+Keep preregistered confirmatory, post-freeze amendment, exploratory, and invalid/technical-invalid evidence visibly separate. A null or Red result is a valid contribution.
 
 ## Contact-free standard
 
-The kit should be considered usable only if a technically competent external reader can determine, from repository artifacts alone:
-
-- what to freeze before running;
-- how to turn the frozen public prompts into a provider-neutral execution and scorer-compatible response archive;
-- what must be recorded;
-- how to classify the evidence level;
-- where the original benchmark/scoring provenance lives;
-- how to report null, negative, amended, or invalid outcomes without asking the original project to reinterpret them.
+The kit is usable only if a technically competent external reader can determine, from repository artifacts alone, what to freeze, how to verify inputs across platforms, how to create and validate a complete 24×4 response archive before scoring, how to classify the evidence level, and how to report null/negative/amended/invalid outcomes without asking the original project to reinterpret them.
