@@ -32,7 +32,19 @@ Each array contains one entry per case with at least:
 
 For a faithful public-benchmark reproduction, treat the `prompt` string as the task payload. Do not paraphrase, add hints, remove records, expose gold labels, or silently change the factual payload.
 
-Verify the generated prompt hashes against `generated/prompt-hashes.json` and the frozen execution manifest at the exact source commit used.
+### Frozen hash policy
+
+The frozen SHA-256 values are hashes of the **repository bytes** for the generated JSON artifacts (LF line endings), not arbitrary platform-specific working-tree bytes. The repository now enforces LF for research JSON/JSONL through `.gitattributes`, but an existing checkout may still contain older CRLF-converted files until it is refreshed.
+
+For cross-platform verification, prefer the kit verifier, which reads bytes directly from the selected Git ref and therefore does not depend on `core.autocrlf`:
+
+```text
+python docs/experiments/zombie-memory-replication-kit-v0.1/verify_frozen_hashes.py --ref <exact-source-commit>
+```
+
+For the currently checked-out commit, `--ref HEAD` is acceptable. A PASS means the repository bytes match `generated/prompt-hashes.json`. Do not reinterpret a working-tree CRLF mismatch as a change to the frozen research payload.
+
+`prompt_generator.py --check` remains a byte-identical working-tree regeneration check; on a correctly normalized checkout it should also pass.
 
 ## 3. Request enumeration
 
@@ -99,18 +111,30 @@ Before opening individual answer quality, verify the preregistered integrity con
 
 1. expected request count is 96;
 2. every expected `(case_id, condition)` pair is present exactly once;
-3. no unreported selective retry/cherry-picking occurred;
-4. prompt/case hashes match the preregistered source;
-5. raw outputs were preserved;
-6. parsing followed the frozen rule;
-7. no gold labels leaked into generation;
-8. scorer self-test passes before aggregate scoring.
+3. every case has all four conditions and every condition has 24 cases;
+4. `parsed_response.id` matches the enclosing `case_id`;
+5. no unreported selective retry/cherry-picking occurred;
+6. prompt/case hashes match the preregistered source;
+7. raw outputs were preserved;
+8. parsing followed the frozen rule;
+9. no gold labels leaked into generation;
+10. scorer self-test passes before aggregate scoring.
+
+Run the provider-neutral structural gate before invoking the historical scorer:
+
+```text
+python docs/experiments/zombie-memory-replication-kit-v0.1/validate_provider_neutral_responses.py <responses.jsonl>
+```
+
+This validator is intentionally independent of OpenAI-specific fields, historical request ordering, `mode`, `attempt`, or `scoring_started`. It checks structural completeness only and does **not** inspect gold labels or score answer quality. The archived `validate_raw_integrity.py` remains the historical pre-scoring validator for the original three runs; it is not the provider-neutral handoff validator.
+
+The archived scorer itself should not be treated as the dataset-completeness gate. A structural-validator PASS is required before its aggregate output is interpretable as a complete 24 × 4 reproduction.
 
 If the preregistered technical-invalid threshold is crossed, preserve the failed attempt and stop confirmatory interpretation according to the preregistration.
 
 ## 7. Using the historical deterministic scorer
 
-For an exact public-benchmark reproduction, the archived `holdout_scorer.py` can score a compatible 96-row `responses.jsonl` against the frozen accepted candidate/gold artifacts.
+For an exact public-benchmark reproduction, the archived `holdout_scorer.py` can score a compatible 96-row `responses.jsonl` against the frozen accepted candidate/gold artifacts **after the provider-neutral integrity gate passes**.
 
 Historical interface:
 
@@ -122,7 +146,7 @@ python holdout_scorer.py --responses <responses.jsonl> --output <aggregate-score
 Important constraints of this scorer:
 
 - it is intentionally tied to exactly `ZH-01..ZH-24` and the four original conditions;
-- it requires exactly 96 parsed rows;
+- it requires exactly 96 parsed rows but is not, by itself, the complete pair-coverage validator;
 - it loads gold from the accepted candidate versions referenced by `FREEZE-MANIFEST.json`;
 - it scores `current_answer` and `historical_answer` using the normalization implemented in the archived scorer;
 - it scores `current_authority_record_ids` using the exact-set behavior implemented in the archived scorer;
@@ -179,8 +203,8 @@ Changes that can alter the research meaning must not be treated as silent implem
 
 ```text
 load preregistration
-load four generated prompt files from frozen source commit
-verify prompt hashes
+verify frozen prompt hashes from exact Git source commit
+load four generated prompt files from that source
 enumerate the frozen/preregistered request order
 
 for each request:
@@ -189,7 +213,7 @@ for each request:
     parse using preregistered parsing rule
     append one immutable response row
 
-run technical-validity checks
+run provider-neutral structural integrity validator
 if invalid:
     preserve attempt and report invalid
     stop confirmatory interpretation
@@ -211,14 +235,22 @@ A contact-free public-benchmark reproduction should be able to produce, without 
 - runner or reproducible execution procedure;
 - run metadata compatible with `RUN-METADATA-SCHEMA.json`;
 - raw responses or justified restricted equivalent;
-- parsing/integrity audit;
+- provider-neutral parsing/integrity audit;
 - frozen confirmatory aggregate score;
 - amendments, if any;
 - exploratory analysis, if any, separately labeled;
 - completed result report;
 - completed evidence-label declaration.
 
-## 12. What to do when something is ambiguous
+## 12. Historical archive validators vs new-replication validators
+
+Keep these roles separate:
+
+- `validate_raw_integrity.py`: historical pre-score gate used by the original live-run workflow. It intentionally expects the original run metadata and `scoring_started=false` state.
+- `validate_provider_neutral_responses.py`: provider-neutral structural gate for a new public-benchmark reproduction.
+- completed Holdout archive evidence: verify using the preserved manifests, scoring audits, final audit, and archived aggregate artifacts; do not expect a pre-score gate to pass after scoring has occurred.
+
+## 13. What to do when something is ambiguous
 
 Do not ask the original project to choose the interpretation after seeing target-model outputs. Prefer the conservative path:
 
