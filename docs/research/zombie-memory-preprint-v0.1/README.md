@@ -28,12 +28,16 @@ Completed preparation decisions:
 - project context: **AranSoul Project**;
 - AI systems: disclosed research/engineering assistance, not scholarly authors;
 - human author retains final responsibility for all claims and publication decisions;
-- first Related Work positioning draft completed;
-- verified working bibliography started from primary paper records;
-- integrated manuscript front matter, problem definition, benchmark design, experimental setup, and confirmatory results drafted;
-- post-freeze amendment, exploratory analysis, discussion, and limitations drafted with explicit evidence labels.
+- Related Work positioning and working bibliography completed;
+- benchmark design, experimental setup, confirmatory results, post-freeze amendment, exploratory analysis, discussion, and limitations drafted;
+- reproducibility/artifact-availability, AI-assistance disclosure, conclusion, and references integrated;
+- first continuous end-to-end manuscript draft completed.
 
-Working files:
+Primary working manuscript:
+
+- `COMPLETE-MANUSCRIPT-DRAFT.md`
+
+Supporting preparation files:
 
 - `MANUSCRIPT-DRAFT.md`
 - `MANUSCRIPT-ANALYSIS-SECTIONS.md`
@@ -44,13 +48,13 @@ Working files:
 Still required before a public preprint:
 
 1. human author's chosen publication name;
-2. integrate the analysis sections and Related Work into one continuous manuscript;
-3. add reproducibility/artifact-availability, AI-assistance disclosure, conclusion, and final references sections;
-4. final human review and normalization of citations/references;
-5. publication snapshot commit/tag;
-6. final human review of wording, statistics, evidence labels, and venue-specific AI disclosure requirements.
+2. final human review of every substantive claim and evidence label;
+3. final citation/reference verification and formatting;
+4. choose and freeze an immutable publication snapshot commit/tag;
+5. review the current AI-use/authorship policy of the selected publication venue or preprint service;
+6. perform a final preprint-readiness audit on the publication snapshot.
 
-## Planned paper structure
+## Integrated paper structure
 
 1. Abstract
 2. Introduction
@@ -64,8 +68,9 @@ Still required before a public preprint:
 10. Discussion
 11. Limitations
 12. Reproducibility and Artifact Availability
-13. AI-Assistance Disclosure / Acknowledgements
-14. References
+13. AI-Assistance Disclosure
+14. Conclusion
+15. References
 
 ## Working principle
 
