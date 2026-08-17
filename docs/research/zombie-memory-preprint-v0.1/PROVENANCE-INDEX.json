@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "study": "Zombie Memory Holdout v0.1",
+  "status": "manuscript-preparation",
+  "publication_snapshot": null,
+  "claims": [
+    {
+      "id": "authority_exact_set",
+      "evidence_label": "preregistered_confirmatory_structured",
+      "reported_result": "186/288 = 64.58% pooled repeated responses; replications 61/96, 63/96, 62/96",
+      "primary_artifacts": [
+        "experiments/holdout/zombie-memory-holdout-v0.1/PREREGISTRATION.md",
+        "experiments/holdout/zombie-memory-holdout-v0.1/FREEZE-MANIFEST.json",
+        "experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-SCORING-CONTRACT.md",
+        "experiments/holdout/zombie-memory-holdout-v0.1/holdout_scorer.py",
+        "experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINDINGS.md",
+        "experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINAL-AUDIT.md"
+      ],
+      "notes": "The final executable scorer was committed after live execution began; pre-freeze record-level scorer fixtures preserved the authority exact-set semantics. Manuscript discloses this implementation-timing deviation."
+    },
+    {
+      "id": "semantic_current",
+      "evidence_label": "post_freeze_measurement_amendment",
+      "reported_result": "284/288 = 98.61%",
+      "primary_artifacts": [
+        "experiments/holdout/zombie-memory-holdout-v0.1/semantic_aggregate_score.py",
+        "experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINDINGS.md",
+        "experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINAL-AUDIT.md"
+      ]
+    },
+    {
+      "id": "semantic_historical",
+      "evidence_label": "post_freeze_measurement_amendment",
+      "reported_result": "283/288 = 98.26%",
+      "primary_artifacts": [
+        "experiments/holdout/zombie-memory-holdout-v0.1/semantic_aggregate_score.py",
+        "experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINDINGS.md",
+        "experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINAL-AUDIT.md"
+      ]
+    },
+    {
+      "id": "authority_error_taxonomy",
+      "evidence_label": "exploratory",
+      "reported_result": "102/102 authority failures were over-selection",
+      "primary_artifacts": [
+        "experiments/holdout/zombie-memory-holdout-v0.1/exploratory_authority_error_analysis.py",
+        "experiments/holdout/zombie-memory-holdout-v0.1/EXPLORATORY-AUTHORITY-ERROR-SUMMARY.json",
+        "experiments/holdout/zombie-memory-holdout-v0.1/EXPLORATORY-AUTHORITY-ERROR-AUDIT.md"
+      ]
+    },
+    {
+      "id": "stratified_extra_record_roles",
+      "evidence_label": "exploratory",
+      "reported_result": "18 sampled failures; 24 extra records: 14 supporting/context, 7 general rule outside scope, 3 current non-authoritative",
+      "primary_artifacts": [
+        "experiments/holdout/zombie-memory-holdout-v0.1/exploratory_stratified_error_analysis.py",
+        "experiments/holdout/zombie-memory-holdout-v0.1/EXPLORATORY-STRATIFIED-ERROR-ANALYSIS.json",
+        "experiments/holdout/zombie-memory-holdout-v0.1/EXPLORATORY-STRATIFIED-ERROR-AUDIT.md"
+      ]
+    }
+  ],
+  "replication_status": {
+    "within_protocol_replications": 3,
+    "independent_external_replication": false,
+    "fixed_case_units": 24,
+    "conditions": 4,
+    "repeated_responses": 288
+  },
+  "public_benchmark_source": {
+    "recommended_execution_ready_commit": "878b21f62faa9d999793b731198caac88a97bf62",
+    "documentation": "docs/experiments/zombie-memory-replication-kit-v0.1/PUBLIC-BENCHMARK-SOURCE.md"
+  },
+  "reproduction_entrypoint": "docs/research/zombie-memory-preprint-v0.1/REPRODUCE.md"
+}
