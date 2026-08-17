@@ -31,6 +31,7 @@ The repository deliberately separates **current governance**, **evaluation metho
 - [Canonical precommit criteria](experiments/precommit-criteria.md)
 - [Blind persona testing](experiments/blind-persona-testing.md)
 - [Evidence ladder](experiments/evidence-ladder.md)
+- [Zombie Memory independent replication protocol v0.1](experiments/zombie-memory-independent-replication-protocol-v0.1.md) — Candidate design for evaluation separation and future external replication; not a completed replication result
 
 ### Zombie Memory Holdout v0.1
 
