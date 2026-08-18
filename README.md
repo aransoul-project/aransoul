@@ -57,7 +57,7 @@ AranSoul's first completed holdout study asks a narrower question than simple me
 
 > Can a model distinguish information that is remembered or relevant from information that currently has decision authority?
 
-The study used a fixed 24-case holdout, four presentation conditions, three blind live replications, and 288 substantive model responses under stable execution settings.
+The study used a fixed 24-case holdout, four presentation conditions, three within-protocol live replications, and 288 substantive model responses under stable execution settings.
 
 ### Confirmatory authority result
 
