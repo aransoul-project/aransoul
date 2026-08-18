@@ -31,6 +31,8 @@ The public preprint is archived on Zenodo with the persistent DOI:
 - **Title:** *Zombie Memory: When Remembered Information Is Not Currently Authoritative*
 - **DOI:** `10.5281/zenodo.22000504`
 - **Persistent link:** <https://doi.org/10.5281/zenodo.22000504>
+- **Frozen research/manuscript tag:** `zombie-memory-preprint-v0.1`
+- **Frozen publication commit:** `8e06554889cb0f5e50072646b2f193476d000dcd`
 
 For citation of the paper as a publication, prefer the Zenodo DOI above. For verification of numerical results, protocol details, or provenance, additionally cite the exact GitHub commit and the relevant repository artifact.
 
