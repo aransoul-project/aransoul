@@ -26,10 +26,19 @@ For technical or research discussion, prefer citing the specific document that s
 
 **Zombie Memory Holdout v0.1 is a post-v0.1 research study.** It is not part of the fixed `v0.1` documentation-release contents merely because its study name also uses `v0.1`.
 
+The public preprint is archived on Zenodo with the persistent DOI:
+
+- **Title:** *Zombie Memory: When Remembered Information Is Not Currently Authoritative*
+- **DOI:** `10.5281/zenodo.22000504`
+- **Persistent link:** <https://doi.org/10.5281/zenodo.22000504>
+
+For citation of the paper as a publication, prefer the Zenodo DOI above. For verification of numerical results, protocol details, or provenance, additionally cite the exact GitHub commit and the relevant repository artifact.
+
 When citing results from this study:
 
-- cite the exact post-release commit consulted rather than only the repository `v0.1` tag;
-- prefer the study's `experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md` for the research narrative;
+- cite the Zenodo preprint for the publication-level research narrative;
+- cite the exact post-release GitHub commit consulted when a claim depends on repository evidence or provenance;
+- prefer the study's `experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md` for the repository research narrative;
 - use `HOLDOUT-V0.1-FINDINGS.md`, `HOLDOUT-V0.1-FINAL-AUDIT.md`, preregistration/freeze artifacts, and run/scoring artifacts when the claim requires the underlying evidence chain;
 - preserve the study's evidence-layer distinctions: preregistered confirmatory results, post-freeze measurement amendment, and exploratory analyses should not be cited as though they had the same evidentiary status;
 - describe the three completed live replications as **within-protocol replications**, not independent external replication.
