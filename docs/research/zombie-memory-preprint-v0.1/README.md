@@ -23,6 +23,7 @@ Manuscript preparation must not silently promote:
 
 Completed preparation decisions:
 
+- publication name: **康晉瑋**;
 - research identity: independent, self-directed research;
 - recommended affiliation: **Independent Researcher**;
 - project context: **AranSoul Project**;
@@ -47,12 +48,11 @@ Supporting preparation files:
 
 Still required before a public preprint:
 
-1. human author's chosen publication name;
-2. final human review of every substantive claim and evidence label;
-3. final citation/reference verification and formatting;
-4. choose and freeze an immutable publication snapshot commit/tag;
-5. review the current AI-use/authorship policy of the selected publication venue or preprint service;
-6. perform a final preprint-readiness audit on the publication snapshot.
+1. final human review of every substantive claim and evidence label;
+2. final citation/reference verification and formatting;
+3. choose and freeze an immutable publication snapshot commit/tag;
+4. review the current AI-use/authorship policy of the selected publication venue or preprint service;
+5. perform a final preprint-readiness audit on the publication snapshot.
 
 ## Integrated paper structure
 

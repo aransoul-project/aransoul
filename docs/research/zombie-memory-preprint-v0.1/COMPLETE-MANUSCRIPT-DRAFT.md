@@ -1,6 +1,6 @@
 # Zombie Memory: When Remembered Information Is Not Currently Authoritative
 
-**[human author's chosen publication name]**  
+**康晉瑋**<br>
 Independent Researcher  
 AranSoul Project
 
@@ -384,4 +384,4 @@ The result remains benchmark-specific. Independent external replication, cross-m
 
 ## Publication-status note
 
-This is a manuscript-preparation draft, not a submitted or accepted paper. Before public preprint release, the human author must choose the publication name, verify all references and claims, freeze an immutable repository snapshot, review the current venue-specific AI-use policy, and perform a final manuscript-level audit.
+This is a manuscript-preparation draft, not a submitted or accepted paper. Before public preprint release, the human author must verify all references and claims, freeze an immutable repository snapshot, review the current venue-specific AI-use policy, and perform a final manuscript-level audit.

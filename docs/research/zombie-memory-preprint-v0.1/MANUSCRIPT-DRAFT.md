@@ -1,6 +1,6 @@
 # Zombie Memory: When Remembered Information Is Not Currently Authoritative
 
-**[human author's chosen publication name]**  
+**康晉瑋**<br>
 Independent Researcher  
 AranSoul Project
 

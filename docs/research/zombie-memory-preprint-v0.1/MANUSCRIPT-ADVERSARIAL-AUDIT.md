@@ -12,7 +12,7 @@ The manuscript preserves the core evidence boundary correctly and no contradicti
 
 None identified that would invalidate the underlying Holdout result.
 
-Before public preprint release, however, the manuscript still requires the human publication name and an immutable publication snapshot/tag as already acknowledged in the manuscript workspace.
+Before public preprint release, however, the manuscript still requires an immutable publication snapshot/tag as already acknowledged in the manuscript workspace; the publication name is recorded as **康晉瑋**.
 
 ## Important
 

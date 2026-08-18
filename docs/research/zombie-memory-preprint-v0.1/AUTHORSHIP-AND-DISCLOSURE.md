@@ -8,13 +8,13 @@ The manuscript should present the human researcher as the sole scholarly author 
 
 Recommended presentation:
 
-- **Author:** [human author's chosen publication name]
+- **Author:** 康晉瑋
 - **Affiliation:** Independent Researcher
 - **Project context:** AranSoul Project
 
 The intended meaning is that this is independent, self-directed research conducted outside a university, company, or institutional research program. `AranSoul Project` identifies the research project in which the question developed; it should not be presented as a university, company, laboratory, or other institutional affiliation unless that status changes in the future.
 
-The publication name remains a human decision and is intentionally left unresolved in this repository document.
+The publication name has been decided and recorded as **康晉瑋**.
 
 ## Project-origin statement
 
@@ -76,7 +76,7 @@ This document does not claim that:
 
 Before any public preprint or venue submission:
 
-1. replace the author placeholder with the chosen publication name;
+1. confirm the recorded publication name is **康晉瑋**;
 2. confirm the exact affiliation wording;
 3. review the target venue's current AI-use and authorship policy;
 4. ensure every citation and related-work claim has been human-reviewed;

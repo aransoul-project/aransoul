@@ -17,8 +17,8 @@ The current manuscript audits found no remaining defect that requires a new live
 
 ## Required human decisions before release
 
-- [ ] Replace `[human author's chosen publication name]` with the chosen publication name.
-- [ ] Confirm final affiliation wording (current recommendation: `Independent Researcher`, with `AranSoul Project` as project context).
+- [x] Publication name recorded as `康晉瑋` in manuscript author fields.
+- [x] Final affiliation wording confirmed as `Independent Researcher`, with `AranSoul Project` as project context.
 - [ ] Human-review every substantive claim, citation, table, and limitation.
 - [ ] Confirm the final AI-assistance disclosure against the target preprint/venue policy.
 

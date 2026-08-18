@@ -16,7 +16,7 @@ Primary manuscript:
 
 `docs/research/zombie-memory-preprint-v0.1/COMPLETE-MANUSCRIPT-DRAFT.md`
 
-The manuscript author placeholder should be resolved to the publication identity above in the final formatted release artifact. The repository-local metadata in this file is the authoritative publication-identity decision for the v0.1 release-preparation stage.
+The manuscript author fields are resolved to the publication identity above. The repository-local metadata in this file is the authoritative publication-identity decision for the v0.1 release-preparation stage.
 
 ## Release boundary
 
