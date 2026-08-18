@@ -10,6 +10,8 @@ For researchers working on **LLM agents, long-term agent memory, stale memory, m
 
 The study asks whether an LLM can distinguish information that is merely **remembered, relevant, or supportive** from information that is **currently authoritative for a decision**. It separates answer correctness from exact authority-set identification and preserves preregistration, frozen inputs, raw evidence, scoring, amendments, exploratory analysis, and a provider-neutral replication kit.
 
+**Public preprint:** *Zombie Memory: When Remembered Information Is Not Currently Authoritative* — Zenodo DOI: [10.5281/zenodo.22000504](https://doi.org/10.5281/zenodo.22000504)
+
 Useful search terms for this research area include: `agent memory`, `LLM memory`, `long-term memory`, `stale memory`, `memory update`, `authority resolution`, `temporal validity`, `provenance`, `RAG`, `LLM evaluation`, `agent benchmark`, and `persistent agents`.
 
 Start with the [Zombie Memory research report](experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md), then see the [Replication Kit](docs/experiments/zombie-memory-replication-kit-v0.1/README.md) and [external replication handoff](docs/experiments/zombie-memory-external-replication-handoff-v0.1.md).
@@ -93,6 +95,7 @@ This framing is benchmark-specific and exploratory. It should not be generalized
 
 For the study itself, start here:
 
+- [Public preprint on Zenodo](https://doi.org/10.5281/zenodo.22000504) — DOI-archived publication version
 - [Research report](experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md) — paper-style overview and interpretation
 - [Findings](experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINDINGS.md) — evidence-layered results
 - [Final repository audit](experiments/holdout/zombie-memory-holdout-v0.1/HOLDOUT-V0.1-FINAL-AUDIT.md) — consistency and provenance audit
@@ -170,7 +173,7 @@ Licensing permission is separate from AranSoul governance status. Permission to 
 
 ## Citation
 
-See [CITATION.md](CITATION.md). Cite the fixed `v0.1` tag or release commit for claims about the v0.1 documentation baseline; for post-v0.1 research or evolving `main` content, cite the exact commit consulted.
+See [CITATION.md](CITATION.md). Cite the fixed `v0.1` tag or release commit for claims about the v0.1 documentation baseline; cite the [Zenodo preprint](https://doi.org/10.5281/zenodo.22000504) for the Zombie Memory paper, and use the exact GitHub commit plus relevant artifacts when verifying experiment-level provenance.
 
 ## Release status
 
