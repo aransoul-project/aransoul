@@ -124,6 +124,7 @@ The repository preserves confirmatory results, post-freeze measurement amendment
 - [Pre-commit criteria](docs/experiments/precommit-criteria.md)
 - [Blind persona testing](docs/experiments/blind-persona-testing.md)
 - [Evidence ladder](docs/experiments/evidence-ladder.md)
+- [AGBench Pilot v0.1 development research snapshot](research/agbench/pilot-v0.1/README.md) — static measurement-design snapshot only; not a released benchmark or model-performance result
 - [Zombie Memory benchmark v0.1](docs/experiments/zombie-memory-benchmark-v0.1.md)
 - [Zombie Memory Holdout v0.1 research report](experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md)
 
@@ -142,6 +143,7 @@ For a complete map, see [docs/README.md](docs/README.md).
 
 ## Repository structure
 
+- `research/` — public-safe development research snapshots that are intentionally separated from released benchmark or holdout claims
 - `docs/governance/` — governance, authority, and decision boundaries
 - `docs/memory/` — memory lifecycle, retirement, forgetting, rollback
 - `docs/metacognition/` — metacognitive checks and belief revision

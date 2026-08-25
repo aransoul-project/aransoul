@@ -35,6 +35,16 @@ Most AranSoul evidence to date comes from **internal longitudinal use, self-audi
 
 This evidence can support claims about internal consistency, operational usefulness within the studied setting, recurring behavioral patterns, and the project's ability to identify and revise some of its own assumptions. It should not be presented as independent external validation.
 
+### Development-only measurement design — AGBench Pilot v0.1
+
+AGBench Pilot v0.1 is currently preserved as a GitHub-safe **development research snapshot** after static measurement-design closure. Its status is `PAUSED_AFTER_STATIC_MEASUREMENT_DESIGN_CLOSURE`.
+
+The snapshot contains 16 synthetic cases (14 strict-primary and 2 controlled-scope diagnostics), six primary macro groups, seven complete strict contrast pairs, six recorded repairs, public-safe aggregation and measurement documentation, schemas, and offline validators.
+
+This snapshot is **not released, not frozen, not preregistered, and contains no model-performance claim**. It does not authorize a live experiment, provider adapter, scorer implementation, benchmark release, or GitHub Release. Private answer keys, blind-ID mappings, reviewer-only materials, adjudicator submissions, and other gold-bearing or sealed materials are excluded from the public-safe snapshot.
+
+See `research/agbench/pilot-v0.1/README.md`.
+
 ### Completed internal behavioral study — Zombie Memory Holdout v0.1
 
 A post-v0.1 study, **Zombie Memory Holdout v0.1**, completed three preregistered within-protocol live replications using the same frozen model snapshot, benchmark, prompts, and execution settings: **288 responses total**.

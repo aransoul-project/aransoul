@@ -31,6 +31,7 @@ The repository deliberately separates **current governance**, **evaluation metho
 - [Canonical precommit criteria](experiments/precommit-criteria.md)
 - [Blind persona testing](experiments/blind-persona-testing.md)
 - [Evidence ladder](experiments/evidence-ladder.md)
+- [AGBench Pilot v0.1 GitHub-safe development research snapshot](../research/agbench/pilot-v0.1/README.md) — `development_only`; paused after static measurement-design closure; not released, not frozen, not preregistered, and contains no model-performance claim
 - [Zombie Memory independent replication protocol v0.1](experiments/zombie-memory-independent-replication-protocol-v0.1.md) — Candidate design for evaluation separation and future external replication; not a completed replication result
 - [Zombie Memory replication kit v0.1](experiments/zombie-memory-replication-kit-v0.1/README.md) — Candidate handoff kit with preregistration, run-metadata, result-report, evidence-label, hash-verification, and provider-neutral integrity tooling; no new replication result
 - [Zombie Memory external replication handoff v0.1](experiments/zombie-memory-external-replication-handoff-v0.1.md) — Public handoff for researchers outside the original AranSoul execution/evaluation lineage; explicitly accepts Green, Red, null, contradictory, or Invalid outcomes
