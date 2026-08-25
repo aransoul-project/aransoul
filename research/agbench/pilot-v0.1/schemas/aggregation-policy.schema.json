@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["benchmark","version","status","case_counts","primary_macro_groups","strict_contrast_pairs","rules"],
+  "properties": {
+    "benchmark": {"const": "AGBench"},
+    "status": {"const": "development_only"}
+  }
+}
