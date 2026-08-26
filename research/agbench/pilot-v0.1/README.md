@@ -27,10 +27,13 @@ This corrective snapshot is a public-safe derivative of canonical development ar
 - `ARTIFACT-INDEX.md`
 - `RESUME-CONDITIONS.md`
 - `candidate-inventory.v0.2.public.json`
+- `canonical-content-fingerprints.v0.2.public.json`
 - `aggregation-policy.v0.2.public.json`
 - `measurement-track-revision.v0.1.md`
 - public-safe schemas
-- offline validators with real Draft 2020-12 schema execution, exact canonical-roster checks, and fail-closed leakage/negative tests
+- offline validators with real Draft 2020-12 schema execution, exact canonical-roster and 16-case content-fingerprint checks, aggregation arithmetic fixtures, and fail-closed leakage/negative tests
+
+The fingerprint manifest fixes a SHA-256 for each case over deterministic canonical JSON containing only `public_id`, `pair_id`, `track`, `scenario`, and `available_context` (`sort_keys=true`, compact separators, UTF-8, `ensure_ascii=false`). Expected hashes are stored independently of the inventory under test and contain no gold or private evaluation material.
 
 Run offline validation with Python 3 and the dependency pinned in `validators/requirements.txt`:
 

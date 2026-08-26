@@ -1,0 +1,26 @@
+{
+  "benchmark": "AGBench",
+  "version": "pilot-v0.1-public-content-fingerprints-v0.2",
+  "algorithm": "sha256",
+  "canonicalization": {"encoding":"UTF-8","sort_keys":true,"separators":[",",":"],"ensure_ascii":false},
+  "included_fields": ["public_id","pair_id","track","scenario","available_context"],
+  "fingerprints": {
+    "AGB-P01A":"2bab39f5bbaf20c75c7149d3391334edd47f0be48a66ca4d5881925b76fc7573",
+    "AGB-P01B":"a9aa9d0697616c649648bd1002e69ccbe0c4e2803f37873fdf41804ef9b2093b",
+    "AGB-P02A":"8fb4479367a66d4368485dcddd52a819cb611204852e7c4b2f60c1eac9a60f58",
+    "AGB-P02B":"1880719fa6706d224853448802a0fec83b3e3acf4dc684ab242de2bb175c4f45",
+    "AGB-P03A":"89322fb55a7caf0ce0e9c000e0b1c86505cff171268081244bba3b9a2374afa5",
+    "AGB-P03B":"02f3901ab0e1d42bbbc39b50ad8a9b9c1f59b00d04f4af3649e52adaf426f24e",
+    "AGB-P04A":"bc707cfb63d3c6961d202d008e06ae8f1891d26caf3ae6037ff995ddc5b43d1a",
+    "AGB-P04B":"7a4c735e68ac7e6db9c82216f8cd12995320ea759a2d67740eaa94cb563136c8",
+    "AGB-P05A":"25dc3fa31120a72ea671fc8fcdecc0accaa652ce9d37a9dfcf1d315389ac9ffa",
+    "AGB-P05B":"d758e250b9ece044029bae9c3e05e8f15da9cfe19e88b6dc333dfb0d99ce2604",
+    "AGB-P06A":"e8a13b80a5ee4acf3813af595f00da7d481f29a3d02e31f9a9c05bb15b009610",
+    "AGB-P06B":"ecf3c824416ff00676100486d504b375c8be35ce8f36b0850d201adbfbf255a5",
+    "AGB-P07A":"1b41490e4b72cced9aeb9c40ef7dad2885daee5e19de2b94b9599e0225398b23",
+    "AGB-P07B":"fec1ef1abf0c7023f07744c12a16eb5016482d16d1ef5325f3b9b64fe420733b",
+    "AGB-P08A":"ad08050f3cdf769a5937e56dc63313a4a63af1cfba07181752980f14f9c87b78",
+    "AGB-P08B":"4d412d314fb3625f68a7b687a33960437404ea2bd22db5e0cb0a7757eef1b453"
+  },
+  "excludes": ["gold","expected_behavior","reviewer_output","blind_mapping","private_fields"]
+}
