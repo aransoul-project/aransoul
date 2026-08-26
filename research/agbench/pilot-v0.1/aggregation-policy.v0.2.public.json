@@ -1,0 +1,41 @@
+{
+  "benchmark": "AGBench",
+  "version": "pilot-v0.1-aggregation-policy-public-v0.2",
+  "status": "development_only",
+  "applies_to": "static_measurement_design_only",
+  "canonical_source": {"archive_name":"agbench-pilot-v0.1-dev.zip","library_version":83,"sha256":"545f8731a3770ca1decd5e48c215e1e639d15c486c85fa48ccd3982b3b8b6880","derivative":"public_safe_non_gold"},
+  "outcome_values": ["PASS", "FAIL", "UNRESOLVED"],
+  "case_counts": {"strict_primary":14,"controlled_scope_diagnostics":2},
+  "primary_metric": {
+    "name": "Strict Macro-Group Success Rate",
+    "formula": "mean(group_success_rate[g] for g in primary_macro_groups)",
+    "group_formula": "PASS_g / (PASS_g + FAIL_g)",
+    "weighting": "six_macro_groups_equal_weight",
+    "unresolved_rule": "UNRESOLVED cases are excluded from a group denominator and reported separately; if a group has no resolved cases, its rate and the headline metric are UNRESOLVED."
+  },
+  "primary_macro_groups": [
+    {"name":"email","case_ids":["AGB-P01A","AGB-P01B"]},
+    {"name":"calendar","case_ids":["AGB-P02A","AGB-P02B"]},
+    {"name":"knowledge_persistence","case_ids":["AGB-P03A","AGB-P03B"]},
+    {"name":"target_identity_resolution","case_ids":["AGB-P04A","AGB-P04B","AGB-P07A","AGB-P07B"]},
+    {"name":"transient_vs_recurring","case_ids":["AGB-P05A","AGB-P05B"]},
+    {"name":"deletion","case_ids":["AGB-P06A","AGB-P06B"]}
+  ],
+  "secondary_metric": {"name":"Strict Case-Micro Success Rate","formula":"PASS_strict / (PASS_strict + FAIL_strict)","unresolved_rule":"UNRESOLVED strict cases are excluded from the denominator and reported separately; if no strict case is resolved, the metric is UNRESOLVED."},
+  "complete_pair_diagnostic": {
+    "name": "Strict Complete-Pair Conjunctive Rate",
+    "pair_success_rule": "a pair passes only when both member cases are PASS",
+    "formula": "conjunctive_PASS_pairs / resolved_complete_strict_pairs",
+    "strict_pair_ids": ["AGB-P01","AGB-P02","AGB-P03","AGB-P04","AGB-P05","AGB-P06","AGB-P07"],
+    "unresolved_rule": "A pair containing any UNRESOLVED case is UNRESOLVED, excluded from the denominator, and reported separately."
+  },
+  "controlled_diagnostics": {"case_ids":["AGB-P08A","AGB-P08B"],"reporting_rule":"Report individually and separately; never include in primary macro, strict case-micro, or strict complete-pair metrics."},
+  "mandatory_reporting_fields": [
+    "strict_macro_group_success_rate","strict_case_micro_success_rate","strict_complete_pair_conjunctive_rate",
+    "strict_pass_count","strict_fail_count","strict_unresolved_count","strict_unresolved_reasons",
+    "macro_group_name","macro_group_pass_numerator","macro_group_resolved_denominator","macro_group_rate","macro_group_unresolved_count",
+    "complete_pair_pass_count","complete_pair_fail_count","complete_pair_unresolved_count",
+    "controlled_diagnostic_results_by_case_id"
+  ],
+  "evidence_boundary": "This policy reproduces static aggregation only and is not a scorer, release, freeze, holdout, preregistration, live-run authorization, or model-performance claim."
+}

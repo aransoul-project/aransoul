@@ -1,9 +1,1 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "type": "object",
-  "required": ["benchmark","version","status","case_counts","primary_macro_groups","strict_contrast_pairs","rules"],
-  "properties": {
-    "benchmark": {"const": "AGBench"},
-    "status": {"const": "development_only"}
-  }
-}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","additionalProperties":false,"required":["benchmark","version","status","applies_to","canonical_source","outcome_values","case_counts","primary_metric","primary_macro_groups","secondary_metric","complete_pair_diagnostic","controlled_diagnostics","mandatory_reporting_fields","evidence_boundary"],"properties":{"benchmark":{"const":"AGBench"},"version":{"const":"pilot-v0.1-aggregation-policy-public-v0.2"},"status":{"const":"development_only"},"applies_to":{"const":"static_measurement_design_only"},"canonical_source":{"type":"object"},"outcome_values":{"const":["PASS","FAIL","UNRESOLVED"]},"case_counts":{"const":{"strict_primary":14,"controlled_scope_diagnostics":2}},"primary_metric":{"type":"object","required":["name","formula","group_formula","weighting","unresolved_rule"]},"primary_macro_groups":{"type":"array","minItems":6,"maxItems":6,"items":{"type":"object","additionalProperties":false,"required":["name","case_ids"],"properties":{"name":{"type":"string"},"case_ids":{"type":"array","minItems":2,"uniqueItems":true,"items":{"type":"string","pattern":"^AGB-P0[1-7][AB]$"}}}}},"secondary_metric":{"type":"object","required":["name","formula","unresolved_rule"]},"complete_pair_diagnostic":{"type":"object","required":["name","pair_success_rule","formula","strict_pair_ids","unresolved_rule"]},"controlled_diagnostics":{"type":"object","required":["case_ids","reporting_rule"]},"mandatory_reporting_fields":{"type":"array","minItems":16,"uniqueItems":true,"items":{"type":"string"}},"evidence_boundary":{"type":"string","minLength":1}}}

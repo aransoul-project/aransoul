@@ -16,7 +16,9 @@ This is **not** a benchmark release, **not** a frozen holdout, **not** a preregi
 - 7 complete strict contrast pairs
 - 6 recorded repairs
 
-The model-facing case file intentionally contains scenarios and observable context only. It excludes expected behavior, gold labels, blind identifiers, reviewer decisions, adjudicator submissions, and private mappings.
+The public inventory preserves canonical case/pair identity, measurement track, scenarios, and observable context. Because track is public measurement metadata, the file is explicitly **not** a direct model input. It excludes expected behavior, gold labels, blind identifiers, reviewer decisions, adjudicator submissions, and private mappings.
+
+This corrective snapshot is a public-safe derivative of canonical development archive `agbench-pilot-v0.1-dev.zip`, Library version 83, SHA-256 `545f8731a3770ca1decd5e48c215e1e639d15c486c85fa48ccd3982b3b8b6880`. The private archive itself is not included.
 
 ## Included
 
@@ -24,11 +26,17 @@ The model-facing case file intentionally contains scenarios and observable conte
 - `FINAL-STATUS.md`
 - `ARTIFACT-INDEX.md`
 - `RESUME-CONDITIONS.md`
-- `candidate-inventory.v0.2.model-facing.json`
-- `aggregation-policy.v0.1.json`
+- `candidate-inventory.v0.2.public.json`
+- `aggregation-policy.v0.2.public.json`
 - `measurement-track-revision.v0.1.md`
 - public-safe schemas
-- offline validators, including a fail-closed leakage validator
+- offline validators with real Draft 2020-12 schema execution, exact canonical-roster checks, and fail-closed leakage/negative tests
+
+Run offline validation with Python 3 and the dependency pinned in `validators/requirements.txt`:
+
+```text
+python validators/validate_snapshot.py --self-test
+```
 
 ## Explicitly excluded
 
