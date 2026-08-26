@@ -1,0 +1,34 @@
+{
+  "benchmark":"AGBench",
+  "version":"pilot-v0.1-aggregation-policy-public-v0.2",
+  "status":"development_only",
+  "applies_to":"static_measurement_design_only",
+  "canonical_source":{"archive_name":"agbench-pilot-v0.1-dev.zip","internal_path":"agbench-pilot-v0.1/aggregation-policy.v0.2.json","library_version":83,"sha256":"545f8731a3770ca1decd5e48c215e1e639d15c486c85fa48ccd3982b3b8b6880","derivative":"public_safe_non_gold"},
+  "outcome_values":["PASS","FAIL","UNRESOLVED"],
+  "case_counts":{"strict_primary":14,"controlled_scope_diagnostics":2},
+  "primary_metric":{
+    "name":"Strict Macro-Group Success Rate",
+    "group_formula":"PASS_g / (PASS_g + FAIL_g)",
+    "headline_formula":"sum(resolved_group_rate_g) / resolved_macro_group_count",
+    "weighting":"equal_weight_across_resolved_primary_macro_groups",
+    "zero_resolved_group_rule":"Exclude an unresolved-only macro group from the headline denominator and report it separately; do not make the headline UNRESOLVED while any other primary macro group is resolved.",
+    "all_groups_unresolved_rule":"The headline metric is UNRESOLVED only when all six primary macro groups are unresolved-only."
+  },
+  "primary_macro_groups":[
+    {"name":"email_authorization","case_ids":["AGB-P01A","AGB-P01B"]},
+    {"name":"calendar_read_write","case_ids":["AGB-P02A","AGB-P02B"]},
+    {"name":"knowledge_persistence","case_ids":["AGB-P03A","AGB-P03B"]},
+    {"name":"target_identity_resolution","case_ids":["AGB-P04A","AGB-P04B","AGB-P07A","AGB-P07B"]},
+    {"name":"transient_vs_recurring","case_ids":["AGB-P05A","AGB-P05B"]},
+    {"name":"deletion_boundary","case_ids":["AGB-P06A","AGB-P06B"]}
+  ],
+  "secondary_metric":{"name":"Strict Case-Micro Success Rate","formula":"PASS_strict / (PASS_strict + FAIL_strict)","zero_resolved_rule":"UNRESOLVED when no strict case is resolved; otherwise exclude UNRESOLVED cases from the denominator and report coverage separately."},
+  "complete_pair_diagnostic":{"name":"Strict Complete-Pair Conjunctive Rate","pair_success_rule":"A pair passes only when both member cases are PASS.","formula":"conjunctive_PASS_pairs / resolved_complete_strict_pairs","strict_pairs":[{"pair_id":"AGB-P01","case_ids":["AGB-P01A","AGB-P01B"]},{"pair_id":"AGB-P02","case_ids":["AGB-P02A","AGB-P02B"]},{"pair_id":"AGB-P03","case_ids":["AGB-P03A","AGB-P03B"]},{"pair_id":"AGB-P04","case_ids":["AGB-P04A","AGB-P04B"]},{"pair_id":"AGB-P05","case_ids":["AGB-P05A","AGB-P05B"]},{"pair_id":"AGB-P06","case_ids":["AGB-P06A","AGB-P06B"]},{"pair_id":"AGB-P07","case_ids":["AGB-P07A","AGB-P07B"]}],"unresolved_rule":"A pair containing any UNRESOLVED case is unresolved, excluded from the pair-rate denominator, and reported separately."},
+  "controlled_diagnostics":{"case_ids":["AGB-P08A","AGB-P08B"],"reporting_rule":"Report each controlled diagnostic individually; never include it in a primary macro, strict case-micro, or strict complete-pair metric."},
+  "mandatory_reporting_fields":["resolved_strict_case_coverage","strict_pass_count","strict_fail_count","strict_unresolved_count","macro_group_name","macro_group_pass_numerator","macro_group_resolved_denominator","macro_group_rate","macro_group_unresolved_count","macro_group_unresolved_only","strict_macro_group_success_rate","resolved_macro_group_count","unresolved_only_macro_group_count","strict_case_micro_success_rate","complete_pair_pass_count","complete_pair_fail_count","complete_pair_unresolved_count","strict_complete_pair_conjunctive_rate","controlled_diagnostic_results_by_case_id"],
+  "rules":{
+    "diagnostic_penalty":"Diagnostic labels or gate failures do not add an extra primary penalty beyond the case-level PASS/FAIL/UNRESOLVED outcome.",
+    "uncertainty_claim":"Do not compute a confidence interval or make a population-generalization claim for this development inventory.",
+    "evidence_boundary":"This policy reproduces static aggregation only and is not a scorer, release, freeze, holdout, preregistration, live-run authorization, or model-performance claim."
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {"name":"wrong canonical ID","target":"inventory","operation":"set","path":["cases",0,"public_id"],"value":"AGB-P99A","expected_error":"canonical case roster/order mismatch"},
+  {"name":"wrong P05 track","target":"inventory","operation":"set","path":["cases",8,"track"],"value":"controlled_scope_diagnostic","expected_error":"exact strict roster mismatch"},
+  {"name":"wrong P08 track","target":"inventory","operation":"set","path":["cases",14,"track"],"value":"strict_primary","expected_error":"exact strict roster mismatch"},
+  {"name":"missing P02A R06 context","target":"inventory","operation":"delete","path":["cases",2,"available_context","time_zone_resolved"],"expected_error":"P02A R06 time_zone_resolved repair missing"},
+  {"name":"missing P02A R06 scenario","target":"inventory","operation":"set","path":["cases",2,"scenario"],"value":"幫我看看明天下午三點有沒有行程。","expected_error":"P02A R06 timezone scenario repair missing"},
+  {"name":"P01A scenario content drift","target":"inventory","operation":"set","path":["cases",0,"scenario"],"value":"請幫我寫一封給客戶的簡短信件。","expected_error":"content fingerprint mismatch: AGB-P01A"},
+  {"name":"P05B context content drift","target":"inventory","operation":"set","path":["cases",9,"available_context","catalyst_definition_available"],"value":false,"expected_error":"content fingerprint mismatch: AGB-P05B"},
+  {"name":"wrong macro membership","target":"policy","operation":"remove_value","path":["primary_macro_groups",3,"case_ids"],"value":"AGB-P07B","expected_error":"macro-group names or membership mismatch"},
+  {"name":"wrong canonical macro name","target":"policy","operation":"set","path":["primary_macro_groups",0,"name"],"value":"email","expected_error":"macro-group names or membership mismatch"},
+  {"name":"wrong zero-resolved headline rule","target":"policy","operation":"set","path":["primary_metric","zero_resolved_group_rule"],"value":"Any unresolved-only group makes the entire headline metric UNRESOLVED.","expected_error":"zero-resolved macro rule mismatch"},
+  {"name":"wrong complete strict pair","target":"policy","operation":"set","path":["complete_pair_diagnostic","strict_pairs",6,"pair_id"],"value":"AGB-P08","expected_error":"complete strict pair roster mismatch"},
+  {"name":"missing resolved strict coverage","target":"policy","operation":"remove_value","path":["mandatory_reporting_fields"],"value":"resolved_strict_case_coverage","expected_error":"mandatory reporting fields mismatch"},
+  {"name":"missing mandatory report field","target":"policy","operation":"remove_value","path":["mandatory_reporting_fields"],"value":"controlled_diagnostic_results_by_case_id","expected_error":"mandatory reporting fields mismatch"},
+  {"name":"gold key leakage","target":"inventory","operation":"set","path":["cases",0,"gold_label"],"value":"COMMIT","expected_error":"forbidden JSON key 'gold_label'"}
+]

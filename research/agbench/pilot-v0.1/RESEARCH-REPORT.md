@@ -16,7 +16,7 @@ Offline validation for P0, P1, inventory structure, aggregation logic, and final
 
 The target is observable behavior and externally inspectable effects, not hidden reasoning labels. A case is useful only when its pass/fail boundary can be grounded in channels such as response text, tool calls, or post-state.
 
-The model-facing material therefore includes only scenario text and supplied observable context. Expected behavior and adjudication belong to a separate private evaluation layer and are intentionally absent here.
+The public inventory therefore includes canonical case/pair identity, measurement track, scenario text, and supplied observable context, and is not direct model input. Expected behavior and adjudication belong to a separate private evaluation layer and are intentionally absent here.
 
 ## Scope limits
 
