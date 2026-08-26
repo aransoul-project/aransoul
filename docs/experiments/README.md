@@ -1,16 +1,27 @@
 # Experiments
 
-This directory contains evaluation methods, experimental protocols, interpretation frameworks, and candidate research. It should remain distinct from the governance baseline while still documenting methods that have already been adopted for testing.
+This directory contains evaluation methods, experimental protocols, interpretation frameworks, and project-specific research support. It should remain distinct from the governance baseline while still documenting methods that have already been adopted for testing.
 
-## Current methods and frameworks
+## Shared evaluation methods and frameworks
+
+These documents are reusable research infrastructure and are not owned by a single research project.
 
 - [Precommit criteria](precommit-criteria.md) — **canonical current evaluation protocol**. Define objective, expected behavior, failure conditions, and alternative explanations before observing the result; classify outcomes as Green / Amber / Red / Invalid.
 - [Blind persona testing](blind-persona-testing.md) — **current specialized protocol**. Remove explicit role cues, anonymize outputs, and test whether behavioral distinctions remain observable.
 - [Evidence ladder](evidence-ladder.md) — **current interpretation framework**. Separate a run's result from the strength of the experimental design that produced it.
 
-## Candidate experiments
+## Zombie Memory project-specific materials
 
-- [Zombie Memory Benchmark v0.1](zombie-memory-benchmark-v0.1.md) — **pre-registered candidate experiment** testing whether explicit Truth / Time / Effect / Authority representation reduces stale-authority errors relative to plain-context and timestamp-only baselines. No empirical result has been claimed yet.
+The following files support the Zombie Memory research project rather than defining shared AranSoul evaluation methods:
+
+- [Zombie Memory Benchmark v0.1](zombie-memory-benchmark-v0.1.md) — protocol for the original benchmark line.
+- [Independent replication protocol v0.1](zombie-memory-independent-replication-protocol-v0.1.md) — candidate protocol for stronger evaluator separation and external replication.
+- [Replication kit v0.1](zombie-memory-replication-kit-v0.1/README.md) — handoff materials and integrity tooling for replication.
+- [External replication handoff v0.1](zombie-memory-external-replication-handoff-v0.1.md) — researcher-facing handoff that explicitly permits null, negative, contradictory, or Invalid outcomes.
+- [External replication outreach template](EXTERNAL-REPLICATION-OUTREACH-TEMPLATE.md) — communication template for prospective external replication.
+- [Preprint readiness audit](ZOMBIE-MEMORY-PREPRINT-READINESS-AUDIT.md) — audit for the publication pathway; not a new empirical result.
+
+For the cross-directory project map, use the [Zombie Memory project entry](../../research/zombie-memory/README.md).
 
 ## Method status is not claim status
 
@@ -23,7 +34,7 @@ A method can be current while the claim it investigates remains candidate or wea
 
 For example, blind testing is a current evaluation protocol. That does not mean stable cross-context persona identity has been established.
 
-Likewise, the Zombie Memory benchmark protocol can be pre-registered before any result exists; the protocol's presence is not evidence that T/T/E/A will outperform simpler baselines.
+Likewise, the presence of a Zombie Memory protocol, replication kit, or outreach package does not by itself establish the hypothesis, complete an independent replication, or strengthen an empirical result beyond the evidence actually recorded.
 
 ## Candidate research and stronger evidence goals
 
@@ -49,4 +60,4 @@ Green / Amber / Red / Invalid and the Evidence Ladder answer different questions
 
 ## Naming note
 
-`precommit-criteria.md` is the canonical current entry for AranSoul's pre-registered behavioral-test criteria. The older `pre-registered-criteria.md` file is retained for provenance and points to the same methodological lineage.
+`precommit-criteria.md` is the canonical current entry for AranSoul's pre-registered behavioral-test criteria. The older `pre-registered-criteria.md` file is retained for provenance and already carries an explicit status notice; future edits should target the canonical file unless historical comparison is the purpose.
