@@ -10,6 +10,10 @@ These documents are reusable research infrastructure and are not owned by a sing
 - [Blind persona testing](blind-persona-testing.md) — **current specialized protocol**. Remove explicit role cues, anonymize outputs, and test whether behavioral distinctions remain observable.
 - [Evidence ladder](evidence-ladder.md) — **current interpretation framework**. Separate a run's result from the strength of the experimental design that produced it.
 
+## EREQ candidate research companion
+
+- [External Review Evidence Qualification (EREQ)](ereq/README.md) — v0.1–v0.13 semantic scorer development notes, including local reviewer agreement, gold-support concerns, errata, and explicit evidence limits. This is not a validated benchmark, a complete scorer, or evidence of real-repository review capability. Historical protocol and provenance limitations remain explicit.
+
 ## Zombie Memory project-specific materials
 
 The following files support the Zombie Memory research project rather than defining shared AranSoul evaluation methods:
