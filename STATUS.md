@@ -45,11 +45,13 @@ This snapshot is **not released, not frozen, not preregistered, and contains no 
 
 See `research/agbench/pilot-v0.1/README.md`.
 
-### Candidate research companion — EREQ v0.1–v0.13
+### Candidate research companion — EREQ development series
 
 [External Review Evidence Qualification](docs/experiments/ereq/README.md) records development of semantic rules for classifying review claims against supplied synthetic facts. In the narrow v0.13 eight-item Version / Result Provenance fixture, two self-declared eligible reviewer submissions matched the frozen key on disposition, exact axis set, and primary class. This does not establish complete scorer reliability, independent gold correctness, full protocol conformance, model rankings, or real-repository review validity.
 
 The companion preserves historical disagreement, the v0.10 three-reviewer agreement correction (13/16), a post-freeze gold-support concern, and protocol/provenance limitations. Underlying internal records and provider-session exports are not included in this public summary. EREQ remains candidate research; this documentation does not change AGBench's paused status or authorize a live experiment.
+
+The subsequent D03 integrated development regression collected three 35-item submissions (105 reviewer-items, 35 cases). Collection and discrepancy analysis are complete, but the predeclared full-match development gate was not met: exact-axis and rationale defects remain. Reviewer provenance is self-reported or unresolved; an additional GPT fresh-chat response is exploratory and excluded from the primary denominator. See the companion for the version-specific counts and limitations. EREQ remains Candidate; complete scorer validation has not been established.
 
 ### Completed internal behavioral study — Zombie Memory Holdout v0.1
 

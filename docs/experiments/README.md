@@ -12,7 +12,7 @@ These documents are reusable research infrastructure and are not owned by a sing
 
 ## EREQ candidate research companion
 
-- [External Review Evidence Qualification (EREQ)](ereq/README.md) — v0.1–v0.13 semantic scorer development notes, including local reviewer agreement, gold-support concerns, errata, and explicit evidence limits. This is not a validated benchmark, a complete scorer, or evidence of real-repository review capability. Historical protocol and provenance limitations remain explicit.
+- [External Review Evidence Qualification (EREQ)](ereq/README.md) — v0.1–v0.13 semantic scorer development notes and the D03 integrated development regression, whose full-match gate was not met; includes local reviewer agreement, gold-support concerns, errata, and explicit evidence limits. This is not a validated benchmark, a complete scorer, or evidence of real-repository review capability. Historical protocol and provenance limitations remain explicit.
 
 ## Zombie Memory project-specific materials
 
