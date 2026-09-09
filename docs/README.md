@@ -31,7 +31,7 @@ The repository deliberately separates **current governance**, **evaluation metho
 - [Canonical precommit criteria](experiments/precommit-criteria.md)
 - [Blind persona testing](experiments/blind-persona-testing.md)
 - [Evidence ladder](experiments/evidence-ladder.md)
-- [EREQ research companion](experiments/ereq/README.md) — candidate semantic scorer development notes for v0.1–v0.13; preserves disagreement, errata, and evidence limits; not a validated benchmark or real-repository review result
+- [EREQ research companion](experiments/ereq/README.md) — candidate semantic scorer development notes for v0.1–v0.13 and the D03 integrated regression; D03's full-match development gate was not met; preserves disagreement, errata, and evidence limits; not a validated benchmark or real-repository review result
 - [AGBench Pilot v0.1 GitHub-safe development research snapshot](../research/agbench/pilot-v0.1/README.md) — `development_only`; paused after static measurement-design closure; not released, not frozen, not preregistered, and contains no model-performance claim
 - [Zombie Memory independent replication protocol v0.1](experiments/zombie-memory-independent-replication-protocol-v0.1.md) — Candidate design for evaluation separation and future external replication; not a completed replication result
 - [Zombie Memory replication kit v0.1](experiments/zombie-memory-replication-kit-v0.1/README.md) — Candidate handoff kit with preregistration, run-metadata, result-report, evidence-label, hash-verification, and provider-neutral integrity tooling; no new replication result
