@@ -40,9 +40,11 @@ Current hosting is intentionally preserved for provenance. This map does not aut
 
 AGBench studies observable agent-governance boundaries and currently remains at a static measurement-design stage.
 
+- [AGBench research entry](agbench/README.md)
 - [AGBench Pilot v0.1 development snapshot](agbench/pilot-v0.1/README.md)
+- [Underspecification Gate v0.1 exploratory note](agbench/underspecification-gate-v0.1.md)
 
-Current status remains `development_only` and `PAUSED_AFTER_STATIC_MEASUREMENT_DESIGN_CLOSURE`. AGBench is not a released benchmark, frozen holdout, preregistration, or model-performance result.
+Current Pilot v0.1 status remains `development_only` and `PAUSED_AFTER_STATIC_MEASUREMENT_DESIGN_CLOSURE`. The exploratory Underspecification Gate note does not reopen or supersede that closure. AGBench is not a released benchmark, frozen holdout, preregistration, or model-performance result.
 
 ## Repository Support
 
