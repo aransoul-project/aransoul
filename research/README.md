@@ -15,3 +15,7 @@ Zombie Memory is treated as an independent research project currently hosted ins
 - [AGBench Pilot v0.1 — GitHub-safe development research snapshot](agbench/pilot-v0.1/README.md) — `development_only`; `PAUSED_AFTER_STATIC_MEASUREMENT_DESIGN_CLOSURE`; not released, not frozen, not preregistered, and contains no model-performance claim.
 
 AGBench remains an incubated research project. The presence of a project identity does not imply independent release, repository extraction, or benchmark maturity.
+
+## Context and governance comparisons
+
+- [Exploratory observations: v0.4, v0.6-R, and v0.7](context-governance/README.md) — internal-record summary of salience similarity, a non-replicating candidate, and no measured governance gain; incomplete raw evidence and unverified execution provenance prevent independent result validation. Versions are not pooled; no baseline or AGBench status change.
