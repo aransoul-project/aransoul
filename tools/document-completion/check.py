@@ -86,6 +86,8 @@ def verify(contract):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("contract", help="JSON expectations fixed before verification")
+    parser.add_argument("--completion", action="store_true",
+                        help="Include a scoped completion receipt only after fresh verification")
     args = parser.parse_args()
     try:
         with open(args.contract, encoding="utf-8") as source:
@@ -97,6 +99,17 @@ def main():
         result = {"status": "UNVERIFIED", "reason": type(error).__name__}
     result["checked_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
     result["scope"] = "remote branch snapshot and expected file bytes only"
+    if args.completion:
+        result["completion"] = None
+        if result["status"] == "PASS":
+            result["completion"] = {
+                "claim": "Specified remote file bytes verified at the recorded branch snapshot",
+                "repository": result["repository"],
+                "branch": result["branch"],
+                "commit": result["observed_commit"],
+                "paths": [item["path"] for item in result["files"]],
+                "checked_at": result["checked_at"],
+            }
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return {"PASS": 0, "FAIL": 1, "UNVERIFIED": 2}[result["status"]]
 
