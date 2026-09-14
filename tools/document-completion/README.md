@@ -75,3 +75,28 @@ branch `main`, expected and observed commit
 Expectations were computed from the previously fetched, reviewed merge commit
 before the checker made its fresh fetch. This exercises the live transport and
 byte comparison; it is not an independent content-quality review.
+
+## Completion receipt entry point (pending execution verification)
+
+```sh
+python3 tools/document-completion/check.py contract.json --completion > result.json
+```
+
+This entry point always runs a fresh verification. It adds a structured
+`completion` receipt only on PASS; FAIL and UNVERIFIED produce `completion: null`
+and retain nonzero exit codes. The receipt binds the limited claim to repository,
+branch, observed commit, specified paths, and check time. It accepts no prior
+report as evidence. Callers must check the current exit code and current output;
+never reuse a report left over from an earlier invocation.
+
+This gates the CLI's receipt generation only. It is not installed as a mandatory
+ChatGPT response gate and cannot stop an assistant from making an unrelated claim.
+No automatic repository workflow or branch protection has been enabled.
+
+Three added tests cover receipt status/exit behavior, timeout suppression, and
+success followed by unavailable verification without reusing a receipt. They mock
+the verifier to isolate output control; the existing tests exercise Git objects.
+The execution environment was unavailable for this amendment, so these tests and
+the modified CLI have **not been run**. The nine-test result above applies only to
+the earlier implementation at commit `4d9654e8a19ad2707b8d4b8c4be26a01f622cf65`.
+Keep this PR in draft until the updated suite and a live invocation are verified.
