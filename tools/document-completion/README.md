@@ -76,7 +76,7 @@ Expectations were computed from the previously fetched, reviewed merge commit
 before the checker made its fresh fetch. This exercises the live transport and
 byte comparison; it is not an independent content-quality review.
 
-## Completion receipt entry point (pending execution verification)
+## Completion receipt entry point
 
 ```sh
 python3 tools/document-completion/check.py contract.json --completion > result.json
@@ -96,7 +96,53 @@ No automatic repository workflow or branch protection has been enabled.
 Three added tests cover receipt status/exit behavior, timeout suppression, and
 success followed by unavailable verification without reusing a receipt. They mock
 the verifier to isolate output control; the existing tests exercise Git objects.
-The execution environment was unavailable for this amendment, so these tests and
-the modified CLI have **not been run**. The nine-test result above applies only to
+The amendment was initially unexecuted. The nine-test result above applies only to
 the earlier implementation at commit `4d9654e8a19ad2707b8d4b8c4be26a01f622cf65`.
-Keep this PR in draft until the updated suite and a live invocation are verified.
+
+## Receipt validation (2026-09-14 UTC)
+
+Reviewed PR head: `5371e232a37cd5181b685be09cc54bf2299b6149`.
+Windows Python 3.12.14 initially ran 12 tests with 12 fixture errors:
+`WinError 1314` when creating OS symlinks. The fixture now creates a real Git
+mode `120000` entry using `hash-object` and `update-index`, requiring no OS
+symlink privilege. All 12 tests then passed (4.663 seconds); none were skipped.
+The CLI implementation is unchanged. Command (use the Python executable path
+in place of `python3` on this Windows environment):
+
+```sh
+python3 -m unittest discover -s tools/document-completion -p 'test_*.py' -v
+python3 tools/document-completion/check.py contract.json --completion
+```
+
+The live invocation at `2026-09-14T18:11:58.802445+00:00` returned PASS, exit 0,
+and a completion receipt matching repository, branch, commit, all three paths,
+and check time. Contract fixed from reviewed Git blobs **before** the separate
+checker fetch:
+
+```json
+{
+  "repository": "aransoul-project/aransoul",
+  "branch": "feat/document-completion-check",
+  "commit": "5371e232a37cd5181b685be09cc54bf2299b6149",
+  "files": {
+    "tools/document-completion/README.md": "3d3c36abe9bf35ce3bada50138fff1da38a260e2776f2871059d6a917fcf8581",
+    "tools/document-completion/check.py": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6",
+    "tools/document-completion/test_check.py": "baad0852b552c786bca1d749b4cf45b905bf46398d6f8578d88a8ad99e5774c9"
+  }
+}
+```
+
+All observed hashes equaled these expectations. The executed `check.py` SHA-256
+was `3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6`.
+Default Windows Schannel first failed with `SEC_E_NO_CREDENTIALS`; that invocation
+correctly returned UNVERIFIED, exit 2, and `completion: null`. The successful run
+used process-local Git configuration `http.sslBackend=openssl` (certificate
+verification remained enabled). No credential or global Git settings changed.
+
+The amended test fixture and this README are later than the contract above.
+Final pushed-head and post-merge contracts/results are recorded in PR #35;
+their hashes are frozen before each checker fetch, with post-merge file hashes
+carried forward from the reviewed final PR version. This avoids a self-referential
+README hash. These checks establish snapshot bytes only, not independent content
+quality, authorship, authorization, or future persistence. Candidate prototype,
+EREQ Candidate, and AGBench paused statuses remain unchanged.

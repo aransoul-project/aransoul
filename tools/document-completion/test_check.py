@@ -16,8 +16,14 @@ class CompletionTests(unittest.TestCase):
         check.git(self.root, 'config', 'user.email', 'test@example.invalid')
         check.git(self.root, 'config', 'user.name', 'Fixture')
         (self.root / 'note.md').write_bytes(b'approved\n')
-        (self.root / 'link.md').symlink_to('note.md')
         check.git(self.root, 'add', '.')
+        # Construct a real Git symlink entry without OS symlink privileges.
+        target = self.root / 'link-target'
+        target.write_bytes(b'note.md')
+        blob = check.git(self.root, 'hash-object', '-w', str(target)).decode().strip()
+        target.unlink()
+        check.git(self.root, 'update-index', '--add', '--cacheinfo',
+                  '120000', blob, 'link.md')
         check.git(self.root, 'commit', '--quiet', '-m', 'fixture')
         sha = check.git(self.root, 'rev-parse', 'HEAD').decode().strip()
         (self.root / '.git' / 'FETCH_HEAD').write_text(sha + '\n')
