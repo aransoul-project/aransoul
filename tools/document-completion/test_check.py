@@ -69,5 +69,52 @@ class CompletionTests(unittest.TestCase):
             self.assertEqual(json.loads(output.call_args.args[0])['status'], 'UNVERIFIED')
 
 
+    def test_completion_receipt_requires_fresh_success(self):
+        import json
+        contract_file = self.root / 'contract.json'
+        contract_file.write_text(json.dumps(self.contract))
+        for status, code in [('PASS', 0), ('FAIL', 1), ('UNVERIFIED', 2)]:
+            result = dict(status=status, observed_commit=self.contract['commit'],
+                          files=[{'path': 'note.md', 'status': status}])
+            with self.subTest(status=status), \
+                 patch('sys.argv', ['check.py', str(contract_file), '--completion']), \
+                 patch('check.verify', return_value=result) as verifier, \
+                 patch('builtins.print') as output:
+                self.assertEqual(check.main(), code)
+                verifier.assert_called_once_with(self.contract)
+                report = json.loads(output.call_args.args[0])
+                if status == 'PASS':
+                    self.assertEqual(report['completion']['commit'], self.contract['commit'])
+                    self.assertEqual(report['completion']['paths'], ['note.md'])
+                    self.assertEqual(report['completion']['checked_at'], report['checked_at'])
+                else:
+                    self.assertIsNone(report['completion'])
+
+    def test_completion_timeout_has_no_receipt(self):
+        import json
+        contract_file = self.root / 'contract.json'
+        contract_file.write_text(json.dumps(self.contract))
+        with patch('sys.argv', ['check.py', str(contract_file), '--completion']), \
+             patch('check.verify', side_effect=subprocess.TimeoutExpired('git', 60)), \
+             patch('builtins.print') as output:
+            self.assertEqual(check.main(), 2)
+            self.assertIsNone(json.loads(output.call_args.args[0])['completion'])
+
+    def test_completion_does_not_reuse_previous_success(self):
+        import json
+        contract_file = self.root / 'contract.json'
+        contract_file.write_text(json.dumps(self.contract))
+        passed = dict(status='PASS', observed_commit=self.contract['commit'],
+                      files=[{'path': 'note.md', 'status': 'PASS'}])
+        with patch('sys.argv', ['check.py', str(contract_file), '--completion']), \
+             patch('check.verify', side_effect=[passed, OSError('unavailable')]) as verifier, \
+             patch('builtins.print') as output:
+            self.assertEqual(check.main(), 0)
+            self.assertIsNotNone(json.loads(output.call_args.args[0])['completion'])
+            self.assertEqual(check.main(), 2)
+            self.assertIsNone(json.loads(output.call_args.args[0])['completion'])
+            self.assertEqual(verifier.call_count, 2)
+
+
 if __name__ == '__main__':
     unittest.main()
