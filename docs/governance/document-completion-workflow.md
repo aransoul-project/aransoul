@@ -13,7 +13,10 @@ ChatGPT enforcement. Agent adherence has not been measured.
 
 ## Procedure
 
-1. Review the intended document bytes against the user's request. Fix repository,
+1. Complete the [task-to-path coverage gate](document-completion-coverage.md)
+   against the original user request. Reconcile required paths with contract paths;
+   unresolved requirements block a whole-task completion claim even if bytes PASS.
+   Review the intended document bytes against the user's request. Fix repository,
    destination branch, required paths and SHA-256 expectations before the checker
    fetches. Include every document covered by the planned completion claim.
    Store the contract outside the files it verifies to avoid self-reference.
