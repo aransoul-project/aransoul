@@ -1,0 +1,55 @@
+[
+  {
+    "timestamp": "2026-09-15T19:18:35.346Z",
+    "ordinal": 7,
+    "type": "turn_context",
+    "payload": {
+      "turn_id": "01a0a681-b6c2-7762-9e4b-326aa38a4383",
+      "root_turn_id": "01a0a681-b6c2-7762-9e4b-326aa38a4383",
+      "cwd": "C:\\Users\\LOCAL_USER\\Documents\\AranSoul-Codex-Lab\\pr37-private\\session-B-repair1",
+      "workspace_roots": [
+        "C:\\Users\\LOCAL_USER\\Documents\\AranSoul-Codex-Lab\\pr37-private\\session-B-repair1"
+      ],
+      "current_date": "2026-09-16",
+      "timezone": "Asia/Taipei",
+      "approval_policy": "never",
+      "approvals_reviewer": "user",
+      "sandbox_policy": {
+        "type": "read-only"
+      },
+      "permission_profile": {
+        "type": "managed",
+        "file_system": {
+          "type": "restricted",
+          "entries": [
+            {
+              "path": {
+                "type": "special",
+                "value": {
+                  "kind": "root"
+                }
+              },
+              "access": "read"
+            }
+          ]
+        },
+        "network": "restricted"
+      },
+      "model": "gpt-6-astra",
+      "comp_hash": "3000",
+      "personality": "pragmatic",
+      "collaboration_mode": {
+        "mode": "default",
+        "settings": {
+          "model": "gpt-6-astra",
+          "reasoning_effort": "medium",
+          "developer_instructions": null
+        }
+      },
+      "multi_agent_version": "v2",
+      "realtime_active": false,
+      "effort": "medium",
+      "summary": "auto"
+    }
+  }
+]

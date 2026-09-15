@@ -1,0 +1,12 @@
+{
+  "expected_commit": "6597053f3a84183e08f3b9aa96aea7c0646f7d95",
+  "observed_commit": "4e7594e3e2907519698012c8e4da5e8e3ea21de0",
+  "files": [],
+  "status": "FAIL",
+  "reason": "VERSION_MISMATCH",
+  "repository": "aransoul-project/aransoul",
+  "branch": "main",
+  "checked_at": "2026-09-15T19:21:53.476068+00:00",
+  "scope": "remote branch snapshot and expected file bytes only",
+  "completion": null
+}

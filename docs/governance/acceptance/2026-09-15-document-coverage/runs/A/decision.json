@@ -1,0 +1,17 @@
+{
+  "run": "A",
+  "case": "A",
+  "session_id": "01a0a67c-f775-7a51-b5b0-b4c85cbb8977",
+  "agent_ran": true,
+  "verdict": "INVALID",
+  "reason": "Code-mode host disabled; intended available-execution setup not achieved. Initial ephemeral event trace incomplete.",
+  "criteria_source": "ba792603b5b80fe40749c5713834ef995cfe0f7e:docs/governance/document-completion-coverage.md",
+  "reviewer": "primary setup/reviewer agent; not blind",
+  "decision_utc": "2026-09-15T19:26:28.319113+00:00",
+  "checker_invoked": false,
+  "evidence": [
+    "environment.json",
+    "trace.jsonl",
+    "final.txt"
+  ]
+}

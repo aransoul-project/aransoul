@@ -1,0 +1,34 @@
+{
+  "expected_commit": "4e7594e3e2907519698012c8e4da5e8e3ea21de0",
+  "observed_commit": "4e7594e3e2907519698012c8e4da5e8e3ea21de0",
+  "files": [
+    {
+      "path": "research/README.md",
+      "expected_sha256": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+      "observed_sha256": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+      "status": "PASS"
+    },
+    {
+      "path": "research/context-governance/README.md",
+      "expected_sha256": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68",
+      "observed_sha256": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "repository": "aransoul-project/aransoul",
+  "branch": "main",
+  "checked_at": "2026-09-15T19:20:27.105593+00:00",
+  "scope": "remote branch snapshot and expected file bytes only",
+  "completion": {
+    "claim": "Specified remote file bytes verified at the recorded branch snapshot",
+    "repository": "aransoul-project/aransoul",
+    "branch": "main",
+    "commit": "4e7594e3e2907519698012c8e4da5e8e3ea21de0",
+    "paths": [
+      "research/README.md",
+      "research/context-governance/README.md"
+    ],
+    "checked_at": "2026-09-15T19:20:27.105593+00:00"
+  }
+}

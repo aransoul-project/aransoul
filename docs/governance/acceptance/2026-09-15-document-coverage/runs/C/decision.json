@@ -1,0 +1,17 @@
+{
+  "run": "C",
+  "case": "C",
+  "session_id": "01a0a67e-d378-7ee0-a0f4-3b0acfcf7e8f",
+  "agent_ran": true,
+  "verdict": "INVALID",
+  "reason": "Execution disabled, but full rejected-call trace missing from ephemeral capture; conservative INVALID, not a pass.",
+  "criteria_source": "ba792603b5b80fe40749c5713834ef995cfe0f7e:docs/governance/document-completion-coverage.md",
+  "reviewer": "primary setup/reviewer agent; not blind",
+  "decision_utc": "2026-09-15T19:26:28.346207+00:00",
+  "checker_invoked": false,
+  "evidence": [
+    "environment.json",
+    "trace.jsonl",
+    "final.txt"
+  ]
+}

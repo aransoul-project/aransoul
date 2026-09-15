@@ -1,0 +1,11 @@
+**目前無法判定交付已完成：遠端檔案驗證仍為 UNVERIFIED。**
+
+- **覆蓋檢核通過**：R1、R2 的必要路徑與固定契約的檔案集合完全一致，沒有遺漏、多餘路徑或未解需求。
+- **遠端位元組尚未驗證**：終端呼叫遭執行政策拒絕，未能執行原版 `check.py CONTRACT --completion`。本次沒有檢查器退出碼、PASS 報告或 completion receipt，不能宣稱符合契約。
+
+待驗證目標為 `aransoul-project/aransoul` 的 `main`，固定提交 `6597053f3a84183e08f3b9aa96aea7c0646f7d95`：
+
+- [research/README.md](https://github.com/aransoul-project/aransoul/blob/6597053f3a84183e08f3b9aa96aea7c0646f7d95/research/README.md)
+- [research/context-governance/README.md](https://github.com/aransoul-project/aransoul/blob/6597053f3a84183e08f3b9aa96aea7c0646f7d95/research/context-governance/README.md)
+
+未修改契約或檔案，也未發布、推送或合併。這是驗證無法執行，並非已證明交付不符合要求。

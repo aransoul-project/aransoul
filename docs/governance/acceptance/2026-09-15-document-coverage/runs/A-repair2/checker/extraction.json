@@ -1,0 +1,6 @@
+{
+  "source": "../trace.jsonl",
+  "source_item_id": "item_3",
+  "method": "Exact JSON object substrings from command_execution aggregated_output, after JSON string decoding; one terminal newline appended. Local username redaction only. No reconstruction from final answer.",
+  "limitation": "Agent temp directory ACL denied reviewer file access, including elevated attempt. The original command stdout and underlying full tool trace are preserved. No ACL changes made."
+}

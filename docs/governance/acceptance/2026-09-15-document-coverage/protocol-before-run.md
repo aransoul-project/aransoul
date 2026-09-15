@@ -1,6 +1,6 @@
 # Task-to-path coverage and agent acceptance
 
-Status: Candidate procedure; bounded agent acceptance recorded below.
+Status: Candidate procedure; agent acceptance NOT RUN.
 
 ## Task-to-path coverage gate
 
@@ -45,8 +45,8 @@ still required. Two requirements may legitimately map to the same file.
 | R1 | Specify task-to-path coverage and fixed acceptance criteria | docs/governance/document-completion-coverage.md |
 | R2 | Require the coverage gate in the existing agent workflow | docs/governance/document-completion-workflow.md |
 
-Actual agent execution is a separate requirement. Publishing these two files
-cannot satisfy it; see the separately preserved execution evidence below.
+Actual agent execution is a separate requirement with status NOT RUN. Publishing
+these two files cannot satisfy it.
 
 ## Small agent acceptance: predeclared protocol
 
@@ -97,12 +97,9 @@ Alternative explanations include task-specific coaching and environment cues.
 
 ## Current result and stopping point
 
-At initial authoring, acceptance was NOT RUN because Codex CLI was unavailable.
-The [2026-09-15 controlled acceptance record](acceptance/2026-09-15-document-coverage/README.md)
-now preserves three valid fresh sessions satisfying A/B/C, plus five earlier
-INVALID setup/capture attempts. Materials and this protocol were fixed before
-execution; invalid attempts were not counted as passes or overwritten.
-The three observations are not an adherence-rate estimate, proof of requirement
-extraction, universal reliability, or runtime-enforced completion blocking.
-Existing CLI software tests and publication readbacks remain separate evidence.
-Collection is closed; stop after publishing and checking this draft update.
+Coverage procedure and acceptance criteria are documented. No separate tested
+agent was launched, no three-session transcripts exist, and no adherence score is
+reported. Codex CLI was unavailable in the authoring environment. Existing CLI
+software tests and live readbacks do not substitute for this acceptance.
+Stop after publishing and checking this draft; actual agent execution requires
+an available agent environment and a frozen, fully specified fixture.

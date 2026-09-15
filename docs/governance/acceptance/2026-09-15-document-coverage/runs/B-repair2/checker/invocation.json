@@ -1,0 +1,11 @@
+{
+  "command": [
+    "C:\\Users\\LOCAL_USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "tools/document-completion/check.py",
+    "C:\\Users\\LOCAL_USER\\Documents\\AranSoul-Codex-Lab\\pr37-private\\session-B-repair2\\verification-evidence-8b98f4edb580\\contract.json",
+    "--completion"
+  ],
+  "exit_code": 1,
+  "report": "report.json",
+  "valid_current_completion": false
+}
