@@ -1,0 +1,8 @@
+[
+  "apply_patch",
+  "clock__curr_time",
+  "create_goal",
+  "get_goal",
+  "update_goal",
+  "view_image"
+]

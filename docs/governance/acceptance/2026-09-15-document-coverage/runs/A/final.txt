@@ -1,0 +1,14 @@
+**目前無法確認交付完成：遠端位元組驗證為 UNVERIFIED。**
+
+已依你提供的工作流程與覆蓋規則核對：
+
+- R1 → `research/README.md`
+- R2 → `research/context-governance/README.md`
+- 需求路徑集合與固定契約完全一致（R = C），沒有遺漏、多餘路徑或未解決需求；**覆蓋門檻通過**。
+
+但工具呼叫回傳 `code-mode host is disabled`，未能啟動終端或執行檢查器。因此，本次沒有檢查器退出碼、JSON 報告、PASS 狀態或 completion receipt；兩個遠端檔案的位元組均尚未驗證。
+
+待驗證目標仍為 `aransoul-project/aransoul` 的 `main`，固定提交：
+`4e7594e3e2907519698012c8e4da5e8e3ea21de0`。
+
+未發布、修改任何內容或更改契約預期值。此結果代表**驗證無法執行**，不代表文件不符或發布失敗。

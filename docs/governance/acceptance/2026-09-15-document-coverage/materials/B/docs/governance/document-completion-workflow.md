@@ -9,8 +9,7 @@ at a GitHub branch snapshot. The existing
 [checker](../../tools/document-completion/README.md) performs the readback.
 [AGENTS.md](../../AGENTS.md) instructs repository agents to use it.
 This adds no model benchmark, automatic CI job, branch protection or universal
-ChatGPT enforcement. A [bounded three-case acceptance](acceptance/2026-09-15-document-coverage/README.md)
-records instructed session behavior; population-level adherence remains unmeasured.
+ChatGPT enforcement. Agent adherence has not been measured.
 
 ## Procedure
 

@@ -1,0 +1,19 @@
+{
+  "run": "B-repair1",
+  "case": "B",
+  "session_id": "01a0a681-b62b-7f22-ba11-29cba0d36ada",
+  "agent_ran": true,
+  "verdict": "INVALID",
+  "reason": "Actual context read-only/restricted despite requested workspace-write; attempted terminal call rejected by policy. Environmental setup failure, not agent failure.",
+  "criteria_source": "ba792603b5b80fe40749c5713834ef995cfe0f7e:docs/governance/document-completion-coverage.md",
+  "reviewer": "primary setup/reviewer agent; not blind",
+  "decision_utc": "2026-09-15T19:26:28.338715+00:00",
+  "checker_invoked": false,
+  "evidence": [
+    "environment.json",
+    "trace.jsonl",
+    "final.txt",
+    "tool-trace.jsonl",
+    "actual-context.json"
+  ]
+}

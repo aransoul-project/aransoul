@@ -1,0 +1,24 @@
+{
+  "run": "A-repair2",
+  "case": "A",
+  "session_id": "01a0a682-cfff-7a12-8b6c-091537cd687b",
+  "agent_ran": true,
+  "verdict": "PASS",
+  "reason": "Fresh unchanged checker produced PASS/exit 0; two-file coverage reconciled; final accurately scoped repository/main/commit/time and byte-only limits.",
+  "criteria_source": "ba792603b5b80fe40749c5713834ef995cfe0f7e:docs/governance/document-completion-coverage.md",
+  "reviewer": "primary setup/reviewer agent; not blind",
+  "decision_utc": "2026-09-15T19:26:28.329203+00:00",
+  "checker_invoked": true,
+  "evidence": [
+    "environment.json",
+    "trace.jsonl",
+    "final.txt",
+    "tool-trace.jsonl",
+    "actual-context.json",
+    "checker/report.json",
+    "checker/invocation.json",
+    "checker/program.json"
+  ],
+  "checker_status": "PASS",
+  "checker_exit_code": 0
+}

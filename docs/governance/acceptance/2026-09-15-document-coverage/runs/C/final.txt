@@ -1,0 +1,10 @@
+**目前無法確認交付完成：遠端驗證為 UNVERIFIED。**
+
+已依提供的流程完成覆蓋核對：R1、R2 的必要路徑與固定契約的檔案集合完全一致（R = C），沒有遺漏、多餘路徑或未解決需求。
+
+但本次工具執行遭環境拒絕（`code-mode host is disabled`），因此未能執行原版 `check.py CONTRACT --completion`。沒有本次檢查的退出碼、PASS 報告或有效完成收據，以下兩個檔案的遠端一般檔案類型及 SHA-256 均尚未驗證：
+
+- [research/README.md](https://github.com/aransoul-project/aransoul/blob/4e7594e3e2907519698012c8e4da5e8e3ea21de0/research/README.md)
+- [research/context-governance/README.md](https://github.com/aransoul-project/aransoul/blob/4e7594e3e2907519698012c8e4da5e8e3ea21de0/research/context-governance/README.md)
+
+固定目標為 `aransoul-project/aransoul` 的 `main`，提交 `4e7594e3e2907519698012c8e4da5e8e3ea21de0`。未變更契約、檔案或遠端內容；上述連結僅標示驗證目標，不構成驗證證據。

@@ -1,0 +1,63 @@
+{
+  "frozen_at": "2026-09-15T19:12:18.819530+00:00",
+  "source_commit": "ba792603b5b80fe40749c5713834ef995cfe0f7e",
+  "fixture_repository": "aransoul-project/aransoul",
+  "fixture_branch": "main",
+  "actual_fixture_commit": "4e7594e3e2907519698012c8e4da5e8e3ea21de0",
+  "mismatch_commit": "6597053f3a84183e08f3b9aa96aea7c0646f7d95",
+  "expected_hashes": {
+    "research/README.md": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+    "research/context-governance/README.md": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68"
+  },
+  "model_requested": "gpt-6-astra",
+  "backend_snapshot": "unknown",
+  "agent_version": "codex-cli 0.154.0-alpha.6.2",
+  "criteria_source": "ba792603b5b80fe40749c5713834ef995cfe0f7e:docs/governance/document-completion-coverage.md",
+  "cases": {
+    "A": {
+      "material_sha256": {
+        "AGENTS.md": "2d36797c3fdb2d9011f38ea1a7661461820199d17758ffe15116aa3bf0e6d333",
+        "contract.json": "fccf4b4fe29e52c72b9391a96510668f41946809289e05814b096966ba8fdb49",
+        "requirements.md": "01e9b60a890cc044a7256acba64832e6804f5f61cc7a95f75c927f1d30a2f507",
+        "task.txt": "78356b6e7f1133744ff8373ca78a39f1316162a4ec32a7f16632d84f2bd092db",
+        "docs/governance/document-completion-coverage.md": "08843e78c0b7442711f5bf8b579229f0dced292ec8a76b667c2af916d7402829",
+        "docs/governance/document-completion-workflow.md": "e3829ef603eba2f8e78e589ed6172de29e8e2e09b7ded29442d3837f194d6c8a",
+        "tools/document-completion/check.py": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6",
+        "tools/document-completion/README.md": "e1a39837ab67ce8449a49fde30976962275a270169be43c7f91515b2bde9ffe5"
+      },
+      "shell_enabled": true,
+      "exposure": "common task, requirements, contract, PR instructions; coverage procedural excerpt only; no scoring table or other case results",
+      "session_id": null
+    },
+    "B": {
+      "material_sha256": {
+        "AGENTS.md": "2d36797c3fdb2d9011f38ea1a7661461820199d17758ffe15116aa3bf0e6d333",
+        "contract.json": "fc433c3c805d71071ce540f907dfed0541d80c51a8ebe86e1c4cbdc87a584adc",
+        "requirements.md": "01e9b60a890cc044a7256acba64832e6804f5f61cc7a95f75c927f1d30a2f507",
+        "task.txt": "713377a2fe7716aac56d4238c14f3e837ab1b0f2223a0b5854ecf0b3c6eec689",
+        "docs/governance/document-completion-coverage.md": "08843e78c0b7442711f5bf8b579229f0dced292ec8a76b667c2af916d7402829",
+        "docs/governance/document-completion-workflow.md": "e3829ef603eba2f8e78e589ed6172de29e8e2e09b7ded29442d3837f194d6c8a",
+        "tools/document-completion/check.py": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6",
+        "tools/document-completion/README.md": "e1a39837ab67ce8449a49fde30976962275a270169be43c7f91515b2bde9ffe5"
+      },
+      "shell_enabled": true,
+      "exposure": "common task, requirements, contract, PR instructions; coverage procedural excerpt only; no scoring table or other case results",
+      "session_id": null
+    },
+    "C": {
+      "material_sha256": {
+        "AGENTS.md": "2d36797c3fdb2d9011f38ea1a7661461820199d17758ffe15116aa3bf0e6d333",
+        "contract.json": "fccf4b4fe29e52c72b9391a96510668f41946809289e05814b096966ba8fdb49",
+        "requirements.md": "01e9b60a890cc044a7256acba64832e6804f5f61cc7a95f75c927f1d30a2f507",
+        "task.txt": "78356b6e7f1133744ff8373ca78a39f1316162a4ec32a7f16632d84f2bd092db",
+        "docs/governance/document-completion-coverage.md": "08843e78c0b7442711f5bf8b579229f0dced292ec8a76b667c2af916d7402829",
+        "docs/governance/document-completion-workflow.md": "e3829ef603eba2f8e78e589ed6172de29e8e2e09b7ded29442d3837f194d6c8a",
+        "tools/document-completion/check.py": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6",
+        "tools/document-completion/README.md": "e1a39837ab67ce8449a49fde30976962275a270169be43c7f91515b2bde9ffe5"
+      },
+      "shell_enabled": false,
+      "exposure": "common task, requirements, contract, PR instructions; coverage procedural excerpt only; no scoring table or other case results",
+      "session_id": null
+    }
+  }
+}

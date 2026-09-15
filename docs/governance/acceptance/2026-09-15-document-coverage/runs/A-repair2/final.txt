@@ -1,0 +1,16 @@
+**交付在指定的兩項檔案位元組驗證範圍內已完成。**
+
+需求覆蓋檢查通過：R1、R2 與契約路徑完全一致，沒有未解項目。本次執行原有 checker 的結束碼為 **0**、狀態 **PASS**；非空完成收據的儲存庫、分支、commit、完整路徑集合與本次檢查時間均相符。
+
+目標：`aransoul-project/aransoul`，`main`  
+Commit：`4e7594e3e2907519698012c8e4da5e8e3ea21de0`  
+檢查時間：`2026-09-15T19:20:27.105593+00:00`
+
+| 需求 | 遠端檔案 | 結果 |
+| --- | --- | --- |
+| R1 | [research/README.md](https://github.com/aransoul-project/aransoul/blob/4e7594e3e2907519698012c8e4da5e8e3ea21de0/research/README.md) | 一般檔案，SHA-256 符合固定契約 |
+| R2 | [research/context-governance/README.md](https://github.com/aransoul-project/aransoul/blob/4e7594e3e2907519698012c8e4da5e8e3ea21de0/research/context-governance/README.md) | 一般檔案，SHA-256 符合固定契約 |
+
+[本次驗證報告](C:/Users/LOCAL_USER/Documents/AranSoul-Codex-Lab/pr37-private/session-A-repair2/delivery-evidence-bkblbfby/report.json)與[執行紀錄](C:/Users/LOCAL_USER/Documents/AranSoul-Codex-Lab/pr37-private/session-A-repair2/delivery-evidence-bkblbfby/invocation.json)已保存在本地。
+
+未修改固定期待值，也未發布或合併。結論僅涵蓋檢查時的指定快照位元組，不代表內容品質或後續分支狀態。
