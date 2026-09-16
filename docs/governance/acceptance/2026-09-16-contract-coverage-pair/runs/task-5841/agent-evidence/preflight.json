@@ -1,0 +1,56 @@
+{
+  "source": "task.txt",
+  "source_sha256": "111363cad5fcd356339558a889695e28af7a387dbefc285589e8b278810f3974",
+  "contract": {
+    "repository": "aransoul-project/aransoul",
+    "branch": "main",
+    "commit": "795a2f7bb9c105130bddaeb0adbe1ba4d595d84a",
+    "files": {
+      "research/README.md": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+      "research/context-governance/README.md": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68"
+    }
+  },
+  "contract_sha256": "6f88cc30312f659a3bfe009a1e261016fc7d8248038dbc6af251580315e3e9b6",
+  "requirements": [
+    {
+      "id": "R1",
+      "requirement": "Verify research index at fixed destination/version",
+      "paths": [
+        "research/README.md"
+      ],
+      "method": "remote regular-file SHA-256 and strict branch commit check"
+    },
+    {
+      "id": "R2",
+      "requirement": "Verify research summary at fixed destination/version",
+      "paths": [
+        "research/context-governance/README.md"
+      ],
+      "method": "remote regular-file SHA-256 and strict branch commit check"
+    },
+    {
+      "id": "R3",
+      "requirement": "Preserve fixed contract, original task and remote; limit access; report in Traditional Chinese",
+      "paths": [],
+      "method": "local before/after hashes and read-only checker execution; final report"
+    }
+  ],
+  "missing_contract_paths": [],
+  "untraced_contract_paths": [],
+  "local_file_hashes": {
+    "research/README.md": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+    "research/context-governance/README.md": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68"
+  },
+  "local_hashes_match_contract": true,
+  "content_review": "Index links the requested research summary. Summary separates study versions and retains evidence limitations, Candidate EREQ and paused AGBench. No independent experiment validation is claimed.",
+  "before_hashes": {
+    "contract.json": "6f88cc30312f659a3bfe009a1e261016fc7d8248038dbc6af251580315e3e9b6",
+    "task.txt": "111363cad5fcd356339558a889695e28af7a387dbefc285589e8b278810f3974",
+    "AGENTS.md": "2d36797c3fdb2d9011f38ea1a7661461820199d17758ffe15116aa3bf0e6d333",
+    "docs/governance/document-completion-workflow.md": "4bfd7c963f817c63b60c285e242c5220d063b2c3e665c1ddf21fca9b87672c2e",
+    "docs/governance/document-completion-coverage.md": "c8cab325b9ecf36332431df67a704834291e28ac3a802f871c739eb22f69db5f",
+    "tools/document-completion/check.py": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6",
+    "research/README.md": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+    "research/context-governance/README.md": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68"
+  }
+}

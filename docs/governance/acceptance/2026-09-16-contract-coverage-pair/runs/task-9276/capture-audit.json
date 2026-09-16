@@ -1,0 +1,20 @@
+{
+  "session_id": "01a0ab9b-47cb-7632-b095-3703fff7585a",
+  "agent_cli_version_observed": "0.154.0-alpha.6.2",
+  "model_observed": "gpt-6-astra",
+  "backend_snapshot": "unknown",
+  "tool_call_pairs": 3,
+  "completed_terminal_calls": 3,
+  "no_missing_tool_returns": true,
+  "full_private_rollout_sha256": "d8a50c925f35f8b5c07e6a5706542c8da3218dbb2281f2ff10a39164c5c19d27",
+  "tool_trace_method": "All persisted tool call and tool output records, original JSONL bytes except account redaction. CLI JSONL additionally preserves nested command executions and agent commentary. Hidden runtime instructions and internal reasoning excluded. Context is a capability/version-only projection.",
+  "checker_evidence_source": "Direct copy of agent-created files; corroborated by command_execution item_6; no reconstruction or stdout extraction required.",
+  "program": {
+    "source_commit": "795a2f7bb9c105130bddaeb0adbe1ba4d595d84a",
+    "path": "tools/document-completion/check.py",
+    "sha256": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6"
+  },
+  "original_inputs_unchanged": true,
+  "remote_endpoint_refs_unchanged": true,
+  "exposure_review": "Only common user task, applicable AGENTS and runtime environment user messages found. All calls restricted to local supplied inputs, locally created evidence, and unchanged checker remote fetch. No sibling/evaluator files or old acceptance fetched in trace. Visible instructions, reviewer not blind."
+}

@@ -1,0 +1,55 @@
+{
+  "utc": "2026-09-16T19:02:59.635732+00:00",
+  "version": {
+    "command": [
+      "C:\\Users\\LOCAL_USER\\AppData\\Local\\OpenAI\\Codex\\bin\\12219cbfbcbddde7\\codex.EXE",
+      "--version"
+    ],
+    "start_utc": "2026-09-16T19:02:59.635732+00:00",
+    "end_utc": "2026-09-16T19:02:59.656981+00:00",
+    "exit_code": 0,
+    "stdout": "codex-cli 0.154.0-alpha.6.2\n",
+    "stderr": ""
+  },
+  "auth": {
+    "command": [
+      "C:\\Users\\LOCAL_USER\\AppData\\Local\\OpenAI\\Codex\\bin\\12219cbfbcbddde7\\codex.EXE",
+      "login",
+      "status"
+    ],
+    "start_utc": "2026-09-16T19:02:59.656981+00:00",
+    "end_utc": "2026-09-16T19:02:59.677871+00:00",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "Logged in using ChatGPT\n"
+  },
+  "persisted_sessions_directory_readable": true,
+  "removed_inherited_environment_names": [
+    "CODEX_APP_TOOLS_PIPE_PATH",
+    "CODEX_CI",
+    "CODEX_INTERNAL_ORIGINATOR_OVERRIDE",
+    "CODEX_MCP_NODE_PATH",
+    "CODEX_PERMISSION_PROFILE",
+    "CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE",
+    "CODEX_SANDBOX_NETWORK_DISABLED",
+    "CODEX_SESSION_ID",
+    "CODEX_SHELL",
+    "CODEX_THREAD_ID",
+    "CODEX_VERSION",
+    "OPENAI_API_KEY"
+  ],
+  "main": {
+    "command": [
+      "git",
+      "ls-remote",
+      "https://github.com/aransoul-project/aransoul.git",
+      "refs/heads/main"
+    ],
+    "start_utc": "2026-09-16T19:02:59.677871+00:00",
+    "end_utc": "2026-09-16T19:03:00.537042+00:00",
+    "exit_code": 0,
+    "stdout": "795a2f7bb9c105130bddaeb0adbe1ba4d595d84a\trefs/heads/main\n",
+    "stderr": ""
+  },
+  "agent_sessions_started": 0
+}
