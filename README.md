@@ -1,8 +1,36 @@
 # AranSoul
 
-**AranSoul** is an experimental framework for long-running human–AI collaboration.
+**AranSoul** is a research project on evidence, memory authority, and reliable completion reporting in long-running human–AI collaboration. It includes research records, governance methods, and small executable tools.
 
 It studies how an AI system can remain useful over time while managing uncertainty, memory, multiple reasoning perspectives, governance boundaries, validation, and human authority.
+
+## Start here
+
+Three questions connect the work: when may remembered information guide a decision, when does evidence justify a conclusion, and when may an agent say a task is complete?
+
+| What you want to do | Start with | What is available / evidence boundary |
+| --- | --- | --- |
+| Understand the project | [Project map](research/PROJECT-MAP.md) and [status ledger](STATUS.md) | Research ownership and current, candidate, and historical material; status labels are not proof of effectiveness. |
+| Examine memory authority results | [Zombie Memory report](experiments/holdout/zombie-memory-holdout-v0.1/RESEARCH-REPORT.md) and [replication kit](docs/experiments/zombie-memory-replication-kit-v0.1/README.md) | Completed internal holdout study with raw evidence and replication materials; independent external replication remains needed. |
+| Inspect evidence-judgment research | [EREQ](docs/experiments/ereq/README.md) and [Underspecification Gate](research/agbench/underspecification-gate-v0.1.md) | Candidate development and exploratory observations, including failed criteria; not a validated general-purpose evaluator. |
+| Try a document verification tool | [GitHub document completion checker](tools/document-completion/README.md) | Executable Candidate prototype for checking a branch commit, file paths, and exact bytes. |
+| Read non-confirming results | [Context and governance comparisons](research/context-governance/README.md) | Summaries of similarity, failed replication, and no measured score gain; incomplete raw materials limit independent validation. |
+
+## Try the document completion checker
+
+For a GitHub document update, this tool checks whether the specified branch points to the expected commit and its listed files match the expected bytes. It requires **Python 3.9+ and Git**. From a local checkout:
+
+1. Follow the [contract example](tools/document-completion/README.md#contract-and-command) to create `contract.json` outside the files being checked. Use the actual full destination commit SHA and fix expected SHA-256 hashes from reviewed intended content before verification.
+2. Compare the original task's required documents with the contract's paths using the [coverage procedure](docs/governance/document-completion-coverage.md#task-to-path-coverage-gate). A missing requirement cannot be satisfied by a PASS on other files.
+3. Run the checker and inspect both its exit code and current JSON output:
+
+```sh
+python3 tools/document-completion/check.py contract.json --completion
+```
+
+`PASS` (exit 0) provides a receipt for the specified file snapshot. `FAIL` (exit 1) means a mismatch; `UNVERIFIED` (exit 2) means verification could not be established. Neither failure state produces a completion receipt.
+
+The tool does not decide whether the task's requirements are correct or complete, judge document quality, or enforce an AI assistant's final response. The [reporting workflow](docs/governance/document-completion-workflow.md) supplies agent instructions. The [three-case acceptance](docs/governance/acceptance/2026-09-15-document-coverage/README.md) and [complete-versus-omitted contract comparison](docs/governance/acceptance/2026-09-16-contract-coverage-pair/README.md) preserve bounded session observations, not a general success rate or measured productivity benefit. EREQ remains Candidate and AGBench remains paused.
 
 ## Research focus: agent memory authority and stale-state evaluation
 
