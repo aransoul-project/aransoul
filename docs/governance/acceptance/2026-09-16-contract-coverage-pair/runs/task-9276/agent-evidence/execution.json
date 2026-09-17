@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\LOCAL_USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "tools/document-completion/check.py",
+    "contract.json",
+    "--completion"
+  ],
+  "exit_code": 0,
+  "current_receipt_matches_contract": true,
+  "coverage_pass": false,
+  "whole_task_verified": false,
+  "contract_unchanged": true
+}

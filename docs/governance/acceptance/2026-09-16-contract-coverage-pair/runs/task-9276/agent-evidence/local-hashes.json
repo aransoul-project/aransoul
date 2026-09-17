@@ -1,0 +1,8 @@
+{
+  "scope": "Local bytes only; not remote verification",
+  "files": {
+    "research/README.md": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+    "research/context-governance/README.md": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68"
+  },
+  "contract_sha256": "410dc435dffee5d577b5147922afb3b3feef3cf9e593e9f7f831329404238318"
+}

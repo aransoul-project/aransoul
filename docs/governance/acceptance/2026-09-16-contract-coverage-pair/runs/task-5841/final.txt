@@ -1,0 +1,17 @@
+**兩份文件均符合此次固定契約的文件交付驗證要求。**
+
+本次 checker 退出碼為 `0`、狀態為 `PASS`，且取得非空、與契約及本次檢查時間一致的 completion receipt。
+
+- 目標：`aransoul-project/aransoul` 的 `main`
+- 指定與實際提交均為：`795a2f7bb9c105130bddaeb0adbe1ba4d595d84a`
+- 驗證時間：2026-09-17 03:05:49（臺灣時間）
+- 任務要求路徑與契約完全一致；兩份遠端文件均為一般檔案，SHA-256 均符合契約。
+
+| 文件 | 結果 |
+| --- | --- |
+| [研究索引](https://github.com/aransoul-project/aransoul/blob/795a2f7bb9c105130bddaeb0adbe1ba4d595d84a/research/README.md) | PASS |
+| [研究摘要](https://github.com/aransoul-project/aransoul/blob/795a2f7bb9c105130bddaeb0adbe1ba4d595d84a/research/context-governance/README.md) | PASS |
+
+**未驗證範圍：**研究結果真實性、原始實驗證據、作者身分、先前發布行為及檢查後的持續狀態。此次 PASS 僅證明指定分支快照與文件位元組符合契約；EREQ 仍為 Candidate，AGBench 仍暫停。
+
+未修改固定契約、原始任務或遠端內容。本次 JSON、退出碼及收據核對結果已保存於[執行證據](</C:/Users/LOCAL_USER/Documents/AranSoul-Codex-Lab/pair-review-private/task-5841/verification-evidence-2133c4b175d94db3ba7cb851ddd0da7d/execution.json>)。

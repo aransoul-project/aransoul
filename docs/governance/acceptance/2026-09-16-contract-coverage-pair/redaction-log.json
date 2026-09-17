@@ -1,0 +1,341 @@
+{
+  "method": "Only local account name and its JSON-escaped forms replaced by LOCAL_USER / LOCAL_USER_SHORT. Exact original bytes retained privately. No behavior content edited. Copied files retain line endings. Selection of tool and user events excludes hidden runtime instructions and internal reasoning; context projection is documented separately. Raw original task hash in frozen manifest differs from public redacted task hash.",
+  "files": [
+    {
+      "public_path": "design-before-run.md",
+      "source": "design-before-run.md",
+      "original_sha256": "f0dfae3b17fc057c52e2b5751eaa399a41a8a59a13afc13139484299885944b6",
+      "public_sha256": "f0dfae3b17fc057c52e2b5751eaa399a41a8a59a13afc13139484299885944b6",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "frozen-manifest.json",
+      "source": "frozen-manifest.json",
+      "original_sha256": "209754690517ac05077d0bac89f0e2e46cfaf1742a41bb2d58bee103a1395fc1",
+      "public_sha256": "209754690517ac05077d0bac89f0e2e46cfaf1742a41bb2d58bee103a1395fc1",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "preflight.json",
+      "source": "preflight.json",
+      "original_sha256": "3a7a045b5e30fede2bdc906bcc1ac48d969da0eb2d309692dfa0c5d540d90b29",
+      "public_sha256": "8a7cc5ab87f9a740a49432440620e93c1a9c7d90f5161864384689e36557e161",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "setup/setup.py",
+      "source": "setup.py",
+      "original_sha256": "9771d9819709295d87703f832f9871bd3c6d9a40be19c8b928d62567afb1e959",
+      "public_sha256": "5a43569abc8c9c145368b1b1d3e59c64b4a7b92c3ddd63c8350e80e1bbf94f5b",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "setup/run_pair.py",
+      "source": "run_pair.py",
+      "original_sha256": "79a0733514b07ebd38f4b2905e25546103f8259c1fca0a1ac8b685e6f6639fdc",
+      "public_sha256": "79a0733514b07ebd38f4b2905e25546103f8259c1fca0a1ac8b685e6f6639fdc",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-5841/AGENTS.md",
+      "source": "task-5841\\AGENTS.md",
+      "original_sha256": "2d36797c3fdb2d9011f38ea1a7661461820199d17758ffe15116aa3bf0e6d333",
+      "public_sha256": "2d36797c3fdb2d9011f38ea1a7661461820199d17758ffe15116aa3bf0e6d333",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-5841/contract.json",
+      "source": "task-5841\\contract.json",
+      "original_sha256": "6f88cc30312f659a3bfe009a1e261016fc7d8248038dbc6af251580315e3e9b6",
+      "public_sha256": "6f88cc30312f659a3bfe009a1e261016fc7d8248038dbc6af251580315e3e9b6",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-5841/docs/governance/document-completion-coverage.md",
+      "source": "task-5841\\docs\\governance\\document-completion-coverage.md",
+      "original_sha256": "c8cab325b9ecf36332431df67a704834291e28ac3a802f871c739eb22f69db5f",
+      "public_sha256": "c8cab325b9ecf36332431df67a704834291e28ac3a802f871c739eb22f69db5f",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-5841/docs/governance/document-completion-workflow.md",
+      "source": "task-5841\\docs\\governance\\document-completion-workflow.md",
+      "original_sha256": "4bfd7c963f817c63b60c285e242c5220d063b2c3e665c1ddf21fca9b87672c2e",
+      "public_sha256": "4bfd7c963f817c63b60c285e242c5220d063b2c3e665c1ddf21fca9b87672c2e",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-5841/research/context-governance/README.md",
+      "source": "task-5841\\research\\context-governance\\README.md",
+      "original_sha256": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68",
+      "public_sha256": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-5841/research/README.md",
+      "source": "task-5841\\research\\README.md",
+      "original_sha256": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+      "public_sha256": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-5841/task.txt",
+      "source": "task-5841\\task.txt",
+      "original_sha256": "111363cad5fcd356339558a889695e28af7a387dbefc285589e8b278810f3974",
+      "public_sha256": "bb3613658dedd906e445b6620b3eb7dec3ee38bba469bbd68ff5c0110c07c97d",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "materials/task-5841/tools/document-completion/check.py",
+      "source": "task-5841\\tools\\document-completion\\check.py",
+      "original_sha256": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6",
+      "public_sha256": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-5841/tools/document-completion/README.md",
+      "source": "task-5841\\tools\\document-completion\\README.md",
+      "original_sha256": "2ae619f4814998f572e73aed09b0bfec0540a20b3b069d2430b84a025245046c",
+      "public_sha256": "2ae619f4814998f572e73aed09b0bfec0540a20b3b069d2430b84a025245046c",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-5841/environment.json",
+      "source": "record-task-5841\\environment.json",
+      "original_sha256": "c8110805b64d59188bcf20bbbc2fc0d8993281b134f85a29502a1b1b2be89696",
+      "public_sha256": "d5c460271de3c85f3b730be08aaa144d52e5ee4265757f30a599f1d11c1c27e1",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-5841/trace.jsonl",
+      "source": "record-task-5841\\trace.jsonl",
+      "original_sha256": "bf989edf827f588e31791de0f977ca12c343ba9492c834e5653555e2191c7511",
+      "public_sha256": "8c73e6f8c951ca9a970a20c2bb1a41c97f120824657db5e46d41ae483f85270c",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-5841/stderr.txt",
+      "source": "record-task-5841\\stderr.txt",
+      "original_sha256": "4bf51ccabec6f98bb12ea1e1c71ae26e0f945acad557d08a95945a6b7deb3306",
+      "public_sha256": "4bf51ccabec6f98bb12ea1e1c71ae26e0f945acad557d08a95945a6b7deb3306",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-5841/final.txt",
+      "source": "record-task-5841\\final.txt",
+      "original_sha256": "d34c6deb49fe91c2312ff016c36d3fc047450a7ab230f7797988bc5970f36f6b",
+      "public_sha256": "15bee2b19fd97d1b47f7f2f8ed2b211b6ad68cf7d724d9d003ebe3e68d6bf622",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-5841/tool-trace.jsonl",
+      "source": "selected tool events from record-task-5841\\private-rollout.jsonl",
+      "original_sha256": "e30e725fe3636fbba18fa5e2bde8535c0c50b607924bfb1060205c016569fa45",
+      "public_sha256": "3b1b70c365f3e2fa86fdf535c056bc3c4481e1aab88d74ef12bb31debe7ebce0",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-5841/input-messages.jsonl",
+      "source": "all user messages from record-task-5841\\private-rollout.jsonl",
+      "original_sha256": "c29eff205151c6259ae2267df3ce575a4015348dfe700ba1a20813bb65b5852a",
+      "public_sha256": "bb06f8b00c3185f2c778899552cacf0cf9b95cc987e37899014ede08248ab827",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-5841/actual-context.json",
+      "source": null,
+      "original_sha256": "4afbf63b69fed8b1c61d364a6707d865f39b74c79436f8e6f33fac61906d4621",
+      "public_sha256": "84f72954535a29be8a6622150ff2cc0181483a88b2ed4260319d61cfdd6d345b",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-5841/agent-evidence/checker.stdout.json",
+      "source": "task-5841\\verification-evidence-2133c4b175d94db3ba7cb851ddd0da7d\\checker.stdout.json",
+      "original_sha256": "e14756a0b9cd3672e66f321125f4efb786ec28e371fb360ab12c3ede02852ebd",
+      "public_sha256": "e14756a0b9cd3672e66f321125f4efb786ec28e371fb360ab12c3ede02852ebd",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-5841/agent-evidence/checker.stderr.txt",
+      "source": "task-5841\\verification-evidence-2133c4b175d94db3ba7cb851ddd0da7d\\checker.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-5841/agent-evidence/execution.json",
+      "source": "task-5841\\verification-evidence-2133c4b175d94db3ba7cb851ddd0da7d\\execution.json",
+      "original_sha256": "7f83a8951a63a4a70582dd18391fa8ab53cfb48dc6a594fb6623b0db5b69d1de",
+      "public_sha256": "03b1b7a932a46e6f10c8a12ba64c6af9aca5522695abe29a14d3939595258f32",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-5841/agent-evidence/preflight.json",
+      "source": "task-5841\\verification-evidence-2133c4b175d94db3ba7cb851ddd0da7d\\preflight.json",
+      "original_sha256": "63ba580fd764cded98ecb859585036c536c96ae31ebae58fc412c56d63a7942c",
+      "public_sha256": "63ba580fd764cded98ecb859585036c536c96ae31ebae58fc412c56d63a7942c",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-5841/agent-evidence/verify_delivery.py",
+      "source": "task-5841\\verify_delivery.py",
+      "original_sha256": "5f2e30b51838226cc3c44ff763c24b47149d3e19461a251e0408ca66153d1210",
+      "public_sha256": "5f2e30b51838226cc3c44ff763c24b47149d3e19461a251e0408ca66153d1210",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-9276/AGENTS.md",
+      "source": "task-9276\\AGENTS.md",
+      "original_sha256": "2d36797c3fdb2d9011f38ea1a7661461820199d17758ffe15116aa3bf0e6d333",
+      "public_sha256": "2d36797c3fdb2d9011f38ea1a7661461820199d17758ffe15116aa3bf0e6d333",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-9276/contract.json",
+      "source": "task-9276\\contract.json",
+      "original_sha256": "410dc435dffee5d577b5147922afb3b3feef3cf9e593e9f7f831329404238318",
+      "public_sha256": "410dc435dffee5d577b5147922afb3b3feef3cf9e593e9f7f831329404238318",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-9276/docs/governance/document-completion-coverage.md",
+      "source": "task-9276\\docs\\governance\\document-completion-coverage.md",
+      "original_sha256": "c8cab325b9ecf36332431df67a704834291e28ac3a802f871c739eb22f69db5f",
+      "public_sha256": "c8cab325b9ecf36332431df67a704834291e28ac3a802f871c739eb22f69db5f",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-9276/docs/governance/document-completion-workflow.md",
+      "source": "task-9276\\docs\\governance\\document-completion-workflow.md",
+      "original_sha256": "4bfd7c963f817c63b60c285e242c5220d063b2c3e665c1ddf21fca9b87672c2e",
+      "public_sha256": "4bfd7c963f817c63b60c285e242c5220d063b2c3e665c1ddf21fca9b87672c2e",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-9276/research/context-governance/README.md",
+      "source": "task-9276\\research\\context-governance\\README.md",
+      "original_sha256": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68",
+      "public_sha256": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-9276/research/README.md",
+      "source": "task-9276\\research\\README.md",
+      "original_sha256": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+      "public_sha256": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-9276/task.txt",
+      "source": "task-9276\\task.txt",
+      "original_sha256": "111363cad5fcd356339558a889695e28af7a387dbefc285589e8b278810f3974",
+      "public_sha256": "bb3613658dedd906e445b6620b3eb7dec3ee38bba469bbd68ff5c0110c07c97d",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "materials/task-9276/tools/document-completion/check.py",
+      "source": "task-9276\\tools\\document-completion\\check.py",
+      "original_sha256": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6",
+      "public_sha256": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "materials/task-9276/tools/document-completion/README.md",
+      "source": "task-9276\\tools\\document-completion\\README.md",
+      "original_sha256": "2ae619f4814998f572e73aed09b0bfec0540a20b3b069d2430b84a025245046c",
+      "public_sha256": "2ae619f4814998f572e73aed09b0bfec0540a20b3b069d2430b84a025245046c",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-9276/environment.json",
+      "source": "record-task-9276\\environment.json",
+      "original_sha256": "e19217b6cb303095458f45091335e5958fa120c857fc4b86390652c9f6f83b18",
+      "public_sha256": "f0c998fc0cd5360e1a62fbb37ead7388ed8611b636af019b91eed557525cf4c1",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-9276/trace.jsonl",
+      "source": "record-task-9276\\trace.jsonl",
+      "original_sha256": "2a7394a99f4471aeb15173fbc8c12c99a465acc920c4bfdb78802d69f111998f",
+      "public_sha256": "db80654af18227d4b3ccc8dc2864cf97e46d57c6982e6438625b075d87621136",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-9276/stderr.txt",
+      "source": "record-task-9276\\stderr.txt",
+      "original_sha256": "a1168f7f61decdc6aef40732ab9a64df8e8d03b24123f9312ce7e2e9759d9601",
+      "public_sha256": "a1168f7f61decdc6aef40732ab9a64df8e8d03b24123f9312ce7e2e9759d9601",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-9276/final.txt",
+      "source": "record-task-9276\\final.txt",
+      "original_sha256": "5d3b8727df23fdb861b265288d1a80c70d12f6634f4e2c7f6ed2f9d279ca7966",
+      "public_sha256": "5d3b8727df23fdb861b265288d1a80c70d12f6634f4e2c7f6ed2f9d279ca7966",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-9276/tool-trace.jsonl",
+      "source": "selected tool events from record-task-9276\\private-rollout.jsonl",
+      "original_sha256": "f971bfd69398388b4536b35704f7b37aba1495b8a3d1addbb97d8101dc8ce0d9",
+      "public_sha256": "9af5839f945312cca9b3ce8c4de761c149b8d4694b69d56cf349d38f7968d476",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-9276/input-messages.jsonl",
+      "source": "all user messages from record-task-9276\\private-rollout.jsonl",
+      "original_sha256": "5fc8565fd4c59a4326c640e84f70ce0655d7fa0966e45f4cd099c9e99c313d49",
+      "public_sha256": "875931e4530283ea63218a5ceeb6e1cc78d6048123f6a872f136c9473cef2555",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-9276/actual-context.json",
+      "source": null,
+      "original_sha256": "66fa3c0769e633fe2ef90c46fc48c77dc0772532510a5685a48127dede93f313",
+      "public_sha256": "df9f8778e22d4a25e873d974f4240a7b510c7126e224bdb126bbc26e347ec27c",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-9276/agent-evidence/checker.stdout.json",
+      "source": "task-9276\\verification-evidence-20260916T190535257392Z\\checker.stdout.json",
+      "original_sha256": "a446e2326fc235768389c63730f9676cdceefffa7a60718efb5c209d327ac99a",
+      "public_sha256": "a446e2326fc235768389c63730f9676cdceefffa7a60718efb5c209d327ac99a",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-9276/agent-evidence/checker.stderr.txt",
+      "source": "task-9276\\verification-evidence-20260916T190535257392Z\\checker.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-9276/agent-evidence/execution.json",
+      "source": "task-9276\\verification-evidence-20260916T190535257392Z\\execution.json",
+      "original_sha256": "09ba3224fdacf1b22142e4eaa8d7d0275270a165ab5bbf6f116a8cfd8b43a483",
+      "public_sha256": "3cdca41349285173e1a6d4823bf97c33b04282357c8666fc85ca8c7952887fd0",
+      "redacted_local_account_identifiers": true
+    },
+    {
+      "public_path": "runs/task-9276/agent-evidence/coverage.json",
+      "source": "task-9276\\verification-evidence-20260916T190535257392Z\\coverage.json",
+      "original_sha256": "7cf29c28fae7fa002dd487a2ec1842614e5c0a1ef162a8ff9c6baa187e85de08",
+      "public_sha256": "7cf29c28fae7fa002dd487a2ec1842614e5c0a1ef162a8ff9c6baa187e85de08",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-9276/agent-evidence/local-hashes.json",
+      "source": "task-9276\\verification-evidence-20260916T190535257392Z\\local-hashes.json",
+      "original_sha256": "bc3473f80983f1a554eb835a620fb6dfef68c411d8b0c359fb5c57f6926b4367",
+      "public_sha256": "bc3473f80983f1a554eb835a620fb6dfef68c411d8b0c359fb5c57f6926b4367",
+      "redacted_local_account_identifiers": false
+    },
+    {
+      "public_path": "runs/task-9276/agent-evidence/verify_delivery.py",
+      "source": "task-9276\\verify_delivery.py",
+      "original_sha256": "26428547d4f44e894d24001df95b7ff055d709d2caa43985217e4fd8c61cb8b6",
+      "public_sha256": "26428547d4f44e894d24001df95b7ff055d709d2caa43985217e4fd8c61cb8b6",
+      "redacted_local_account_identifiers": false
+    }
+  ]
+}

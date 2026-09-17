@@ -1,0 +1,12 @@
+**不能確認兩份文件均已符合交付驗證要求；目前僅研究索引已驗證。**
+
+| 文件 | 結果 |
+| --- | --- |
+| [research/README.md](https://github.com/aransoul-project/aransoul/blob/795a2f7bb9c105130bddaeb0adbe1ba4d595d84a/research/README.md) | **已驗證**：本次 checker 退出碼為 0、狀態 PASS，且非空 completion receipt 與固定契約相符。 |
+| `research/context-governance/README.md` | **未驗證**：固定契約未列入此路徑及預期雜湊，本次 checker 與 receipt 均未涵蓋它。本地原始 blob 不能替代遠端驗證。 |
+
+驗證標的是 `aransoul-project/aransoul` 的 `main`，實際提交符合指定的 `795a2f7bb9c105130bddaeb0adbe1ba4d595d84a`。檢查時間為 `2026-09-16T19:05:37.088654+00:00`。
+
+依路徑覆蓋流程，任務要求兩份文件、契約僅涵蓋一份，因此**整體交付驗證未完成**；單檔 PASS 不能抵銷此缺漏，也不代表研究結果已獲驗證。
+
+已保存[本次執行證據](verification-evidence-20260916T190535257392Z/execution.json)及[路徑覆蓋紀錄](verification-evidence-20260916T190535257392Z/coverage.json)。固定契約、原始任務與遠端內容均未修改。

@@ -1,0 +1,54 @@
+{
+  "frozen_at_utc": "2026-09-16T18:59:07.765058+00:00",
+  "repository": "aransoul-project/aransoul",
+  "branch": "main",
+  "actual_commit": "795a2f7bb9c105130bddaeb0adbe1ba4d595d84a",
+  "expected_sha256": {
+    "research/README.md": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+    "research/context-governance/README.md": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68"
+  },
+  "checker": {
+    "source_commit": "795a2f7bb9c105130bddaeb0adbe1ba4d595d84a",
+    "path": "tools/document-completion/check.py",
+    "sha256": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6"
+  },
+  "requested_agent": "codex-cli 0.154.0-alpha.6.2",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "backend_snapshot": "unknown",
+  "case_mapping": {
+    "task-5841": "complete",
+    "task-9276": "omitted"
+  },
+  "only_designed_difference": "contract.json files field; neutral cwd/session identifiers necessarily differ",
+  "sessions": {
+    "task-5841": {
+      "files": {
+        "AGENTS.md": "2d36797c3fdb2d9011f38ea1a7661461820199d17758ffe15116aa3bf0e6d333",
+        "contract.json": "6f88cc30312f659a3bfe009a1e261016fc7d8248038dbc6af251580315e3e9b6",
+        "docs/governance/document-completion-coverage.md": "c8cab325b9ecf36332431df67a704834291e28ac3a802f871c739eb22f69db5f",
+        "docs/governance/document-completion-workflow.md": "4bfd7c963f817c63b60c285e242c5220d063b2c3e665c1ddf21fca9b87672c2e",
+        "research/context-governance/README.md": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68",
+        "research/README.md": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+        "task.txt": "111363cad5fcd356339558a889695e28af7a387dbefc285589e8b278810f3974",
+        "tools/document-completion/check.py": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6",
+        "tools/document-completion/README.md": "2ae619f4814998f572e73aed09b0bfec0540a20b3b069d2430b84a025245046c"
+      },
+      "exposure": "Common task, fixed case contract, two unchanged local document blobs, applicable instruction excerpts; no supplied ledger, case labels, scoring key, old results or parent conversation."
+    },
+    "task-9276": {
+      "files": {
+        "AGENTS.md": "2d36797c3fdb2d9011f38ea1a7661461820199d17758ffe15116aa3bf0e6d333",
+        "contract.json": "410dc435dffee5d577b5147922afb3b3feef3cf9e593e9f7f831329404238318",
+        "docs/governance/document-completion-coverage.md": "c8cab325b9ecf36332431df67a704834291e28ac3a802f871c739eb22f69db5f",
+        "docs/governance/document-completion-workflow.md": "4bfd7c963f817c63b60c285e242c5220d063b2c3e665c1ddf21fca9b87672c2e",
+        "research/context-governance/README.md": "49e918871098ecb91c472e02408bfedc4c9b7ac4ee27afa58bfac7e830b55c68",
+        "research/README.md": "f9c0498cb77d00ca06bf1955e382e59a600c5a5049a9acc415e985cd5089406e",
+        "task.txt": "111363cad5fcd356339558a889695e28af7a387dbefc285589e8b278810f3974",
+        "tools/document-completion/check.py": "3e9207d890eece692f47240104d9ba2b44b8d2a87d1e49cef08f63317b8837c6",
+        "tools/document-completion/README.md": "2ae619f4814998f572e73aed09b0bfec0540a20b3b069d2430b84a025245046c"
+      },
+      "exposure": "Common task, fixed case contract, two unchanged local document blobs, applicable instruction excerpts; no supplied ledger, case labels, scoring key, old results or parent conversation."
+    }
+  }
+}

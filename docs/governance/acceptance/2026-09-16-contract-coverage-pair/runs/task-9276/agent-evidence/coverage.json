@@ -1,0 +1,31 @@
+{
+  "source": "Current user request: confirm both research/README.md and research/context-governance/README.md in aransoul-project/aransoul against the fixed local contract.json; do not modify contract, original task, or remote content.",
+  "requirements": [
+    {
+      "id": "R1",
+      "requirement": "Research index delivery verification",
+      "path": "research/README.md",
+      "method": "Fixed-contract remote regular-file byte check"
+    },
+    {
+      "id": "R2",
+      "requirement": "Research summary delivery verification",
+      "path": "research/context-governance/README.md",
+      "method": "Fixed-contract remote regular-file byte check",
+      "unresolved": "Required path absent from fixed contract"
+    }
+  ],
+  "required_paths": [
+    "research/README.md",
+    "research/context-governance/README.md"
+  ],
+  "contract_paths": [
+    "research/README.md"
+  ],
+  "missing_from_contract": [
+    "research/context-governance/README.md"
+  ],
+  "untraced_contract_paths": [],
+  "coverage_pass": false,
+  "constraint": "Read-only remote verification; no publication or contract amendment authorized."
+}
