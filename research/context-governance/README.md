@@ -91,6 +91,11 @@ The useful contribution is preservation of non-confirming evidence:
 
 v0.5 revision dynamics and earlier decision-boundary studies are outside this note's result synthesis. This is not a complete history of all context experiments.
 
+Documentation addition (2026-09-18): the separate [Revision Dynamics v0.5 record](revision-dynamics-v0.5.md)
+preserves the source-reported design and available Turn 3 summaries. It does not
+add v0.5 to the results above; complete trajectories and independent scoring remain
+unavailable in the inspected sources.
+
 This note does not establish stable persona identity, general absence of context effects, causal governance utility, model rankings, benchmark validity, or mechanistic findings. EREQ remains Candidate and AGBench Pilot v0.1 remains paused. No new experiment, scorer, or benchmark release is authorized by this documentation.
 
 Any future evidence recovery should be reported as a dated amendment, preserving these limitations as the historical publication state. Cite this note with its repository commit and the specific study version, under the [repository citation guidance](../../CITATION.md).
