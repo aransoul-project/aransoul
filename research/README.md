@@ -19,3 +19,4 @@ AGBench remains an incubated research project. The presence of a project identit
 ## Context and governance comparisons
 
 - [Exploratory observations: v0.4, v0.6-R, and v0.7](context-governance/README.md) — internal-record summary of salience similarity, a non-replicating candidate, and no measured governance gain; incomplete raw evidence and unverified execution provenance prevent independent result validation. Versions are not pooled; no baseline or AGBench status change.
+- [Revision Dynamics v0.5](context-governance/revision-dynamics-v0.5.md) — historical multi-turn comparison design and reported endpoint summaries; complete revision paths and independent scoring are unavailable in the inspected sources. No PC/Clean difference or equivalence is established.
