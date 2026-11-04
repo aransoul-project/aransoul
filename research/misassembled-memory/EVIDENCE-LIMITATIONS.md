@@ -36,10 +36,10 @@ This public derivative intentionally omits private source conversations, real pe
 - No change to the AranSoul `CURRENT` baseline, canonical memory or experimental method files, `STATUS.md`, or released tagged versions.
 - No permission to resume any held API, agent, engineering, or separate research activity.
 - A proposed future run requires a fresh protocol, independent evidence plan, and explicit authorization. No prior observations are to be re-run or repaired merely to erase limitations.
-- This directory is a candidate publication package; an actual public GitHub commit must be reviewed and approved separately.
+- The four public-safe documents have been posted on an explicitly authorized public draft PR. That publication does not authorize merging into `main`; a separate review and decision are required.
 
 ## External inspection and licensing qualification
 
 This derivative provides aggregate descriptions and methodological cautions, **not** a reproducibility package: reviewers cannot independently re-score or replicate the 24 outputs from this public snapshot because original prompts, raw outputs, blind keys, and platform execution records are deliberately absent. The publicly stated counts are traceable to private local research notes reviewed by the authors, not independently inspectable raw provider records.
 
-Repository documentation presently defaults to CC BY-SA 4.0; publication nevertheless requires explicit maintainer review of authorship, permission, third-party rights, privacy, and any cross-license constraints. A clean synthetic-content scan does not itself grant redistribution permission.
+Repository documentation defaults to CC BY-SA 4.0. Publication of this four-file draft PR was explicitly authorized; that authorization does not apply to private or third-party materials outside the approved scope. A synthetic-content scan alone is not evidence of ownership, permission, or third-party rights clearance. Any merge requires a separate maintainer review.
