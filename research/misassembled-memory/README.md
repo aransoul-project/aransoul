@@ -3,7 +3,7 @@
 **Status:** `CANDIDATE_ONLY` / `CONTENT_PROVISIONAL` / `EXECUTION_UNVERIFIED`  
 **Snapshot date:** 2026-11-04  
 **Scope:** Public-safe, synthetic prompt-response observations; not a validated benchmark or governance baseline.
-**Publication state:** Draft only; public release requires a separate human decision.
+**Publication state:** Publicly visible on a draft GitHub pull request following explicit human authorization; merge into `main` requires a separate decision.
 
 ## Research question
 
@@ -30,8 +30,8 @@ The strongest bounded observation is a split between (a) answering correctly whe
 - Inclusion in the repository does **not** change `STATUS.md` or current governance.
 - Raw human conversations, user-identifying records, actual private memory summaries, sealed test prompts, blind mapping, answer keys, and original evaluator-only materials are intentionally absent from this public-safe derivative.
 
-This snapshot is intended as an **unpublished candidate patch** until a separate repository contribution decision and final review.
+This snapshot is publicly visible in a **draft pull request** for review; it is not merged into the repository's `main` branch or adopted as a formal baseline.
 
 ## Publication and licensing boundary
 
-The parent repository currently applies CC BY-SA 4.0 to non-code research documentation unless a more specific notice applies. This candidate follows that anticipated repository scope **only if it is accepted for publication**. Its existence in a local ZIP is not a public license grant, proof of ownership or third-party rights clearance, or permission to publish private source material. An authorized maintainer must separately approve any actual GitHub contribution.
+The parent repository applies CC BY-SA 4.0 to non-code research documentation unless a more specific notice applies. The authorized public draft PR uses that repository license scope. This permission covers only the four public-safe research documents, not any private source conversations, sealed test materials, or third-party content. Merge into `main` remains subject to separate maintainer review and authorization.
