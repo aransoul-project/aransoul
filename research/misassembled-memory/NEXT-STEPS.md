@@ -30,4 +30,4 @@ Proceed to a *design-only* R07 protocol review after confirming that execution e
 
 ## Publication gate (separate from experiment authorization)
 
-A proposed public commit requires a named maintainer decision after diff review, confirmation of rights and CC BY-SA 4.0 handling, privacy review, and a documented scope statement. Approval to prepare a ZIP does not authorize publication, running R07, or modifying formal status files.
+The four public-safe files were placed on a public draft PR after explicit human publication permission under the repository's CC BY-SA 4.0 documentation license. **Merge into `main` remains unapproved** and requires a separate human decision after diff review. That publication does not authorize R07, other experiments, or modifications to formal status files.
