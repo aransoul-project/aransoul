@@ -36,10 +36,14 @@ This public derivative intentionally omits private source conversations, real pe
 - No change to the AranSoul `CURRENT` baseline, canonical memory or experimental method files, `STATUS.md`, or released tagged versions.
 - No permission to resume any held API, agent, engineering, or separate research activity.
 - A proposed future run requires a fresh protocol, independent evidence plan, and explicit authorization. No prior observations are to be re-run or repaired merely to erase limitations.
-- The four public-safe documents have been posted on an explicitly authorized public draft PR. That publication does not authorize merging into `main`; a separate review and decision are required.
+- [PR #41](https://github.com/aransoul-project/aransoul/pull/41) was merged into `main` on 2026-11-04 at 21:01:07 Asia/Taipei (13:01:07 UTC), producing commit [5233beae63565d7672b95990101ff1916f93b61e](https://github.com/aransoul-project/aransoul/commit/5233beae63565d7672b95990101ff1916f93b61e). The earlier draft-publication permission and the subsequent merge event are distinct; neither establishes research validation.
 
 ## External inspection and licensing qualification
 
 This derivative provides aggregate descriptions and methodological cautions, **not** a reproducibility package: reviewers cannot independently re-score or replicate the 24 outputs from this public snapshot because original prompts, raw outputs, blind keys, and platform execution records are deliberately absent. The publicly stated counts are traceable to private local research notes reviewed by the authors, not independently inspectable raw provider records.
 
-Repository documentation defaults to CC BY-SA 4.0. Publication of this four-file draft PR was explicitly authorized; that authorization does not apply to private or third-party materials outside the approved scope. A synthetic-content scan alone is not evidence of ownership, permission, or third-party rights clearance. Any merge requires a separate maintainer review.
+Repository documentation defaults to CC BY-SA 4.0. Publication of this four-file draft PR was explicitly authorized; that authorization does not apply to private or third-party materials outside the approved scope. A synthetic-content scan alone is not evidence of ownership, permission, or third-party rights clearance. The recorded merge does not authorize new experiments or promote candidate conclusions.
+
+## Publication-status correction — 2026-11-09
+
+The earlier draft/unmerged wording is retained in Git history. The Bridge Master authorized this factual status correction on 2026-11-09. This does not backdate a separate approval for the 2026-11-04 merge: no separate approval record was located in the reviewed PR comments or reviews. Research grades, evidence limitations, candidate status, and execution holds are unchanged.
