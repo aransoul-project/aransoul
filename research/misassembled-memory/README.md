@@ -3,7 +3,7 @@
 **Status:** `CANDIDATE_ONLY` / `CONTENT_PROVISIONAL` / `EXECUTION_UNVERIFIED`  
 **Snapshot date:** 2026-11-04  
 **Scope:** Public-safe, synthetic prompt-response observations; not a validated benchmark or governance baseline.
-**Publication state:** Publicly visible on a draft GitHub pull request following explicit human authorization; merge into `main` requires a separate decision.
+**Publication state:** [PR #41](https://github.com/aransoul-project/aransoul/pull/41) was merged into `main` on 2026-11-04 at 21:01:07 Asia/Taipei (13:01:07 UTC), producing commit [5233beae63565d7672b95990101ff1916f93b61e](https://github.com/aransoul-project/aransoul/commit/5233beae63565d7672b95990101ff1916f93b61e).
 
 ## Research question
 
@@ -30,8 +30,12 @@ The strongest bounded observation is a split between (a) answering correctly whe
 - Inclusion in the repository does **not** change `STATUS.md` or current governance.
 - Raw human conversations, user-identifying records, actual private memory summaries, sealed test prompts, blind mapping, answer keys, and original evaluator-only materials are intentionally absent from this public-safe derivative.
 
-This snapshot is publicly visible in a **draft pull request** for review; it is not merged into the repository's `main` branch or adopted as a formal baseline.
+This snapshot is merged into `main` as candidate research documentation; it is not adopted as a formal governance baseline.
 
 ## Publication and licensing boundary
 
-The parent repository applies CC BY-SA 4.0 to non-code research documentation unless a more specific notice applies. The authorized public draft PR uses that repository license scope. This permission covers only the four public-safe research documents, not any private source conversations, sealed test materials, or third-party content. Merge into `main` remains subject to separate maintainer review and authorization.
+The parent repository applies CC BY-SA 4.0 to non-code research documentation unless a more specific notice applies. The authorized public draft PR uses that repository license scope. This permission covers only the four public-safe research documents, not any private source conversations, sealed test materials, or third-party content. The merge event records repository publication, not validation or governance adoption.
+
+## Publication-status correction — 2026-11-09
+
+The earlier draft/unmerged wording is retained in Git history. The Bridge Master authorized this factual status correction on 2026-11-09. This does not backdate a separate approval for the 2026-11-04 merge: no separate approval record was located in the reviewed PR comments or reviews. Research grades, evidence limitations, candidate status, and execution holds are unchanged.
