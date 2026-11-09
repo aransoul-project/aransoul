@@ -30,4 +30,8 @@ Proceed to a *design-only* R07 protocol review after confirming that execution e
 
 ## Publication gate (separate from experiment authorization)
 
-The four public-safe files were placed on a public draft PR after explicit human publication permission under the repository's CC BY-SA 4.0 documentation license. **Merge into `main` remains unapproved** and requires a separate human decision after diff review. That publication does not authorize R07, other experiments, or modifications to formal status files.
+The four public-safe files were placed on a public draft PR after explicit human publication permission under the repository's CC BY-SA 4.0 documentation license. [PR #41](https://github.com/aransoul-project/aransoul/pull/41) was merged into `main` on 2026-11-04 at 21:01:07 Asia/Taipei (13:01:07 UTC), producing commit [5233beae63565d7672b95990101ff1916f93b61e](https://github.com/aransoul-project/aransoul/commit/5233beae63565d7672b95990101ff1916f93b61e). This is a publication-history update, not experimental authorization. That publication does not authorize R07, other experiments, or modifications to formal status files.
+
+## Publication-status correction — 2026-11-09
+
+The earlier draft/unmerged wording is retained in Git history. The Bridge Master authorized this factual status correction on 2026-11-09. This does not backdate a separate approval for the 2026-11-04 merge: no separate approval record was located in the reviewed PR comments or reviews. Research grades, evidence limitations, candidate status, and execution holds are unchanged.
