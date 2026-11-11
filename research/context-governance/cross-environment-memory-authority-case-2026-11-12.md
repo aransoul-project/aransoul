@@ -30,7 +30,7 @@ The inventory included a reported 13 visible Markdown documents and 6 extracted 
 | R07 / M02 | Scoped Codex memory search returned `NOT_FOUND` | R07 is `PAUSED_DUPLICATIVE / DESIGN_ONLY / NOT_RUN`; M02 results are provisional and their execution is unverified | Missing decision context, **not** a demonstrated incorrect Codex action |
 | Zombie Memory Holdout | Earlier 96-response `responses_complete_unreviewed` state retained | Public `STATUS.md` reports three within-protocol replications / 288 responses; 186/288 authority exact-set matches | Historical snapshot versus later project progress |
 
-**Key distinction:** The earlier 96-response state need not be a false memory. It accurately describes an earlier research phase; it is unsafe **only if treated as the project's current state without verifying later evidence**.
+**Key distinction:** The earlier 96-response state need not be a false memory. It is consistent with the reported earlier research phase, but the original local-memory and execution artifacts were not independently rechecked for this note. The decision risk arises **if that historical state is treated as the project's current state without verifying later evidence**.
 
 The user then requested a read-only reconciliation against four named documents. Codex reported `STALE` overall, identified R07 as paused, maintained D3 HOLD, and treated the later GitHub study state as current. The operation was explicitly guided: **this case provides no evidence of spontaneous authority checking**.
 
