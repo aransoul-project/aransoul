@@ -1,15 +1,17 @@
 # M02 — Next-step conditions (proposal only)
 
-**State:** `PROPOSED / NOT_AUTHORIZED`.
+**State:** `R07_PAUSED_DUPLICATIVE / DESIGN_ONLY / NOT_RUN`.
 
-## Before any new test
+**Status correction (2026-11-11).** R07’s proposed source-availability and task-framing comparison overlaps substantially with M02 R03, R04, and R06. The design remains a historical candidate. Preparation and execution are paused. The checklist below records evidence requirements for future proposals.
+
+## Evidence requirements for future proposals
 
 1. **Pre-register the question.** Narrow the target to source qualification in natural questions; define the expected behavior, failure boundaries, ambiguous/Amber outputs, and competing explanations before sampling prompts.
 2. **Freeze only new stimuli.** Keep new prompt content, order, source conditions, case identifiers, grading and hash inventory in a sealed version. Do not alter or replay prior exploratory items to create a false retrospective control.
 3. **Prepare execution receipts.** Preserve actual submitted prompt bytes, first complete answer, the model name visible in the interface, mode/isolation evidence, available timestamp, and provenance of the capture. Mark unavailable elements `UNVERIFIED`, not `PASS`.
 4. **Separate roles.** Keep test operator, blind grader, and case key mapping apart where feasible. Require an independent content review or record its absence.
 5. **Keep scope explicit.** Separate synthetic source-attribution experiments from product-memory system tests. Neither alone establishes a real historical incident's causal mechanism.
-6. **Seek authorization anew.** A proposed R07 would require a separate, limited decision. This document neither starts nor schedules any test and does not release other governance or engineering holds.
+6. **Obtain separate authorization for execution.** A future test requires its own scoped decision. Existing governance and engineering holds remain in effect.
 
 ## Minimum future evidence checklist
 
@@ -24,9 +26,9 @@
 | Scoring and deviations | Apply fixed rubric; log any changes as a new version |
 | Execution validity | Distinct from content-level Green/Amber/Red/Invalid |
 
-## Candidate decision point
+## Open research question
 
-Proceed to a *design-only* R07 protocol review after confirming that execution evidence can be collected without disclosing sensitive conversations. Any runtime test, automated retrieval, provider integration, or release requires additional authorization.
+The open research question is whether a documented correction remains effective when information is summarized, retrieved, or cited later. See the [call for examples and method review](https://github.com/aransoul-project/aransoul/issues/43). The call does not authorize R07 or any new AranSoul experiment.
 
 ## Publication gate (separate from experiment authorization)
 
