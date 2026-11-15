@@ -1,6 +1,8 @@
 # M02 — Next-step conditions (proposal only)
 
-**State:** `PROPOSED / NOT_AUTHORIZED`.
+**State:** `R07_PAUSED_DUPLICATIVE / DESIGN_ONLY / NOT_RUN`.
+
+**Status correction (2026-11-11).** R07’s proposed source-availability and task-framing comparison overlaps substantially with M02 R03, R04, and R06. The design remains a historical candidate. Preparation and execution are paused. The checklist below records evidence requirements for future proposals.
 
 ## Before any new test
 
@@ -26,7 +28,7 @@
 
 ## Candidate decision point
 
-Proceed to a *design-only* R07 protocol review after confirming that execution evidence can be collected without disclosing sensitive conversations. Any runtime test, automated retrieval, provider integration, or release requires additional authorization.
+The open research question is whether a documented correction remains effective when information is summarized, retrieved, or cited later. See the [call for examples and method review](https://github.com/aransoul-project/aransoul/issues/43). The call does not authorize R07 or any new AranSoul experiment.
 
 ## Publication gate (separate from experiment authorization)
 
