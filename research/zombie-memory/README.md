@@ -38,6 +38,7 @@ The three completed live replications are within-protocol replications and shoul
 - [Independent replication protocol](../../docs/experiments/zombie-memory-independent-replication-protocol-v0.1.md)
 - [Replication kit](../../docs/experiments/zombie-memory-replication-kit-v0.1/README.md)
 - [External replication handoff](../../docs/experiments/zombie-memory-external-replication-handoff-v0.1.md)
+- [External replication call (#45)](https://github.com/aransoul-project/aransoul/issues/45) — share a replication plan, results, or a blocker.
 - [External replication outreach template](../../docs/experiments/EXTERNAL-REPLICATION-OUTREACH-TEMPLATE.md)
 
 These artifacts define or support future external replication. Their existence does not claim that an independent external replication has already been completed.
